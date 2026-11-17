@@ -1,0 +1,261 @@
+{
+  "scope": "knot-format-matrix-20261116-d-pptx",
+  "caseName": "pptx",
+  "requestedFormat": "pptx",
+  "taskID": "4eac43e9-ef99-47a7-be53-bfeff373dba8",
+  "conversationID": "75303802-9535-4100-ae04-d6942429250b",
+  "expectedBuild": "f2910baf23bbaddc8a93b00c2b10a21d21f72dc851b710a8fdcef3c85f4f90c9",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:47:05.544Z",
+  "passed": false,
+  "accountID": "0677298c-86b8-43e7-b244-a5c85cf9ec27",
+  "terminal": {
+    "task": {
+      "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8",
+      "bot": "main",
+      "conversationID": "75303802-9535-4100-ae04-d6942429250b",
+      "sourceMessageID": "4eac43e9-ef99-47a7-be53-bfeff373dba8",
+      "replyID": "ceac43e9-ef99-47a7-be53-bfeff373dba8",
+      "state": "degraded",
+      "createdAt": 1794797229970,
+      "startedAt": 1794797233954,
+      "finishedAt": 1794797309667,
+      "sequence": 170
+    },
+    "events": [],
+    "next": 170,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a1",
+        "label": "Prepare PowerPoint: Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Create slides for herb gardening with setup, watering, and harvesting advice.",
+        "started_at": 1794797241897,
+        "ended_at": 1794797244031,
+        "receipt_id": "28b73cbb-fa8a-42bb-bdae-0afd7b61d19f"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a2",
+        "label": "Prepare PowerPoint: Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Create slides for herb gardening with setup, watering, and harvesting advice.",
+        "started_at": 1794797244031,
+        "ended_at": 1794797244765,
+        "receipt_id": "28b73cbb-fa8a-42bb-bdae-0afd7b61d19f"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a3",
+        "label": "Author Balcony Herb Plan Slides",
+        "tool": "session_input",
+        "purpose": "Create and deliver a PowerPoint file containing four slides with complete content.",
+        "started_at": 1794797246758,
+        "ended_at": 1794797246852,
+        "receipt_id": "a89b0399-b190-48f3-a182-b46274a1e5b3"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a4",
+        "label": "Author Balcony Herb Plan Slides",
+        "tool": "session_input",
+        "purpose": "Create and deliver a PowerPoint file containing four slides with complete content.",
+        "started_at": 1794797246852,
+        "ended_at": 1794797247592,
+        "receipt_id": "a89b0399-b190-48f3-a182-b46274a1e5b3"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a5",
+        "label": "Create Balcony Herb Plan Slides",
+        "tool": "session_input",
+        "purpose": "Design and create a PowerPoint presentation with specific herb gardening advice.",
+        "started_at": 1794797250392,
+        "ended_at": 1794797250492,
+        "receipt_id": "f63d05df-7531-473d-a85d-6a65c1291cca"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a6",
+        "label": "Create Balcony Herb Plan Slides",
+        "tool": "session_input",
+        "purpose": "Design and create a PowerPoint presentation with specific herb gardening advice.",
+        "started_at": 1794797250492,
+        "ended_at": 1794797251200,
+        "receipt_id": "f63d05df-7531-473d-a85d-6a65c1291cca"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a7",
+        "label": "Create PowerPoint: Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Author PPTX with Basil/Mint setup, care, and safety notes.",
+        "started_at": 1794797253072,
+        "ended_at": 1794797253262,
+        "receipt_id": "fbd60098-2483-4a38-b0c8-27cf41fbbff7"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a8",
+        "label": "Create PowerPoint: Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Author PPTX with Basil/Mint setup, care, and safety notes.",
+        "started_at": 1794797253262,
+        "ended_at": 1794797253999,
+        "receipt_id": "fbd60098-2483-4a38-b0c8-27cf41fbbff7"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a9",
+        "label": "Design PowerPoint slides",
+        "tool": "document_prepare",
+        "purpose": "Create four PowerPoint slides with setup, watering, harvesting, and safety tips for balcony herbs.",
+        "started_at": 1794797255588,
+        "ended_at": 1794797258344,
+        "receipt_id": "f643d564-5e52-42e8-82e8-bebab9236054"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a10",
+        "label": "Design PowerPoint slides",
+        "tool": "document_script",
+        "purpose": "Create four PowerPoint slides with setup, watering, harvesting, and safety tips for balcony herbs.",
+        "started_at": 1794797258344,
+        "ended_at": 1794797259789,
+        "receipt_id": "f643d564-5e52-42e8-82e8-bebab9236054"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a11",
+        "label": "Create PowerPoint slides with herb gardening guide",
+        "tool": "document_prepare",
+        "purpose": "Compile a PowerPoint presentation with practical gardening advice for basil and mint, including setup steps, watering, and harvesting guidance.",
+        "started_at": 1794797266091,
+        "ended_at": 1794797272748,
+        "receipt_id": "56d42ade-ea92-4178-a42d-253f32f57205"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a12",
+        "label": "Create PowerPoint slides with herb gardening guide",
+        "tool": "document_script",
+        "purpose": "Compile a PowerPoint presentation with practical gardening advice for basil and mint, including setup steps, watering, and harvesting guidance.",
+        "started_at": 1794797272748,
+        "ended_at": 1794797274342,
+        "receipt_id": "56d42ade-ea92-4178-a42d-253f32f57205"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a13",
+        "label": "Create PowerPoint slides for herb plan",
+        "tool": "document_prepare",
+        "purpose": "Design and deliver a concise informative presentation on balcony herb gardening.",
+        "started_at": 1794797278888,
+        "ended_at": 1794797281810,
+        "receipt_id": "a69092dc-3b57-4808-be9e-49412a749705"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a14",
+        "label": "Create PowerPoint slides for herb plan",
+        "tool": "document_script",
+        "purpose": "Design and deliver a concise informative presentation on balcony herb gardening.",
+        "started_at": 1794797281810,
+        "ended_at": 1794797283236,
+        "receipt_id": "a69092dc-3b57-4808-be9e-49412a749705"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a15",
+        "label": "Create PowerPoint slide deck",
+        "tool": "document_prepare",
+        "purpose": "Prepare four slides on herb planning including setup, watering, harvesting, and a safety note.",
+        "started_at": 1794797286023,
+        "ended_at": 1794797289506,
+        "receipt_id": "d08e028b-96a1-48ca-ae8e-ecc0f809b7c5"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a16",
+        "label": "Create PowerPoint slide deck",
+        "tool": "document_script",
+        "purpose": "Prepare four slides on herb planning including setup, watering, harvesting, and a safety note.",
+        "started_at": 1794797289506,
+        "ended_at": 1794797290885,
+        "receipt_id": "d08e028b-96a1-48ca-ae8e-ecc0f809b7c5"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a17",
+        "label": "Plan and layout balcony herb slides",
+        "tool": "session_input",
+        "purpose": "Develop a content structure for a PowerPoint presentation on balcony herb gardening.",
+        "started_at": 1794797295058,
+        "ended_at": 1794797295383,
+        "receipt_id": null
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a18",
+        "label": "Generate PowerPoint presentation",
+        "tool": "session_input",
+        "purpose": "Develop and deliver a new four-slide PowerPoint on balcony herb gardening.",
+        "started_at": 1794797297109,
+        "ended_at": 1794797297177,
+        "receipt_id": null
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a19",
+        "label": "Create Balcony Herb Plan PowerPoint",
+        "tool": "document_prepare",
+        "purpose": "Generate a PowerPoint file with four slides on balcony herbs setup, watering, and harvesting.",
+        "started_at": 1794797299106,
+        "ended_at": 1794797306627,
+        "receipt_id": "9c9b151d-c690-4f93-b8eb-542d45244f08"
+      },
+      {
+        "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a20",
+        "label": "Create Balcony Herb Plan PowerPoint",
+        "tool": "document_script",
+        "purpose": "Generate a PowerPoint file with four slides on balcony herbs setup, watering, and harvesting.",
+        "started_at": 1794797306627,
+        "ended_at": 1794797308080,
+        "receipt_id": "9c9b151d-c690-4f93-b8eb-542d45244f08"
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [
+    {
+      "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8:148",
+      "requestID": "4eac43e9-ef99-47a7-be53-bfeff373dba8",
+      "sequence": 148,
+      "kind": "tool_request_rejected",
+      "label": "Tool request rejected before execution",
+      "recordedAt": "2026-11-16T02:48:17.273Z",
+      "taskID": "4eac43e9-ef99-47a7-be53-bfeff373dba8",
+      "sourceMessageID": "4eac43e9-ef99-47a7-be53-bfeff373dba8",
+      "detail": {
+        "stepID": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a18",
+        "tool": "session_input",
+        "reason": "document_structured_invocation_required",
+        "stage": "shell_command_preparation",
+        "turnElapsedMs": 58923
+      }
+    },
+    {
+      "id": "4eac43e9-ef99-47a7-be53-bfeff373dba8:141",
+      "requestID": "4eac43e9-ef99-47a7-be53-bfeff373dba8",
+      "sequence": 141,
+      "kind": "tool_request_rejected",
+      "label": "Tool request rejected before execution",
+      "recordedAt": "2026-11-16T02:48:15.464Z",
+      "taskID": "4eac43e9-ef99-47a7-be53-bfeff373dba8",
+      "sourceMessageID": "4eac43e9-ef99-47a7-be53-bfeff373dba8",
+      "detail": {
+        "stepID": "4eac43e9-ef99-47a7-be53-bfeff373dba8-a17",
+        "tool": "session_input",
+        "reason": "document_structured_invocation_required",
+        "stage": "shell_command_preparation",
+        "turnElapsedMs": 57129
+      }
+    }
+  ],
+  "issue": "original_format_capture_missing",
+  "stopAcknowledgment": {
+    "ok": true
+  },
+  "endedAt": "2026-11-16T02:48:31.365Z",
+  "elapsedMs": 85821
+}

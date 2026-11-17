@@ -1,0 +1,17 @@
+{
+  "title": "One authorized new-backend prime-sum turn",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+  "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+  "conversationID": "66fc7df7-ed84-4930-b19b-a84e122e7172",
+  "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+  "expectedBuild": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c",
+  "startedAt": "2026-11-14T08:30:54.260Z",
+  "ask": "Use the real workspace to compute the sum of all prime numbers below 1000. Show the actual computation tool card and give the numeric answer based on its command result. Do not create files or update memory for this calculation.",
+  "noAutomaticRetry": true,
+  "noHistoricalReplay": true,
+  "dedicatedAccountOnly": true,
+  "personalAccountAccessed": false
+}

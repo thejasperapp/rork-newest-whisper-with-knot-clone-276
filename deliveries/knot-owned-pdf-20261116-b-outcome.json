@@ -1,0 +1,273 @@
+{
+  "scope": "knot-owned-pdf-20261116-b",
+  "taskID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+  "conversationID": "d63d2c82-0063-4af7-96a2-952a016a3fe2",
+  "expectedBuild": "72b0667e4f56fbd01c5417b54ae3c9598b0d85e4aea9b5126724a949b9b81df4",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T01:01:44.689Z",
+  "passed": false,
+  "accountID": "24f08490-4dcc-41fc-a804-6784a77a9626",
+  "workspaceID": "whisper-24f08490-4dcc-41fc-a804-6784a77a9626",
+  "terminal": {
+    "task": {
+      "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "bot": "main",
+      "conversationID": "d63d2c82-0063-4af7-96a2-952a016a3fe2",
+      "sourceMessageID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "replyID": "9d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "state": "degraded",
+      "createdAt": 1794790909808,
+      "startedAt": 1794790913291,
+      "finishedAt": 1794790948062,
+      "sequence": 76
+    },
+    "events": [],
+    "next": 76,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a1",
+        "label": "Prepare Rainy Day Reading Plan Content",
+        "tool": "session_input",
+        "purpose": "Develop and structure the HTML document content for PDF conversion with specified themes and sections.",
+        "started_at": 1794790920697,
+        "ended_at": 1794790923080,
+        "receipt_id": "bcb1279d-03b2-4ed2-9fac-d1d69fa1eb6e"
+      },
+      {
+        "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a2",
+        "label": "Prepare Rainy Day Reading Plan Content",
+        "tool": "session_input",
+        "purpose": "Develop and structure the HTML document content for PDF conversion with specified themes and sections.",
+        "started_at": 1794790923080,
+        "ended_at": 1794790924675,
+        "receipt_id": "bcb1279d-03b2-4ed2-9fac-d1d69fa1eb6e"
+      },
+      {
+        "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a3",
+        "label": "Develop structured PDF content",
+        "tool": "session_input",
+        "purpose": "Create a two-page reading plan with detailed tasks and schedules",
+        "started_at": 1794790927608,
+        "ended_at": 1794790927755,
+        "receipt_id": "f543b2bd-5d05-44f9-97c3-cce4d276638d"
+      },
+      {
+        "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a4",
+        "label": "Develop structured PDF content",
+        "tool": "session_input",
+        "purpose": "Create a two-page reading plan with detailed tasks and schedules",
+        "started_at": 1794790927755,
+        "ended_at": 1794790928629,
+        "receipt_id": "f543b2bd-5d05-44f9-97c3-cce4d276638d"
+      },
+      {
+        "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a5",
+        "label": "Prepare Rainy Day Reading Plan PDF Content",
+        "tool": "session_input",
+        "purpose": "To create structured content for a two-page reading plan PDF including preparation tasks and a weekend schedule.",
+        "started_at": 1794790932157,
+        "ended_at": 1794790932289,
+        "receipt_id": "352528e5-3a36-4f5b-ba22-42d04e107d6b"
+      },
+      {
+        "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a6",
+        "label": "Prepare Rainy Day Reading Plan PDF Content",
+        "tool": "session_input",
+        "purpose": "To create structured content for a two-page reading plan PDF including preparation tasks and a weekend schedule.",
+        "started_at": 1794790932289,
+        "ended_at": 1794790933110,
+        "receipt_id": "352528e5-3a36-4f5b-ba22-42d04e107d6b"
+      },
+      {
+        "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a7",
+        "label": "Compose structured content for the Rainy Day Reading Plan",
+        "tool": "session_input",
+        "purpose": "Prepare content for a well-designed, two-page PDF document titled Rainy Day Reading Plan with reading nook tasks and a weekend schedule.",
+        "started_at": 1794790936105,
+        "ended_at": 1794790936400,
+        "receipt_id": "41c99646-018b-4f50-86ab-21603aef4281"
+      },
+      {
+        "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a8",
+        "label": "Compose structured content for the Rainy Day Reading Plan",
+        "tool": "session_input",
+        "purpose": "Prepare content for a well-designed, two-page PDF document titled Rainy Day Reading Plan with reading nook tasks and a weekend schedule.",
+        "started_at": 1794790936400,
+        "ended_at": 1794790937256,
+        "receipt_id": "41c99646-018b-4f50-86ab-21603aef4281"
+      },
+      {
+        "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a9",
+        "label": "Author Rainy Day Reading Plan",
+        "tool": "document_prepare",
+        "purpose": "Develop structured content for a two-page reading plan including tasks, checklist and schedule.",
+        "started_at": 1794790939011,
+        "ended_at": 1794790943459,
+        "receipt_id": null
+      },
+      {
+        "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a10",
+        "label": "Create Rainy Day Reading Plan source content",
+        "tool": "document_prepare",
+        "purpose": "Develop a complete HTML source for a reading plan with tasks and schedule.",
+        "started_at": 1794790947166,
+        "ended_at": 1794790947295,
+        "receipt_id": null
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "labels": [
+    {
+      "observedAt": "2026-11-16T01:02:01.859Z",
+      "turnID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "activityID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a1",
+      "label": "Prepare Rainy Day Reading Plan Content",
+      "source": {
+        "tool": "session_input",
+        "receiptID": null
+      },
+      "startedAt": 1794790920697,
+      "endedAt": null
+    },
+    {
+      "observedAt": "2026-11-16T01:02:04.755Z",
+      "turnID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "activityID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a2",
+      "label": "Prepare Rainy Day Reading Plan Content",
+      "source": {
+        "tool": "session_input",
+        "receiptID": null
+      },
+      "startedAt": 1794790923080,
+      "endedAt": null
+    },
+    {
+      "observedAt": "2026-11-16T01:02:20.994Z",
+      "turnID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "activityID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a9",
+      "label": "Author Rainy Day Reading Plan",
+      "source": {
+        "tool": "document_prepare",
+        "receiptID": null
+      },
+      "startedAt": 1794790939011,
+      "endedAt": null
+    },
+    {
+      "observedAt": "2026-11-16T01:02:22.405Z",
+      "turnID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "activityID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a9",
+      "label": "Author Rainy Day Reading Plan",
+      "source": {
+        "tool": "document_prepare",
+        "receiptID": null
+      },
+      "startedAt": 1794790939011,
+      "endedAt": null
+    }
+  ],
+  "failures": [
+    {
+      "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576:75",
+      "requestID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "sequence": 75,
+      "kind": "document_work_unavailable",
+      "label": "Document work stopped before delivery",
+      "recordedAt": "2026-11-16T01:02:27.665Z",
+      "taskID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "sourceMessageID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "detail": {
+        "check": "receipt_binding",
+        "branch": "receipt_binding",
+        "fieldPath": "$",
+        "expectedShape": "validated_contract",
+        "receivedShape": "unclassified_rejection",
+        "unexplained": true,
+        "deadlineSource": "owned_turn",
+        "expiresAt": 1794791757241,
+        "tool": "document_prepare",
+        "schemaHash": "bd8e2641b148a522a026e96dd60b3614723916e59b0402811a90a3099bbc3085",
+        "reason": "document_program_closed",
+        "stage": "document_authoring",
+        "commands": 0,
+        "commandLimit": 10000,
+        "model": "openai/gpt-4o",
+        "outcome": "degraded",
+        "programBytes": 0,
+        "modelResponseBytes": 0,
+        "authoringResponses": 0,
+        "authoringElapsedMs": 129,
+        "authoringBytesPerSecond": 0,
+        "turnElapsedMs": 30054,
+        "commandDispatched": false,
+        "sourceMeasured": false,
+        "finalMeasured": false,
+        "proofPrepared": false,
+        "proofConfirmed": false
+      }
+    },
+    {
+      "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576:73",
+      "requestID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "sequence": 73,
+      "kind": "tool_request_rejected",
+      "label": "Tool request rejected before execution",
+      "recordedAt": "2026-11-16T01:02:27.491Z",
+      "taskID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "sourceMessageID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "detail": {
+        "stepID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a10",
+        "check": "receipt_binding",
+        "branch": "receipt_binding",
+        "fieldPath": "$",
+        "expectedShape": "validated_contract",
+        "receivedShape": "unclassified_rejection",
+        "unexplained": true,
+        "deadlineSource": "owned_turn",
+        "expiresAt": 1794791757241,
+        "tool": "document_prepare",
+        "schemaHash": "bd8e2641b148a522a026e96dd60b3614723916e59b0402811a90a3099bbc3085",
+        "reason": "document_program_closed",
+        "stage": "document_authoring",
+        "model": "openai/gpt-4o",
+        "programBytes": 0,
+        "modelResponseBytes": 0,
+        "authoringResponses": 0,
+        "authoringElapsedMs": 129,
+        "authoringBytesPerSecond": 0,
+        "turnElapsedMs": 30054
+      }
+    },
+    {
+      "id": "1d31c42c-dcde-4eab-93ff-27a03e9d3576:62",
+      "requestID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "sequence": 62,
+      "kind": "tool_request_rejected",
+      "label": "Tool request rejected before execution",
+      "recordedAt": "2026-11-16T01:02:23.620Z",
+      "taskID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "sourceMessageID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576",
+      "detail": {
+        "stepID": "1d31c42c-dcde-4eab-93ff-27a03e9d3576-a9",
+        "tool": "document_prepare",
+        "reason": "document_authoring_required",
+        "stage": "shell_command_preparation",
+        "turnElapsedMs": 26218
+      }
+    }
+  ],
+  "issue": "fresh_pdf_capture_missing",
+  "stopAcknowledgment": {
+    "ok": true
+  },
+  "endedAt": "2026-11-16T01:02:30.395Z",
+  "elapsedMs": 45706
+}

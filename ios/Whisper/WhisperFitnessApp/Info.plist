@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GIDClientID</key>
+	<string>280601415167-uk3usliu2behmifvqrgic4508tbchnt5.apps.googleusercontent.com</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.280601415167-uk3usliu2behmifvqrgic4508tbchnt5</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>app.rork.whisper</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>whisper</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string>Whisper</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>jasper</string>
+		<string>thejasperapp</string>
+		<string>jasperapp</string>
+	</array>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Whisper uses your music library so you can tag a song to a post, like Instagram.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Whisper uses Face ID to protect one-tap login so only you can unlock your saved sign-in on this device.</string>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>INSendMessageIntent</string>
+		<string>INStartCallIntent</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>voip</string>
+		<string>fetch</string>
+		<string>processing</string>
+		<string>location</string>
+		<string>remote-notification</string>
+	</array>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>app.rork.jasper.widget.refresh</string>
+		<string>app.rork.jasper.ember.dailyplan</string>
+		<string>app.rork.whisper.content.refresh</string>
+	</array>
+</dict>
+</plist>

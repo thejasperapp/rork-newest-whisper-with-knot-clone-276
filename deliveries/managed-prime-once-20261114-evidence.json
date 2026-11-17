@@ -1,0 +1,282 @@
+{
+  "title": "One new-backend acceptance attempt — blocked before execution",
+  "observedAt": "2026-11-14T08:31:38.703Z",
+  "intent": {
+    "title": "One authorized new-backend prime-sum turn",
+    "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+    "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+    "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+    "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+    "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+    "conversationID": "66fc7df7-ed84-4930-b19b-a84e122e7172",
+    "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+    "expectedBuild": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c",
+    "startedAt": "2026-11-14T08:30:54.260Z",
+    "ask": "Use the real workspace to compute the sum of all prime numbers below 1000. Show the actual computation tool card and give the numeric answer based on its command result. Do not create files or update memory for this calculation.",
+    "noAutomaticRetry": true,
+    "noHistoricalReplay": true,
+    "dedicatedAccountOnly": true,
+    "personalAccountAccessed": false
+  },
+  "outcome": {
+    "title": "Observed new-backend prime-sum turn",
+    "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+    "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+    "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+    "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+    "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+    "conversationID": "66fc7df7-ed84-4930-b19b-a84e122e7172",
+    "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+    "expectedBuild": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c",
+    "startedAt": "2026-11-14T08:30:54.260Z",
+    "servingRequestID": "5577191e-4889-4d7c-ae54-2176b43cf0c2",
+    "endedAt": "2026-11-14T08:30:58.434Z",
+    "elapsedMs": 4174,
+    "completionReceivedMs": null,
+    "streamEndedMs": 3846,
+    "completed": false,
+    "workIncomplete": false,
+    "issue": "upstream_quota_exhausted",
+    "reply": "",
+    "answerVerified": false,
+    "stopConfirmed": true,
+    "executions": [],
+    "retained": {
+      "records": [],
+      "activityCount": 5
+    },
+    "frameCount": 4,
+    "chatSubmissions": 1,
+    "directSidecarCalls": 0,
+    "personalAccountAccessed": false
+  },
+  "streamResponse": {
+    "status": 200,
+    "servingRequestID": "5577191e-4889-4d7c-ae54-2176b43cf0c2",
+    "workerBuild": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c"
+  },
+  "modelCalls": [
+    {
+      "logID": 14,
+      "loggedAt": "2026-11-14T08:30:58.001Z",
+      "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "servingRequestID": "5577191e-4889-4d7c-ae54-2176b43cf0c2",
+      "phase": "classification",
+      "requestedModel": "openai/gpt-4o",
+      "callID": "6c708ed6-a7a9-44fa-9294-3cb5bffb8d24",
+      "workerBuildSHA256": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c",
+      "transport": "rork",
+      "endpointHost": "toolkit.rork.com",
+      "endpointPath": "/v2/vercel/v1/chat/completions",
+      "reportedProvider": null,
+      "returnedModel": null,
+      "responseID": null,
+      "responseHeaders": {
+        "x-vercel-id": "pdx1::iad1::84g9q-1794645057745-2bc3edb81bd7"
+      },
+      "httpStatus": 402,
+      "startedAt": "2026-11-14T08:30:57.631Z",
+      "endedAt": "2026-11-14T08:30:58.001Z",
+      "headersMs": 370,
+      "firstContentMs": null,
+      "elapsedMs": 370,
+      "outcome": "failed",
+      "timingSource": "worker_wall_clock",
+      "upstreamInternalTiming": "unavailable_unless_response_header_supplied"
+    }
+  ],
+  "rejection": {
+    "stage": "work_classification",
+    "httpStatus": 402,
+    "category": "quota_exhausted",
+    "code": "INSUFFICIENT_BALANCE",
+    "evidenceLogID": 13
+  },
+  "toolExecutionRecord": {
+    "proposalsEmitted": 0,
+    "executions": [],
+    "retainedCommandRecords": [],
+    "remoteSessionID": null,
+    "stdout": null,
+    "exitCode": null,
+    "computationPerformed": false
+  },
+  "turnFrames": [
+    {
+      "v": 1,
+      "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sequence": 1,
+      "type": "accepted",
+      "activity": {
+        "id": "6ebfbfa4-89be-425c-bd24-9357c9b17842:1",
+        "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+        "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+        "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+        "sequence": 1,
+        "kind": "accepted",
+        "label": "Request received",
+        "recordedAt": "2026-11-14T08:30:55.901Z",
+        "detail": {
+          "turnElapsedMs": 0
+        }
+      },
+      "clientReceivedAt": "2026-11-14T08:30:55.917Z",
+      "clientElapsedMs": 1657
+    },
+    {
+      "v": 1,
+      "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sequence": 2,
+      "type": "connection_check_started",
+      "activity": {
+        "id": "6ebfbfa4-89be-425c-bd24-9357c9b17842:2",
+        "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+        "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+        "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+        "sequence": 2,
+        "kind": "connection_check_started",
+        "label": "Checking workspace connection",
+        "recordedAt": "2026-11-14T08:30:57.335Z",
+        "detail": {
+          "turnElapsedMs": 1434
+        }
+      },
+      "clientReceivedAt": "2026-11-14T08:30:57.343Z",
+      "clientElapsedMs": 3083
+    },
+    {
+      "v": 1,
+      "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sequence": 3,
+      "type": "work_routing",
+      "activity": {
+        "id": "6ebfbfa4-89be-425c-bd24-9357c9b17842:3",
+        "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+        "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+        "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+        "sequence": 3,
+        "kind": "work_routing",
+        "label": "Choosing tools",
+        "recordedAt": "2026-11-14T08:30:57.631Z",
+        "detail": {
+          "turnElapsedMs": 1730
+        }
+      },
+      "clientReceivedAt": "2026-11-14T08:30:57.641Z",
+      "clientElapsedMs": 3381
+    },
+    {
+      "v": 1,
+      "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sequence": 4,
+      "type": "rejected",
+      "error": "response_unavailable",
+      "reason": "upstream_quota_exhausted",
+      "stage": "work_classification",
+      "status": 402,
+      "activity": {
+        "id": "6ebfbfa4-89be-425c-bd24-9357c9b17842:4",
+        "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+        "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+        "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+        "sequence": 4,
+        "kind": "rejected",
+        "label": "Response not completed",
+        "recordedAt": "2026-11-14T08:30:58.001Z",
+        "detail": {
+          "reason": "upstream_quota_exhausted",
+          "stage": "work_classification",
+          "status": 402,
+          "turnElapsedMs": 2100
+        }
+      },
+      "clientReceivedAt": "2026-11-14T08:30:58.013Z",
+      "clientElapsedMs": 3753
+    }
+  ],
+  "retainedActivities": [
+    {
+      "id": "6ebfbfa4-89be-425c-bd24-9357c9b17842:4",
+      "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sequence": 4,
+      "kind": "rejected",
+      "label": "Response not completed",
+      "recordedAt": "2026-11-14T08:30:57.995Z",
+      "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+      "detail": {
+        "reason": "upstream_quota_exhausted",
+        "stage": "work_classification",
+        "status": 402,
+        "turnElapsedMs": 2100
+      }
+    },
+    {
+      "id": "6ebfbfa4-89be-425c-bd24-9357c9b17842:3",
+      "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sequence": 3,
+      "kind": "work_routing",
+      "label": "Choosing tools",
+      "recordedAt": "2026-11-14T08:30:57.728Z",
+      "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+      "detail": {
+        "turnElapsedMs": 1730
+      }
+    },
+    {
+      "id": "6ebfbfa4-89be-425c-bd24-9357c9b17842:2",
+      "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sequence": 2,
+      "kind": "connection_check_started",
+      "label": "Checking workspace connection",
+      "recordedAt": "2026-11-14T08:30:57.558Z",
+      "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+      "detail": {
+        "turnElapsedMs": 1434
+      }
+    },
+    {
+      "id": "6ebfbfa4-89be-425c-bd24-9357c9b17842:1",
+      "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sequence": 1,
+      "kind": "accepted",
+      "label": "Request received",
+      "recordedAt": "2026-11-14T08:30:57.277Z",
+      "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+      "detail": {
+        "turnElapsedMs": 0
+      }
+    },
+    {
+      "id": "6ebfbfa4-89be-425c-bd24-9357c9b17842:reaction-unsupported",
+      "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+      "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+      "messageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+      "sequence": 1,
+      "kind": "reaction_unsupported",
+      "label": "This client cannot display live reactions",
+      "recordedAt": "2026-11-14T08:30:57.219Z"
+    }
+  ],
+  "conclusions": {
+    "authenticatedNewBackend": true,
+    "dedicatedSessionOnly": true,
+    "backendSidecarDiscovery": "passed",
+    "backendToBoxExecutionProven": false,
+    "upstreamProvider": "unavailable; requested model is not evidence of provider execution",
+    "noAutomaticRetry": true,
+    "personalAccountWorkspaceOrMemoryAccessed": false,
+    "recipesRun": false
+  },
+  "validation": {
+    "focusedBackendStrictCompilation": "passed",
+    "fullEntrypoint": "14 inherited errors; baseline comparison only",
+    "nativeChanges": false,
+    "deviceInteractionTesting": "not performed"
+  }
+}

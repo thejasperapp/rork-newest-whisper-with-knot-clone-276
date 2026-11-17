@@ -1,0 +1,13 @@
+{
+  "scope": "native-knot-ui-20261114-artifact-01",
+  "authorization": "owner_authorized_paid_native_knot_workspace_and_interactive_previewer_testing",
+  "accountID": "bad7b131-6b05-44c8-a450-a30f4748639f",
+  "workspaceID": "whisper-bad7b131-6b05-44c8-a450-a30f4748639f",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "nativeBuildID": "3026999b-8bc0-4ed2-9204-3cf0826b830f",
+  "nativeSource": "src_cc46a3c8f94046fec",
+  "method": "real_native_composer_and_send",
+  "prompt": "Create and deliver one small self-contained HTML file titled Tap Counter for my interactive preview check. It should show a large count starting at 0, a working Add one button, and a Reset button, using only inline CSS and JavaScript and no network access. Use the real workspace, check that both buttons work, and attach the actual HTML artifact with its real preview. This is an independent new task; do not repeat the earlier calculation or write memory.",
+  "noAutomaticReplay": true,
+  "independentOfEarlierIntents": true
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "game",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "workspaceID": "whisper-4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "requestID": "9306ce44-9554-4bc0-bfb1-ffa04082681c",
+  "taskID": "9306ce44-9554-4bc0-bfb1-ffa04082681c",
+  "conversationID": "e82a2133-3407-4bd1-af3f-7f7b0cf0d181",
+  "sourceMessageID": "0a2438f4-7ed0-4dc5-94b7-3d366eae3400",
+  "expectedBuild": "1bcd5a7556437b6a32b21a314e048feaa919535380daadf51fe9d82bfa49a78a",
+  "startedAt": "2026-11-15T10:18:04.917Z",
+  "ask": "Build and deliver a self-contained playable HTML game titled Herb Match. Show six shuffled pairs of herb cards, a move counter, visible matched states, a win message when all pairs are found, and a Restart button. Use original simple CSS artwork, no external dependencies. Include stable data-testid attributes card, moves, restart and win for accessible acceptance checks. Deliver the actual HTML file, not a guide or PDF.",
+  "noAutomaticRetry": true,
+  "noHistoricalReplay": true,
+  "syntheticOnly": true
+}

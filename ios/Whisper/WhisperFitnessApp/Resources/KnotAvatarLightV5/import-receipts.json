@@ -1,0 +1,32 @@
+[
+  {
+    "name": "knot-avatar-master.jpg",
+    "bytes": 288636,
+    "sha256": "972ce710e299a9a43b499abb6ecb32de0dc145be73223a9e904d2ac2532bd09f",
+    "byteIdentical": true
+  },
+  {
+    "name": "anim-light-milestone.mp4",
+    "bytes": 375197,
+    "sha256": "3e0a929455d42b1bc35ca62fa047d695f9011e574b1cf486e00a971cfd322c9b",
+    "byteIdentical": true
+  },
+  {
+    "name": "anim-light-making-something.mp4",
+    "bytes": 566791,
+    "sha256": "d9202d4e9cf56e3baa04c537f33b44d2939c2e0b06f8a5ed28a8445dcf63d186",
+    "byteIdentical": true
+  },
+  {
+    "name": "anim-light-idle.mp4",
+    "bytes": 354519,
+    "sha256": "f2dab72e847043bad4add0f4da894439674bf23863b3505a7f62e91d96d42a66",
+    "byteIdentical": true
+  },
+  {
+    "name": "anim-light-working.mp4",
+    "bytes": 255616,
+    "sha256": "241b5a896d4b8334122b94ed3d24c0c8985f4660ee54e90cbef9b67150f1cd5c",
+    "byteIdentical": true
+  }
+]

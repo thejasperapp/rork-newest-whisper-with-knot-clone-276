@@ -1,0 +1,7 @@
+{
+  "images": [
+    { "filename": "meet-light.png", "idiom": "universal" },
+    { "filename": "meet-dark.png", "idiom": "universal", "appearances": [{ "appearance": "luminosity", "value": "dark" }] }
+  ],
+  "info": { "author": "xcode", "version": 1 }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Owner-authorized fresh new-backend prime-sum retries",
+  "authorizedOn": "2026-11-14",
+  "ownerApprovedFreshRetries": true,
+  "ownerInstruction": "We’ll retry it until it works",
+  "rotationInstruction": "You can rotate the key with your new one",
+  "projectID": "mayokn2749ag072e3uvbh",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "maximumAttemptsThisBatch": 3,
+  "sequentialManualDispatchOnly": true,
+  "freshTurnIdentitiesRequired": true,
+  "stopOnSuccessOrExecutionUncertainty": true,
+  "preserveOriginalOnceEvidence": true,
+  "noPersonalAccountAccess": true,
+  "noDirectProviderFallback": true,
+  "noSandboxOrDirectSidecarComputation": true,
+  "rotation": {
+    "supportedProjectManagedOperation": true,
+    "previousKeyID": "sk_rgk11trj",
+    "reportedNewKeyID": "sk_1j1ctnz8",
+    "oldKeyBuildWarningGiven": true,
+    "credentialValuesPrintedOrCopied": false
+  }
+}

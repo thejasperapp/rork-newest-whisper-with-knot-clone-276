@@ -1,0 +1,42 @@
+{
+  "version": "knot_supplemental_visual_acceptance_v1",
+  "observedAt": "2026-11-16T01:15:30Z",
+  "scope": "knot-owned-pdf-20261116-e",
+  "taskID": "f0d82a61-515a-402d-a922-5c4471ad21aa",
+  "originalOutcome": "deliveries/knot-owned-pdf-20261116-e-outcome.json",
+  "originalOutcomeSHA256": "7c0f916a2a3037d4c0d379b858bc81c74d9ac159c8fe54cd485595650847b87d",
+  "originalOutcomeUnchanged": true,
+  "original": "deliveries/knot-owned-pdf-20261116-e-original.pdf",
+  "documentID": "1128f0e7e2b82238ee05a76f0c065d27070d76c670bed7a5108875cbd80a0898",
+  "sha256": "c554786b7cd98ba813cc9143a4709c8a40742e703ed5c8ac9f8693e8da5b1d64",
+  "bytes": 17013,
+  "pages": 2,
+  "method": "Opened and inspected both independent PNG page renders with the image-viewing tool; combined with the original automated backend, download hash, durable history and two-parser evidence. No task was rerun or replayed for this review.",
+  "renderObservations": [
+    {
+      "page": 1,
+      "renderSHA256": "db663094886b7b5801b664c90f0f68274e1c2981070e21cd255a587e5aeaba19",
+      "observed": "Warm cream paper and dark ink, readable serif title and section headings, five reading-nook preparation tasks, five book-selection checklist bullets, comfortable margins, footer 1. No visible clipping, overlap or overflow."
+    },
+    {
+      "page": 2,
+      "renderSHA256": "4f17bbe9371844feb4d039c1e212f1470c2665d27baf273f7bc777e17b1077e3",
+      "observed": "Reading Schedule table with Day, Time and Book columns; Friday, both Saturday rows and both Sunday rows entirely on this page. Long book titles wrap legibly without clipping or overlap. Footer 2; no unintended blank page."
+    }
+  ],
+  "freshSyntheticPDFAcceptance": "pass_for_content_layout_byte_identity_capture_and_history",
+  "backendContentQuality": "pass",
+  "backendAllPageVisualReview": "pass",
+  "independentPageAndTextChecks": "pass",
+  "independentRenderedReview": "pass",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "newExecutionOrReplay": false,
+  "limitations": [
+    "This is an isolated synthetic-account production-backend PDF acceptance, not owner-account or signed-in phone acceptance.",
+    "The final authored reply still contains attachment and factual/runtime disclaimer prose; quiet card-only delivery presentation is not accepted by this evidence.",
+    "No factual certification is implied by visual, text-coverage or hash checks.",
+    "Custom-avatar restart/account-switch/playback, native activity-chip appearance and dark outgoing bubble appearance were not exercised on a signed-in device.",
+    "Owner execution remains blocked by the unresolved historical session-start quarantine; no owner session was rebound, enumerated or cleared."
+  ]
+}

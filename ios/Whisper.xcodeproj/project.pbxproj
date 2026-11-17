@@ -1,0 +1,1173 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		XX4567ECFF2E6031D386BDXX /* WhisperWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = XXE588A268810199362DD5XX /* WhisperWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		XX50D61ED0BAE05FA2F8E9XX /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = XX1C9FF110ABBCE8BF456CXX /* Supabase */; };
+		XX54470A7A53A45DB79957XX /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = XX0B481EFD5CF60CF18375XX /* LiveKit */; };
+		XX6B55EF5BDBB06FA78746XX /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = XX1523791DAAC03A11009CXX /* GoogleSignInSwift */; };
+		XX87701FB8CA42E0F2391CXX /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = XX38CAEA4D2822BC39B9EBXX /* WebRTC */; };
+		XXA600CDC911B883FE0C6CXX /* WhisperWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = XX0C29CFA73E1F01AFF118XX /* WhisperWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		XXC2732D520C02064817F5XX /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = XXB48B343CDA2FFA072770XX /* GoogleSignIn */; };
+		XXE43874A3B5C8887066DFXX /* WhisperNotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = XX52C5A7ECD6A0C0EF42AAXX /* WhisperNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		XXF4F43DC156A327BE4298XX /* ElevenLabs in Frameworks */ = {isa = PBXBuildFile; productRef = XX40020BB1BCD17BE464D2XX /* ElevenLabs */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		105FC58A2E9EAD3200EA8BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105FC5722E9EAD3100EA8BCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 105FC5792E9EAD3100EA8BCF;
+			remoteInfo = Whisper;
+		};
+		105FC5942E9EAD3200EA8BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105FC5722E9EAD3100EA8BCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 105FC5792E9EAD3100EA8BCF;
+			remoteInfo = Whisper;
+		};
+		XX5E44E4C95E37A26FCA93XX /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105FC5722E9EAD3100EA8BCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = XXEDB1D7883938702F7AEFXX;
+			remoteInfo = WhisperWidgets;
+		};
+		XX98690D87E7BEDAC95D44XX /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105FC5722E9EAD3100EA8BCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = XXFF7309FFC56A3E46D317XX;
+			remoteInfo = WhisperNotificationService;
+		};
+		XXAE5063F91C6CFA6D101FXX /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105FC5722E9EAD3100EA8BCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = XXDE5E8AB0F54869E02E70XX;
+			remoteInfo = WhisperWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		XX81FF245A222E3682268EXX /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				XX4567ECFF2E6031D386BDXX /* WhisperWatch.app in Embed Watch Content */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Embed Watch Content";
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+		};
+		XX9F839E26AA117A437CCDXX /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				XXA600CDC911B883FE0C6CXX /* WhisperWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		XXCB02FE0363AD9BCB30B3XX /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				XXE43874A3B5C8887066DFXX /* WhisperNotificationService.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		105FC57A2E9EAD3100EA8BCF /* Whisper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whisper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		105FC5892E9EAD3200EA8BCF /* WhisperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhisperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		105FC5932E9EAD3200EA8BCF /* WhisperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhisperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		XX0C29CFA73E1F01AFF118XX /* WhisperWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WhisperWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		XX52C5A7ECD6A0C0EF42AAXX /* WhisperNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WhisperNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		XXE588A268810199362DD5XX /* WhisperWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhisperWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		XX2BBC7C6B30272DB54760XX /* Exceptions for "WhisperNotificationService" folder in "WhisperNotificationService" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = XXFF7309FFC56A3E46D317XX /* WhisperNotificationService */;
+		};
+		XX376CC1213D9AC6A07DE3XX /* Exceptions for "WhisperWidgets" folder in "WhisperWidgets" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = XXEDB1D7883938702F7AEFXX /* WhisperWidgets */;
+		};
+		XXINFOPLIST001EXCEPTIONSETXX /* Exceptions for "Whisper" folder in "Whisper" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				WhisperFitnessApp/Info.plist,
+			);
+			target = 105FC5792E9EAD3100EA8BCF /* Whisper */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		105FC57C2E9EAD3100EA8BCF /* Whisper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				XXINFOPLIST001EXCEPTIONSETXX /* Exceptions for "Whisper" folder in "Whisper" target */,
+			);
+			path = Whisper;
+			sourceTree = "<group>";
+		};
+		105FC58C2E9EAD3200EA8BCF /* WhisperTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WhisperTests;
+			sourceTree = "<group>";
+		};
+		105FC5962E9EAD3200EA8BCF /* WhisperUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WhisperUITests;
+			sourceTree = "<group>";
+		};
+		XX2B8F4E148EB325317451XX /* WhisperWatch */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WhisperWatch;
+			sourceTree = "<group>";
+		};
+		XX2FD3AF4C9349D597706BXX /* WhisperWidgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				XX376CC1213D9AC6A07DE3XX /* Exceptions for "WhisperWidgets" folder in "WhisperWidgets" target */,
+			);
+			path = WhisperWidgets;
+			sourceTree = "<group>";
+		};
+		XX39A8F1A774EA5D9EB7ADXX /* WhisperNotificationService */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				XX2BBC7C6B30272DB54760XX /* Exceptions for "WhisperNotificationService" folder in "WhisperNotificationService" target */,
+			);
+			path = WhisperNotificationService;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		105FC5772E9EAD3100EA8BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				XXC2732D520C02064817F5XX /* GoogleSignIn in Frameworks */,
+				XX6B55EF5BDBB06FA78746XX /* GoogleSignInSwift in Frameworks */,
+				XX50D61ED0BAE05FA2F8E9XX /* Supabase in Frameworks */,
+				XX87701FB8CA42E0F2391CXX /* WebRTC in Frameworks */,
+				XX54470A7A53A45DB79957XX /* LiveKit in Frameworks */,
+				XXF4F43DC156A327BE4298XX /* ElevenLabs in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105FC5862E9EAD3200EA8BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105FC5902E9EAD3200EA8BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		XX30C61DAEA0007D2AA377XX /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		XX75B8358D2242CEB782C5XX /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		XXBAB8100C19C8EF3E065EXX /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		105FC5712E9EAD3100EA8BCF = {
+			isa = PBXGroup;
+			children = (
+				105FC57C2E9EAD3100EA8BCF /* Whisper */,
+				105FC58C2E9EAD3200EA8BCF /* WhisperTests */,
+				105FC5962E9EAD3200EA8BCF /* WhisperUITests */,
+				105FC57B2E9EAD3100EA8BCF /* Products */,
+				XX39A8F1A774EA5D9EB7ADXX /* WhisperNotificationService */,
+				XX2FD3AF4C9349D597706BXX /* WhisperWidgets */,
+				XX2B8F4E148EB325317451XX /* WhisperWatch */,
+			);
+			sourceTree = "<group>";
+		};
+		105FC57B2E9EAD3100EA8BCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				105FC57A2E9EAD3100EA8BCF /* Whisper.app */,
+				105FC5892E9EAD3200EA8BCF /* WhisperTests.xctest */,
+				105FC5932E9EAD3200EA8BCF /* WhisperUITests.xctest */,
+				XX52C5A7ECD6A0C0EF42AAXX /* WhisperNotificationService.appex */,
+				XX0C29CFA73E1F01AFF118XX /* WhisperWidgets.appex */,
+				XXE588A268810199362DD5XX /* WhisperWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		105FC5792E9EAD3100EA8BCF /* Whisper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 105FC59D2E9EAD3200EA8BCF /* Build configuration list for PBXNativeTarget "Whisper" */;
+			buildPhases = (
+				105FC5762E9EAD3100EA8BCF /* Sources */,
+				105FC5772E9EAD3100EA8BCF /* Frameworks */,
+				105FC5782E9EAD3100EA8BCF /* Resources */,
+				XXCB02FE0363AD9BCB30B3XX /* Embed Foundation Extensions */,
+				XX9F839E26AA117A437CCDXX /* Embed Foundation Extensions */,
+				XX81FF245A222E3682268EXX /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				XX86BDB3F8A125A676487CXX /* PBXTargetDependency */,
+				XX251E31EE577266D4BA32XX /* PBXTargetDependency */,
+				XX6337CF62DE47DFEF9887XX /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				105FC57C2E9EAD3100EA8BCF /* Whisper */,
+			);
+			name = Whisper;
+			packageProductDependencies = (
+				XXB48B343CDA2FFA072770XX /* GoogleSignIn */,
+				XX1523791DAAC03A11009CXX /* GoogleSignInSwift */,
+				XX1C9FF110ABBCE8BF456CXX /* Supabase */,
+				XX38CAEA4D2822BC39B9EBXX /* WebRTC */,
+				XX0B481EFD5CF60CF18375XX /* LiveKit */,
+				XX40020BB1BCD17BE464D2XX /* ElevenLabs */,
+			);
+			productName = Whisper;
+			productReference = 105FC57A2E9EAD3100EA8BCF /* Whisper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		105FC5882E9EAD3200EA8BCF /* WhisperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 105FC5A02E9EAD3200EA8BCF /* Build configuration list for PBXNativeTarget "WhisperTests" */;
+			buildPhases = (
+				105FC5852E9EAD3200EA8BCF /* Sources */,
+				105FC5862E9EAD3200EA8BCF /* Frameworks */,
+				105FC5872E9EAD3200EA8BCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				105FC58B2E9EAD3200EA8BCF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				105FC58C2E9EAD3200EA8BCF /* WhisperTests */,
+			);
+			name = WhisperTests;
+			packageProductDependencies = (
+			);
+			productName = WhisperTests;
+			productReference = 105FC5892E9EAD3200EA8BCF /* WhisperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		105FC5922E9EAD3200EA8BCF /* WhisperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 105FC5A32E9EAD3200EA8BCF /* Build configuration list for PBXNativeTarget "WhisperUITests" */;
+			buildPhases = (
+				105FC58F2E9EAD3200EA8BCF /* Sources */,
+				105FC5902E9EAD3200EA8BCF /* Frameworks */,
+				105FC5912E9EAD3200EA8BCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				105FC5952E9EAD3200EA8BCF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				105FC5962E9EAD3200EA8BCF /* WhisperUITests */,
+			);
+			name = WhisperUITests;
+			packageProductDependencies = (
+			);
+			productName = WhisperUITests;
+			productReference = 105FC5932E9EAD3200EA8BCF /* WhisperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		XXDE5E8AB0F54869E02E70XX /* WhisperWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = XX96D8EE76EED22BCBB69EXX /* Build configuration list for PBXNativeTarget "WhisperWatch" */;
+			buildPhases = (
+				XXA34EED90225F89C4AD81XX /* Sources */,
+				XX30C61DAEA0007D2AA377XX /* Frameworks */,
+				XX5B340A77FFACEDB22FEBXX /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhisperWatch;
+			productName = WhisperWatch;
+			productReference = XXE588A268810199362DD5XX /* WhisperWatch.app */;
+			productType = "com.apple.product-type.application";
+			fileSystemSynchronizedGroups = (
+				XX2B8F4E148EB325317451XX /* WhisperWatch */,
+			);
+		};
+		XXEDB1D7883938702F7AEFXX /* WhisperWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = XX73E338258757021E3CA7XX /* Build configuration list for PBXNativeTarget "WhisperWidgets" */;
+			buildPhases = (
+				XXE0FD6AFA7551401BFCEBXX /* Sources */,
+				XX75B8358D2242CEB782C5XX /* Frameworks */,
+				XX8DEE49FEB104205DDA8DXX /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				XX2FD3AF4C9349D597706BXX /* WhisperWidgets */,
+			);
+			name = WhisperWidgets;
+			productName = WhisperWidgets;
+			productReference = XX0C29CFA73E1F01AFF118XX /* WhisperWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		XXFF7309FFC56A3E46D317XX /* WhisperNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = XXBF5A94435AC8C6239A74XX /* Build configuration list for PBXNativeTarget "WhisperNotificationService" */;
+			buildPhases = (
+				XX32EB6FBA1171BB4DF422XX /* Sources */,
+				XXBAB8100C19C8EF3E065EXX /* Frameworks */,
+				XX474936E2D3CD7E4D3BE7XX /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				XX39A8F1A774EA5D9EB7ADXX /* WhisperNotificationService */,
+			);
+			name = WhisperNotificationService;
+			productName = WhisperNotificationService;
+			productReference = XX52C5A7ECD6A0C0EF42AAXX /* WhisperNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		105FC5722E9EAD3100EA8BCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					105FC5792E9EAD3100EA8BCF = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					105FC5882E9EAD3200EA8BCF = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 105FC5792E9EAD3100EA8BCF;
+					};
+					105FC5922E9EAD3200EA8BCF = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 105FC5792E9EAD3100EA8BCF;
+					};
+				};
+			};
+			buildConfigurationList = 105FC5752E9EAD3100EA8BCF /* Build configuration list for PBXProject "Whisper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 105FC5712E9EAD3100EA8BCF;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				XX5E367D25F4C8BB4A06F5XX /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				XX20EB7F6EA71E9F2E096CXX /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				XX2DCF7F305D1B02422A75XX /* XCRemoteSwiftPackageReference "WebRTC" */,
+				XX727FF3B556CAD2ACA247XX /* XCRemoteSwiftPackageReference "client-sdk-swift" */,
+				XX01062A651D6C835EF751XX /* XCRemoteSwiftPackageReference "elevenlabs-swift-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 105FC57B2E9EAD3100EA8BCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				105FC5792E9EAD3100EA8BCF /* Whisper */,
+				105FC5882E9EAD3200EA8BCF /* WhisperTests */,
+				105FC5922E9EAD3200EA8BCF /* WhisperUITests */,
+				XXFF7309FFC56A3E46D317XX /* WhisperNotificationService */,
+				XXEDB1D7883938702F7AEFXX /* WhisperWidgets */,
+				XXDE5E8AB0F54869E02E70XX /* WhisperWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		105FC5782E9EAD3100EA8BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105FC5872E9EAD3200EA8BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105FC5912E9EAD3200EA8BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		XX474936E2D3CD7E4D3BE7XX /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		XX5B340A77FFACEDB22FEBXX /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		XX8DEE49FEB104205DDA8DXX /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		105FC5762E9EAD3100EA8BCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105FC5852E9EAD3200EA8BCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105FC58F2E9EAD3200EA8BCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		XX32EB6FBA1171BB4DF422XX /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		XXA34EED90225F89C4AD81XX /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		XXE0FD6AFA7551401BFCEBXX /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		105FC58B2E9EAD3200EA8BCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 105FC5792E9EAD3100EA8BCF /* Whisper */;
+			targetProxy = 105FC58A2E9EAD3200EA8BCF /* PBXContainerItemProxy */;
+		};
+		105FC5952E9EAD3200EA8BCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 105FC5792E9EAD3100EA8BCF /* Whisper */;
+			targetProxy = 105FC5942E9EAD3200EA8BCF /* PBXContainerItemProxy */;
+		};
+		XX251E31EE577266D4BA32XX /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = XXEDB1D7883938702F7AEFXX /* WhisperWidgets */;
+			targetProxy = XX5E44E4C95E37A26FCA93XX /* PBXContainerItemProxy */;
+		};
+		XX6337CF62DE47DFEF9887XX /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = XXDE5E8AB0F54869E02E70XX /* WhisperWatch */;
+			targetProxy = XXAE5063F91C6CFA6D101FXX /* PBXContainerItemProxy */;
+		};
+		XX86BDB3F8A125A676487CXX /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = XXFF7309FFC56A3E46D317XX /* WhisperNotificationService */;
+			targetProxy = XX98690D87E7BEDAC95D44XX /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		105FC59B2E9EAD3200EA8BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		105FC59C2E9EAD3200EA8BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		105FC59E2E9EAD3200EA8BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Whisper/WhisperFitnessApp/WhisperFitnessApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Whisper/WhisperFitnessApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Whisper;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Jasper uses Apple Music to display now playing controls and let Ember vibe with your music.";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Jasper connects to your Bluetooth smart scale to read weight and body composition data.";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Jasper reads and writes to your calendar so Ember can schedule workouts and suggest training windows around your meetings.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Jasper reads and writes to your calendar so Ember can schedule workouts and suggest training windows around your meetings.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Jasper uses the camera to scan food barcodes, analyze food photos, take progress photos, and make video calls.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Whisper uses your contacts to find friends already on Whisper. Names and numbers stay on your device — only one-way hashes are sent so we can match them.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Jasper uses Face ID to securely sign you in.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Jasper reads your health data to show activity, workouts, sleep, and nutrition insights.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Jasper saves workout and nutrition data to Apple Health.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Jasper needs continuous location access to track your race progress even when the app is in the background.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Jasper uses your location so Ember can suggest nearby restaurants that fit your macros, plus power race tracking and weather.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Whisper uses your local network for direct peer-to-peer video calls when available, reducing latency and server costs.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Whisper uses your microphone for calls, recordings and Knot conversations through ElevenLabs. When meeting AI notes are on, your own speech can be transcribed into notes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Jasper saves Ember-found photos and gallery images to your Photo Library when you tap save.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Jasper accesses your photo library for food photo analysis and progress photo tracking.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Jasper uses speech recognition for Ember conversations and live Whisper meeting captions that help create shared notes.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		105FC59F2E9EAD3200EA8BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Whisper/WhisperFitnessApp/WhisperFitnessApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Whisper/WhisperFitnessApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Whisper;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Jasper uses Apple Music to display now playing controls and let Ember vibe with your music.";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Jasper connects to your Bluetooth smart scale to read weight and body composition data.";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Jasper reads and writes to your calendar so Ember can schedule workouts and suggest training windows around your meetings.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Jasper reads and writes to your calendar so Ember can schedule workouts and suggest training windows around your meetings.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Jasper uses the camera to scan food barcodes, analyze food photos, take progress photos, and make video calls.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Whisper uses your contacts to find friends already on Whisper. Names and numbers stay on your device — only one-way hashes are sent so we can match them.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Jasper uses Face ID to securely sign you in.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Jasper reads your health data to show activity, workouts, sleep, and nutrition insights.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Jasper saves workout and nutrition data to Apple Health.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Jasper needs continuous location access to track your race progress even when the app is in the background.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Jasper uses your location so Ember can suggest nearby restaurants that fit your macros, plus power race tracking and weather.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Whisper uses your local network for direct peer-to-peer video calls when available, reducing latency and server costs.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Whisper uses your microphone for calls, recordings and Knot conversations through ElevenLabs. When meeting AI notes are on, your own speech can be transcribed into notes.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Jasper saves Ember-found photos and gallery images to your Photo Library when you tap save.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Jasper accesses your photo library for food photo analysis and progress photo tracking.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Jasper uses speech recognition for Ember conversations and live Whisper meeting captions that help create shared notes.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		105FC5A12E9EAD3200EA8BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 2.5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whisper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Whisper";
+			};
+			name = Debug;
+		};
+		105FC5A22E9EAD3200EA8BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 2.5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whisper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Whisper";
+			};
+			name = Release;
+		};
+		105FC5A42E9EAD3200EA8BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 2.5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Whisper;
+			};
+			name = Debug;
+		};
+		105FC5A52E9EAD3200EA8BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 2.5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Whisper;
+			};
+			name = Release;
+		};
+		XX0B78CB613ADD51770A6CXX /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WhisperWatch/WhisperWatch.entitlements;
+				PRODUCT_NAME = WhisperWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper.whisperwatch;
+				SDKROOT = watchos;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				GENERATE_INFOPLIST_FILE = YES;
+				SWIFT_VERSION = 5.0;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				TARGETED_DEVICE_FAMILY = 4;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				ENABLE_PREVIEWS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.mydailywhisper.whisper;
+			};
+			name = Debug;
+		};
+		XX2E45892184C11BF223F4XX /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WhisperWidgets/WhisperWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhisperWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Whisper;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper.whisperwidgets;
+				PRODUCT_NAME = WhisperWidgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		XX31709482AC3C52F25A12XX /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WhisperWatch/WhisperWatch.entitlements;
+				PRODUCT_NAME = WhisperWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper.whisperwatch;
+				SDKROOT = watchos;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				GENERATE_INFOPLIST_FILE = YES;
+				SWIFT_VERSION = 5.0;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				TARGETED_DEVICE_FAMILY = 4;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				ENABLE_PREVIEWS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.mydailywhisper.whisper;
+			};
+			name = Release;
+		};
+		XX3AA7F0B13EB4344330E9XX /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhisperNotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper.whispernotificationservice;
+				PRODUCT_NAME = WhisperNotificationService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		XX7BC56AC72A7BC88A3B0DXX /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WhisperWidgets/WhisperWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhisperWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Whisper;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper.whisperwidgets;
+				PRODUCT_NAME = WhisperWidgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		XXE403DE70B1E3867B7B37XX /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhisperNotificationService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(PRODUCT_NAME)";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydailywhisper.whisper.whispernotificationservice;
+				PRODUCT_NAME = WhisperNotificationService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		105FC5752E9EAD3100EA8BCF /* Build configuration list for PBXProject "Whisper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105FC59B2E9EAD3200EA8BCF /* Debug */,
+				105FC59C2E9EAD3200EA8BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		105FC59D2E9EAD3200EA8BCF /* Build configuration list for PBXNativeTarget "Whisper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105FC59E2E9EAD3200EA8BCF /* Debug */,
+				105FC59F2E9EAD3200EA8BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		105FC5A02E9EAD3200EA8BCF /* Build configuration list for PBXNativeTarget "WhisperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105FC5A12E9EAD3200EA8BCF /* Debug */,
+				105FC5A22E9EAD3200EA8BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		105FC5A32E9EAD3200EA8BCF /* Build configuration list for PBXNativeTarget "WhisperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105FC5A42E9EAD3200EA8BCF /* Debug */,
+				105FC5A52E9EAD3200EA8BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		XX73E338258757021E3CA7XX /* Build configuration list for PBXNativeTarget "WhisperWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XX2E45892184C11BF223F4XX /* Debug */,
+				XX7BC56AC72A7BC88A3B0DXX /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		XX96D8EE76EED22BCBB69EXX /* Build configuration list for PBXNativeTarget "WhisperWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XX0B78CB613ADD51770A6CXX /* Debug */,
+				XX31709482AC3C52F25A12XX /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		XXBF5A94435AC8C6239A74XX /* Build configuration list for PBXNativeTarget "WhisperNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XXE403DE70B1E3867B7B37XX /* Debug */,
+				XX3AA7F0B13EB4344330E9XX /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		XX01062A651D6C835EF751XX /* XCRemoteSwiftPackageReference "elevenlabs-swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elevenlabs/elevenlabs-swift-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.4.0;
+			};
+		};
+		XX20EB7F6EA71E9F2E096CXX /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		XX2DCF7F305D1B02422A75XX /* XCRemoteSwiftPackageReference "WebRTC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = https://github.com/stasel/WebRTC.git;
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 147.0.0;
+			};
+		};
+		XX5E367D25F4C8BB4A06F5XX /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		XX727FF3B556CAD2ACA247XX /* XCRemoteSwiftPackageReference "client-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/client-sdk-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		XX0B481EFD5CF60CF18375XX /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = XX727FF3B556CAD2ACA247XX /* XCRemoteSwiftPackageReference "client-sdk-swift" */;
+			productName = LiveKit;
+		};
+		XX1523791DAAC03A11009CXX /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = XX5E367D25F4C8BB4A06F5XX /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		XX1C9FF110ABBCE8BF456CXX /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = XX20EB7F6EA71E9F2E096CXX /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		XX38CAEA4D2822BC39B9EBXX /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = XX2DCF7F305D1B02422A75XX /* XCRemoteSwiftPackageReference "WebRTC" */;
+			productName = WebRTC;
+		};
+		XX40020BB1BCD17BE464D2XX /* ElevenLabs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = XX01062A651D6C835EF751XX /* XCRemoteSwiftPackageReference "elevenlabs-swift-sdk" */;
+			productName = ElevenLabs;
+		};
+		XXB48B343CDA2FFA072770XX /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = XX5E367D25F4C8BB4A06F5XX /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 105FC5722E9EAD3100EA8BCF /* Project object */;
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "knot-owned-pdf-20261116-j",
+  "taskID": "f4e38c50-6c57-4e16-a60b-de6d71f52f17",
+  "sourceBuildSHA256": "e7eded0631f31bea472200c98215736d51b0d1f4fb91ac679e421cd6d22b03a2",
+  "finalSHA256": "74ce08316afc5096a5496ec7bb55bc5ff2b9be86aacc3681000b4cb087499119",
+  "bytes": 17105,
+  "pages": 2,
+  "observationDate": "2026-11-16",
+  "independentRendersOpened": [1, 2],
+  "observations": [
+    "Page one contains the human title, five reading-nook preparation tasks and a complete book-selection checklist.",
+    "The Friday, Saturday and Sunday schedule is entirely on page two.",
+    "Both pages have warm cream backgrounds and dark ink, comfortable margins, legible wrapping and no visible clipped or overlapping text."
+  ],
+  "backendTaskState": "completed",
+  "backendCaptureContentAndVisualChecks": "pass",
+  "independentFileTextPagesAndByteIdentity": "pass",
+  "emptyTerminalAndNoStoredAssistantBubble": "pass",
+  "supplementalSyntheticAcceptance": "pass",
+  "ownerAccessed": false,
+  "phoneOrBrowserInteractionsTested": false,
+  "newExecutionOrReplay": false,
+  "immutableOriginalOutcomePreserved": true,
+  "limitations": "Independent file/render and authenticated synthetic backend acceptance only; not a factual certification or general all-format reliability guarantee."
+}

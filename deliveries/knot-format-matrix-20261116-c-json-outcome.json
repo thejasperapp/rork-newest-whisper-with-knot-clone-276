@@ -1,0 +1,313 @@
+{
+  "scope": "knot-format-matrix-20261116-c-json",
+  "caseName": "json",
+  "requestedFormat": "json",
+  "taskID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+  "conversationID": "d94c457b-5684-4c95-bc89-4c15647982dd",
+  "expectedBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:44:10.612Z",
+  "passed": true,
+  "accountID": "6bbab7bb-9892-4cb4-93bd-727e5a6368cf",
+  "terminal": {
+    "task": {
+      "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+      "bot": "main",
+      "conversationID": "d94c457b-5684-4c95-bc89-4c15647982dd",
+      "sourceMessageID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+      "replyID": "064cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+      "state": "completed",
+      "createdAt": 1794797054266,
+      "startedAt": 1794797056871,
+      "finishedAt": 1794797086736,
+      "sequence": 72
+    },
+    "events": [
+      {
+        "v": 1,
+        "requestID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+        "sequence": 71,
+        "type": "accepted",
+        "stepPresentation": "authored_v1",
+        "activity": {
+          "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd:71",
+          "requestID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+          "taskID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+          "sourceMessageID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+          "sequence": 71,
+          "kind": "accepted",
+          "label": "Request received",
+          "recordedAt": "2026-11-16T02:44:46.450Z",
+          "detail": {
+            "stepPresentation": "authored_v1",
+            "turnElapsedMs": 25797
+          }
+        }
+      },
+      {
+        "v": 1,
+        "requestID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+        "sequence": 72,
+        "type": "complete",
+        "reply": "",
+        "activity": {
+          "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd:72",
+          "requestID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+          "taskID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+          "sourceMessageID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+          "sequence": 72,
+          "kind": "complete",
+          "label": "Response prepared",
+          "recordedAt": "2026-11-16T02:44:46.560Z",
+          "detail": {
+            "stage": "document_capture",
+            "turnElapsedMs": 25907
+          }
+        }
+      }
+    ],
+    "next": 72,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-a1",
+        "label": "Create JSON File",
+        "tool": "session_input",
+        "purpose": "Generate a JSON file as specified with herb plan details.",
+        "started_at": 1794797064598,
+        "ended_at": 1794797066684,
+        "receipt_id": "9f02f81c-2dca-4c5d-a51a-9dc3e72d640d"
+      },
+      {
+        "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-a2",
+        "label": "Create JSON File",
+        "tool": "session_input",
+        "purpose": "Generate a JSON file as specified with herb plan details.",
+        "started_at": 1794797066684,
+        "ended_at": 1794797068178,
+        "receipt_id": "9f02f81c-2dca-4c5d-a51a-9dc3e72d640d"
+      },
+      {
+        "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-a3",
+        "label": "Create JSON File for Herb Plan",
+        "tool": "session_input",
+        "purpose": "Produce an exact JSON file containing the specified herb plan data.",
+        "started_at": 1794797069872,
+        "ended_at": 1794797070045,
+        "receipt_id": "1ef00d95-6d27-4fdf-9289-f3f0ea5dc03c"
+      },
+      {
+        "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-a4",
+        "label": "Create JSON File for Herb Plan",
+        "tool": "session_input",
+        "purpose": "Produce an exact JSON file containing the specified herb plan data.",
+        "started_at": 1794797070045,
+        "ended_at": 1794797070847,
+        "receipt_id": "1ef00d95-6d27-4fdf-9289-f3f0ea5dc03c"
+      },
+      {
+        "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-a5",
+        "label": "Author JSON File",
+        "tool": "session_input",
+        "purpose": "Create and deliver the specified JSON file with herb plan details.",
+        "started_at": 1794797072553,
+        "ended_at": 1794797072706,
+        "receipt_id": "12d9776a-4fe6-4af5-a60c-3df786933134"
+      },
+      {
+        "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-a6",
+        "label": "Author JSON File",
+        "tool": "session_input",
+        "purpose": "Create and deliver the specified JSON file with herb plan details.",
+        "started_at": 1794797072706,
+        "ended_at": 1794797073481,
+        "receipt_id": "12d9776a-4fe6-4af5-a60c-3df786933134"
+      },
+      {
+        "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-a7",
+        "label": "Create Balcony Herb Plan JSON file",
+        "tool": "session_input",
+        "purpose": "Generate a JSON file with specific herb plan details",
+        "started_at": 1794797075375,
+        "ended_at": 1794797075611,
+        "receipt_id": "fb837b20-1f1a-4e53-8f00-344ae13cbf01"
+      },
+      {
+        "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-a8",
+        "label": "Create Balcony Herb Plan JSON file",
+        "tool": "session_input",
+        "purpose": "Generate a JSON file with specific herb plan details",
+        "started_at": 1794797075611,
+        "ended_at": 1794797076373,
+        "receipt_id": "fb837b20-1f1a-4e53-8f00-344ae13cbf01"
+      },
+      {
+        "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-a9",
+        "label": "Create balcony herb plan JSON",
+        "tool": "document_prepare",
+        "purpose": "Generate a JSON document for a balcony herb plan.",
+        "started_at": 1794797078039,
+        "ended_at": 1794797080361,
+        "receipt_id": "7180d43c-591b-46df-8475-30b5a15d3ea8"
+      },
+      {
+        "id": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-a10",
+        "label": "Create balcony herb plan JSON",
+        "tool": "document_script",
+        "purpose": "Generate a JSON document for a balcony herb plan.",
+        "started_at": 1794797080361,
+        "ended_at": 1794797081854,
+        "receipt_id": "7180d43c-591b-46df-8475-30b5a15d3ea8"
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [],
+  "document": {
+    "id": "7c7f91b224fe60c7e5e162db73603bfd0c9f69ad9980ac8b3b3db6049ad60880",
+    "name": "knot-864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-balcony_herb_plan.json",
+    "format": "json",
+    "contentType": "application/json",
+    "title": "Balcony Herb Plan",
+    "deliveryLabel": "JSON Data File",
+    "size": 147,
+    "sha256": "85718bca961440e55e61f41cae50e5e45237ffbf090abbcb0da76c921f01756a",
+    "pages": 1,
+    "proofPages": [],
+    "createdAt": "2026-11-16T02:44:45.391Z",
+    "expiresAt": "2026-11-23T02:44:45.391Z",
+    "proposalID": "7180d43c-591b-46df-8475-30b5a15d3ea8",
+    "review": "not_requested",
+    "sampled": true,
+    "sourcePath": "knot-864cf3a9-8966-4b2b-b5a6-d7f307c3efdd-balcony_herb_plan.json",
+    "byteFidelity": {
+      "status": "pass",
+      "scope": "measured_final_to_immutable_capture",
+      "sha256": "85718bca961440e55e61f41cae50e5e45237ffbf090abbcb0da76c921f01756a",
+      "bytes": 147
+    },
+    "contentQuality": {
+      "status": "pass",
+      "scope": "complete_text_coverage",
+      "finalSHA256": "85718bca961440e55e61f41cae50e5e45237ffbf090abbcb0da76c921f01756a",
+      "factualCertification": false
+    },
+    "contentReview": {
+      "version": "knot_document_content_v1",
+      "status": "pass",
+      "contentCheckAttempts": [
+        {
+          "attempt": 1,
+          "model": "openai/gpt-4o",
+          "durationMs": 3295,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 4429,
+          "contentBytes": 2127,
+          "outcome": "pass",
+          "httpStatus": 200,
+          "contentEncoding": "json"
+        }
+      ],
+      "requestSHA256": "8027eabae3f7e64074570f1e20902b1fa8039bbfadb2afbc21ba57fb8af6798e",
+      "finalSHA256": "85718bca961440e55e61f41cae50e5e45237ffbf090abbcb0da76c921f01756a",
+      "finalTextSHA256": "85718bca961440e55e61f41cae50e5e45237ffbf090abbcb0da76c921f01756a",
+      "sourceSHA256s": [],
+      "scope": "complete_text",
+      "requestedItems": [
+        {
+          "item": "title",
+          "evidenceID": "request",
+          "quote": "Create a new actual JSON file containing exactly {\"title\":\"Balcony Herb Plan\",\"plants\":[{\"name\":\"Basil\",\"containers\":2,\"weeklyWaterChecks\":3},{\"name\":\"Mint\",\"containers\":1,\"weeklyWaterChecks\":4}]}",
+          "section": "JSON structure",
+          "status": "developed",
+          "coverageQuote": "{\"title\":\"Balcony Herb Plan\",\"plants\":[{\"name\":\"Basil\",\"containers\":2,\"weeklyWaterChecks\":3},{\"name\":\"Mint\",\"containers\":1,\"weeklyWaterChecks\":4}]",
+          "repair": ""
+        },
+        {
+          "item": "plants",
+          "evidenceID": "request",
+          "quote": "Create a new actual JSON file containing exactly {\"title\":\"Balcony Herb Plan\",\"plants\":[{\"name\":\"Basil\",\"containers\":2,\"weeklyWaterChecks\":3},{\"name\":\"Mint\",\"containers\":1,\"weeklyWaterChecks\":4}]}",
+          "section": "JSON structure",
+          "status": "developed",
+          "coverageQuote": "{\"title\":\"Balcony Herb Plan\",\"plants\":[{\"name\":\"Basil\",\"containers\":2,\"weeklyWaterChecks\":3},{\"name\":\"Mint\",\"containers\":1,\"weeklyWaterChecks\":4}]",
+          "repair": ""
+        },
+        {
+          "item": "Basil containers",
+          "evidenceID": "request",
+          "quote": "{\"name\":\"Basil\",\"containers\":2,\"weeklyWaterChecks\":3}",
+          "section": "plants",
+          "status": "developed",
+          "coverageQuote": "{\"name\":\"Basil\",\"containers\":2,\"weeklyWaterChecks\":3}",
+          "repair": ""
+        },
+        {
+          "item": "Basil weeklyWaterChecks",
+          "evidenceID": "request",
+          "quote": "{\"name\":\"Basil\",\"containers\":2,\"weeklyWaterChecks\":3}",
+          "section": "plants",
+          "status": "developed",
+          "coverageQuote": "{\"name\":\"Basil\",\"containers\":2,\"weeklyWaterChecks\":3}",
+          "repair": ""
+        },
+        {
+          "item": "Mint containers",
+          "evidenceID": "request",
+          "quote": "{\"name\":\"Mint\",\"containers\":1,\"weeklyWaterChecks\":4}",
+          "section": "plants",
+          "status": "developed",
+          "coverageQuote": "{\"name\":\"Mint\",\"containers\":1,\"weeklyWaterChecks\":4}",
+          "repair": ""
+        },
+        {
+          "item": "Mint weeklyWaterChecks",
+          "evidenceID": "request",
+          "quote": "{\"name\":\"Mint\",\"containers\":1,\"weeklyWaterChecks\":4}",
+          "section": "plants",
+          "status": "developed",
+          "coverageQuote": "{\"name\":\"Mint\",\"containers\":1,\"weeklyWaterChecks\":4}",
+          "repair": ""
+        }
+      ],
+      "workOrders": []
+    },
+    "sourceMessageID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+    "originalPath": "/home/user/rork-app/deliveries/knot-format-matrix-20261116-c-json-original.json",
+    "downloadedSHA256": "85718bca961440e55e61f41cae50e5e45237ffbf090abbcb0da76c921f01756a"
+  },
+  "independentInspection": {
+    "format": "json",
+    "sha256": "85718bca961440e55e61f41cae50e5e45237ffbf090abbcb0da76c921f01756a",
+    "bytes": 147,
+    "newExecutionOrReplay": false,
+    "value": {
+      "title": "Balcony Herb Plan",
+      "plants": [
+        {
+          "name": "Basil",
+          "containers": 2,
+          "weeklyWaterChecks": 3
+        },
+        {
+          "name": "Mint",
+          "containers": 1,
+          "weeklyWaterChecks": 4
+        }
+      ]
+    },
+    "text": "{\"title\":\"Balcony Herb Plan\",\"plants\":[{\"name\":\"Basil\",\"containers\":2,\"weeklyWaterChecks\":3},{\"name\":\"Mint\",\"containers\":1,\"weeklyWaterChecks\":4}]}"
+  },
+  "automatedChecksPassed": true,
+  "runtimeScope": "authenticated_backend_delivery_and_downloaded_bytes_not_phone_or_browser",
+  "awaitingVisualReview": false,
+  "endedAt": "2026-11-16T02:44:48.340Z",
+  "elapsedMs": 37728
+}

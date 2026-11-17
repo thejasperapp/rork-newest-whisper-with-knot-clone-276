@@ -1,0 +1,15 @@
+begin;
+create table if not exists public.whisper_legacy_label_history(user_id uuid not null,source text not null,reason text,archived_at timestamptz not null default now(),primary key(user_id,source));
+alter table public.whisper_legacy_label_history enable row level security;
+create policy whisper_legacy_label_history_read on public.whisper_legacy_label_history for select to authenticated using(user_id=auth.uid() or public.whisper_is_reviewer());
+grant select on public.whisper_legacy_label_history to authenticated;
+insert into public.whisper_legacy_label_history(user_id,source,reason) select id,'profiles',liar_reason from public.profiles where is_liar is true on conflict do nothing;
+insert into public.whisper_legacy_label_history(user_id,source,reason) select user_id,'whisper_profiles',liar_reason from public.whisper_profiles where is_liar is true on conflict do nothing;
+update public.profiles set is_liar=false,liar_reason=null where is_liar is true;
+update public.whisper_profiles set is_liar=false,liar_reason=null where is_liar is true;
+create or replace function public.whisper_legacy_appeal_owner(p_username text) returns boolean language sql stable security definer set search_path='' as $$ select exists(select 1 from public.whisper_profiles where user_id=auth.uid() and lower(username)=lower(p_username)); $$;
+create policy whisper_legacy_appeal_private_v2 on public.whisper_liar_appeals as restrictive for select to public using(public.whisper_is_reviewer() or public.whisper_legacy_appeal_owner(username));
+create policy whisper_legacy_appeal_own_insert_v2 on public.whisper_liar_appeals as restrictive for insert to public with check(public.whisper_legacy_appeal_owner(username) and status='pending');
+create policy whisper_legacy_appeal_staff_update_v2 on public.whisper_liar_appeals as restrictive for update to public using(public.whisper_is_reviewer()) with check(public.whisper_is_reviewer());
+create policy whisper_legacy_appeal_no_delete_v2 on public.whisper_liar_appeals as restrictive for delete to public using(false);
+commit;

@@ -1,0 +1,255 @@
+{
+  "scope": "knot-format-matrix-20261116-b-txt",
+  "caseName": "txt",
+  "requestedFormat": "txt",
+  "taskID": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b",
+  "conversationID": "abd0904f-f720-4c10-886e-3741267433c4",
+  "expectedBuild": "e7eded0631f31bea472200c98215736d51b0d1f4fb91ac679e421cd6d22b03a2",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:21:05.314Z",
+  "passed": true,
+  "accountID": "3e5db371-7ce8-4e17-be15-017eb3a8b55d",
+  "terminal": {
+    "task": {
+      "id": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b",
+      "bot": "main",
+      "conversationID": "abd0904f-f720-4c10-886e-3741267433c4",
+      "sourceMessageID": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b",
+      "replyID": "471305d4-326a-4a6f-8c9b-dbaaf3903a7b",
+      "state": "completed",
+      "createdAt": 1794795668894,
+      "startedAt": 1794795672742,
+      "finishedAt": 1794795709644,
+      "sequence": 72
+    },
+    "events": [],
+    "next": 72,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b-a1",
+        "label": "Create Balcony Herb Plan TXT",
+        "tool": "session_input",
+        "purpose": "Compose a text file with herb planting and care guide for basil and mint.",
+        "started_at": 1794795681731,
+        "ended_at": 1794795684119,
+        "receipt_id": "34870dd5-9c8c-4096-add0-4a006f93d851"
+      },
+      {
+        "id": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b-a2",
+        "label": "Create Balcony Herb Plan TXT",
+        "tool": "session_input",
+        "purpose": "Compose a text file with herb planting and care guide for basil and mint.",
+        "started_at": 1794795684119,
+        "ended_at": 1794795684872,
+        "receipt_id": "34870dd5-9c8c-4096-add0-4a006f93d851"
+      },
+      {
+        "id": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b-a3",
+        "label": "Author Balcony Herb Plan TXT",
+        "tool": "session_input",
+        "purpose": "Create a detailed original-format TXT file with information on setting up and caring for basil and mint on a balcony, including safety measures for mint.",
+        "started_at": 1794795687444,
+        "ended_at": 1794795687744,
+        "receipt_id": "659cce7a-2eb0-4f34-bce3-706fbe3ea81e"
+      },
+      {
+        "id": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b-a4",
+        "label": "Author Balcony Herb Plan TXT",
+        "tool": "session_input",
+        "purpose": "Create a detailed original-format TXT file with information on setting up and caring for basil and mint on a balcony, including safety measures for mint.",
+        "started_at": 1794795687744,
+        "ended_at": 1794795688530,
+        "receipt_id": "659cce7a-2eb0-4f34-bce3-706fbe3ea81e"
+      },
+      {
+        "id": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b-a5",
+        "label": "Prepare Balcony Herb Plan TXT",
+        "tool": "session_input",
+        "purpose": "Create new authoring content for a balcony herb plan in the requested TXT format.",
+        "started_at": 1794795691317,
+        "ended_at": 1794795691945,
+        "receipt_id": "58a6a965-48b0-4319-9594-2807c1b9daa4"
+      },
+      {
+        "id": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b-a6",
+        "label": "Prepare Balcony Herb Plan TXT",
+        "tool": "session_input",
+        "purpose": "Create new authoring content for a balcony herb plan in the requested TXT format.",
+        "started_at": 1794795691945,
+        "ended_at": 1794795692682,
+        "receipt_id": "58a6a965-48b0-4319-9594-2807c1b9daa4"
+      },
+      {
+        "id": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b-a7",
+        "label": "Author Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Create a concise and practical balcony herb plan for basil and mint, with setup, care, and harvesting advice.",
+        "started_at": 1794795696345,
+        "ended_at": 1794795696469,
+        "receipt_id": "227651eb-5f28-49e1-8e27-0ab4f4e538b6"
+      },
+      {
+        "id": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b-a8",
+        "label": "Author Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Create a concise and practical balcony herb plan for basil and mint, with setup, care, and harvesting advice.",
+        "started_at": 1794795696469,
+        "ended_at": 1794795697219,
+        "receipt_id": "227651eb-5f28-49e1-8e27-0ab4f4e538b6"
+      },
+      {
+        "id": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b-a9",
+        "label": "Create balcony herb gardening guide",
+        "tool": "document_prepare",
+        "purpose": "Develop a guide on setting up and maintaining a basil and mint garden on a balcony, with practical advice and safety notes.",
+        "started_at": 1794795699000,
+        "ended_at": 1794795701908,
+        "receipt_id": "a3b9d05f-63e0-47bc-a003-f14be3fa51f2"
+      },
+      {
+        "id": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b-a10",
+        "label": "Create balcony herb gardening guide",
+        "tool": "document_script",
+        "purpose": "Develop a guide on setting up and maintaining a basil and mint garden on a balcony, with practical advice and safety notes.",
+        "started_at": 1794795701908,
+        "ended_at": 1794795703335,
+        "receipt_id": "a3b9d05f-63e0-47bc-a003-f14be3fa51f2"
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [],
+  "document": {
+    "id": "725a044040885b1c36afe9d1096aad2142ad02f6f8b319db061d5a587084f48c",
+    "name": "balcony_herb_plan.txt",
+    "format": "txt",
+    "contentType": "text/plain",
+    "title": "Balcony Herb Plan",
+    "deliveryLabel": "Herb Gardening Guide",
+    "size": 801,
+    "sha256": "1c3f9738ab0b0c57732466a76a4bd154568d657b91c75df04a11a5d76eb1d8a5",
+    "pages": 1,
+    "proofPages": [],
+    "createdAt": "2026-11-16T02:21:46.406Z",
+    "expiresAt": "2026-11-23T02:21:46.406Z",
+    "proposalID": "a3b9d05f-63e0-47bc-a003-f14be3fa51f2",
+    "review": "not_requested",
+    "sampled": true,
+    "sourcePath": "balcony_herb_plan.txt",
+    "byteFidelity": {
+      "status": "pass",
+      "scope": "measured_final_to_immutable_capture",
+      "sha256": "1c3f9738ab0b0c57732466a76a4bd154568d657b91c75df04a11a5d76eb1d8a5",
+      "bytes": 801
+    },
+    "contentQuality": {
+      "status": "pass",
+      "scope": "complete_text_coverage",
+      "finalSHA256": "1c3f9738ab0b0c57732466a76a4bd154568d657b91c75df04a11a5d76eb1d8a5",
+      "factualCertification": false
+    },
+    "contentReview": {
+      "version": "knot_document_content_v1",
+      "status": "pass",
+      "contentCheckAttempts": [
+        {
+          "attempt": 1,
+          "model": "openai/gpt-4o",
+          "durationMs": 2900,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 4170,
+          "contentBytes": 2169,
+          "outcome": "pass",
+          "httpStatus": 200,
+          "contentEncoding": "json"
+        }
+      ],
+      "requestSHA256": "61916b1dcb9699367c0b05a23596dd341a9a8979263b3c5c2d0c574f303ef272",
+      "finalSHA256": "1c3f9738ab0b0c57732466a76a4bd154568d657b91c75df04a11a5d76eb1d8a5",
+      "finalTextSHA256": "1c3f9738ab0b0c57732466a76a4bd154568d657b91c75df04a11a5d76eb1d8a5",
+      "sourceSHA256s": [],
+      "scope": "complete_text",
+      "requestedItems": [
+        {
+          "item": "Basil",
+          "evidenceID": "request",
+          "quote": "Include Basil and Mint, practical setup steps, watering and harvesting advice, and a safety note to keep mint contained.",
+          "section": "Herbs: Basil and Mint",
+          "status": "developed",
+          "coverageQuote": "- Basil: Begin harvesting when the plant has at least 6-8 leaves. Cut just above a leaf pair to encourage bushy growth.",
+          "repair": ""
+        },
+        {
+          "item": "Mint",
+          "evidenceID": "request",
+          "quote": "Include Basil and Mint, practical setup steps, watering and harvesting advice, and a safety note to keep mint contained.",
+          "section": "Herbs: Basil and Mint",
+          "status": "developed",
+          "coverageQuote": "- Mint: Harvest leaves regularly to encourage new growth. Pinch the top leaves as needed.",
+          "repair": ""
+        },
+        {
+          "item": "Practical setup steps",
+          "evidenceID": "request",
+          "quote": "Include Basil and Mint, practical setup steps, watering and harvesting advice, and a safety note to keep mint contained.",
+          "section": "Practical Setup Steps",
+          "status": "developed",
+          "coverageQuote": "1. Choose suitable containers with drainage holes.",
+          "repair": ""
+        },
+        {
+          "item": "Watering advice",
+          "evidenceID": "request",
+          "quote": "Include Basil and Mint, practical setup steps, watering and harvesting advice, and a safety note to keep mint contained.",
+          "section": "Watering Advice",
+          "status": "developed",
+          "coverageQuote": "- Basil: Water regularly. Keep the soil moist but not waterlogged.",
+          "repair": ""
+        },
+        {
+          "item": "Harvesting advice",
+          "evidenceID": "request",
+          "quote": "Include Basil and Mint, practical setup steps, watering and harvesting advice, and a safety note to keep mint contained.",
+          "section": "Harvesting Advice",
+          "status": "developed",
+          "coverageQuote": "- Basil: Begin harvesting when the plant has at least 6-8 leaves.",
+          "repair": ""
+        },
+        {
+          "item": "Safety note to keep mint contained",
+          "evidenceID": "request",
+          "quote": "Include Basil and Mint, practical setup steps, watering and harvesting advice, and a safety note to keep mint contained.",
+          "section": "Safety Note",
+          "status": "developed",
+          "coverageQuote": "- Mint can be invasive. Consider keeping it in a separate container to prevent it from spreading and taking over other plants.",
+          "repair": ""
+        }
+      ],
+      "workOrders": []
+    },
+    "sourceMessageID": "c71305d4-326a-4a6f-8c9b-dbaaf3903a7b",
+    "originalPath": "/home/user/rork-app/deliveries/knot-format-matrix-20261116-b-txt-original.txt",
+    "downloadedSHA256": "1c3f9738ab0b0c57732466a76a4bd154568d657b91c75df04a11a5d76eb1d8a5"
+  },
+  "independentInspection": {
+    "format": "txt",
+    "sha256": "1c3f9738ab0b0c57732466a76a4bd154568d657b91c75df04a11a5d76eb1d8a5",
+    "bytes": 801,
+    "newExecutionOrReplay": false,
+    "text": "\nBalcony Herb Plan\n===================\n\nHerbs: Basil and Mint\n\nPractical Setup Steps:\n1. Choose suitable containers with drainage holes.\n2. Use quality potting soil and add compost.\n3. Place containers where they receive 6-8 hours of sunlight per day.\n\nWatering Advice:\n- Basil: Water regularly. Keep the soil moist but not waterlogged.\n- Mint: Water sparingly and ensure soil is well-drained. Mint prefers less water than basil.\n\nHarvesting Advice:\n- Basil: Begin harvesting when the plant has at least 6-8 leaves. Cut just above a leaf pair to encourage bushy growth.\n- Mint: Harvest leaves regularly to encourage new growth. Pinch the top leaves as needed.\n\nSafety Note:\n- Mint can be invasive. Consider keeping it in a separate container to prevent it from spreading and taking over other plants.\n"
+  },
+  "automatedChecksPassed": true,
+  "runtimeScope": "authenticated_backend_delivery_and_downloaded_bytes_not_phone_or_browser",
+  "awaitingVisualReview": false,
+  "endedAt": "2026-11-16T02:21:52.211Z",
+  "elapsedMs": 46897
+}

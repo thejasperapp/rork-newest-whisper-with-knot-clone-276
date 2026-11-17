@@ -1,0 +1,217 @@
+{
+  "scope": "knot-format-matrix-20261116-c-md",
+  "caseName": "md",
+  "requestedFormat": "md",
+  "taskID": "c256528e-555d-4d1d-914c-fd2811a80306",
+  "conversationID": "c6df88f7-6d92-4385-94e2-93f4d46b8916",
+  "expectedBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:29:24.018Z",
+  "passed": true,
+  "accountID": "badf172f-9176-42d9-8dad-efbbdd3d754f",
+  "terminal": {
+    "task": {
+      "id": "c256528e-555d-4d1d-914c-fd2811a80306",
+      "bot": "main",
+      "conversationID": "c6df88f7-6d92-4385-94e2-93f4d46b8916",
+      "sourceMessageID": "c256528e-555d-4d1d-914c-fd2811a80306",
+      "replyID": "4256528e-555d-4d1d-914c-fd2811a80306",
+      "state": "completed",
+      "createdAt": 1794796168697,
+      "startedAt": 1794796172408,
+      "finishedAt": 1794796214635,
+      "sequence": 72
+    },
+    "events": [],
+    "next": 72,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "c256528e-555d-4d1d-914c-fd2811a80306-a1",
+        "label": "Create Markdown file for balcony herb plan",
+        "tool": "session_input",
+        "purpose": "To author and deliver a new Markdown file with guidance on growing basil and mint.",
+        "started_at": 1794796181280,
+        "ended_at": 1794796183350,
+        "receipt_id": "66637241-dda2-4341-8118-ab41fd441b51"
+      },
+      {
+        "id": "c256528e-555d-4d1d-914c-fd2811a80306-a2",
+        "label": "Create Markdown file for balcony herb plan",
+        "tool": "session_input",
+        "purpose": "To author and deliver a new Markdown file with guidance on growing basil and mint.",
+        "started_at": 1794796183350,
+        "ended_at": 1794796184131,
+        "receipt_id": "66637241-dda2-4341-8118-ab41fd441b51"
+      },
+      {
+        "id": "c256528e-555d-4d1d-914c-fd2811a80306-a3",
+        "label": "Author Balcony Herb Plan Markdown",
+        "tool": "session_input",
+        "purpose": "Create a new Markdown file detailing practical steps for growing basil and mint, including watering, harvesting, and a safety note about mint spreading.",
+        "started_at": 1794796187027,
+        "ended_at": 1794796187146,
+        "receipt_id": "530a5dc6-d3ec-4430-8b50-7db6415efbdd"
+      },
+      {
+        "id": "c256528e-555d-4d1d-914c-fd2811a80306-a4",
+        "label": "Author Balcony Herb Plan Markdown",
+        "tool": "session_input",
+        "purpose": "Create a new Markdown file detailing practical steps for growing basil and mint, including watering, harvesting, and a safety note about mint spreading.",
+        "started_at": 1794796187146,
+        "ended_at": 1794796187891,
+        "receipt_id": "530a5dc6-d3ec-4430-8b50-7db6415efbdd"
+      },
+      {
+        "id": "c256528e-555d-4d1d-914c-fd2811a80306-a5",
+        "label": "Create Markdown file for Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Produce a structured Markdown document with steps for growing basil and mint, water care, and a mint safety note.",
+        "started_at": 1794796191110,
+        "ended_at": 1794796191283,
+        "receipt_id": "199e8eb7-a22f-4e64-b9bf-fa633a3c3be9"
+      },
+      {
+        "id": "c256528e-555d-4d1d-914c-fd2811a80306-a6",
+        "label": "Create Markdown file for Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Produce a structured Markdown document with steps for growing basil and mint, water care, and a mint safety note.",
+        "started_at": 1794796191283,
+        "ended_at": 1794796192066,
+        "receipt_id": "199e8eb7-a22f-4e64-b9bf-fa633a3c3be9"
+      },
+      {
+        "id": "c256528e-555d-4d1d-914c-fd2811a80306-a7",
+        "label": "Markdown Document Authoring",
+        "tool": "session_input",
+        "purpose": "Create a Markdown file for balcony herb gardening instructions.",
+        "started_at": 1794796194705,
+        "ended_at": 1794796194840,
+        "receipt_id": "0cf07f47-5830-4aa3-b80b-995c72fb1997"
+      },
+      {
+        "id": "c256528e-555d-4d1d-914c-fd2811a80306-a8",
+        "label": "Markdown Document Authoring",
+        "tool": "session_input",
+        "purpose": "Create a Markdown file for balcony herb gardening instructions.",
+        "started_at": 1794796194840,
+        "ended_at": 1794796195591,
+        "receipt_id": "0cf07f47-5830-4aa3-b80b-995c72fb1997"
+      },
+      {
+        "id": "c256528e-555d-4d1d-914c-fd2811a80306-a9",
+        "label": "Author Markdown for Herb Plan",
+        "tool": "document_prepare",
+        "purpose": "Prepare original-format Markdown document with herb planting advice.",
+        "started_at": 1794796197274,
+        "ended_at": 1794796202506,
+        "receipt_id": "c0e284d1-8904-4473-9265-49ddaa0aaa80"
+      },
+      {
+        "id": "c256528e-555d-4d1d-914c-fd2811a80306-a10",
+        "label": "Author Markdown for Herb Plan",
+        "tool": "document_script",
+        "purpose": "Prepare original-format Markdown document with herb planting advice.",
+        "started_at": 1794796202506,
+        "ended_at": 1794796204301,
+        "receipt_id": "c0e284d1-8904-4473-9265-49ddaa0aaa80"
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [],
+  "document": {
+    "id": "d5793bb4256d0c89e586d3d9006e5e2f247c4c1ba10b6c778a412c82b911460f",
+    "name": "Balcony_Herb_Plan.md",
+    "format": "md",
+    "contentType": "text/markdown",
+    "title": "Balcony Herb Plan",
+    "size": 1833,
+    "sha256": "57fd1cbc5640905304993a65cc5761e4c1228fe21faa22378a805a0afa41333c",
+    "pages": 1,
+    "proofPages": [],
+    "createdAt": "2026-11-16T02:30:11.871Z",
+    "expiresAt": "2026-11-23T02:30:11.871Z",
+    "proposalID": "c0e284d1-8904-4473-9265-49ddaa0aaa80",
+    "review": "not_requested",
+    "sampled": true,
+    "sourcePath": "Balcony_Herb_Plan.md",
+    "byteFidelity": {
+      "status": "pass",
+      "scope": "measured_final_to_immutable_capture",
+      "sha256": "57fd1cbc5640905304993a65cc5761e4c1228fe21faa22378a805a0afa41333c",
+      "bytes": 1833
+    },
+    "contentQuality": {
+      "status": "unconfirmed",
+      "scope": "complete_text_coverage",
+      "finalSHA256": "57fd1cbc5640905304993a65cc5761e4c1228fe21faa22378a805a0afa41333c",
+      "factualCertification": false
+    },
+    "contentReview": {
+      "version": "knot_document_content_v1",
+      "status": "unconfirmed",
+      "contentCheckAttempts": [
+        {
+          "attempt": 1,
+          "model": "openai/gpt-4o",
+          "durationMs": 4548,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 5899,
+          "contentBytes": 3821,
+          "outcome": "unconfirmed",
+          "httpStatus": 200,
+          "contentEncoding": "json",
+          "failureStage": "grounding",
+          "validationCode": "item_coverage_anchor",
+          "itemIndex": 5,
+          "reason": "content_check_unparseable"
+        },
+        {
+          "attempt": 2,
+          "model": "openai/gpt-4o",
+          "durationMs": 2558,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 3985,
+          "contentBytes": 1953,
+          "outcome": "unconfirmed",
+          "httpStatus": 200,
+          "contentEncoding": "json",
+          "failureStage": "grounding",
+          "validationCode": "item_coverage_anchor",
+          "itemIndex": 4,
+          "reason": "content_check_unparseable"
+        }
+      ],
+      "requestSHA256": "f1f0439c0bc1c08e0754943383c86a6164e1453050575b45e065e24803330a19",
+      "finalSHA256": "57fd1cbc5640905304993a65cc5761e4c1228fe21faa22378a805a0afa41333c",
+      "finalTextSHA256": "57fd1cbc5640905304993a65cc5761e4c1228fe21faa22378a805a0afa41333c",
+      "sourceSHA256s": [],
+      "scope": "complete_text"
+    },
+    "sourceMessageID": "c256528e-555d-4d1d-914c-fd2811a80306",
+    "originalPath": "/home/user/rork-app/deliveries/knot-format-matrix-20261116-c-md-original.md",
+    "downloadedSHA256": "57fd1cbc5640905304993a65cc5761e4c1228fe21faa22378a805a0afa41333c"
+  },
+  "independentInspection": {
+    "format": "md",
+    "sha256": "57fd1cbc5640905304993a65cc5761e4c1228fe21faa22378a805a0afa41333c",
+    "bytes": 1833,
+    "newExecutionOrReplay": false,
+    "text": "# Balcony Herb Plan\n\n## Basil\n\n### Practical Setup Steps\n1. **Container Selection**: Choose a container that is at least 6-8 inches deep. Ensure it has drainage holes to prevent waterlogging.\n2. **Soil**: Use well-draining potting soil. Basil thrives in nutrient-rich environments.\n3. **Placement**: Place the container in an area with full sun. Basil needs at least 6 hours of sunlight per day.\n\n### Watering\n- Water the basil plant regularly, keeping the soil moist but not waterlogged. Allow the top inch of soil to dry out between waterings.\n\n### Harvesting\n- Begin harvesting once the plant has at least 6-8 leaves. Pinch off leaves or cut stems just above a leaf node to encourage bushy growth.\n\n## Mint\n\n### Practical Setup Steps\n1. **Container Selection**: Use a container with a depth of at least 8 inches with proper drainage systems.\n2. **Soil**: Plant mint in a loamy, well-drained soil. It should retain moisture without becoming too soggy.\n3. **Placement**: Position the pot in partial shade to avoid intense sunlight, which can scorch the plant.\n\n### Watering\n- Keep the soil consistently moist. Mint requires frequent watering, especially in warm weather, but avoid overwatering.\n\n### Harvesting\n- Start harvesting once the plant reaches about 6 inches in height. Frequent cutting helps promote growth.\n\n### Safety Note\n- **Containment**: Mint can be invasive and can quickly outgrow its space. It’s essential to keep it in a pot to prevent spreading.\n\n## General Advice\n- **Fertilization**: Apply a balanced, water-soluble fertilizer monthly during the growing season.\n- **Pest Management**: Check regularly for pests such as aphids and use organic methods to control them.\n\nThis plan will help ensure a successful and manageable balcony herb garden. Regular maintenance and observation are key to thriving plants."
+  },
+  "automatedChecksPassed": true,
+  "runtimeScope": "authenticated_backend_delivery_and_downloaded_bytes_not_phone_or_browser",
+  "awaitingVisualReview": false,
+  "endedAt": "2026-11-16T02:30:17.538Z",
+  "elapsedMs": 53520
+}

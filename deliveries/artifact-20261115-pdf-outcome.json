@@ -1,0 +1,45 @@
+{
+  "kind": "pdf",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "workspaceID": "whisper-4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "requestID": "2f76bdba-b940-4e5c-936f-848ba5df589b",
+  "taskID": "2f76bdba-b940-4e5c-936f-848ba5df589b",
+  "conversationID": "052b6846-3693-4b48-9f6b-e51e11986205",
+  "sourceMessageID": "10e4189f-2b05-45a8-a360-741826d39113",
+  "expectedBuild": "1bcd5a7556437b6a32b21a314e048feaa919535380daadf51fe9d82bfa49a78a",
+  "startedAt": "2026-11-15T10:13:12.032Z",
+  "elapsedMs": 6230,
+  "completed": false,
+  "workIncomplete": false,
+  "issue": "cached_skill_provenance_unconfirmed",
+  "stopConfirmed": true,
+  "executions": [
+    {
+      "proposalID": "db4d60e7-d6a9-4174-b8c1-a633e9e7579c",
+      "operation": "memory_read",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "b4f25f5a2a3ba56c3eba5d9e71262272d99b5bcb3fb52fa9522f8c30617d3a49"
+    },
+    {
+      "proposalID": "e4572de4-130b-4544-a38c-b95de8490416",
+      "operation": "skill_index",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "77f735984584ac7ce6017bf231b8bab430af79f2e5ab1a8be975daa4f656b8d3"
+    }
+  ],
+  "documents": [],
+  "retainedRecordCount": 3,
+  "frameCount": 19,
+  "chatSubmissions": 1,
+  "directSidecarCalls": 0,
+  "personalAccountAccessed": false
+}

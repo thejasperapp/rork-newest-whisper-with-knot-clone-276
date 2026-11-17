@@ -1,0 +1,29 @@
+{
+  "$schema": "https://rork.com/schema/rork.json",
+  "apps": [
+    {
+      "name": "Whisper",
+      "path": "ios",
+      "framework": "swift",
+      "settings": {
+        "iosBundleId": "com.mydailywhisper.whisper",
+        "displayName": "Whisper"
+      }
+    },
+    {
+      "name": "whisperweb",
+      "path": "web-whisperweb",
+      "framework": "web"
+    },
+    {
+      "name": "Functions",
+      "path": "functions",
+      "framework": "cloudflare"
+    },
+    {
+      "name": "Backend",
+      "path": "backend",
+      "framework": "supabase"
+    }
+  ]
+}

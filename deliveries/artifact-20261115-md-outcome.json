@@ -1,0 +1,137 @@
+{
+  "kind": "md",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "workspaceID": "whisper-4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "requestID": "36f09b6e-a7a6-461c-b723-e1c4965c28ba",
+  "taskID": "36f09b6e-a7a6-461c-b723-e1c4965c28ba",
+  "conversationID": "89fd971a-c3db-45ad-a9fc-a2f6004d6cb9",
+  "sourceMessageID": "b5ccd38c-12f8-4a8d-86f8-546b411ac2b7",
+  "expectedBuild": "1bcd5a7556437b6a32b21a314e048feaa919535380daadf51fe9d82bfa49a78a",
+  "startedAt": "2026-11-15T10:12:16.279Z",
+  "elapsedMs": 48617,
+  "completed": true,
+  "workIncomplete": false,
+  "issue": null,
+  "stopConfirmed": true,
+  "executions": [
+    {
+      "proposalID": "3bbbb163-64f3-4d0e-829b-bd9054198602",
+      "operation": "memory_read",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "22bdd03e383b42c0524c4726c341a049dad2ec854b300fb09403bbd8dcf0e1ef"
+    },
+    {
+      "proposalID": "aee74d0e-e916-4171-92d2-c365539db983",
+      "operation": "skill_index",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "77f735984584ac7ce6017bf231b8bab430af79f2e5ab1a8be975daa4f656b8d3"
+    },
+    {
+      "proposalID": "6dbcc548-4988-4c90-8e1a-3c1553023245",
+      "operation": "skill_read",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "f59a19dbc39edbc3b4b7e65108ed7125f3dd9e9338a97be7907c0a5710b4bcd4"
+    },
+    {
+      "proposalID": "bb71c2e3-b89d-4d45-9eaf-632af3812d32",
+      "operation": "workspace_inventory",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "22cb402c7b910da5de4744f45716b53317d1089d4d528662f99781771a005ad4"
+    },
+    {
+      "proposalID": "fe31fc7d-d109-480f-85d4-527367d186f4",
+      "operation": "work",
+      "documentStage": "final",
+      "status": "failed",
+      "exitCode": 1,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "proposalID": "74c3dced-97d8-4c66-ab26-dffb5cacfdff",
+      "operation": "recovery_read",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "46392f8b5dc384ceb5064b039cf46c8ecc1e59ad2f2f07b34d54280a3f21d0fe"
+    },
+    {
+      "proposalID": "da480516-b9ba-41ac-9126-ca9e077faca6",
+      "operation": "work",
+      "documentStage": "final",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "2b2932ade19b82933332f664603cd6dc3ad68be59e00665f6bdd109f4f01cbac"
+    },
+    {
+      "proposalID": "80cad86d-81b7-4608-9a6c-841980ba8174",
+      "operation": "memory_write",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "28b296166e6e7a51e6a37f4043a13810b222460f27fffbd9225fd59e4f2375e7"
+    },
+    {
+      "proposalID": "4c57aed6-907b-42f3-8b24-bd8b30595c0b",
+      "operation": "skill_read",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "d3f8d371cc179c7a5ec39447ae7f7337e1a8b904ed33272257b415a5d72860a6"
+    }
+  ],
+  "documents": [
+    {
+      "id": "e2dcb83a30c296fed19d8106a2e44d10589296315ff709b66b10526af5e4e077",
+      "title": "Small Garden Checklist",
+      "name": "small_garden_checklist-v2.md",
+      "format": "md",
+      "size": 1350,
+      "sha256": "76ada1eb64242a715b5cd6a750a59b559c6da4b8f87d4444080b4f3b744f9355",
+      "downloadSHA256": "76ada1eb64242a715b5cd6a750a59b559c6da4b8f87d4444080b4f3b744f9355",
+      "deliveredMatches": true,
+      "review": "not_requested",
+      "contentQuality": {
+        "status": "unconfirmed",
+        "scope": "complete_text_coverage",
+        "finalSHA256": "76ada1eb64242a715b5cd6a750a59b559c6da4b8f87d4444080b4f3b744f9355",
+        "factualCertification": false
+      },
+      "proofs": [],
+      "originalPath": "/home/user/.tmp/knot-artifact-acceptance-mayokn2749ag072e3uvbh-20261115/md/e2dcb83a30c296fed19d8106a2e44d10589296315ff709b66b10526af5e4e077.md"
+    }
+  ],
+  "retainedRecordCount": 10,
+  "frameCount": 96,
+  "chatSubmissions": 1,
+  "directSidecarCalls": 0,
+  "personalAccountAccessed": false
+}

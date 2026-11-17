@@ -1,0 +1,190 @@
+{
+  "title": "Structured recipes replacement measurement — authoring rejected",
+  "taskID": "0f1801ec-e34e-4cf7-8b4f-3b3aeb81ecd3",
+  "conversationID": "b87a7a4d-d2ed-4408-8e42-f4cf2f743e58",
+  "sourceMessageID": "57afd4b7-f9b6-47ec-b92b-da0b74938f0f",
+  "sourceBuildSHA256": "4110da0a37d66d75739d13632f97aac39d1f47380a504eaaa2e0c1c5a064d8a4",
+  "preflightObservedAt": "2026-11-14T04:29:21.024Z",
+  "startedAt": "2026-11-14T04:29:26.882Z",
+  "endedAt": "2026-11-14T04:34:01.346Z",
+  "outcome": "failed_before_source_build_proof_or_capture",
+  "prospectivePlan": {
+    "declaredAt": "2026-11-14T04:19:44.472Z",
+    "referenceTaskID": "b936a45f-b94a-4c5c-8ac6-b0c92e894466",
+    "baselineCompletionMs": 603097,
+    "baselineProviderGenerationMs": 440082,
+    "baselineNonGenerationMs": 163015,
+    "calibrationBytesPerSecond": 215,
+    "completeExtractedTextBytes": 17580,
+    "estimatedStructuredResponseBytes": 21975,
+    "prospectivePlanningMs": 265225,
+    "targetMs": 330000,
+    "policy": "One full structured content response; at most one affected-section layout-only response. Unpatchable visual advice ships recorded. No model-authored markup/CSS. No output shortening, provider fallback, skipped proof/review or reduced funded deadline.",
+    "interpretation": "Prospective working floor, not a physical lower bound or promise. Reuses all observed non-generation overhead conservatively, including the old second build/proof. Actual post-run floor must use actual model-response bytes and separately reported overhead. The former three-minute target is superseded, not retroactively passed."
+  },
+  "attemptTimings": {
+    "incompleteCompletionEventMs": 270443,
+    "streamEndedMs": 271677,
+    "evidenceCollectionMs": 2787,
+    "totalElapsedMs": 274464,
+    "successfulCompletionMs": null,
+    "captureElapsedMs": null
+  },
+  "comparison": {
+    "baselineTaskID": "b936a45f-b94a-4c5c-8ac6-b0c92e894466",
+    "baselineCompletionMs": 603097,
+    "exactSameAsk": true,
+    "targetMs": 330000,
+    "targetMet": false,
+    "successfulLatencyComparisonAvailable": false,
+    "improvementEstablished": false,
+    "recalibratedSuccessfulPipelineFloorMs": null,
+    "reason": "The 270443 ms event reports incomplete work, not PDF completion. No new PDF exists; failure duration cannot establish successful delivery latency or a new floor."
+  },
+  "authoring": [
+    {
+      "attempt": 1,
+      "model": "anthropic/claude-sonnet-4.6",
+      "schemaSHA256": "8709e414481e63158fe11e61e2eb2407b38531aff44b22e40bed48eb86e7b4c9",
+      "returnedModelResponseBytes": 15975,
+      "providerElapsedMs": 88653,
+      "returnedBytesPerProviderSecond": 180.2,
+      "firstContentMs": 4200,
+      "maxIdleMs": 4200,
+      "transportCalls": 1,
+      "contractOutcome": "slice_shape_rejected",
+      "sealedProgramBytes": 0,
+      "storagePieces": 0,
+      "promptBytesIncludingContract": 46110,
+      "promptOverageBytes": 13342,
+      "completeReadMessageBytes": 22882
+    },
+    {
+      "attempt": 2,
+      "model": "anthropic/claude-sonnet-4.6",
+      "schemaSHA256": "8709e414481e63158fe11e61e2eb2407b38531aff44b22e40bed48eb86e7b4c9",
+      "returnedModelResponseBytes": 16062,
+      "providerElapsedMs": 86355,
+      "returnedBytesPerProviderSecond": 186,
+      "firstContentMs": 1348,
+      "maxIdleMs": 1348,
+      "transportCalls": 1,
+      "contractOutcome": "slice_shape_rejected",
+      "sealedProgramBytes": 0,
+      "storagePieces": 0,
+      "promptBytesIncludingContract": 46238,
+      "promptOverageBytes": 13470,
+      "completeReadMessageBytes": 22882
+    },
+    {
+      "attempt": 3,
+      "model": "anthropic/claude-sonnet-4.6",
+      "schemaSHA256": "8709e414481e63158fe11e61e2eb2407b38531aff44b22e40bed48eb86e7b4c9",
+      "returnedModelResponseBytes": 15248,
+      "providerElapsedMs": 80546,
+      "returnedBytesPerProviderSecond": 189.31,
+      "firstContentMs": 1909,
+      "maxIdleMs": 1909,
+      "transportCalls": 1,
+      "contractOutcome": "slice_shape_rejected",
+      "sealedProgramBytes": 0,
+      "storagePieces": 0,
+      "promptBytesIncludingContract": 46238,
+      "promptOverageBytes": 13470,
+      "completeReadMessageBytes": 22882
+    }
+  ],
+  "providerGenerationMs": 255554,
+  "exposedReturnedModelResponseBytes": 47285,
+  "aggregateReturnedBytesPerProviderSecond": 185.03,
+  "nonProviderTimeThroughIncompleteCompletionMs": 14889,
+  "throughputScope": "Returned exposed response-content bytes, including rejected responses; not accepted content, deterministic program throughput, renderer throughput or a successful-pipeline calibration. Internal discarded transport bodies, if any, are outside this metric.",
+  "commands": [
+    {
+      "proposalID": "219a514d-1e3a-4ad7-b6d7-d93490db8ddf",
+      "operation": "memory_read",
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "commandSHA256": "7898ebb296291043dacbe7db07cf88b60529018b007c2890b7ca321825e59b8e",
+      "stdoutSHA256": "a042a3adeae1109fd7095c3d2c6ae9fb3539d94e79e15b294dc3a6ceb68e3d7e",
+      "newShellExecution": true,
+      "logBoundariesMatch": true
+    },
+    {
+      "proposalID": "8bcbf102-2b13-4b04-9641-9ef146f45c44",
+      "operation": "skill_index",
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "commandSHA256": "2cfb3bd266aa9c5d650f39c895229d2a56ecdd2560f7a744996a00851ce2da3b",
+      "stdoutSHA256": "4c163e791dd33692132eaab48f6475de06dbfcfe8f52a28f531d738fd9624436",
+      "newShellExecution": true,
+      "logBoundariesMatch": true
+    },
+    {
+      "proposalID": "dbfd9ad1-a036-45ab-aaf2-8f10badccd77",
+      "operation": "skill_read",
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "commandSHA256": "a765a95fa5f09f55be26e4919686940279c865d9e91136882ea206b4aa105b1a",
+      "stdoutSHA256": "f59a19dbc39edbc3b4b7e65108ed7125f3dd9e9338a97be7907c0a5710b4bcd4",
+      "newShellExecution": false,
+      "cachedSourceProposalID": "9924aed8-6462-4db0-a779-a0f0400495b0",
+      "cacheMatchesCompleteOriginal": true
+    },
+    {
+      "proposalID": "d98cd00c-03d0-4721-b948-346c8eb13c05",
+      "operation": "workspace_inventory",
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "commandSHA256": "b2de3e2c8bd7951ca8c49b16b67e3a41eca2b38a6e6f97967db34d0fe59d2d6c",
+      "stdoutSHA256": "22177fd3e1ba76da7083371a43b25a174892b9fa651a14a62e7bc67d5ae8635f",
+      "newShellExecution": true,
+      "logBoundariesMatch": true
+    }
+  ],
+  "evidence": {
+    "observedOwnedProposals": 4,
+    "actualShellInputs": 3,
+    "strictKnownOriginalCachedReads": 1,
+    "samePreviouslyLiveSessionReused": true,
+    "meteredWorkCommands": 0,
+    "observedAuthorResponses": 3,
+    "observedAuthorProviderCalls": 3,
+    "sealedProgramBytes": 0,
+    "sourceBuildProofCommands": 0,
+    "contentChecks": 0,
+    "visualPageReviews": 0,
+    "localLayoutPatches": 0,
+    "captures": 0,
+    "finalPDFs": 0,
+    "noHistoricalReplay": true
+  },
+  "diagnosis": {
+    "confirmedGate": "document_authoring / slice_shape on each of three attempts",
+    "completeJSONParsingReached": true,
+    "exactRejectedField": "unavailable in retained diagnostics",
+    "rawReturnedBodiesRetained": false,
+    "sourceBranchesCoveredByThisGate": [
+      "Preparation interpreter/path or prefix/index constraint",
+      "Structured content validation or deterministic source construction",
+      "Returned executable-envelope validation"
+    ],
+    "exactRootCauseEstablished": false,
+    "providerOutageOrTimeoutEstablished": false,
+    "guideProvenanceProblemResolvedForThisRun": true,
+    "nextInvestigation": "Add content-free field/path/code diagnostics at the distinct structured validation branches and verify the selected descriptor before spending another author response. Preserve strict content/integrity gates and full guidance; a further paid run requires fresh explicit permission."
+  },
+  "quality": {
+    "byteFidelity": "not reached",
+    "sourceCoverage": "not reached",
+    "finalContentCoverage": "not reached",
+    "visualReview": "not reached",
+    "nutritionCertification": false
+  },
+  "validation": {
+    "replacementHarnessAndEvidenceReviewerStrictTypes": "passed",
+    "deployedBackendSourceStamp": "unchanged and verified",
+    "supportedWebStaticAndBuildChecks": "passed; zero errors",
+    "fullBackend": "14 inherited diagnostics; no added signatures or counts in prior validation; not globally clean",
+    "newUnitOrRegressionTests": "not run",
+    "backendRuntimeMeasurement": "performed once; failed at authoring validation",
+    "browserDeviceAndExactOwnerSignedReleaseAcceptance": "not performed"
+  },
+  "scope": "One explicitly authorized replacement fresh task only, using the existing dedicated owned session and original backend. Local evidence review never submits or resumes commands, model calls, reviews or captures. Both structured once-intents and all earlier deliveries remain preserved. No new PDF is claimed or substituted. Backend source is unchanged. No automatic retry or further paid measurement authorized."
+}

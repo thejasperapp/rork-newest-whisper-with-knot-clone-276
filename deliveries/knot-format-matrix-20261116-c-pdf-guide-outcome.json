@@ -1,0 +1,376 @@
+{
+  "scope": "knot-format-matrix-20261116-c-pdf-guide",
+  "caseName": "pdf-guide",
+  "requestedFormat": "pdf",
+  "taskID": "882a3cab-20aa-46d1-9ce8-365647df10ab",
+  "conversationID": "eaf3860d-07ac-4fe6-873a-c633d5a48e0e",
+  "expectedBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:35:43.932Z",
+  "passed": false,
+  "accountID": "5af0d9a8-630f-4857-9f39-0b28b7ea5ad0",
+  "terminal": {
+    "task": {
+      "id": "882a3cab-20aa-46d1-9ce8-365647df10ab",
+      "bot": "main",
+      "conversationID": "eaf3860d-07ac-4fe6-873a-c633d5a48e0e",
+      "sourceMessageID": "882a3cab-20aa-46d1-9ce8-365647df10ab",
+      "replyID": "082a3cab-20aa-46d1-9ce8-365647df10ab",
+      "state": "completed",
+      "createdAt": 1794796547462,
+      "startedAt": 1794796551599,
+      "finishedAt": 1794796621583,
+      "sequence": 112
+    },
+    "events": [],
+    "next": 112,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a1",
+        "label": "Prepare Balcony Herb Plan PDF",
+        "tool": "session_input",
+        "purpose": "Author content for a guide on growing herbs (Basil & Mint) on balconies.",
+        "started_at": 1794796561211,
+        "ended_at": 1794796563443,
+        "receipt_id": "07cf979b-63ca-4198-ad11-a0877db36a83"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a2",
+        "label": "Prepare Balcony Herb Plan PDF",
+        "tool": "session_input",
+        "purpose": "Author content for a guide on growing herbs (Basil & Mint) on balconies.",
+        "started_at": 1794796563443,
+        "ended_at": 1794796564238,
+        "receipt_id": "07cf979b-63ca-4198-ad11-a0877db36a83"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a3",
+        "label": "Prepare Balcony Herb Plan PDF",
+        "tool": "session_input",
+        "purpose": "Create structured content for PDF with setup, care, and safety advice for basil and mint.",
+        "started_at": 1794796567734,
+        "ended_at": 1794796567832,
+        "receipt_id": "c1128ee7-9d31-439c-917a-10f1dbe869ef"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a4",
+        "label": "Prepare Balcony Herb Plan PDF",
+        "tool": "session_input",
+        "purpose": "Create structured content for PDF with setup, care, and safety advice for basil and mint.",
+        "started_at": 1794796567832,
+        "ended_at": 1794796568602,
+        "receipt_id": "c1128ee7-9d31-439c-917a-10f1dbe869ef"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a5",
+        "label": "Create Balcony Herb Plan PDF",
+        "tool": "session_input",
+        "purpose": "Draft the content for a Balcony Herb Plan document including setup, care, and safety advice.",
+        "started_at": 1794796572040,
+        "ended_at": 1794796572162,
+        "receipt_id": "81f6c755-b66c-4019-bcb1-2e90f8f0fafc"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a6",
+        "label": "Create Balcony Herb Plan PDF",
+        "tool": "session_input",
+        "purpose": "Draft the content for a Balcony Herb Plan document including setup, care, and safety advice.",
+        "started_at": 1794796572162,
+        "ended_at": 1794796572945,
+        "receipt_id": "81f6c755-b66c-4019-bcb1-2e90f8f0fafc"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a7",
+        "label": "Create Balcony Herb Plan PDF",
+        "tool": "session_input",
+        "purpose": "Author detailed setup, care, and safety instructions for cultivating basil and mint on a balcony.",
+        "started_at": 1794796575694,
+        "ended_at": 1794796575803,
+        "receipt_id": "9a23d17d-4f12-4a44-9e02-fabdadd0cb91"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a8",
+        "label": "Create Balcony Herb Plan PDF",
+        "tool": "session_input",
+        "purpose": "Author detailed setup, care, and safety instructions for cultivating basil and mint on a balcony.",
+        "started_at": 1794796575803,
+        "ended_at": 1794796576564,
+        "receipt_id": "9a23d17d-4f12-4a44-9e02-fabdadd0cb91"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a9",
+        "label": "Author Balcony Herb Plan",
+        "tool": "document_prepare",
+        "purpose": "Create comprehensive guide on growing basil and mint with setup steps, care and harvesting advice, and safety notes.",
+        "started_at": 1794796578138,
+        "ended_at": 1794796582326,
+        "receipt_id": "a3f472e7-6fdd-4bc7-9c6c-8b4d8e04c8f5"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a10",
+        "label": "Author Balcony Herb Plan",
+        "tool": "document_script",
+        "purpose": "Create comprehensive guide on growing basil and mint with setup steps, care and harvesting advice, and safety notes.",
+        "started_at": 1794796582326,
+        "ended_at": 1794796583820,
+        "receipt_id": "a3f472e7-6fdd-4bc7-9c6c-8b4d8e04c8f5"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a11",
+        "label": "Author new Balcony Herb Plan source",
+        "tool": "document_prepare",
+        "purpose": "Create a complete and formatted source document using the guide@1.0.0 template.",
+        "started_at": 1794796589836,
+        "ended_at": 1794796596769,
+        "receipt_id": "e8f9078c-991c-4611-b803-b6d5120835e0"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a12",
+        "label": "Author new Balcony Herb Plan source",
+        "tool": "document_script",
+        "purpose": "Create a complete and formatted source document using the guide@1.0.0 template.",
+        "started_at": 1794796596769,
+        "ended_at": 1794796598246,
+        "receipt_id": "e8f9078c-991c-4611-b803-b6d5120835e0"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a13",
+        "label": "Convert Markdown to PDF",
+        "tool": "document_prepare",
+        "purpose": "Transform the authored Markdown source into a PDF using the guide template.",
+        "started_at": 1794796603686,
+        "ended_at": 1794796603851,
+        "receipt_id": "577941c0-dca9-4a94-9dc4-4bb5ab618381"
+      },
+      {
+        "id": "882a3cab-20aa-46d1-9ce8-365647df10ab-a14",
+        "label": "Convert Markdown to PDF",
+        "tool": "document_script",
+        "purpose": "Transform the authored Markdown source into a PDF using the guide template.",
+        "started_at": 1794796603851,
+        "ended_at": 1794796607344,
+        "receipt_id": "577941c0-dca9-4a94-9dc4-4bb5ab618381"
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [],
+  "document": {
+    "id": "724216d745bc5e49bfc2087adefef3a8a738d40e663c72257e919220e32b62a7",
+    "name": "knot-882a3cab-20aa-46d1-9ce8-365647df10ab-build-v2.pdf",
+    "format": "pdf",
+    "contentType": "application/pdf",
+    "title": "Balcony Herb Plan",
+    "deliveryLabel": "Guide Document",
+    "size": 16921,
+    "sha256": "a2f5cbe66f13f3bf072d218a670b93ecd201fba3889ac91634f78367db95317c",
+    "pages": 2,
+    "proofPages": [
+      1,
+      2
+    ],
+    "createdAt": "2026-11-16T02:36:57.854Z",
+    "expiresAt": "2026-11-23T02:36:57.854Z",
+    "proposalID": "038210a6-ba5e-460f-b302-233c893df5d5",
+    "review": "issues",
+    "reviewIssue": "document_visual_quality_shortfalls",
+    "sampled": false,
+    "sourcePath": "knot-882a3cab-20aa-46d1-9ce8-365647df10ab-build-v2.pdf",
+    "byteFidelity": {
+      "status": "pass",
+      "scope": "measured_final_to_immutable_capture",
+      "sha256": "a2f5cbe66f13f3bf072d218a670b93ecd201fba3889ac91634f78367db95317c",
+      "bytes": 16921
+    },
+    "contentQuality": {
+      "status": "pass",
+      "scope": "complete_text_coverage",
+      "finalSHA256": "a2f5cbe66f13f3bf072d218a670b93ecd201fba3889ac91634f78367db95317c",
+      "factualCertification": false
+    },
+    "verification": {
+      "version": "knot_document_proof_v1",
+      "sourceSHA256": "a2f5cbe66f13f3bf072d218a670b93ecd201fba3889ac91634f78367db95317c",
+      "sourceSize": 16921,
+      "format": "pdf",
+      "renderedPages": 2,
+      "textSHA256": "1093e9d520e1503629ee23aa24b852df186a2bf8bf01834a4df7ce4efc008bb0",
+      "markupScan": "clear",
+      "renderer": "poppler",
+      "producerChecked": false,
+      "structureChecked": true,
+      "allPageProofs": true,
+      "textPath": "deliverables/knot-proof-577941c0-dca9-4a94-9dc4-4bb5ab618381/text.txt",
+      "textSize": 1978
+    },
+    "contentReview": {
+      "version": "knot_document_content_v1",
+      "status": "pass",
+      "contentCheckAttempts": [
+        {
+          "attempt": 1,
+          "model": "openai/gpt-4o",
+          "durationMs": 3037,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 4095,
+          "contentBytes": 2063,
+          "outcome": "unconfirmed",
+          "httpStatus": 200,
+          "contentEncoding": "json",
+          "failureStage": "grounding",
+          "validationCode": "item_coverage_anchor",
+          "itemIndex": 0,
+          "reason": "content_check_unparseable"
+        },
+        {
+          "attempt": 2,
+          "model": "openai/gpt-4o",
+          "durationMs": 2701,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 4017,
+          "contentBytes": 1984,
+          "outcome": "pass",
+          "httpStatus": 200,
+          "contentEncoding": "json"
+        }
+      ],
+      "requestSHA256": "8955266dc178deecfce54a335bd80f00f8087fdfdf107bf454b1d001fd871d7a",
+      "finalSHA256": "a2f5cbe66f13f3bf072d218a670b93ecd201fba3889ac91634f78367db95317c",
+      "finalTextSHA256": "1093e9d520e1503629ee23aa24b852df186a2bf8bf01834a4df7ce4efc008bb0",
+      "sourceSHA256s": [
+        "edf97700a046d7cf9aad0bcaff900ffb5287c2e122add51c4e082ba652ee747c",
+        "18a767835553e332e99d6607531f766c74cf76e6a0e5acf2f5d87a52aeee429a"
+      ],
+      "scope": "complete_text",
+      "requestedItems": [
+        {
+          "item": "Basil setup steps",
+          "evidenceID": "request",
+          "quote": "Include Basil and Mint, practical setup steps",
+          "section": "Basil\nPractical Setup Steps",
+          "status": "developed",
+          "coverageQuote": "• Container Selection: Choose a pot with good drainage. A diameter of at least 12 inches is ideal for\nbasil.",
+          "repair": ""
+        },
+        {
+          "item": "Mint setup steps",
+          "evidenceID": "request",
+          "quote": "Include Basil and Mint, practical setup steps",
+          "section": "Mint\nPractical Setup Steps",
+          "status": "developed",
+          "coverageQuote": "• Container Selection: Use a wide, shallow container to prevent mint from spreading too much.",
+          "repair": ""
+        },
+        {
+          "item": "Basil watering advice",
+          "evidenceID": "request",
+          "quote": "watering and harvesting advice",
+          "section": "Basil\nWatering",
+          "status": "developed",
+          "coverageQuote": "• Frequency: Water basil when the soil surface is dry. Basil prefers moist but not waterlogged soil.",
+          "repair": ""
+        },
+        {
+          "item": "Mint watering advice",
+          "evidenceID": "request",
+          "quote": "watering and harvesting advice",
+          "section": "Mint\nWatering",
+          "status": "developed",
+          "coverageQuote": "• Frequency: Mint requires consistently moist soil; water when the top inch of soil is dry.",
+          "repair": ""
+        },
+        {
+          "item": "Basil harvesting advice",
+          "evidenceID": "request",
+          "quote": "watering and harvesting advice",
+          "section": "Basil\nHarvesting Advice",
+          "status": "developed",
+          "coverageQuote": "• Timing: Start harvesting once the plant has 6-8 leaves per stem.",
+          "repair": ""
+        },
+        {
+          "item": "Mint harvesting advice",
+          "evidenceID": "request",
+          "quote": "watering and harvesting advice",
+          "section": "Mint\nHarvesting Advice",
+          "status": "developed",
+          "coverageQuote": "• Timing: Harvest mint leaves regularly once the plant is established.",
+          "repair": ""
+        },
+        {
+          "item": "Safety note on mint containment",
+          "evidenceID": "request",
+          "quote": "safety note to keep mint contained",
+          "section": "Safety Note",
+          "status": "developed",
+          "coverageQuote": "Mint can be invasive and take over other plants if not confined.",
+          "repair": ""
+        }
+      ],
+      "workOrders": []
+    },
+    "visualReview": {
+      "version": "knot_document_visual_v1",
+      "finalSHA256": "a2f5cbe66f13f3bf072d218a670b93ecd201fba3889ac91634f78367db95317c",
+      "scope": "all_pages",
+      "status": "issues",
+      "pages": [
+        {
+          "page": 1,
+          "sha256": "6fe4d0e968b736c81305c3b72190b1a664b92bb246979d64616dc4f3619261dd",
+          "verdict": "issues",
+          "issues": [
+            "Typography hierarchy is weak; headings could be more distinct.",
+            "Excessive whitespace at page bottom creates an imbalance."
+          ]
+        },
+        {
+          "page": 2,
+          "sha256": "f95023800c7ba1d435f53876ebddbd7d5b27dbb52d229ee8ade5b31d58d5603b",
+          "verdict": "issues",
+          "issues": [
+            "Content is minimal, resulting in an overall sparse appearance.",
+            "The 'Safety Note' could be better integrated with the main content for cohesion."
+          ]
+        }
+      ]
+    },
+    "qualityShortfalls": [
+      "Page 1: Typography hierarchy is weak; headings could be more distinct.",
+      "Page 1: Excessive whitespace at page bottom creates an imbalance.",
+      "Page 2: Content is minimal, resulting in an overall sparse appearance.",
+      "Page 2: The 'Safety Note' could be better integrated with the main content for cohesion."
+    ],
+    "sourceMessageID": "882a3cab-20aa-46d1-9ce8-365647df10ab",
+    "originalPath": "/home/user/rork-app/deliveries/knot-format-matrix-20261116-c-pdf-guide-original.pdf",
+    "downloadedSHA256": "a2f5cbe66f13f3bf072d218a670b93ecd201fba3889ac91634f78367db95317c"
+  },
+  "independentInspection": {
+    "format": "pdf",
+    "sha256": "a2f5cbe66f13f3bf072d218a670b93ecd201fba3889ac91634f78367db95317c",
+    "bytes": 16921,
+    "newExecutionOrReplay": false,
+    "pages": 2,
+    "renders": [
+      "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-guide/independent/page-1.png",
+      "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-guide/independent/page-2.png"
+    ],
+    "visualInspection": "pending",
+    "text": "Balcony Herb Plan\nA Practical Guide to Growing Basil and Mint\nIntroduction\nGrowing herbs on your balcony can be a rewarding and practical way to enhance your cooking and beautify\nyour living space. This guide provides step-by-step instructions to grow basil and mint, including setup,\nmaintenance, and harvesting tips. You will also find a crucial safety note to keep mint controlled.\nBasil\nPractical Setup Steps\nContainer Selection: Choose a pot with good drainage. A diameter of at least 12 inches is ideal for\nbasil.\nSoil: Use well-draining potting soil enriched with compost to provide essential nutrients.\nPlacement: Place the pot in a sunny spot that receives 6-8 hours of sunlight daily.\nWatering\nFrequency: Water basil when the soil surface is dry. Basil prefers moist but not waterlogged soil.\nTechnique: Water at the base of the plant to avoid wetting the leaves.\nHarvesting Advice\nTiming: Start harvesting once the plant has 6-8 leaves per stem.\nMethod: Pinch leaves from the top to encourage bushier growth.\nMint\nPractical Setup Steps\nContainer Selection: Use a wide, shallow container to prevent mint from spreading too much.\nSoil: A general-purpose potting mix will support mint's growth needs.\nPlacement: Mint thrives in partial sunlight, so place the pot in a lightly shaded area.\nWatering\nFrequency: Mint requires consistently moist soil; water when the top inch of soil is dry.\nTechnique: Ensure even watering without waterlogging.\nHarvesting Advice\nTiming: Harvest mint leaves regularly once the plant is established.\nMethod: Snip leaves or stems with scissors to promote new growth.\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \nSafety Note\nMint can be invasive and take over other plants if not confined. Always keep it in a separate container to\nprevent it from encroaching on other herbs.\nThis guide helps you maintain a successful and manageable herb garden on your balcony. Enjoy the fresh\nflavors and aromas at your doorstep!\n2 / 2"
+  },
+  "automatedChecksPassed": true,
+  "runtimeScope": "authenticated_backend_delivery_and_downloaded_bytes_not_phone_or_browser",
+  "awaitingVisualReview": true,
+  "endedAt": "2026-11-16T02:37:04.236Z",
+  "elapsedMs": 80304
+}

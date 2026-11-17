@@ -1,0 +1,38 @@
+{
+  "title": "Herb Match Game",
+  "sha256": "7077f0aa7d24f2432f168cfbe24139db5ad242e13af44ed1dfa8acf8d3dd70bd",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "pageErrors": [],
+  "missingResources": [
+    "/basil.png",
+    "/chive.png",
+    "/dill.png",
+    "/parsley.png",
+    "/mint.png",
+    "/oregano.png"
+  ],
+  "checks": {
+    "cardCount": 12,
+    "initialMoves": "0",
+    "missingArtworkCount": 12,
+    "observedHerbs": [
+      "basil",
+      "chive",
+      "dill",
+      "parsley",
+      "mint",
+      "oregano"
+    ],
+    "movesAfterSixPairs": "6",
+    "matchedCount": 12,
+    "winMessageVisible": true,
+    "restartMoves": "6",
+    "restartMatchedCount": 12,
+    "restartResets": false,
+    "horizontalOverflow": false
+  },
+  "screenshot": ".rork/verification/knot-artifacts-20261115/delivered-game-win.png"
+}

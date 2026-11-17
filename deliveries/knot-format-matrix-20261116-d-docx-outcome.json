@@ -1,0 +1,297 @@
+{
+  "scope": "knot-format-matrix-20261116-d-docx",
+  "caseName": "docx",
+  "requestedFormat": "docx",
+  "taskID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+  "conversationID": "dd109c89-1b80-4720-9409-7afe9cf7e77d",
+  "expectedBuild": "f2910baf23bbaddc8a93b00c2b10a21d21f72dc851b710a8fdcef3c85f4f90c9",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:52:38.300Z",
+  "passed": false,
+  "accountID": "0eab89ed-8cf5-4eaf-8ac6-6cb6950a7d99",
+  "terminal": {
+    "task": {
+      "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "bot": "main",
+      "conversationID": "dd109c89-1b80-4720-9409-7afe9cf7e77d",
+      "sourceMessageID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "replyID": "7ab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "state": "degraded",
+      "createdAt": 1794797562021,
+      "startedAt": 1794797565773,
+      "finishedAt": 1794797628491,
+      "sequence": 138
+    },
+    "events": [],
+    "next": 138,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a1",
+        "label": "Prepare Balcony Herb Plan Docx",
+        "tool": "session_input",
+        "purpose": "Author a Word document detailing setup, care, and harvesting for basil and mint on a balcony.",
+        "started_at": 1794797573246,
+        "ended_at": 1794797575459,
+        "receipt_id": "96ca75d8-29ab-47d9-a81d-27be3cf8cfce"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a2",
+        "label": "Prepare Balcony Herb Plan Docx",
+        "tool": "session_input",
+        "purpose": "Author a Word document detailing setup, care, and harvesting for basil and mint on a balcony.",
+        "started_at": 1794797575459,
+        "ended_at": 1794797576222,
+        "receipt_id": "96ca75d8-29ab-47d9-a81d-27be3cf8cfce"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a3",
+        "label": "Compose Balcony Herb Plan Document",
+        "tool": "session_input",
+        "purpose": "Create a detailed plan for growing basil and mint on a balcony.",
+        "started_at": 1794797579284,
+        "ended_at": 1794797579392,
+        "receipt_id": "f519333d-c3e6-483d-9f1a-c87b3b9360d4"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a4",
+        "label": "Compose Balcony Herb Plan Document",
+        "tool": "session_input",
+        "purpose": "Create a detailed plan for growing basil and mint on a balcony.",
+        "started_at": 1794797579392,
+        "ended_at": 1794797580131,
+        "receipt_id": "f519333d-c3e6-483d-9f1a-c87b3b9360d4"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a5",
+        "label": "Author Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Create a detailed guide for growing basil and mint on a balcony, including setup, care, and containment advice.",
+        "started_at": 1794797583429,
+        "ended_at": 1794797583540,
+        "receipt_id": "6ebadf0a-da3f-48d4-8644-56d3db5df8f3"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a6",
+        "label": "Author Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Create a detailed guide for growing basil and mint on a balcony, including setup, care, and containment advice.",
+        "started_at": 1794797583540,
+        "ended_at": 1794797584252,
+        "receipt_id": "6ebadf0a-da3f-48d4-8644-56d3db5df8f3"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a7",
+        "label": "Author Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Create Word document with setup, care, and safety instructions for basil and mint.",
+        "started_at": 1794797587196,
+        "ended_at": 1794797587326,
+        "receipt_id": "e11ebf03-bb03-4d40-a3df-5585c54dddda"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a8",
+        "label": "Author Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Create Word document with setup, care, and safety instructions for basil and mint.",
+        "started_at": 1794797587326,
+        "ended_at": 1794797588032,
+        "receipt_id": "e11ebf03-bb03-4d40-a3df-5585c54dddda"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a9",
+        "label": "Write Balcony Herb Plan",
+        "tool": "document_prepare",
+        "purpose": "Create a detailed guide for growing basil and mint on a balcony.",
+        "started_at": 1794797589394,
+        "ended_at": 1794797592630,
+        "receipt_id": "42b01563-8398-4cbe-b6f1-cd075d4c7b07"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a10",
+        "label": "Write Balcony Herb Plan",
+        "tool": "document_script",
+        "purpose": "Create a detailed guide for growing basil and mint on a balcony.",
+        "started_at": 1794797592630,
+        "ended_at": 1794797594053,
+        "receipt_id": "42b01563-8398-4cbe-b6f1-cd075d4c7b07"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a11",
+        "label": "Create DOCX Balcony Herb Plan",
+        "tool": "document_prepare",
+        "purpose": "Draft and deliver a herb garden plan in DOCX with setup, care, and safety advice.",
+        "started_at": 1794797598911,
+        "ended_at": 1794797602538,
+        "receipt_id": "8326c966-d42a-4d37-9ac6-8e9e4bbab95c"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a12",
+        "label": "Create DOCX Balcony Herb Plan",
+        "tool": "document_script",
+        "purpose": "Draft and deliver a herb garden plan in DOCX with setup, care, and safety advice.",
+        "started_at": 1794797602538,
+        "ended_at": 1794797603972,
+        "receipt_id": "8326c966-d42a-4d37-9ac6-8e9e4bbab95c"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a13",
+        "label": "Author Herb Growing Guide",
+        "tool": "document_prepare",
+        "purpose": "Create concise and informative content on setting up, watering, and harvesting basil and mint on a balcony, with safety tips for mint containment.",
+        "started_at": 1794797608551,
+        "ended_at": 1794797612059,
+        "receipt_id": "3c990e46-79f2-45b9-be69-770ec9bfd9e3"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a14",
+        "label": "Author Herb Growing Guide",
+        "tool": "document_script",
+        "purpose": "Create concise and informative content on setting up, watering, and harvesting basil and mint on a balcony, with safety tips for mint containment.",
+        "started_at": 1794797612059,
+        "ended_at": 1794797613495,
+        "receipt_id": "3c990e46-79f2-45b9-be69-770ec9bfd9e3"
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a15",
+        "label": "Draft Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Include practical guidance on growing Basil and Mint with safety advice.",
+        "started_at": 1794797622560,
+        "ended_at": 1794797622642,
+        "receipt_id": null
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a16",
+        "label": "Plan and format Word document",
+        "tool": "session_input",
+        "purpose": "Author the content and layout for a practical guide on growing basil and mint.",
+        "started_at": 1794797624355,
+        "ended_at": 1794797624415,
+        "receipt_id": null
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a17",
+        "label": "Outline Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Detail new Word file for balcony herb gardening, covering setup and care for basil and mint.",
+        "started_at": 1794797626297,
+        "ended_at": 1794797626372,
+        "receipt_id": null
+      },
+      {
+        "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a18",
+        "label": "Create Word file for Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Outline herb-growing instructions and advice in Word format.",
+        "started_at": 1794797627952,
+        "ended_at": 1794797628052,
+        "receipt_id": null
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [
+    {
+      "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7:137",
+      "requestID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "sequence": 137,
+      "kind": "document_work_unavailable",
+      "label": "Document work stopped before delivery",
+      "recordedAt": "2026-11-16T02:53:48.298Z",
+      "taskID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "sourceMessageID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "detail": {
+        "reason": "document_next_step_not_prepared",
+        "commands": 3,
+        "commandLimit": 10000,
+        "turnElapsedMs": 58639,
+        "sourceMeasured": true,
+        "finalMeasured": false,
+        "proofPrepared": false,
+        "proofConfirmed": false
+      }
+    },
+    {
+      "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7:135",
+      "requestID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "sequence": 135,
+      "kind": "tool_request_rejected",
+      "label": "Tool request rejected before execution",
+      "recordedAt": "2026-11-16T02:53:48.136Z",
+      "taskID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "sourceMessageID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "detail": {
+        "stepID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a18",
+        "tool": "session_input",
+        "reason": "document_structured_invocation_required",
+        "stage": "shell_command_preparation",
+        "turnElapsedMs": 58639
+      }
+    },
+    {
+      "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7:128",
+      "requestID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "sequence": 128,
+      "kind": "tool_request_rejected",
+      "label": "Tool request rejected before execution",
+      "recordedAt": "2026-11-16T02:53:46.504Z",
+      "taskID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "sourceMessageID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "detail": {
+        "stepID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a17",
+        "tool": "session_input",
+        "reason": "document_structured_invocation_required",
+        "stage": "shell_command_preparation",
+        "turnElapsedMs": 56959
+      }
+    },
+    {
+      "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7:121",
+      "requestID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "sequence": 121,
+      "kind": "tool_request_rejected",
+      "label": "Tool request rejected before execution",
+      "recordedAt": "2026-11-16T02:53:44.563Z",
+      "taskID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "sourceMessageID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "detail": {
+        "stepID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a16",
+        "tool": "session_input",
+        "reason": "document_structured_invocation_required",
+        "stage": "shell_command_preparation",
+        "turnElapsedMs": 55002
+      }
+    },
+    {
+      "id": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7:114",
+      "requestID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "sequence": 114,
+      "kind": "tool_request_rejected",
+      "label": "Tool request rejected before execution",
+      "recordedAt": "2026-11-16T02:53:42.742Z",
+      "taskID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "sourceMessageID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "detail": {
+        "stepID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7-a15",
+        "tool": "session_input",
+        "reason": "document_structured_invocation_required",
+        "stage": "shell_command_preparation",
+        "turnElapsedMs": 53229
+      }
+    }
+  ],
+  "issue": "original_format_capture_missing",
+  "stopAcknowledgment": {
+    "ok": true
+  },
+  "endedAt": "2026-11-16T02:53:50.840Z",
+  "elapsedMs": 72540
+}

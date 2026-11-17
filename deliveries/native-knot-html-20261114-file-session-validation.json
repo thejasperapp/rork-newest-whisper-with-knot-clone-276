@@ -1,0 +1,129 @@
+{
+  "projectID": "mayokn2749ag072e3uvbh",
+  "observedAt": "2026-11-14T15:32:47Z",
+  "app": "ios",
+  "scope": "Presentation-only native single-file HTML sessions, evidence-derived header wording and scoped projection caching",
+  "status": "implemented_and_focused_tests_passed_not_A1_A5_acceptance",
+  "supersedesImplementationOnly": "The thumbnail-only HTML cards and inactive HTML teardown described in deliveries/native-knot-ui-20261114-summary.json are superseded. That historical report and its runtime evidence are unchanged.",
+  "specification": "https://r2-pub.rork.com/attachments/kcrb2gkp4u7wujm6xnqcr.md",
+  "implementation": {
+    "html": [
+      "Render the exact hash-verified Application Support original with loadFileURL and read access limited to its artifact directory.",
+      "Keep one retained live WKWebView per owner, conversation, bot and artifact, transferring the same view between inline and expanded hosts.",
+      "Use an isolated persistent WebKit profile per artifact; never use the default or Safari data store. Page-local storage can survive explicit Restart.",
+      "Do not reload or stop the page on an ordinary host unmount or scene-phase transition. Bound older detached sessions to three, in addition to the opened or attached sessions.",
+      "Provide explicit Restart of the same original; report WebKit content-process loss rather than silently replaying the page.",
+      "Install fail-closed content rules before file load, plus document-start CSP. Block remote resource connections, frames, forms, workers and downloads; expose no app message bridge.",
+      "Allow exact-original fragment navigation. Route only explicit safe external links through the existing browser/mail/phone policy without replacing the artifact.",
+      "Invalidate retained pages and release original-file pins at account, permission and deletion boundaries; persist profile-removal tombstones for retry.",
+      "Use a native live page host rather than an outer card Button. Ancestor gesture exclusion is implemented but has not been touch-accepted.",
+      "Leave original bundle export retrieval and non-HTML viewer branches in place; do not regenerate or seed deliveries."
+    ],
+    "headerAndPerformance": [
+      "Derive planning/preparation wording from recorded selectionPhase, carrying it only within the newest matching request.",
+      "Require an explicit current source message before marking a task active; retain a blank idle header.",
+      "Cache step date ranges, stage wording and current-step projections; avoid repeated current-row sorting.",
+      "Cache cleaned message projections within the view context and update pill-only Events timelines without rebuilding all evidence steps.",
+      "Skip expensive header task projection while idle or without current ownership. Existing Events-only workspaceIncomplete narration is unchanged."
+    ]
+  },
+  "validation": {
+    "testRunSequence": [
+      {
+        "selection": ["WhisperKnotHTMLSessionTests", "WhisperKnotTaskPresentationTests", "WhisperKnotResponsivenessTests"],
+        "passed": 30,
+        "failed": 1,
+        "durationSeconds": 291,
+        "failure": "Offline real-file renderer test reported failed rendering."
+      },
+      {
+        "selection": ["WhisperKnotHTMLSessionTests/testRealFileJavaScriptDOMAndScrollSurviveHostTransferWithoutChangingOriginal"],
+        "passed": 0,
+        "failed": 1,
+        "durationSeconds": 117,
+        "failure": "Added bounded diagnostics identified initial content-rule compilation failure.",
+        "correction": "WebKit content-rule regex does not support alternation. Replace the grouped file/data/blob alternation with three separate anchored allow rules. Retain fail-closed behavior and current-navigation callback ownership."
+      },
+      {
+        "selection": ["WhisperKnotHTMLSessionTests/testRealFileJavaScriptDOMAndScrollSurviveHostTransferWithoutChangingOriginal"],
+        "passed": 1,
+        "failed": 0,
+        "durationSeconds": 104
+      },
+      {
+        "command": "rork test ios --app ios --only WhisperTests/WhisperKnotHTMLSessionTests --only WhisperTests/WhisperKnotTaskPresentationTests --only WhisperTests/WhisperKnotResponsivenessTests --only WhisperTests/WhisperKnotDocumentQualityTests --json",
+        "passed": 37,
+        "failed": 0,
+        "durationSeconds": 31,
+        "fullSuite": false,
+        "result": "passed"
+      }
+    ],
+    "offlineWebKitFixtureCoverage": [
+      "Actual local-file load with JavaScript enabled and an isolated persistent data store",
+      "JavaScript-dispatched button clicks update the real DOM",
+      "Same WKWebView, load identity, counter value and nonzero scroll survive expanded/inline transfer and detach/remount",
+      "Actual fetch to a remote origin is blocked",
+      "Explicit Restart resets the page counter but retains page-local storage",
+      "Original bytes remain identical after execution and Restart",
+      "Session invalidation releases its web view without deleting the fixture file"
+    ],
+    "fixtureLimits": [
+      "Fresh isolated guest test host, random local synthetic owner defaults and local consent; not an authenticated QA or owner account",
+      "Offline counter fixture is not a delivery, artifact card, portfolio, battle or particle animation",
+      "JavaScript click is not touch input; no 60-second animation, complete battle, force-quit relaunch or signed-Release interaction is established"
+    ],
+    "nativeChecks": {
+      "command": "rork checks --app ios --json",
+      "result": "passed",
+      "sourceID": "src_f86fd963aa84eb6a1",
+      "simulatorBuildSeconds": 84,
+      "deviceBuild": "started_detached_unverified",
+      "installableBuildID": null,
+      "notice": "One inherited unrelated legacy asset URL warning"
+    },
+    "whitespace": "Staged and unstaged git diff checks passed",
+    "sourceFingerprints": {
+      "ios/Whisper/WhisperFitnessApp/Views/Whisper/WhisperKnotHTMLSession.swift": "26a91c72c662930b81d7da5a2dfc0a8d0392620b087008f940b15ded3f9b72bd",
+      "ios/WhisperTests/WhisperKnotHTMLSessionTests.swift": "bf4e4380497276068db55776d2d7ea3007b09299d48371bffaa129d5120571c1"
+    },
+    "regexReference": "https://webkit.org/blog/3476/content-blockers-first-look/"
+  },
+  "currentBuildInteractiveAcceptance": {
+    "performed": false,
+    "blockers": [
+      "The separate QA account has no delivered HTML artifacts. Its consumed failed artifact request was not replayed, and no fake delivery was seeded.",
+      "Earlier simulator start/default install selected old source src_cc46a3c8f94046fec, run 3026999b-8bc0-4ed2-9204-3cf0826b830f, not the newly checked implementation.",
+      "Final checks returned a source hash but no installable run ID. The final install attempt found the existing rental expired; no current-build interaction is claimed."
+    ],
+    "runtimeLogCaveat": "An errors-only lookup returned historical 09:46 main-thread hang entries, ending at 61554 ms, without verified attribution to this source. These are not current-build performance measurements or evidence of an improvement.",
+    "A1": "open: actual delivered portfolio navigation/buttons, scrolling and leave/return without a blank page",
+    "A2": "open: four move controls and a completed creature battle inside the native preview",
+    "A3": "open: real 60-second particle animation with touch/drag effects and measured fluidity",
+    "A4": "open: force quit/relaunch, same delivered original and matching identity-panel SHA",
+    "A5": "open: actual PDF, Markdown, image and Events/delivery behavior on a device; source-level branches and delivery records are preserved",
+    "exactOwnerSignedRelease": "c1291eed acceptance remains distinct and open"
+  },
+  "preserved": {
+    "backendOrigin": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+    "lastEstablishedBackendSourceFingerprint": "178f79bcc6b19776fe27a0aa4bf24dc1a5bfd3e411e7590c798e650ad04dfe97",
+    "backendChangedOrDeployed": false,
+    "supabaseProjectRef": "uryyyegnbtlmyhqlgndy",
+    "backendWebAndGeneratedConfigDiff": "No changes in functions, backend, web-whisperweb or ios/Whisper/Config.swift against HEAD",
+    "previousSummaryUnchanged": true,
+    "newLiveKnotRequests": 0,
+    "replayedConsumedRequests": 0,
+    "seededOrRegeneratedArtifacts": 0,
+    "privateCredentialsReadOrPrinted": false,
+    "voiceGitHubRecipesAndParkedBackendsChanged": false,
+    "signingOrBrowserSettingsChanged": false
+  },
+  "cleanup": {
+    "simulatorID": "ios_uswb_01m7da3twfeqssb6xzcn5aqntj",
+    "rentalExpiredAt": "2026-11-14T15:31:47Z",
+    "endAttempt": "Reported no live simulator because the rental had already expired",
+    "sessionListAfterward": "complete true; sessions []; others []",
+    "newRentalStarted": false,
+    "qaHistoryFilesAndWorkspacePreserved": true
+  }
+}

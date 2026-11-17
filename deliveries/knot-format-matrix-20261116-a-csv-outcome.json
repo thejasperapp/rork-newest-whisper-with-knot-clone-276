@@ -1,0 +1,119 @@
+{
+  "scope": "knot-format-matrix-20261116-a-csv",
+  "caseName": "csv",
+  "requestedFormat": "csv",
+  "taskID": "d93de767-b89b-420c-b5c3-9ec2f453bb5f",
+  "conversationID": "ec5d2183-019b-4bf9-9afd-36ffc10883a7",
+  "expectedBuild": "7f561ae5f22b876dc9e6a18e1f82b57a7fa987399fcf70c4cbc5d6171215aa6e",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:04:31.809Z",
+  "passed": false,
+  "accountID": "a1361e69-8088-4598-a284-3117d7ae79f6",
+  "terminal": {
+    "task": {
+      "id": "d93de767-b89b-420c-b5c3-9ec2f453bb5f",
+      "bot": "main",
+      "conversationID": "ec5d2183-019b-4bf9-9afd-36ffc10883a7",
+      "sourceMessageID": "d93de767-b89b-420c-b5c3-9ec2f453bb5f",
+      "replyID": "593de767-b89b-420c-b5c3-9ec2f453bb5f",
+      "state": "completed",
+      "createdAt": 1794794676154,
+      "startedAt": 1794794679995,
+      "finishedAt": 1794794684580,
+      "sequence": 6
+    },
+    "events": [
+      {
+        "v": 1,
+        "requestID": "d93de767-b89b-420c-b5c3-9ec2f453bb5f",
+        "sequence": 5,
+        "type": "accepted",
+        "stage": "work_classification",
+        "elapsedMs": 1331,
+        "promptBytes": 7755,
+        "responseBytes": 2104,
+        "model": "openai/gpt-4o",
+        "finishReason": "stop",
+        "choicesPresent": true,
+        "messagePresent": true,
+        "toolCallsPresent": false,
+        "argumentBytes": 0,
+        "contentBytes": 247,
+        "contentShape": "json",
+        "completionTokens": 61,
+        "promptTokens": 1415,
+        "reasoningTokens": 0,
+        "status": 200,
+        "commandDispatched": false,
+        "activity": {
+          "id": "d93de767-b89b-420c-b5c3-9ec2f453bb5f:5",
+          "requestID": "d93de767-b89b-420c-b5c3-9ec2f453bb5f",
+          "taskID": "d93de767-b89b-420c-b5c3-9ec2f453bb5f",
+          "sourceMessageID": "d93de767-b89b-420c-b5c3-9ec2f453bb5f",
+          "sequence": 5,
+          "kind": "classification_returned",
+          "label": "Classification response observed; no command dispatched",
+          "recordedAt": "2026-11-16T02:04:44.378Z",
+          "detail": {
+            "stage": "work_classification",
+            "status": 200,
+            "model": "openai/gpt-4o",
+            "finishReason": "stop",
+            "argumentBytes": 0,
+            "responseBytes": 2104,
+            "contentBytes": 247,
+            "completionTokens": 61,
+            "promptTokens": 1415,
+            "reasoningTokens": 0,
+            "elapsedMs": 1331,
+            "promptBytes": 7755,
+            "turnElapsedMs": 1606,
+            "commandDispatched": false,
+            "contentShape": "json",
+            "choicesPresent": true,
+            "messagePresent": true,
+            "toolCallsPresent": false
+          }
+        }
+      },
+      {
+        "v": 1,
+        "requestID": "d93de767-b89b-420c-b5c3-9ec2f453bb5f",
+        "sequence": 6,
+        "type": "complete",
+        "reply": "Which single final file format would you like? I won’t substitute a PDF for the format you choose.",
+        "activity": {
+          "id": "d93de767-b89b-420c-b5c3-9ec2f453bb5f:6",
+          "requestID": "d93de767-b89b-420c-b5c3-9ec2f453bb5f",
+          "taskID": "d93de767-b89b-420c-b5c3-9ec2f453bb5f",
+          "sourceMessageID": "d93de767-b89b-420c-b5c3-9ec2f453bb5f",
+          "sequence": 6,
+          "kind": "complete",
+          "label": "Response prepared",
+          "recordedAt": "2026-11-16T02:04:44.378Z",
+          "detail": {
+            "turnElapsedMs": 1606
+          }
+        }
+      }
+    ],
+    "next": 6,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [],
+    "result": {
+      "reply": "Which single final file format would you like? I won’t substitute a PDF for the format you choose."
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [],
+  "issue": "original_format_capture_missing",
+  "stopAcknowledgment": {
+    "ok": true
+  },
+  "endedAt": "2026-11-16T02:04:46.935Z",
+  "elapsedMs": 15126
+}

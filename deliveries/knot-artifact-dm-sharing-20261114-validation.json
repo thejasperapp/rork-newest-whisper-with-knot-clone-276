@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-14",
+  "feature": "Immutable artifact sharing through ordinary Whisper direct messages",
+  "status": "implemented_and_deployed_owner_acceptance_open",
+  "scope": {
+    "nativeApp": "ios",
+    "backend": "functions",
+    "backendOrigin": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+    "supabaseProject": "uryyyegnbtlmyhqlgndy",
+    "webClientChanged": false,
+    "generatedNativeConfigurationChanged": false,
+    "newDatabaseMigration": false
+  },
+  "implemented": [
+    "Existing artifact cards and opened originals offer Send to a friend through the existing recipient tray.",
+    "Confirmed ordinary direct-message delivery retains existing contact enforcement, UUID reconciliation and optional note delivery.",
+    "Authenticated resolution verifies the actual caller-visible message, direct thread, participants, current contact permission and sender-owned grant.",
+    "Attribution is resolved from the sender account's Whisper profile, not client-supplied file or message attribution.",
+    "Received cards reuse the existing document renderer and isolated local HTML page; all declared bundle resources are hash-verified before loading.",
+    "Save explicitly copies immutable original bytes into existing recipient document storage and the actual account-bound recipient workspace.",
+    "Workspace publication uses bounded fixed data-only import jobs, no-follow directories, exclusive publication and independent final file hash verification.",
+    "Durable job intent precedes dispatch; uncertain or failed transfers are not replayed. Explicit retry checks known receipts and resumes subsequent undispatched steps.",
+    "Recipient provenance is retained in owned metadata and the workspace; sender browser data and game progress are not transferred.",
+    "DM page storage is account/message-qualified and remains stable when the saved storage ID changes. Native account changes invalidate private attachment access."
+  ],
+  "validation": {
+    "ios": {
+      "command": "rork checks --app ios --json",
+      "success": true,
+      "sourceHash": "src_d8d7f20ce7ed35d5c",
+      "simulatorBuildSeconds": 88,
+      "deviceBuild": "started_detached_not_verified",
+      "notice": "One inherited unrelated legacy asset URL notice."
+    },
+    "backendStatic": {
+      "command": "bun scripts/check-knot-worker-type-baseline.ts",
+      "currentErrors": 14,
+      "inheritedErrors": 14,
+      "addedDiagnosticSignaturesOrCounts": 0,
+      "cleanFullEntrypointTypecheck": false,
+      "note": "Current diagnostic output contains no errors in the artifact-sharing, import, document or shell modules; unrelated inherited entrypoint/other-module diagnostics remain."
+    },
+    "importSyntax": {
+      "command": "bun scripts/check-knot-artifact-import-syntax.ts",
+      "success": true,
+      "fullChunkRequestBytes": 67331,
+      "provenanceRequestBytes": 3126,
+      "shellAndPythonParsedOnly": true,
+      "importerExecuted": false
+    },
+    "sidecarDiscovery": {
+      "providerTime": "2026-11-14T20:12:59.623Z",
+      "authenticated": true,
+      "advertised": ["exec_once POST /exec", "job_status GET /jobs/:id", "file_read GET /files?path=<path>&user_id=<id>"],
+      "uploadEndpointAdvertised": false,
+      "workspaceFilesRead": false,
+      "jobsOrSessionsCreated": false
+    },
+    "whitespace": "staged_and_unstaged_passed",
+    "newUnitOrBehaviorTestsRun": false,
+    "nativeOrBrowserInteractionsRun": false,
+    "realDirectMessagesSent": false,
+    "historicalTasksReplayed": false,
+    "newGamesGenerated": false
+  },
+  "deployment": {
+    "success": true,
+    "environment": "production",
+    "sourceHash": "src_618d05e8969d9616c",
+    "artifactHash": "df2c2e6c465f4e84149b2bfe49274f7c",
+    "sourceBuildSHA256": "2f0df2362f3f9e881b034d150afd14b5e4ddb5b6552701f515a669c651f00711",
+    "sourceInputs": 92,
+    "warnings": []
+  },
+  "limitations": [
+    "No two-account/device acceptance has run. Compilation and deployment do not establish DM delivery, gameplay controls, workspace importer behavior or byte-fidelity round trips.",
+    "Unsaved shares still depend on original retention and current messaging permission. Only completed workspace saves are independent recipient copies.",
+    "Workspace saving proceeds in bounded steps while the recipient keeps saving active; backgrounding or pausing stops further dispatch, but an already dispatched data-only chunk can finish.",
+    "Uncertain or definitively failed import jobs are not replayed; a fresh share may be required after a failed transfer.",
+    "This implementation targets the selected native app. The web client is unchanged."
+  ],
+  "ownerAcceptance": {
+    "A1": "OPEN: send an existing artifact from account A to B and verify title and real sender attribution in B's DM.",
+    "A2": "OPEN: actually move the character/use controls and play the shared game inside the native DM preview.",
+    "A3": "OPEN: save in B's workspace and independently compare actual filename, byte count, full SHA-256 and bundle resources with A's original; verify separate progress and repeat-save behavior.",
+    "A4": "OPEN: exercise ordinary DM text/media and PDF, Markdown and image file cards without regressions."
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "title": "Balcony Herb Plan",
+    "plants": [
+        {
+            "name": "Basil",
+            "containers": 2,
+            "weeklyWaterChecks": 3
+        },
+        {
+            "name": "Mint",
+            "containers": 1,
+            "weeklyWaterChecks": 4
+        }
+    ]
+}

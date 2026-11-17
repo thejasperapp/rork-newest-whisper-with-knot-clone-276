@@ -1,0 +1,226 @@
+{
+  "scope": "knot-format-matrix-20261116-c-pptx",
+  "caseName": "pptx",
+  "requestedFormat": "pptx",
+  "taskID": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3",
+  "conversationID": "b9c3931c-56cc-48fc-9dd9-29d288f7cc8a",
+  "expectedBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:34:05.832Z",
+  "passed": false,
+  "accountID": "8ddf8245-34fb-4232-868d-6a98a61491d6",
+  "terminal": {
+    "task": {
+      "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3",
+      "bot": "main",
+      "conversationID": "b9c3931c-56cc-48fc-9dd9-29d288f7cc8a",
+      "sourceMessageID": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3",
+      "replyID": "310d456d-9a35-43c5-8c79-d6c2aa67d6d3",
+      "state": "degraded",
+      "createdAt": 1794796449774,
+      "startedAt": 1794796453776,
+      "finishedAt": 1794796540593,
+      "sequence": 167
+    },
+    "events": [],
+    "next": 167,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a1",
+        "label": "Create Balcony Herb Plan Presentation",
+        "tool": "session_input",
+        "purpose": "Author a PowerPoint file with 4 slides outlining setup, watering, and harvesting for herbs with specific advice on mint containment.",
+        "started_at": 1794796461436,
+        "ended_at": 1794796463539,
+        "receipt_id": "ec67bb48-6f7e-4cac-9eb4-67f82347fb1c"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a2",
+        "label": "Create Balcony Herb Plan Presentation",
+        "tool": "session_input",
+        "purpose": "Author a PowerPoint file with 4 slides outlining setup, watering, and harvesting for herbs with specific advice on mint containment.",
+        "started_at": 1794796463539,
+        "ended_at": 1794796464326,
+        "receipt_id": "ec67bb48-6f7e-4cac-9eb4-67f82347fb1c"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a3",
+        "label": "Create Balcony Herb Plan Slides",
+        "tool": "session_input",
+        "purpose": "Draft PowerPoint slides for a balcony herb gardening plan featuring basil and mint with practical guidance.",
+        "started_at": 1794796466254,
+        "ended_at": 1794796466362,
+        "receipt_id": "16776444-de60-4619-bc83-32330c723f9f"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a4",
+        "label": "Create Balcony Herb Plan Slides",
+        "tool": "session_input",
+        "purpose": "Draft PowerPoint slides for a balcony herb gardening plan featuring basil and mint with practical guidance.",
+        "started_at": 1794796466362,
+        "ended_at": 1794796467130,
+        "receipt_id": "16776444-de60-4619-bc83-32330c723f9f"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a5",
+        "label": "Create PowerPoint Slides for Herb Plan",
+        "tool": "session_input",
+        "purpose": "Generate a complete 4-slide PowerPoint presentation on growing Basil and Mint.",
+        "started_at": 1794796469642,
+        "ended_at": 1794796469755,
+        "receipt_id": "5098b29e-5a34-4342-8b9c-969112c5172d"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a6",
+        "label": "Create PowerPoint Slides for Herb Plan",
+        "tool": "session_input",
+        "purpose": "Generate a complete 4-slide PowerPoint presentation on growing Basil and Mint.",
+        "started_at": 1794796469755,
+        "ended_at": 1794796470503,
+        "receipt_id": "5098b29e-5a34-4342-8b9c-969112c5172d"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a7",
+        "label": "Authoring Balcony Herb Plan slides",
+        "tool": "session_input",
+        "purpose": "Create a clear and informative PowerPoint presentation for growing basil and mint on balconies.",
+        "started_at": 1794796473101,
+        "ended_at": 1794796473227,
+        "receipt_id": "fb0ac34c-482e-4f34-af34-396da59cd4d5"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a8",
+        "label": "Authoring Balcony Herb Plan slides",
+        "tool": "session_input",
+        "purpose": "Create a clear and informative PowerPoint presentation for growing basil and mint on balconies.",
+        "started_at": 1794796473227,
+        "ended_at": 1794796473974,
+        "receipt_id": "fb0ac34c-482e-4f34-af34-396da59cd4d5"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a9",
+        "label": "Prepare PowerPoint content",
+        "tool": "document_prepare",
+        "purpose": "Create the source content for a PPTX file about balcony herb gardening.",
+        "started_at": 1794796475585,
+        "ended_at": 1794796481324,
+        "receipt_id": "23f3f30e-946c-4a9f-ab57-de1b0d7a1797"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a10",
+        "label": "Prepare PowerPoint content",
+        "tool": "document_script",
+        "purpose": "Create the source content for a PPTX file about balcony herb gardening.",
+        "started_at": 1794796481324,
+        "ended_at": 1794796482832,
+        "receipt_id": "23f3f30e-946c-4a9f-ab57-de1b0d7a1797"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a11",
+        "label": "Create Detailed Herb Plan Slides",
+        "tool": "document_prepare",
+        "purpose": "Develop complete explanations for setup, watering, and harvesting in a PowerPoint format.",
+        "started_at": 1794796488318,
+        "ended_at": 1794796491840,
+        "receipt_id": "e523d12d-1579-4c03-9f45-433ab07e5b4f"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a12",
+        "label": "Create Detailed Herb Plan Slides",
+        "tool": "document_script",
+        "purpose": "Develop complete explanations for setup, watering, and harvesting in a PowerPoint format.",
+        "started_at": 1794796491840,
+        "ended_at": 1794796493300,
+        "receipt_id": "e523d12d-1579-4c03-9f45-433ab07e5b4f"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a13",
+        "label": "Expand and refine balcony herb plan content",
+        "tool": "document_prepare",
+        "purpose": "Add detailed and complete practical setup steps, watering frequency, amounts, and harvesting advice for basil and mint.",
+        "started_at": 1794796498336,
+        "ended_at": 1794796501795,
+        "receipt_id": "0838dafe-fcdf-432e-a520-c051e614c85d"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a14",
+        "label": "Expand and refine balcony herb plan content",
+        "tool": "document_script",
+        "purpose": "Add detailed and complete practical setup steps, watering frequency, amounts, and harvesting advice for basil and mint.",
+        "started_at": 1794796501795,
+        "ended_at": 1794796503575,
+        "receipt_id": "0838dafe-fcdf-432e-a520-c051e614c85d"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a15",
+        "label": "author-slides-for-herb-plan",
+        "tool": "document_prepare",
+        "purpose": "Create a PowerPoint with detailed setup, watering, and harvesting advice for Basil and Mint.",
+        "started_at": 1794796506451,
+        "ended_at": 1794796510081,
+        "receipt_id": "7758d684-4fc2-446d-b1b1-26982ec859a4"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a16",
+        "label": "author-slides-for-herb-plan",
+        "tool": "document_script",
+        "purpose": "Create a PowerPoint with detailed setup, watering, and harvesting advice for Basil and Mint.",
+        "started_at": 1794796510081,
+        "ended_at": 1794796511529,
+        "receipt_id": "7758d684-4fc2-446d-b1b1-26982ec859a4"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a17",
+        "label": "Develop detailed setup steps",
+        "tool": "document_prepare",
+        "purpose": "Enhance the setup slide with detailed steps for arranging pots and ensuring sun exposure for basil and mint.",
+        "started_at": 1794796516376,
+        "ended_at": 1794796520018,
+        "receipt_id": "d927b8d2-6b2a-4d0f-8306-6c427beb3807"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a18",
+        "label": "Develop detailed setup steps",
+        "tool": "document_script",
+        "purpose": "Enhance the setup slide with detailed steps for arranging pots and ensuring sun exposure for basil and mint.",
+        "started_at": 1794796520018,
+        "ended_at": 1794796521504,
+        "receipt_id": "d927b8d2-6b2a-4d0f-8306-6c427beb3807"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a19",
+        "label": "Create Balcony Herb Plan slides",
+        "tool": "document_prepare",
+        "purpose": "Develop a PowerPoint presentation with slides on herb setup, watering, and harvesting.",
+        "started_at": 1794796531772,
+        "ended_at": 1794796538444,
+        "receipt_id": "f4539516-d157-4844-b93f-c15d71648fad"
+      },
+      {
+        "id": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3-a20",
+        "label": "Create Balcony Herb Plan slides",
+        "tool": "document_script",
+        "purpose": "Develop a PowerPoint presentation with slides on herb setup, watering, and harvesting.",
+        "started_at": 1794796538444,
+        "ended_at": 1794796539916,
+        "receipt_id": "f4539516-d157-4844-b93f-c15d71648fad"
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [],
+  "issue": "original_format_capture_missing",
+  "stopAcknowledgment": {
+    "ok": true
+  },
+  "endedAt": "2026-11-16T02:35:43.070Z",
+  "elapsedMs": 97238
+}

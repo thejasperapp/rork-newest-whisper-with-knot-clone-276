@@ -1,0 +1,295 @@
+{
+  "scope": "knot-format-matrix-20261116-d-xlsx",
+  "caseName": "xlsx",
+  "requestedFormat": "xlsx",
+  "taskID": "dabf1526-73c0-4be9-94e2-25fe07d684bc",
+  "conversationID": "229226d9-309d-47ad-b344-1c47a2cbad45",
+  "expectedBuild": "f2910baf23bbaddc8a93b00c2b10a21d21f72dc851b710a8fdcef3c85f4f90c9",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:53:51.790Z",
+  "passed": false,
+  "accountID": "8924cfae-3dbb-4661-932a-aa484288c154",
+  "terminal": {
+    "task": {
+      "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc",
+      "bot": "main",
+      "conversationID": "229226d9-309d-47ad-b344-1c47a2cbad45",
+      "sourceMessageID": "dabf1526-73c0-4be9-94e2-25fe07d684bc",
+      "replyID": "5abf1526-73c0-4be9-94e2-25fe07d684bc",
+      "state": "completed",
+      "createdAt": 1794797635477,
+      "startedAt": 1794797639523,
+      "finishedAt": 1794797692430,
+      "sequence": 96
+    },
+    "events": [],
+    "next": 96,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a1",
+        "label": "Create Excel sheet with herb plan",
+        "tool": "session_input",
+        "purpose": "Author and prepare Excel sheet 'Balcony Herb Plan' with specified data and structure",
+        "started_at": 1794797646821,
+        "ended_at": 1794797649919,
+        "receipt_id": "6142973a-2d86-433d-9052-3541904dfb1b"
+      },
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a2",
+        "label": "Create Excel sheet with herb plan",
+        "tool": "session_input",
+        "purpose": "Author and prepare Excel sheet 'Balcony Herb Plan' with specified data and structure",
+        "started_at": 1794797649919,
+        "ended_at": 1794797651451,
+        "receipt_id": "6142973a-2d86-433d-9052-3541904dfb1b"
+      },
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a3",
+        "label": "Create Excel with Herb Data",
+        "tool": "session_input",
+        "purpose": "Author an Excel file with specified header and data structure.",
+        "started_at": 1794797654005,
+        "ended_at": 1794797654125,
+        "receipt_id": "9d3563f4-0ef2-4ec8-9cec-77bc3d3da2ab"
+      },
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a4",
+        "label": "Create Excel with Herb Data",
+        "tool": "session_input",
+        "purpose": "Author an Excel file with specified header and data structure.",
+        "started_at": 1794797654125,
+        "ended_at": 1794797654908,
+        "receipt_id": "9d3563f4-0ef2-4ec8-9cec-77bc3d3da2ab"
+      },
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a5",
+        "label": "Creating Excel Spreadsheet for Herb Plan",
+        "tool": "session_input",
+        "purpose": "Generate an Excel file with specified headers and data rows.",
+        "started_at": 1794797657195,
+        "ended_at": 1794797657330,
+        "receipt_id": "6afe0711-21f4-480c-aa41-75e09951e7c5"
+      },
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a6",
+        "label": "Creating Excel Spreadsheet for Herb Plan",
+        "tool": "session_input",
+        "purpose": "Generate an Excel file with specified headers and data rows.",
+        "started_at": 1794797657330,
+        "ended_at": 1794797658118,
+        "receipt_id": "6afe0711-21f4-480c-aa41-75e09951e7c5"
+      },
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a7",
+        "label": "Creating Excel Sheet",
+        "tool": "session_input",
+        "purpose": "To construct an Excel sheet according to user specifications with specified headers and data entries.",
+        "started_at": 1794797660756,
+        "ended_at": 1794797660913,
+        "receipt_id": "d2efb277-0880-4653-b095-0d74b85cc253"
+      },
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a8",
+        "label": "Creating Excel Sheet",
+        "tool": "session_input",
+        "purpose": "To construct an Excel sheet according to user specifications with specified headers and data entries.",
+        "started_at": 1794797660913,
+        "ended_at": 1794797661693,
+        "receipt_id": "d2efb277-0880-4653-b095-0d74b85cc253"
+      },
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a9",
+        "label": "Author Excel Herb Plan",
+        "tool": "document_prepare",
+        "purpose": "Create a new Excel file with herb planting data.",
+        "started_at": 1794797663327,
+        "ended_at": 1794797666088,
+        "receipt_id": "3596f1c3-02ef-4347-a320-ab0cc0f86096"
+      },
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a10",
+        "label": "Author Excel Herb Plan",
+        "tool": "document_script",
+        "purpose": "Create a new Excel file with herb planting data.",
+        "started_at": 1794797666088,
+        "ended_at": 1794797667564,
+        "receipt_id": "3596f1c3-02ef-4347-a320-ab0cc0f86096"
+      },
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a11",
+        "label": "Create Excel Balcony Herb Plan",
+        "tool": "document_prepare",
+        "purpose": "Prepare a new Excel file with specified sheet and data structure.",
+        "started_at": 1794797674597,
+        "ended_at": 1794797677908,
+        "receipt_id": "d0a105ca-ba24-4772-a5f5-e9bb95003625"
+      },
+      {
+        "id": "dabf1526-73c0-4be9-94e2-25fe07d684bc-a12",
+        "label": "Create Excel Balcony Herb Plan",
+        "tool": "document_script",
+        "purpose": "Prepare a new Excel file with specified sheet and data structure.",
+        "started_at": 1794797677908,
+        "ended_at": 1794797679402,
+        "receipt_id": "d0a105ca-ba24-4772-a5f5-e9bb95003625"
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [],
+  "document": {
+    "id": "e68c3547d13d23f3be2926dac52a52127fe6fc30f1900f6ec8cc425888834fec",
+    "name": "balcony_herb_plan_v2.xlsx",
+    "format": "xlsx",
+    "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "title": "Balcony Herb Plan",
+    "deliveryLabel": "New Excel Sheet",
+    "size": 4944,
+    "sha256": "69c7a7d3eda1210f59826bd1ae6bac19212245461ec896f7c4c06612a57055ed",
+    "pages": 1,
+    "proofPages": [
+      1
+    ],
+    "createdAt": "2026-11-16T02:54:49.554Z",
+    "expiresAt": "2026-11-23T02:54:49.554Z",
+    "proposalID": "8033993e-4af5-4ad7-8fbd-5f7e033d258b",
+    "review": "issues",
+    "reviewIssue": "document_visual_quality_shortfalls",
+    "sampled": false,
+    "sourcePath": "balcony_herb_plan_v2.xlsx",
+    "byteFidelity": {
+      "status": "pass",
+      "scope": "measured_final_to_immutable_capture",
+      "sha256": "69c7a7d3eda1210f59826bd1ae6bac19212245461ec896f7c4c06612a57055ed",
+      "bytes": 4944
+    },
+    "contentQuality": {
+      "status": "unconfirmed",
+      "scope": "complete_text_coverage",
+      "finalSHA256": "69c7a7d3eda1210f59826bd1ae6bac19212245461ec896f7c4c06612a57055ed",
+      "factualCertification": false
+    },
+    "verification": {
+      "version": "knot_document_proof_v1",
+      "sourceSHA256": "69c7a7d3eda1210f59826bd1ae6bac19212245461ec896f7c4c06612a57055ed",
+      "sourceSize": 4944,
+      "format": "xlsx",
+      "renderedPages": 1,
+      "textSHA256": "ced66c1f3ca9619fe1faea2efd27e076725c8d86baa4fb540e5d2bc05d4824e5",
+      "markupScan": "clear",
+      "renderer": "poppler",
+      "producerChecked": false,
+      "structureChecked": true,
+      "allPageProofs": true,
+      "textPath": "deliverables/knot-proof-d0a105ca-ba24-4772-a5f5-e9bb95003625/text.txt",
+      "textSize": 55
+    },
+    "contentReview": {
+      "version": "knot_document_content_v1",
+      "status": "unconfirmed",
+      "contentCheckAttempts": [
+        {
+          "attempt": 1,
+          "model": "openai/gpt-4o",
+          "durationMs": 2737,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 3543,
+          "contentBytes": 1573,
+          "outcome": "unconfirmed",
+          "httpStatus": 200,
+          "contentEncoding": "json",
+          "failureStage": "grounding",
+          "validationCode": "item_requirement_anchor",
+          "itemIndex": 0,
+          "reason": "content_check_unparseable"
+        },
+        {
+          "attempt": 2,
+          "model": "openai/gpt-4o",
+          "durationMs": 2412,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 3180,
+          "contentBytes": 1232,
+          "outcome": "unconfirmed",
+          "httpStatus": 200,
+          "contentEncoding": "json",
+          "failureStage": "grounding",
+          "validationCode": "item_coverage_anchor",
+          "itemIndex": 0,
+          "reason": "content_check_unparseable"
+        }
+      ],
+      "requestSHA256": "4522ba61eacf722916fcf989eff849580db3af2bdac86ec679b6539dbe678d30",
+      "finalSHA256": "69c7a7d3eda1210f59826bd1ae6bac19212245461ec896f7c4c06612a57055ed",
+      "finalTextSHA256": "ced66c1f3ca9619fe1faea2efd27e076725c8d86baa4fb540e5d2bc05d4824e5",
+      "sourceSHA256s": [
+        "c930b2a5973ca39bf24f4c2161da5550f1c4ff97e9edae48120eef18c6be107d"
+      ],
+      "scope": "complete_text"
+    },
+    "visualReview": {
+      "version": "knot_document_visual_v1",
+      "finalSHA256": "69c7a7d3eda1210f59826bd1ae6bac19212245461ec896f7c4c06612a57055ed",
+      "scope": "all_pages",
+      "status": "issues",
+      "pages": [
+        {
+          "page": 1,
+          "sha256": "10faa4e5aae91c88125ad6e28cdb12b5e7653563ebea9e582f4c398952c8760a",
+          "verdict": "issues",
+          "issues": [
+            "Poor typography with uneven spacing",
+            "Lack of consistent alignment",
+            "Missing separation between table columns",
+            "Table header and contents are crammed together",
+            "Significant whitespace imbalance"
+          ]
+        }
+      ]
+    },
+    "qualityShortfalls": [
+      "Page 1: Poor typography with uneven spacing",
+      "Page 1: Lack of consistent alignment",
+      "Page 1: Missing separation between table columns",
+      "Page 1: Table header and contents are crammed together",
+      "Page 1: Significant whitespace imbalance"
+    ],
+    "sourceMessageID": "dabf1526-73c0-4be9-94e2-25fe07d684bc",
+    "originalPath": "/home/user/rork-app/deliveries/knot-format-matrix-20261116-d-xlsx-original.xlsx",
+    "downloadedSHA256": "69c7a7d3eda1210f59826bd1ae6bac19212245461ec896f7c4c06612a57055ed"
+  },
+  "independentInspection": {
+    "format": "xlsx",
+    "sha256": "69c7a7d3eda1210f59826bd1ae6bac19212245461ec896f7c4c06612a57055ed",
+    "bytes": 4944,
+    "newExecutionOrReplay": false,
+    "cells": {
+      "A1": "Plant",
+      "B1": "Containers",
+      "C1": "WeeklyWaterChecks",
+      "A2": "Basil",
+      "B2": "2",
+      "C2": "3",
+      "A3": "Mint",
+      "B3": "1",
+      "C3": "4"
+    },
+    "officeRendering": "not_independently_exercised",
+    "text": "Balcony Herb Plan Plant Containers WeeklyWaterChecks Basil 2 3 Mint 1 4"
+  },
+  "automatedChecksPassed": true,
+  "runtimeScope": "authenticated_backend_delivery_and_downloaded_bytes_not_phone_or_browser",
+  "awaitingVisualReview": true,
+  "endedAt": "2026-11-16T02:54:54.307Z",
+  "elapsedMs": 62517
+}

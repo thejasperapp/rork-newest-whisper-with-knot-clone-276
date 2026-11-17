@@ -1,0 +1,11 @@
+import {beforeEach,afterEach,it,expect,vi} from 'vitest';
+import {pushPreferenceRequest} from './pushPreferences';
+const owner='11111111-1111-4111-8111-111111111111';
+const {check,dispose}=vi.hoisted(()=>({check:vi.fn(),dispose:vi.fn()}));
+vi.mock('./groupThemeSession',()=>({groupThemeSession:async()=>({token:'fixture',signal:new AbortController().signal,check,dispose})}));
+vi.mock('./supabase',()=>({supabaseUrl:'https://fixture.test',supabaseAnonKey:'fixture'}));
+beforeEach(()=>{check.mockReset();dispose.mockReset();});afterEach(()=>vi.unstubAllGlobals());
+it('loads without silently opting in or writing',async()=>{const fetcher=vi.fn().mockResolvedValue(Response.json([{user_id:owner,new_posts:false,quiet_mode:true}]));vi.stubGlobal('fetch',fetcher);expect(await pushPreferenceRequest(owner)).toEqual({new_posts:false,quiet_mode:true});expect(fetcher).toHaveBeenCalledTimes(1);expect(fetcher.mock.calls[0][1]).toMatchObject({redirect:'error',cache:'no-store'});expect(dispose).toHaveBeenCalled();});
+it('requires confirmed owner-bound new-post mutation before reading saved preferences',async()=>{const fetcher=vi.fn().mockResolvedValueOnce(Response.json({new_posts:true})).mockResolvedValueOnce(Response.json([{user_id:owner,new_posts:true}]));vi.stubGlobal('fetch',fetcher);expect((await pushPreferenceRequest(owner,{field:'new_posts',value:true})).new_posts).toBe(true);expect(JSON.parse(fetcher.mock.calls[0][1].body)).toEqual({p_owner:owner,p_enabled:true});});
+it('does not retry or claim success after ambiguous responses',async()=>{const fetcher=vi.fn().mockResolvedValue(Response.json({new_posts:false}));vi.stubGlobal('fetch',fetcher);await expect(pushPreferenceRequest(owner,{field:'new_posts',value:true})).rejects.toThrow(/confirmed/);expect(fetcher).toHaveBeenCalledTimes(1);});
+it('discards responses after an account change',async()=>{vi.stubGlobal('fetch',vi.fn().mockResolvedValue(Response.json([{user_id:owner,new_posts:true}])));check.mockImplementation(()=>{throw new Error('Account changed')});await expect(pushPreferenceRequest(owner)).rejects.toThrow();expect(dispose).toHaveBeenCalled();});

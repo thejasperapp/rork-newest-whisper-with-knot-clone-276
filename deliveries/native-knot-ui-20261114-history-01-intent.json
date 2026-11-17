@@ -1,0 +1,13 @@
+{
+  "scope": "native-knot-ui-20261114-history-01",
+  "authorization": "owner_authorized_paid_native_knot_and_separate_test_account",
+  "accountID": "bad7b131-6b05-44c8-a450-a30f4748639f",
+  "workspaceID": "whisper-bad7b131-6b05-44c8-a450-a30f4748639f",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "nativeBuildID": "3026999b-8bc0-4ed2-9204-3cf0826b830f",
+  "nativeSource": "src_cc46a3c8f94046fec",
+  "method": "real_native_composer_and_send",
+  "prompt": "For a chat UI check, write 18 numbered one-sentence tips for making a small browser game accessible. Reply in chat only. Do not run tools, create files or update memory.",
+  "noAutomaticReplay": true,
+  "personalAccountAccessed": false
+}

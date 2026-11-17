@@ -1,0 +1,48 @@
+{
+  "check": "clone_managed_cloud_configuration",
+  "observedAt": "2026-11-14T09:08:30.118Z",
+  "project": "mayokn2749ag072e3uvbh",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "reportedManagedKeyID": "sk_0gbdem17",
+  "reportedIdentityIsNotRuntimeByteProof": true,
+  "policy": {
+    "status": 200,
+    "tokenPresent": true,
+    "gatewayValid": true,
+    "provider": "rork",
+    "routingPolicy": "rork_cloud_only_v1",
+    "credentialSource": "managed",
+    "addressOverridePresent": false
+  },
+  "inheritedCandidate": {
+    "present": false,
+    "explicitPlaceholderMarker": false
+  },
+  "localPresence": [
+    {
+      "source": "web-whisperweb/.env",
+      "present": true,
+      "explicitPlaceholderMarker": true
+    },
+    {
+      "source": "generated_native_configuration_not_independent_key_authority",
+      "present": false,
+      "explicitPlaceholderMarker": false
+    }
+  ],
+  "generatedNativeStructure": {
+    "containsManagedCredentialName": true,
+    "usesAllValues": true,
+    "usesBase64": false,
+    "usesJSONSerialization": false,
+    "usesEnvironmentLookup": false,
+    "usesBundleLookup": false,
+    "literalFound": true,
+    "literalEmpty": true
+  },
+  "comparisons": [],
+  "managedRuntimeIdentityVerified": false,
+  "billingAssociationVerified": false,
+  "gatewayRequestPerformed": false,
+  "generationPerformed": false
+}

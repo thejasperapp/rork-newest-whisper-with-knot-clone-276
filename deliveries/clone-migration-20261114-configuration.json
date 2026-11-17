@@ -1,0 +1,247 @@
+{
+  "title": "Clone migration — read-only configuration audit",
+  "audit": "clone_migration_configuration",
+  "observedAt": "2026-11-14T08:56:36.124Z",
+  "project": "mayokn2749ag072e3uvbh",
+  "environment": [
+    {
+      "name": "BROADCAST_SECRET",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "ELEVENLABS_AGENT_ID",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "ELEVENLABS_API_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "ELEVENLABS_KNOT_BRIDGE_SECRET_ID",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "ELEVENLABS_RELAY_AGENT_ID",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "EXPO_PUBLIC_EMBER_SMS_NUMBER",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "EXPO_PUBLIC_FACEBOOK_APP_ID",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "EXPO_PUBLIC_FACEBOOK_CLIENT_TOKEN",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "EXPO_PUBLIC_FACEBOOK_DISPLAY_NAME",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "EXPO_PUBLIC_GIPHY_API_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "EXPO_PUBLIC_GOOGLE_CLIENT_ID",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "EXPO_PUBLIC_LIVEKIT_URL",
+      "scope": "all",
+      "version": 1,
+      "originCategory": "other_origin_redacted"
+    },
+    {
+      "name": "EXPO_PUBLIC_OPENAI_API_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "EXPO_PUBLIC_RORK_APP_KEY",
+      "scope": "all",
+      "version": 2
+    },
+    {
+      "name": "EXPO_PUBLIC_RORK_TOOLKIT_SECRET_KEY",
+      "scope": "all",
+      "version": 2
+    },
+    {
+      "name": "EXPO_PUBLIC_SUPABASE_ANON_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "EXPO_PUBLIC_SUPABASE_URL",
+      "scope": "all",
+      "version": 1,
+      "originCategory": "value_not_exposed"
+    },
+    {
+      "name": "FIGMA_ACCESS_TOKEN",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "KNOT_ACCEPTANCE_SUPABASE_SERVICE_ROLE_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "KNOT_AI_TRANSPORT",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "KNOT_VOICE_BRIDGE_SIGNING_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "LIVEKIT_API_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "LIVEKIT_API_SECRET",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "OPENAI_API_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "RESEND_API_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "RESEND_AUDIENCE_ID",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "RESEND_FROM",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "SIDECAR_TOKEN_WHISPER",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "STRIPE_PUBLISHABLE_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "STRIPE_SECRET_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "STRIPE_WEBHOOK_SECRET",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "SUPABASE_ACCESS_TOKEN",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "SUPABASE_SERVICE_ROLE_KEY",
+      "scope": "all",
+      "version": 1
+    },
+    {
+      "name": "SUPABASE_URL",
+      "scope": "all",
+      "version": 1,
+      "originCategory": "value_not_exposed"
+    }
+  ],
+  "health": [
+    {
+      "label": "backend",
+      "status": 200,
+      "ok": true,
+      "sourceBuild": "64a52ba451c40b227115a912f88ebf2eb1ce49d10a127d10b0d96fb524657881"
+    },
+    {
+      "label": "hosted_web_proxy",
+      "status": 404,
+      "ok": false,
+      "sourceBuild": null
+    },
+    {
+      "label": "shared_notification_bridge",
+      "status": 200,
+      "ready": true,
+      "supportsCurrentClone": true,
+      "supportsPreviousClone": true,
+      "supportsOriginal": true
+    }
+  ],
+  "textPolicy": {
+    "status": 200,
+    "rorkOnly": true,
+    "managedCredentialPresent": true,
+    "gatewayValid": true,
+    "addressOverridePresent": false,
+    "signingKeyPresent": true,
+    "admissionPresent": true
+  },
+  "voice": [
+    {
+      "role": "workspace",
+      "status": 200,
+      "forwardingPolicyValid": true
+    },
+    {
+      "role": "voice",
+      "configured": true,
+      "status": 200,
+      "callbackCategory": "previous_clone_backend",
+      "currentCallbackMatches": false,
+      "strictCurrentPolicyValid": false,
+      "relayToolValid": true,
+      "sharedAgentOwnershipNotInferred": true
+    },
+    {
+      "role": "relay",
+      "configured": true,
+      "status": 200,
+      "callbackCategory": "previous_clone_backend",
+      "currentCallbackMatches": false,
+      "strictCurrentPolicyValid": false,
+      "relayToolValid": true,
+      "sharedAgentOwnershipNotInferred": true
+    }
+  ],
+  "memberDataRead": false,
+  "callsStarted": 0,
+  "generations": 0,
+  "configurationWrites": 0,
+  "runtimeCredentialIdentityVerified": false,
+  "cloudAuthenticationAcceptanceVerified": false,
+  "historicalDurableStateMigrated": false,
+  "deviceOrBrowserInteractionTested": false
+}

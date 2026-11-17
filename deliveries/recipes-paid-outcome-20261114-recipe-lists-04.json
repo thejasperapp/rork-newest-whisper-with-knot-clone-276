@@ -1,0 +1,352 @@
+{
+  "title": "Paid recipes terminal observation",
+  "scope": "20261114-recipe-lists-04",
+  "key": "recipe-pdf",
+  "requestID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+  "conversationID": "ee938d0d-cff3-4645-812a-1faff64a4797",
+  "sourceMessageID": "bd9f0567-9808-486e-96de-560308cd6523",
+  "taskID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+  "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "startedAt": "2026-11-14T06:48:39.108Z",
+  "expectedBuild": "61b7039aac31177019ab0b7f1806eaa0e1306988b171835c4babb848913d700a",
+  "endedAt": "2026-11-14T06:59:20.855Z",
+  "completed": true,
+  "workIncomplete": false,
+  "stopConfirmed": true,
+  "servingBuilds": {
+    "worker": "61b7039aac31177019ab0b7f1806eaa0e1306988b171835c4babb848913d700a"
+  },
+  "completionReceivedMs": 634211,
+  "streamEndedMs": 635463,
+  "captureElapsedMs": 618401,
+  "frameCount": 110,
+  "executions": [
+    {
+      "proposalID": "8cec075a-e5e9-453b-887b-c83d1e1b5449",
+      "operation": "memory_read",
+      "tool": "session_input",
+      "commandBytes": 98,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "a042a3adeae1109fd7095c3d2c6ae9fb3539d94e79e15b294dc3a6ceb68e3d7e"
+    },
+    {
+      "proposalID": "ba5e928f-cfb2-4efc-bd1c-da9fdfec7b67",
+      "operation": "skill_index",
+      "tool": "session_input",
+      "commandBytes": 1176,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "4c163e791dd33692132eaab48f6475de06dbfcfe8f52a28f531d738fd9624436"
+    },
+    {
+      "proposalID": "3cac09fa-fe03-41e1-8824-8d4a62a7fd81",
+      "operation": "skill_read",
+      "tool": "session_input",
+      "commandBytes": 47,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "f59a19dbc39edbc3b4b7e65108ed7125f3dd9e9338a97be7907c0a5710b4bcd4"
+    },
+    {
+      "proposalID": "5bc5ba29-c8b8-4ed5-a57e-495e3799671b",
+      "operation": "workspace_inventory",
+      "tool": "session_input",
+      "commandBytes": 204,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "ab51a7d583f62463975731aa7262b83c8b73c5ccc18e29b8022af9944e7fa4ff"
+    },
+    {
+      "proposalID": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+      "operation": "work",
+      "tool": "document_script",
+      "documentStage": "source",
+      "commandBytes": 26777,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "bf4c7752240fad29d55611f804f467d0a076dfb076867b14c8bf5b2e1b29fade"
+    },
+    {
+      "proposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "operation": "work",
+      "tool": "document_script",
+      "documentStage": "source",
+      "commandBytes": 26718,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "ef7438f935cf3680a0119d0253cdeeabc987cb5aa7a4225b4c92a74ef9d237b6"
+    },
+    {
+      "proposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "operation": "work",
+      "tool": "document_script",
+      "documentStage": "source",
+      "commandBytes": 27632,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "d69905854d8dd4680c45ecbcdbe53893323357b6229ef511ba95b27989eb236a"
+    },
+    {
+      "proposalID": "b7450130-6419-4af3-a45b-a406ddceb043",
+      "operation": "work",
+      "tool": "document_script",
+      "documentStage": "source",
+      "commandBytes": 29590,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "d1f26d1f733058088c403b39777cb5a21d2d9fdfcbdb1edcb10d34dd354eaeec"
+    },
+    {
+      "proposalID": "7beecfbd-7e04-4d8a-8205-53754b8ce32e",
+      "operation": "work",
+      "tool": "document_script",
+      "documentStage": "build",
+      "commandBytes": 9782,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "ff7bbdf79c055eee4f61fceea25c0845669404c8d2b1299301874a527076676e"
+    },
+    {
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "operation": "work",
+      "tool": "session_input",
+      "commandBytes": 4929,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "ba5715b8865575b9154a5ef0c221f2b46f9cc3ee640e7640bf86725360d8d22a"
+    },
+    {
+      "proposalID": "126be6ae-8f1c-465c-921b-7122764a5cea",
+      "operation": "work",
+      "tool": "document_script",
+      "documentStage": "source",
+      "commandBytes": 29738,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "d5350e3adf347c1bef861a216976b8601782d248cd983b9be16a9ae2b44c6642"
+    },
+    {
+      "proposalID": "f5de22fb-ddd3-4401-ab17-a18700d1745e",
+      "operation": "work",
+      "tool": "document_script",
+      "documentStage": "build",
+      "commandBytes": 9782,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "75f6dc5bc8bd1da39fca10f734431a107144e612d6042e3dc92093874385b217"
+    },
+    {
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "operation": "work",
+      "tool": "session_input",
+      "commandBytes": 4929,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "3f7f7cc0f55dbd4bc79190626cb495da49c9286559672c5406ccc4f03ba9c773"
+    },
+    {
+      "proposalID": "e08c6a37-dfde-4a52-aad7-346e187558e7",
+      "operation": "memory_write",
+      "tool": "session_input",
+      "commandBytes": 2412,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "03ab6679e291b91dce37defd21ad1c93a83e1ef24bdc85f1aa4efd2ccfc6fcb5"
+    }
+  ],
+  "documents": [
+    {
+      "id": "0057c3694395b7940d41063a67e458939233815970a8a25c35fc3424814c8a1f",
+      "title": "High-Protein Recipes for Fat Loss",
+      "name": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v5.pdf",
+      "format": "pdf",
+      "sha256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+      "size": 36646,
+      "pages": 8,
+      "createdAt": "2026-11-14T06:58:57.509Z",
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "review": "unavailable",
+      "reviewIssue": "document_visual_review_unavailable",
+      "proofPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "byteFidelity": {
+        "status": "pass",
+        "scope": "measured_final_to_immutable_capture",
+        "sha256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+        "bytes": 36646
+      },
+      "contentQuality": {
+        "status": "unconfirmed",
+        "scope": "complete_text_coverage",
+        "finalSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+        "factualCertification": false
+      },
+      "contentReview": {
+        "version": "knot_document_content_v1",
+        "status": "unconfirmed",
+        "contentCheckAttempts": [
+          {
+            "attempt": 1,
+            "model": "openai/gpt-4o",
+            "durationMs": 8454,
+            "tokenLimit": 6500,
+            "finishReason": "stop",
+            "responseBytes": 7050,
+            "contentBytes": 4794,
+            "outcome": "unconfirmed",
+            "httpStatus": 200,
+            "contentEncoding": "json",
+            "failureStage": "grounding",
+            "validationCode": "item_coverage_anchor",
+            "itemIndex": 0,
+            "reason": "content_check_unparseable"
+          },
+          {
+            "attempt": 2,
+            "model": "openai/gpt-4o",
+            "durationMs": 6528,
+            "tokenLimit": 6500,
+            "finishReason": "stop",
+            "responseBytes": 7055,
+            "contentBytes": 4796,
+            "outcome": "unconfirmed",
+            "httpStatus": 200,
+            "contentEncoding": "json",
+            "failureStage": "grounding",
+            "validationCode": "item_coverage_anchor",
+            "itemIndex": 0,
+            "reason": "content_check_unparseable"
+          }
+        ],
+        "requestSHA256": "3c9fbb5caa2c57b21d2fa908ad02c096caac25efc8b4a4979524844862e31b3a",
+        "finalSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+        "finalTextSHA256": "7baab17b3ff0d71e24e9d6f35dd1b35d817ac3834f49df5b4c9164dbd00e4d1a",
+        "sourceSHA256s": [
+          "5e100928a130a032a2638096ed1325501b8aa15405e69fcc1f80a0788a9c47ba",
+          "bb5aaf4005e6542b45d61fff1932669a7de2f9cc535a830fd572bc3f8ba8a7ad",
+          "50612ccda22c93ea58616d4f4043660dc126e313ec9e7ccfddaf8347673bd693",
+          "444c53c4aab9458a1f529fed889824b546cb0f86a550a738dc7d0cce1c1912ef",
+          "cec9d9d5bb76b23b30462fb5610b107b37b3eb19069c85e345a44f94bfeb9402"
+        ],
+        "scope": "complete_text"
+      },
+      "downloadedProofs": [
+        {
+          "page": 1,
+          "bytes": 107131,
+          "sha256": "142c6d70b08a055e68c62d966ac54f8adcb000076278a0485a8a4c81af82480a"
+        },
+        {
+          "page": 2,
+          "bytes": 146401,
+          "sha256": "dbc6f30a5ea96277ebfff6b6d861ccaea0db874e386a32989d45d9951673a088"
+        },
+        {
+          "page": 3,
+          "bytes": 117480,
+          "sha256": "093eb2d46b5061b372e39ab26e5f8aa6a5c76d5df45fe34268a4f391349892a9"
+        },
+        {
+          "page": 4,
+          "bytes": 144892,
+          "sha256": "83041ecb2b0ea28c0bb11de5d58843ff2dfd4b1db016d24b2d3cb3151b672fbe"
+        },
+        {
+          "page": 5,
+          "bytes": 127594,
+          "sha256": "d63884df9c4ed374810844140a65b6e4c24ae5cb5ad7a387114788843808cba5"
+        },
+        {
+          "page": 6,
+          "bytes": 142487,
+          "sha256": "21103628e0924c5b85679c1b9963785aec49cd6c228276adee612ab86293f248"
+        },
+        {
+          "page": 7,
+          "bytes": 150579,
+          "sha256": "a4d4d59c6d2e745e86c897741980c4ff052bf7d3c69a607c8f2edae12a7d5490"
+        },
+        {
+          "page": 8,
+          "bytes": 134644,
+          "sha256": "5c77415e81ffa5274fec0b46fac200a85837119d00071db88f12d928dda40e13"
+        }
+      ],
+      "deliveredSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+      "deliveredBytes": 36646,
+      "deliveredMatches": true,
+      "boxSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+      "boxBytes": 36646,
+      "boxMatches": true
+    }
+  ],
+  "historicalReplay": false,
+  "orderedStreamRetainedPrivately": true,
+  "acceptance": "requires_independent_evidence_review"
+}

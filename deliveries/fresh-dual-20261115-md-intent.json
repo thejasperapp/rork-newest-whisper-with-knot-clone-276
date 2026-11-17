@@ -1,0 +1,18 @@
+{
+  "kind": "md",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "38192e58-6cda-4452-9cd7-ddd2443b9925",
+  "workspaceID": "whisper-38192e58-6cda-4452-9cd7-ddd2443b9925",
+  "requestID": "a5fe1acb-160f-4d0d-8e15-c9cc9afa0c6b",
+  "taskID": "a5fe1acb-160f-4d0d-8e15-c9cc9afa0c6b",
+  "conversationID": "d95242f4-096a-4b96-868f-68a8cf72eb90",
+  "sourceMessageID": "89b5393a-5f5d-4577-8ae1-7e7e5e195787",
+  "expectedBuild": "b738112fad6fc1585433fee3c84f0345fb4b6769f5ab6fe26a594f05533303a9",
+  "startedAt": "2026-11-15T20:32:59.861Z",
+  "ask": "Create and deliver a new real Markdown (.md) file titled Rainy Day Reading Checklist. Include five concrete reading-nook preparation tasks, a short book-selection checklist and a Friday-through-Sunday reading schedule. Keep it concise and practical. Deliver the actual Markdown file itself, not a PDF or a description. This is new authoring, not retrieval or repair of any earlier file.",
+  "syntheticOnly": true,
+  "noAutomaticRetry": true,
+  "noHistoricalReplay": true,
+  "documentConsent": "knot_ai_consent_v4",
+  "modelConsent": "default_cloud_routed_only"
+}

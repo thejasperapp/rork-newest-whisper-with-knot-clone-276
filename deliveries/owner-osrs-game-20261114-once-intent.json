@@ -1,0 +1,18 @@
+{
+  "title": "One owner-authorized fresh OSRS game",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "71b598c5-b235-46e4-90ba-9ae0e4ee9280",
+  "workspaceID": "whisper-71b598c5-b235-46e4-90ba-9ae0e4ee9280",
+  "requestID": "cedfd85b-8836-4208-9948-7071dca58bfc",
+  "taskID": "cedfd85b-8836-4208-9948-7071dca58bfc",
+  "conversationID": "fedcba15-f13a-4bcd-9bbb-6179b3c1a310",
+  "sourceMessageID": "eb413e1e-dc41-4f3e-9c9b-506539ceaccd",
+  "expectedBuild": "fd240cf595d8ff95b7c04c2db8b7c22bfc72b56c65ab1495535a8b56dbb6ba68",
+  "startedAt": "2026-11-14T16:54:43.342Z",
+  "ask": "Make me an osrs style rpg game",
+  "noAutomaticRetry": true,
+  "noHistoricalReplay": true,
+  "scopeConsumed": true,
+  "originalFailedTask": "ff1ec610-bba1-48f4-8bbb-73485b63436e",
+  "pdfTaskNotReplayed": "e9e11652-e0d9-4881-84da-3d0f1006bc9d"
+}

@@ -1,0 +1,14 @@
+{
+  "images": [
+    {
+      "filename": "knot-wordmark-black.png",
+      "idiom": "universal"
+    },
+    {
+      "appearances": [{ "appearance": "luminosity", "value": "dark" }],
+      "filename": "knot-wordmark-white.png",
+      "idiom": "universal"
+    }
+  ],
+  "info": { "author": "xcode", "version": 1 }
+}

@@ -1,0 +1,2165 @@
+{
+  "observedAt": "2026-11-13T20:26:13.925Z",
+  "battery": "battery-2026-11-13T20-16-15-706Z",
+  "artifactSHA256": "89b32fc7b8da38fb7d040633e2cafd04ab841df0cdb8cbe05f102bfe7f01164a",
+  "unchangedArtifact": true,
+  "mode": "manual_browser_observation_not_unit_suite",
+  "observations": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "artifactSHA256": "89b32fc7b8da38fb7d040633e2cafd04ab841df0cdb8cbe05f102bfe7f01164a",
+      "errors": [],
+      "blockedRequests": [],
+      "actions": [
+        {
+          "elapsedMs": 1153,
+          "action": "move",
+          "index": 0,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Emberstrike… but it missed!",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 27 damage to Flombix.",
+          "healthWidths": {
+            "player": "73%",
+            "enemy": "100%"
+          }
+        },
+        {
+          "elapsedMs": 2102,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Shadow Claw! Dealt 27 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 18 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "healthWidths": {
+            "player": "58%",
+            "enemy": "82%"
+          }
+        },
+        {
+          "elapsedMs": 3052,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap… but it missed!",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw… but it missed!",
+          "healthWidths": {
+            "player": "58%",
+            "enemy": "82%"
+          }
+        },
+        {
+          "elapsedMs": 4003,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Shadow Claw… but it missed!",
+          "immediate": "Flombix used Leafguard! Recovered 22 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "80%",
+            "enemy": "82%"
+          }
+        },
+        {
+          "elapsedMs": 4952,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Flombix used Emberstrike! Dealt 27 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 19 damage to Flombix.",
+          "healthWidths": {
+            "player": "61%",
+            "enemy": "55%"
+          }
+        },
+        {
+          "elapsedMs": 5902,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 19 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "61%",
+            "enemy": "33%"
+          }
+        },
+        {
+          "elapsedMs": 5956,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "61%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 6027,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 6969,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 19 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "healthWidths": {
+            "player": "100%",
+            "enemy": "94%"
+          }
+        },
+        {
+          "elapsedMs": 8002,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 19 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 34 damage to Flombix.",
+          "healthWidths": {
+            "player": "66%",
+            "enemy": "75%"
+          }
+        },
+        {
+          "elapsedMs": 9035,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam! Dealt 34 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 20 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "healthWidths": {
+            "player": "51%",
+            "enemy": "55%"
+          }
+        },
+        {
+          "elapsedMs": 10069,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 24 damage to Flombix.",
+          "healthWidths": {
+            "player": "27%",
+            "enemy": "33%"
+          }
+        },
+        {
+          "elapsedMs": 11102,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam! Dealt 24 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 21 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 24 damage to Flombix.",
+          "healthWidths": {
+            "player": "3%",
+            "enemy": "12%"
+          }
+        },
+        {
+          "elapsedMs": 11228,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Shadow Claw! Dealt 24 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "3%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 11262,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 12302,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 35 damage to Flombix.",
+          "healthWidths": {
+            "player": "65%",
+            "enemy": "78%"
+          }
+        },
+        {
+          "elapsedMs": 13252,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Hex Beam! Dealt 35 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap… but it missed!",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 19 damage to Flombix.",
+          "healthWidths": {
+            "player": "46%",
+            "enemy": "78%"
+          }
+        },
+        {
+          "elapsedMs": 14202,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Wing Blast! Dealt 19 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 23 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 20 HP.",
+          "healthWidths": {
+            "player": "69%",
+            "enemy": "98%"
+          }
+        },
+        {
+          "elapsedMs": 15152,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 20 HP.",
+          "immediate": "Flombix used Emberstrike! Dealt 23 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 18 damage to Flombix.",
+          "healthWidths": {
+            "player": "51%",
+            "enemy": "75%"
+          }
+        },
+        {
+          "elapsedMs": 16102,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 18 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 24 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 23 damage to Flombix.",
+          "healthWidths": {
+            "player": "28%",
+            "enemy": "51%"
+          }
+        },
+        {
+          "elapsedMs": 17052,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Hex Beam! Dealt 23 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap… but it missed!",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 25 damage to Flombix.",
+          "healthWidths": {
+            "player": "3%",
+            "enemy": "51%"
+          }
+        },
+        {
+          "elapsedMs": 18002,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Shadow Claw! Dealt 25 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 18 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "healthWidths": {
+            "player": "21%",
+            "enemy": "64%"
+          }
+        },
+        {
+          "elapsedMs": 18952,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "immediate": "Flombix used Emberstrike! Dealt 29 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 16 damage to Flombix.",
+          "healthWidths": {
+            "player": "5%",
+            "enemy": "35%"
+          }
+        },
+        {
+          "elapsedMs": 19902,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 16 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Flombix fainted… Better luck next time!",
+          "healthWidths": {
+            "player": "0%",
+            "enemy": "10%"
+          }
+        },
+        {
+          "elapsedMs": 19978,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 20935,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 24 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "healthWidths": {
+            "player": "100%",
+            "enemy": "89%"
+          }
+        },
+        {
+          "elapsedMs": 21968,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 18 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "healthWidths": {
+            "player": "85%",
+            "enemy": "71%"
+          }
+        },
+        {
+          "elapsedMs": 23002,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 20 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 19 HP.",
+          "healthWidths": {
+            "player": "85%",
+            "enemy": "70%"
+          }
+        },
+        {
+          "elapsedMs": 24035,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 19 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 22 damage to Flombix.",
+          "healthWidths": {
+            "player": "63%",
+            "enemy": "45%"
+          }
+        },
+        {
+          "elapsedMs": 25068,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 22 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 17 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 33 damage to Flombix.",
+          "healthWidths": {
+            "player": "30%",
+            "enemy": "28%"
+          }
+        },
+        {
+          "elapsedMs": 26102,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam! Dealt 33 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 21 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "30%",
+            "enemy": "7%"
+          }
+        },
+        {
+          "elapsedMs": 26229,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "30%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 26276,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 27268,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 19 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 16 damage to Flombix.",
+          "healthWidths": {
+            "player": "84%",
+            "enemy": "81%"
+          }
+        },
+        {
+          "elapsedMs": 28218,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Wing Blast! Dealt 16 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap! Dealt 40 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 31 damage to Flombix.",
+          "healthWidths": {
+            "player": "53%",
+            "enemy": "41%"
+          }
+        },
+        {
+          "elapsedMs": 29168,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Hex Beam! Dealt 31 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 22 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "75%",
+            "enemy": "41%"
+          }
+        },
+        {
+          "elapsedMs": 30118,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Flombix used Emberstrike! Dealt 28 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 20 damage to Flombix.",
+          "healthWidths": {
+            "player": "55%",
+            "enemy": "13%"
+          }
+        },
+        {
+          "elapsedMs": 30168,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Shadow Claw! Dealt 20 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "55%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 30207,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 31151,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 25 damage to Flombix.",
+          "healthWidths": {
+            "player": "75%",
+            "enemy": "75%"
+          }
+        },
+        {
+          "elapsedMs": 32184,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Shadow Claw! Dealt 25 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 18 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 17 damage to Flombix.",
+          "healthWidths": {
+            "player": "58%",
+            "enemy": "57%"
+          }
+        },
+        {
+          "elapsedMs": 33234,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 17 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 26 damage to Flombix.",
+          "healthWidths": {
+            "player": "32%",
+            "enemy": "35%"
+          }
+        },
+        {
+          "elapsedMs": 34267,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Shadow Claw! Dealt 26 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "healthWidths": {
+            "player": "17%",
+            "enemy": "13%"
+          }
+        },
+        {
+          "elapsedMs": 34394,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "17%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 34425,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 35368,
+          "action": "move",
+          "index": 3,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Leafguard! Recovered 16 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 19 damage to Flombix.",
+          "healthWidths": {
+            "player": "81%",
+            "enemy": "100%"
+          }
+        },
+        {
+          "elapsedMs": 36318,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Wing Blast! Dealt 19 damage to Flombix.",
+          "immediate": "Flombix used Emberstrike! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 14 damage to Flombix.",
+          "healthWidths": {
+            "player": "67%",
+            "enemy": "78%"
+          }
+        },
+        {
+          "elapsedMs": 37267,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 14 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 19 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 20 damage to Flombix.",
+          "healthWidths": {
+            "player": "47%",
+            "enemy": "59%"
+          }
+        },
+        {
+          "elapsedMs": 38218,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Wing Blast! Dealt 20 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 14 damage to Flombix.",
+          "healthWidths": {
+            "player": "33%",
+            "enemy": "34%"
+          }
+        },
+        {
+          "elapsedMs": 39168,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Wing Blast! Dealt 14 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 19 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 24 damage to Flombix.",
+          "healthWidths": {
+            "player": "28%",
+            "enemy": "34%"
+          }
+        },
+        {
+          "elapsedMs": 40117,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Hex Beam! Dealt 24 damage to Flombix.",
+          "immediate": "Flombix used Emberstrike! Dealt 24 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 18 HP.",
+          "healthWidths": {
+            "player": "28%",
+            "enemy": "28%"
+          }
+        },
+        {
+          "elapsedMs": 41068,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 18 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 15 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Flombix fainted… Better luck next time!",
+          "healthWidths": {
+            "player": "0%",
+            "enemy": "13%"
+          }
+        },
+        {
+          "elapsedMs": 41107,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 42051,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 28 damage to Flombix.",
+          "healthWidths": {
+            "player": "72%",
+            "enemy": "75%"
+          }
+        },
+        {
+          "elapsedMs": 43084,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Shadow Claw! Dealt 28 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 20 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 33 damage to Flombix.",
+          "healthWidths": {
+            "player": "39%",
+            "enemy": "55%"
+          }
+        },
+        {
+          "elapsedMs": 44117,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam! Dealt 33 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 15 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 16 HP.",
+          "healthWidths": {
+            "player": "39%",
+            "enemy": "56%"
+          }
+        },
+        {
+          "elapsedMs": 45151,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 16 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 17 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 23 damage to Flombix.",
+          "healthWidths": {
+            "player": "16%",
+            "enemy": "39%"
+          }
+        },
+        {
+          "elapsedMs": 46184,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Shadow Claw! Dealt 23 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 19 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Flombix fainted… Better luck next time!",
+          "healthWidths": {
+            "player": "0%",
+            "enemy": "20%"
+          }
+        },
+        {
+          "elapsedMs": 46226,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 47184,
+          "action": "move",
+          "index": 3,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Leafguard! Recovered 24 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 22 damage to Flombix.",
+          "healthWidths": {
+            "player": "78%",
+            "enemy": "100%"
+          }
+        },
+        {
+          "elapsedMs": 48134,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Wing Blast! Dealt 22 damage to Flombix.",
+          "immediate": "Flombix used Emberstrike! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 29 damage to Flombix.",
+          "healthWidths": {
+            "player": "49%",
+            "enemy": "78%"
+          }
+        },
+        {
+          "elapsedMs": 49084,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam! Dealt 29 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 16 HP.",
+          "healthWidths": {
+            "player": "49%",
+            "enemy": "72%"
+          }
+        },
+        {
+          "elapsedMs": 50034,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 16 HP.",
+          "immediate": "Flombix used Voltsnap… but it missed!",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 19 HP.",
+          "healthWidths": {
+            "player": "49%",
+            "enemy": "91%"
+          }
+        },
+        {
+          "elapsedMs": 50984,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 19 HP.",
+          "immediate": "Flombix used Leafguard! Recovered 20 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "69%",
+            "enemy": "91%"
+          }
+        },
+        {
+          "elapsedMs": 51934,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Flombix used Emberstrike! Dealt 26 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "69%",
+            "enemy": "65%"
+          }
+        },
+        {
+          "elapsedMs": 52884,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 18 HP.",
+          "healthWidths": {
+            "player": "69%",
+            "enemy": "61%"
+          }
+        },
+        {
+          "elapsedMs": 53834,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 18 HP.",
+          "immediate": "Flombix used Voltsnap! Dealt 32 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 34 damage to Flombix.",
+          "healthWidths": {
+            "player": "35%",
+            "enemy": "29%"
+          }
+        },
+        {
+          "elapsedMs": 54784,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Hex Beam! Dealt 34 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 23 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "healthWidths": {
+            "player": "37%",
+            "enemy": "29%"
+          }
+        },
+        {
+          "elapsedMs": 54827,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "37%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 54874,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 55817,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 16 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 18 damage to Flombix.",
+          "healthWidths": {
+            "player": "82%",
+            "enemy": "84%"
+          }
+        },
+        {
+          "elapsedMs": 56850,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 18 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "82%",
+            "enemy": "59%"
+          }
+        },
+        {
+          "elapsedMs": 57883,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 28 damage to Flombix.",
+          "healthWidths": {
+            "player": "54%",
+            "enemy": "37%"
+          }
+        },
+        {
+          "elapsedMs": 58917,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam! Dealt 28 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "healthWidths": {
+            "player": "33%",
+            "enemy": "15%"
+          }
+        },
+        {
+          "elapsedMs": 59044,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "33%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 59091,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 60034,
+          "action": "move",
+          "index": 2,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Voltsnap! Dealt 38 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "healthWidths": {
+            "player": "100%",
+            "enemy": "75%"
+          }
+        },
+        {
+          "elapsedMs": 60983,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "immediate": "Flombix used Leafguard! Recovered 22 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 35 damage to Flombix.",
+          "healthWidths": {
+            "player": "65%",
+            "enemy": "75%"
+          }
+        },
+        {
+          "elapsedMs": 61934,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Hex Beam! Dealt 35 damage to Flombix.",
+          "immediate": "Flombix used Emberstrike! Dealt 24 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "healthWidths": {
+            "player": "65%",
+            "enemy": "64%"
+          }
+        },
+        {
+          "elapsedMs": 62883,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 18 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 19 HP.",
+          "healthWidths": {
+            "player": "65%",
+            "enemy": "65%"
+          }
+        },
+        {
+          "elapsedMs": 63833,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 19 HP.",
+          "immediate": "Flombix used Voltsnap! Dealt 40 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 30 damage to Flombix.",
+          "healthWidths": {
+            "player": "35%",
+            "enemy": "25%"
+          }
+        },
+        {
+          "elapsedMs": 64783,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Hex Beam! Dealt 30 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 17 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 17 damage to Flombix.",
+          "healthWidths": {
+            "player": "35%",
+            "enemy": "25%"
+          }
+        },
+        {
+          "elapsedMs": 64826,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Wing Blast! Dealt 17 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "35%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 64857,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 65800,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 17 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 33 damage to Flombix.",
+          "healthWidths": {
+            "player": "67%",
+            "enemy": "83%"
+          }
+        }
+      ],
+      "outcomes": [
+        "🏆 You won!",
+        "🏆 You won!",
+        "💀 You lost…",
+        "🏆 You won!",
+        "🏆 You won!",
+        "🏆 You won!",
+        "💀 You lost…",
+        "💀 You lost…",
+        "🏆 You won!",
+        "🏆 You won!",
+        "🏆 You won!"
+      ],
+      "screenshots": [
+        "/home/user/rork-app/.rork/web-verification/knot-battery-2026-11-13T20-16-15-706Z/390-loaded.png",
+        "/home/user/rork-app/.rork/web-verification/knot-battery-2026-11-13T20-16-15-706Z/390-win.png",
+        "/home/user/rork-app/.rork/web-verification/knot-battery-2026-11-13T20-16-15-706Z/390-loss.png",
+        "/home/user/rork-app/.rork/web-verification/knot-battery-2026-11-13T20-16-15-706Z/390-after-play.png"
+      ],
+      "elapsedMs": 65831,
+      "title": "Wildmatch Battle",
+      "layout": {
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "game": {
+          "x": 0,
+          "y": 188,
+          "width": 390,
+          "height": 468
+        }
+      }
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "artifactSHA256": "89b32fc7b8da38fb7d040633e2cafd04ab841df0cdb8cbe05f102bfe7f01164a",
+      "errors": [],
+      "blockedRequests": [],
+      "actions": [
+        {
+          "elapsedMs": 1045,
+          "action": "move",
+          "index": 0,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Emberstrike! Dealt 28 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 15 HP.",
+          "healthWidths": {
+            "player": "100%",
+            "enemy": "87%"
+          }
+        },
+        {
+          "elapsedMs": 1995,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 15 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "healthWidths": {
+            "player": "85%",
+            "enemy": "62%"
+          }
+        },
+        {
+          "elapsedMs": 2945,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap! Dealt 34 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 25 damage to Flombix.",
+          "healthWidths": {
+            "player": "60%",
+            "enemy": "28%"
+          }
+        },
+        {
+          "elapsedMs": 3895,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Hex Beam! Dealt 25 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 24 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "healthWidths": {
+            "player": "63%",
+            "enemy": "28%"
+          }
+        },
+        {
+          "elapsedMs": 3941,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "63%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 4035,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 4978,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 21 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 19 damage to Flombix.",
+          "healthWidths": {
+            "player": "81%",
+            "enemy": "79%"
+          }
+        },
+        {
+          "elapsedMs": 6011,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 19 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 16 HP.",
+          "healthWidths": {
+            "player": "81%",
+            "enemy": "73%"
+          }
+        },
+        {
+          "elapsedMs": 7044,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 16 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 23 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 20 HP.",
+          "healthWidths": {
+            "player": "81%",
+            "enemy": "70%"
+          }
+        },
+        {
+          "elapsedMs": 8078,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 20 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 24 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "81%",
+            "enemy": "46%"
+          }
+        },
+        {
+          "elapsedMs": 9111,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Flombix used Tidepulse! Dealt 19 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 16 damage to Flombix.",
+          "healthWidths": {
+            "player": "65%",
+            "enemy": "27%"
+          }
+        },
+        {
+          "elapsedMs": 10144,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 16 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 18 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "healthWidths": {
+            "player": "44%",
+            "enemy": "9%"
+          }
+        },
+        {
+          "elapsedMs": 10270,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "44%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 10300,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 11244,
+          "action": "move",
+          "index": 0,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Emberstrike! Dealt 24 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 18 damage to Flombix.",
+          "healthWidths": {
+            "player": "82%",
+            "enemy": "76%"
+          }
+        },
+        {
+          "elapsedMs": 12194,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 18 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 19 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 12 HP.",
+          "healthWidths": {
+            "player": "82%",
+            "enemy": "69%"
+          }
+        },
+        {
+          "elapsedMs": 13145,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 12 HP.",
+          "immediate": "Flombix used Voltsnap! Dealt 33 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 18 damage to Flombix.",
+          "healthWidths": {
+            "player": "64%",
+            "enemy": "36%"
+          }
+        },
+        {
+          "elapsedMs": 14094,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Wing Blast! Dealt 18 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 17 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "healthWidths": {
+            "player": "66%",
+            "enemy": "36%"
+          }
+        },
+        {
+          "elapsedMs": 15044,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "immediate": "Flombix used Emberstrike! Dealt 24 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 20 HP.",
+          "healthWidths": {
+            "player": "66%",
+            "enemy": "32%"
+          }
+        },
+        {
+          "elapsedMs": 15994,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 20 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 24 damage to Flombix.",
+          "healthWidths": {
+            "player": "42%",
+            "enemy": "10%"
+          }
+        },
+        {
+          "elapsedMs": 16944,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Shadow Claw! Dealt 24 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap… but it missed!",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "healthWidths": {
+            "player": "21%",
+            "enemy": "10%"
+          }
+        },
+        {
+          "elapsedMs": 17894,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 15 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 18 HP.",
+          "healthWidths": {
+            "player": "36%",
+            "enemy": "28%"
+          }
+        },
+        {
+          "elapsedMs": 17936,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 18 HP.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "36%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 17968,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 18911,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 17 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 15 HP.",
+          "healthWidths": {
+            "player": "100%",
+            "enemy": "98%"
+          }
+        },
+        {
+          "elapsedMs": 19944,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 15 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 32 damage to Flombix.",
+          "healthWidths": {
+            "player": "68%",
+            "enemy": "73%"
+          }
+        },
+        {
+          "elapsedMs": 20977,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam! Dealt 32 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "healthWidths": {
+            "player": "47%",
+            "enemy": "48%"
+          }
+        },
+        {
+          "elapsedMs": 22011,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 16 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "47%",
+            "enemy": "32%"
+          }
+        },
+        {
+          "elapsedMs": 23044,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Flombix used Tidepulse! Dealt 24 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 14 damage to Flombix.",
+          "healthWidths": {
+            "player": "33%",
+            "enemy": "8%"
+          }
+        },
+        {
+          "elapsedMs": 23169,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 14 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "33%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 23200,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 24144,
+          "action": "move",
+          "index": 3,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Leafguard! Recovered 20 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 23 damage to Flombix.",
+          "healthWidths": {
+            "player": "77%",
+            "enemy": "100%"
+          }
+        },
+        {
+          "elapsedMs": 25094,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Hex Beam! Dealt 23 damage to Flombix.",
+          "immediate": "Flombix used Emberstrike! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "healthWidths": {
+            "player": "77%",
+            "enemy": "91%"
+          }
+        },
+        {
+          "elapsedMs": 26044,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 15 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 14 damage to Flombix.",
+          "healthWidths": {
+            "player": "63%",
+            "enemy": "76%"
+          }
+        },
+        {
+          "elapsedMs": 26993,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Wing Blast! Dealt 14 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap! Dealt 34 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "63%",
+            "enemy": "42%"
+          }
+        },
+        {
+          "elapsedMs": 27944,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Flombix used Leafguard! Recovered 24 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 14 HP.",
+          "healthWidths": {
+            "player": "87%",
+            "enemy": "56%"
+          }
+        },
+        {
+          "elapsedMs": 28893,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 14 HP.",
+          "immediate": "Flombix used Emberstrike! Dealt 23 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 20 HP.",
+          "healthWidths": {
+            "player": "87%",
+            "enemy": "53%"
+          }
+        },
+        {
+          "elapsedMs": 29844,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 20 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 24 damage to Flombix.",
+          "healthWidths": {
+            "player": "63%",
+            "enemy": "28%"
+          }
+        },
+        {
+          "elapsedMs": 30793,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Shadow Claw! Dealt 24 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap! Dealt 27 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 26 damage to Flombix.",
+          "healthWidths": {
+            "player": "37%",
+            "enemy": "1%"
+          }
+        },
+        {
+          "elapsedMs": 31744,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Shadow Claw! Dealt 26 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 21 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 27 damage to Flombix.",
+          "healthWidths": {
+            "player": "31%",
+            "enemy": "1%"
+          }
+        },
+        {
+          "elapsedMs": 31785,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Hex Beam! Dealt 27 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "31%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 31817,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 32760,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 17 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 12 HP.",
+          "healthWidths": {
+            "player": "100%",
+            "enemy": "95%"
+          }
+        },
+        {
+          "elapsedMs": 33794,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 12 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 17 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "healthWidths": {
+            "player": "79%",
+            "enemy": "78%"
+          }
+        },
+        {
+          "elapsedMs": 34827,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 22 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "79%",
+            "enemy": "56%"
+          }
+        },
+        {
+          "elapsedMs": 35860,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Flombix used Tidepulse! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "healthWidths": {
+            "player": "64%",
+            "enemy": "31%"
+          }
+        },
+        {
+          "elapsedMs": 36893,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 15 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 21 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 14 HP.",
+          "healthWidths": {
+            "player": "64%",
+            "enemy": "24%"
+          }
+        },
+        {
+          "elapsedMs": 37926,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 14 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 19 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "healthWidths": {
+            "player": "43%",
+            "enemy": "5%"
+          }
+        },
+        {
+          "elapsedMs": 38052,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "43%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 38083,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 39026,
+          "action": "move",
+          "index": 0,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Emberstrike! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "100%",
+            "enemy": "75%"
+          }
+        },
+        {
+          "elapsedMs": 39976,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Flombix used Tidepulse! Dealt 19 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 31 damage to Flombix.",
+          "healthWidths": {
+            "player": "69%",
+            "enemy": "56%"
+          }
+        },
+        {
+          "elapsedMs": 40927,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Hex Beam! Dealt 31 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap… but it missed!",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 19 damage to Flombix.",
+          "healthWidths": {
+            "player": "50%",
+            "enemy": "56%"
+          }
+        },
+        {
+          "elapsedMs": 41877,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Shadow Claw! Dealt 19 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 22 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 14 HP.",
+          "healthWidths": {
+            "player": "72%",
+            "enemy": "70%"
+          }
+        },
+        {
+          "elapsedMs": 42826,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 14 HP.",
+          "immediate": "Flombix used Emberstrike! Dealt 30 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 25 damage to Flombix.",
+          "healthWidths": {
+            "player": "47%",
+            "enemy": "40%"
+          }
+        },
+        {
+          "elapsedMs": 43776,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam! Dealt 25 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 21 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 27 damage to Flombix.",
+          "healthWidths": {
+            "player": "20%",
+            "enemy": "19%"
+          }
+        },
+        {
+          "elapsedMs": 43819,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Shadow Claw! Dealt 27 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "20%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 43850,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 44826,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 21 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 24 damage to Flombix.",
+          "healthWidths": {
+            "player": "76%",
+            "enemy": "79%"
+          }
+        },
+        {
+          "elapsedMs": 45860,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Shadow Claw! Dealt 24 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 17 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 14 damage to Flombix.",
+          "healthWidths": {
+            "player": "62%",
+            "enemy": "62%"
+          }
+        },
+        {
+          "elapsedMs": 46893,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 14 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 23 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam… but it missed!",
+          "healthWidths": {
+            "player": "62%",
+            "enemy": "39%"
+          }
+        },
+        {
+          "elapsedMs": 47926,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam… but it missed!",
+          "immediate": "Flombix used Tidepulse! Dealt 21 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 18 damage to Flombix.",
+          "healthWidths": {
+            "player": "44%",
+            "enemy": "18%"
+          }
+        },
+        {
+          "elapsedMs": 48052,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 18 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "44%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 48101,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 49043,
+          "action": "move",
+          "index": 0,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Emberstrike! Dealt 26 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "healthWidths": {
+            "player": "100%",
+            "enemy": "87%"
+          }
+        },
+        {
+          "elapsedMs": 49993,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 17 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 19 damage to Flombix.",
+          "healthWidths": {
+            "player": "81%",
+            "enemy": "70%"
+          }
+        },
+        {
+          "elapsedMs": 50943,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Wing Blast! Dealt 19 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap! Dealt 32 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 24 damage to Flombix.",
+          "healthWidths": {
+            "player": "57%",
+            "enemy": "38%"
+          }
+        },
+        {
+          "elapsedMs": 51893,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Shadow Claw! Dealt 24 damage to Flombix.",
+          "immediate": "Flombix used Leafguard! Recovered 17 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 17 damage to Flombix.",
+          "healthWidths": {
+            "player": "57%",
+            "enemy": "38%"
+          }
+        },
+        {
+          "elapsedMs": 52843,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Wing Blast! Dealt 17 damage to Flombix.",
+          "immediate": "Flombix used Emberstrike! Dealt 23 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 14 HP.",
+          "healthWidths": {
+            "player": "57%",
+            "enemy": "29%"
+          }
+        },
+        {
+          "elapsedMs": 53793,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 14 HP.",
+          "immediate": "Flombix used Tidepulse! Dealt 24 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 21 damage to Flombix.",
+          "healthWidths": {
+            "player": "36%",
+            "enemy": "5%"
+          }
+        },
+        {
+          "elapsedMs": 53834,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Shadow Claw! Dealt 21 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "36%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 53865,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 54843,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 23 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 21 damage to Flombix.",
+          "healthWidths": {
+            "player": "79%",
+            "enemy": "77%"
+          }
+        },
+        {
+          "elapsedMs": 55876,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Shadow Claw! Dealt 21 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 18 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 24 damage to Flombix.",
+          "healthWidths": {
+            "player": "55%",
+            "enemy": "59%"
+          }
+        },
+        {
+          "elapsedMs": 56909,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam! Dealt 24 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 23 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 16 damage to Flombix.",
+          "healthWidths": {
+            "player": "39%",
+            "enemy": "36%"
+          }
+        },
+        {
+          "elapsedMs": 57942,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 16 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 16 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 31 damage to Flombix.",
+          "healthWidths": {
+            "player": "8%",
+            "enemy": "20%"
+          }
+        },
+        {
+          "elapsedMs": 58067,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam! Dealt 31 damage to Flombix.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "8%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 58098,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 59042,
+          "action": "move",
+          "index": 0,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Emberstrike! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 32 damage to Flombix.",
+          "healthWidths": {
+            "player": "68%",
+            "enemy": "75%"
+          }
+        },
+        {
+          "elapsedMs": 59992,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Hex Beam! Dealt 32 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 16 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Hex Beam! Dealt 32 damage to Flombix.",
+          "healthWidths": {
+            "player": "36%",
+            "enemy": "59%"
+          }
+        },
+        {
+          "elapsedMs": 60942,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Hex Beam! Dealt 32 damage to Flombix.",
+          "immediate": "Flombix used Voltsnap! Dealt 25 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "healthWidths": {
+            "player": "36%",
+            "enemy": "47%"
+          }
+        },
+        {
+          "elapsedMs": 61892,
+          "action": "move",
+          "index": 3,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 13 HP.",
+          "immediate": "Flombix used Leafguard! Recovered 18 HP.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw… but it missed!",
+          "healthWidths": {
+            "player": "54%",
+            "enemy": "47%"
+          }
+        },
+        {
+          "elapsedMs": 62842,
+          "action": "move",
+          "index": 0,
+          "before": "Vultrak used Shadow Claw… but it missed!",
+          "immediate": "Flombix used Emberstrike! Dealt 20 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw… but it missed!",
+          "healthWidths": {
+            "player": "54%",
+            "enemy": "27%"
+          }
+        },
+        {
+          "elapsedMs": 63792,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Shadow Claw… but it missed!",
+          "immediate": "Flombix used Tidepulse! Dealt 21 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Dark Mend! Vultrak recovered 15 HP.",
+          "healthWidths": {
+            "player": "54%",
+            "enemy": "21%"
+          }
+        },
+        {
+          "elapsedMs": 63834,
+          "action": "move",
+          "index": 2,
+          "before": "Vultrak used Dark Mend! Vultrak recovered 15 HP.",
+          "immediate": "Vultrak fainted! You are victorious!",
+          "inputLocked": true,
+          "after": "Vultrak fainted! You are victorious!",
+          "healthWidths": {
+            "player": "54%",
+            "enemy": "0%"
+          }
+        },
+        {
+          "elapsedMs": 63865,
+          "action": "restart",
+          "log": "Choose your move!"
+        },
+        {
+          "elapsedMs": 64842,
+          "action": "move",
+          "index": 1,
+          "before": "Choose your move!",
+          "immediate": "Flombix used Tidepulse! Dealt 24 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "healthWidths": {
+            "player": "79%",
+            "enemy": "76%"
+          }
+        },
+        {
+          "elapsedMs": 65876,
+          "action": "move",
+          "index": 1,
+          "before": "Vultrak used Wing Blast! Dealt 21 damage to Flombix.",
+          "immediate": "Flombix used Tidepulse! Dealt 19 damage to Vultrak.",
+          "inputLocked": true,
+          "after": "Vultrak used Shadow Claw! Dealt 19 damage to Flombix.",
+          "healthWidths": {
+            "player": "60%",
+            "enemy": "57%"
+          }
+        }
+      ],
+      "outcomes": [
+        "🏆 You won!",
+        "🏆 You won!",
+        "🏆 You won!",
+        "🏆 You won!",
+        "🏆 You won!",
+        "🏆 You won!",
+        "🏆 You won!",
+        "🏆 You won!",
+        "🏆 You won!",
+        "🏆 You won!",
+        "🏆 You won!"
+      ],
+      "screenshots": [
+        "/home/user/rork-app/.rork/web-verification/knot-battery-2026-11-13T20-16-15-706Z/1280-loaded.png",
+        "/home/user/rork-app/.rork/web-verification/knot-battery-2026-11-13T20-16-15-706Z/1280-win.png",
+        "/home/user/rork-app/.rork/web-verification/knot-battery-2026-11-13T20-16-15-706Z/1280-after-play.png"
+      ],
+      "elapsedMs": 65920,
+      "title": "Wildmatch Battle",
+      "layout": {
+        "viewportWidth": 1280,
+        "documentWidth": 1280,
+        "game": {
+          "x": 430,
+          "y": 166,
+          "width": 420,
+          "height": 468
+        }
+      }
+    }
+  ]
+}

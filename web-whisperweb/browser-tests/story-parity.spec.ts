@@ -1,0 +1,15 @@
+import { test, expect } from "@playwright/test";
+for (const width of [390,1280]) test(`Story readiness, rounded 9:16 stage and interactive pause at ${width}`,async({page})=>{
+  test.setTimeout(30000);await page.setViewportSize({width,height:844});const errors:string[]=[];page.on("pageerror",error=>errors.push(error.message));
+  await page.route("**/*",route=>new URL(route.request().url()).origin==="http://127.0.0.1:4176"?route.fallback():route.abort());
+  await page.route(/\/src\/lib\/storyResponses\.ts(?:\?.*)?$/,route=>route.fulfill({contentType:"application/javascript",body:"export const recordStoryView=async()=>{};export const fetchStoryViewers=async()=>[];export const recordStoryResponse=async()=>{};export const fetchPollTally=async()=>({counts:[],total:0});"}));
+  let release:()=>void=()=>{};const mediaGate=new Promise<void>(resolve=>{release=resolve;});
+  await page.route("**/fixture-photo.svg",async route=>{await mediaGate;await route.fulfill({contentType:"image/svg+xml",body:'<svg xmlns="http://www.w3.org/2000/svg" width="390" height="694"><rect width="390" height="694" fill="#34564d"/></svg>'});});
+  await page.route("**/story-parity-harness",route=>route.fulfill({contentType:"text/html",body:'<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"></head><body><div id="root"></div><script type="module">import RefreshRuntime from "/@react-refresh";RefreshRuntime.injectIntoGlobalHook(window);window.$RefreshReg$=()=>{};window.$RefreshSig$=()=>(type)=>type;window.__vite_plugin_react_preamble_installed__=true;</script><script type="module" src="/browser-tests/story-parity-harness.tsx"></script></body></html>'}));
+  await page.goto("/story-parity-harness",{waitUntil:"domcontentloaded"});await expect(page.getByText("First story")).toBeVisible();
+  await page.waitForTimeout(7200);expect(await page.evaluate(()=>localStorage.getItem("whisper_story_seen_v1"))).toBeNull();await expect(page.getByText("First story")).toBeVisible();
+  release();await expect.poll(()=>page.evaluate(()=>localStorage.getItem("whisper_story_seen_v1"))).toContain("story-one");
+  const stage=page.locator("[data-story-stage]");const box=await stage.boundingBox();expect(Math.abs(box!.width/box!.height-9/16)).toBeLessThan(.002);expect(box!.y).toBeGreaterThanOrEqual(0);expect(box!.y+box!.height).toBeLessThanOrEqual(844);
+  await page.getByRole("button",{name:/Ask me/}).click();await expect(page.getByRole("textbox",{name:"Type something…"})).toBeVisible();await page.waitForTimeout(7200);await expect(page.getByRole("textbox",{name:"Type something…"})).toBeVisible();expect(await page.evaluate(()=>JSON.parse(localStorage.getItem("whisper_story_seen_v1") ?? "[]"))).toEqual(["story-one"]);await expect(page.getByText("Second story")).toHaveCount(0);expect(errors).toEqual([]);
+  await page.screenshot({path:`../tmp/parity-story-${width}.png`});await page.keyboard.press("Escape");await expect(page.getByRole("textbox",{name:"Type something…"})).toHaveCount(0);await expect(page.getByText("First story")).toBeVisible();
+});

@@ -1,0 +1,16 @@
+{
+  "kind": "office",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "workspaceID": "whisper-4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "requestID": "ce689f6e-24b3-4ea7-8cc9-e1f515480a66",
+  "taskID": "ce689f6e-24b3-4ea7-8cc9-e1f515480a66",
+  "conversationID": "f461af5d-424b-4457-ac7a-81f562fce568",
+  "sourceMessageID": "7b1170d6-a593-4e22-826c-b1a9c230cc32",
+  "expectedBuild": "1bcd5a7556437b6a32b21a314e048feaa919535380daadf51fe9d82bfa49a78a",
+  "startedAt": "2026-11-15T10:15:29.691Z",
+  "ask": "Create and deliver an actual Excel (.xlsx) workbook titled Balcony Garden Budget with six plausible sample items, quantity, unit price, calculated line totals and a formula-based grand total. Include a small editable budget and formula-based remaining balance. Clearly label currency USD and sample prices. Deliver the working XLSX file, not a PDF.",
+  "noAutomaticRetry": true,
+  "noHistoricalReplay": true,
+  "syntheticOnly": true
+}

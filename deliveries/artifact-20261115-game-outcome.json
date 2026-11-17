@@ -1,0 +1,90 @@
+{
+  "kind": "game",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "workspaceID": "whisper-4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "requestID": "9306ce44-9554-4bc0-bfb1-ffa04082681c",
+  "taskID": "9306ce44-9554-4bc0-bfb1-ffa04082681c",
+  "conversationID": "e82a2133-3407-4bd1-af3f-7f7b0cf0d181",
+  "sourceMessageID": "0a2438f4-7ed0-4dc5-94b7-3d366eae3400",
+  "expectedBuild": "1bcd5a7556437b6a32b21a314e048feaa919535380daadf51fe9d82bfa49a78a",
+  "startedAt": "2026-11-15T10:18:04.917Z",
+  "elapsedMs": 29214,
+  "completed": true,
+  "workIncomplete": false,
+  "issue": null,
+  "stopConfirmed": true,
+  "executions": [
+    {
+      "proposalID": "5fdc2830-f5ad-48f1-a27b-ded1d8a751d7",
+      "operation": "memory_read",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "b4f25f5a2a3ba56c3eba5d9e71262272d99b5bcb3fb52fa9522f8c30617d3a49"
+    },
+    {
+      "proposalID": "a97fe330-058a-4808-9948-8e7b12fbd589",
+      "operation": "skill_index",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "77f735984584ac7ce6017bf231b8bab430af79f2e5ab1a8be975daa4f656b8d3"
+    },
+    {
+      "proposalID": "e6a60225-978b-4d64-bdd3-60f5d1a9562f",
+      "operation": "skill_read",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "f59a1e189e43bc8af270503287c24e98a319d0a78f261d5e7fc2fa5d27391250"
+    },
+    {
+      "proposalID": "1adad2ab-61d7-4c9b-8ab8-1f97990adf45",
+      "operation": "workspace_inventory",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "2176deeda91a8df11e6f5985cb908a6ad43f7a782454092608b4d49b1e5424b1"
+    },
+    {
+      "proposalID": "58b2eea4-7620-4de5-a364-d0fd0895c075",
+      "operation": "work",
+      "documentStage": "final",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "4acf907a60994ce81b082e29f45889c55898379d600d1fc5d3fedd97fbeaafcf"
+    }
+  ],
+  "documents": [
+    {
+      "id": "2869f134eb846910c2d92a04f5063b5697bb7ba07099a6519dad824aab934f70",
+      "title": "Herb Match Game",
+      "name": "herb_match.html",
+      "format": "html",
+      "size": 4022,
+      "sha256": "7077f0aa7d24f2432f168cfbe24139db5ad242e13af44ed1dfa8acf8d3dd70bd",
+      "downloadSHA256": "7077f0aa7d24f2432f168cfbe24139db5ad242e13af44ed1dfa8acf8d3dd70bd",
+      "deliveredMatches": true,
+      "review": "unavailable",
+      "proofs": [],
+      "originalPath": "/home/user/.tmp/knot-artifact-acceptance-mayokn2749ag072e3uvbh-20261115/game/2869f134eb846910c2d92a04f5063b5697bb7ba07099a6519dad824aab934f70.html"
+    }
+  ],
+  "retainedRecordCount": 5,
+  "frameCount": 60,
+  "chatSubmissions": 1,
+  "directSidecarCalls": 0,
+  "personalAccountAccessed": false
+}

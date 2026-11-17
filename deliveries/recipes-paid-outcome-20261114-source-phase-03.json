@@ -1,0 +1,82 @@
+{
+  "title": "Paid recipes terminal observation",
+  "scope": "20261114-source-phase-03",
+  "key": "recipe-pdf",
+  "requestID": "f42c1da8-750b-4233-9be6-a8a86b61faf6",
+  "conversationID": "911272bb-0f1e-4449-9bb6-3d3d6e418e93",
+  "sourceMessageID": "fd65d1b7-85ce-4537-b764-9d2476f54caf",
+  "taskID": "f42c1da8-750b-4233-9be6-a8a86b61faf6",
+  "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "startedAt": "2026-11-14T06:44:02.119Z",
+  "expectedBuild": "dd67165a58ddaf72624a942254ff12a81d8a5f7e6766f167f2bcc3e4c2070898",
+  "endedAt": "2026-11-14T06:45:58.858Z",
+  "completed": true,
+  "workIncomplete": true,
+  "issue": "document_program_invalid",
+  "stopConfirmed": true,
+  "servingBuilds": {
+    "worker": "dd67165a58ddaf72624a942254ff12a81d8a5f7e6766f167f2bcc3e4c2070898"
+  },
+  "completionReceivedMs": 114872,
+  "streamEndedMs": 115155,
+  "frameCount": 27,
+  "executions": [
+    {
+      "proposalID": "d9e0c041-2790-453b-8c08-ae659b8fd410",
+      "operation": "memory_read",
+      "tool": "session_input",
+      "commandBytes": 98,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "a042a3adeae1109fd7095c3d2c6ae9fb3539d94e79e15b294dc3a6ceb68e3d7e"
+    },
+    {
+      "proposalID": "3c6c52c9-3a32-4482-97ef-2c71fa3b26ba",
+      "operation": "skill_index",
+      "tool": "session_input",
+      "commandBytes": 1176,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "4c163e791dd33692132eaab48f6475de06dbfcfe8f52a28f531d738fd9624436"
+    },
+    {
+      "proposalID": "4403adb5-ba43-4503-b35b-5422f28c0b99",
+      "operation": "skill_read",
+      "tool": "session_input",
+      "commandBytes": 47,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "f59a19dbc39edbc3b4b7e65108ed7125f3dd9e9338a97be7907c0a5710b4bcd4"
+    },
+    {
+      "proposalID": "94731352-1714-42cd-983d-e5e1d867614d",
+      "operation": "workspace_inventory",
+      "tool": "session_input",
+      "commandBytes": 204,
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "truncated": false,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "stdoutSHA256": "ab51a7d583f62463975731aa7262b83c8b73c5ccc18e29b8022af9944e7fa4ff"
+    }
+  ],
+  "documents": [],
+  "historicalReplay": false,
+  "orderedStreamRetainedPrivately": true,
+  "acceptance": "requires_independent_evidence_review"
+}

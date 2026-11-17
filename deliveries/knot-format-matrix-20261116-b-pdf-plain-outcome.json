@@ -1,0 +1,16 @@
+{
+  "scope": "knot-format-matrix-20261116-b-pdf-plain",
+  "caseName": "pdf-plain",
+  "requestedFormat": "pdf",
+  "taskID": "46b55a5a-5823-4761-9634-fa55d9418c2e",
+  "conversationID": "20fb2b8d-0840-46b1-a96a-1bb151c30baa",
+  "expectedBuild": "e7eded0631f31bea472200c98215736d51b0d1f4fb91ac679e421cd6d22b03a2",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:20:05.668Z",
+  "passed": false,
+  "issue": "auth_http_500",
+  "endedAt": "2026-11-16T02:20:07.475Z",
+  "elapsedMs": 1807
+}

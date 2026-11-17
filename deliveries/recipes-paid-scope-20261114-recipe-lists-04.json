@@ -1,0 +1,20 @@
+{
+  "title": "Consumed paid recipes scope",
+  "scope": "20261114-recipe-lists-04",
+  "scopeConsumed": true,
+  "key": "recipe-pdf",
+  "requestID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+  "conversationID": "ee938d0d-cff3-4645-812a-1faff64a4797",
+  "sourceMessageID": "bd9f0567-9808-486e-96de-560308cd6523",
+  "taskID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+  "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "startedAt": "2026-11-14T06:48:39.108Z",
+  "backend": "https://uf26aun6d49w1tsjsm2u9-backend.rork.app",
+  "expectedBuild": "61b7039aac31177019ab0b7f1806eaa0e1306988b171835c4babb848913d700a",
+  "askSHA256": "3c9fbb5caa2c57b21d2fa908ad02c096caac25efc8b4a4979524844862e31b3a",
+  "taskModelConsentVersion": "knot_task_models_v1",
+  "noAutomaticRetry": true,
+  "recoveryLane": true,
+  "historicalScopesRemainConsumed": true
+}

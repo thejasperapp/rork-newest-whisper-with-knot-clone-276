@@ -1,0 +1,64 @@
+import { expect, test } from "@playwright/test";
+import type { RecorderUpdate } from "../src/lib/meetingRecorder";
+import type { PipMosaicSource } from "../src/lib/meetPipMosaic";
+for (const video of [false, true]) {
+  test(`real browser ${video ? "video" : "audio"} capture preserves outgoing and received voices with seekable backup`, async ({ page, context }) => {
+    await page.route("**/recording-harness", (route) => route.fulfill({ contentType: "text/html", body: "<!doctype html><html><body>Recording regression harness</body></html>" }));
+    await page.goto("/recording-harness");
+    const result = await page.evaluate(async (includeVideo) => {
+      const enginePath = "/src/lib/meetingRecorder.ts", storagePath = "/src/lib/meetingRecordingStorage.ts", backupPath = "/src/lib/recordingAudioBackup.ts";
+      const { MeetingRecorder } = await import(enginePath) as typeof import("../src/lib/meetingRecorder");
+      const { recordingChunks, listRecordings } = await import(storagePath) as typeof import("../src/lib/meetingRecordingStorage");
+      const { recordingAudioBackup } = await import(backupPath) as typeof import("../src/lib/recordingAudioBackup");
+      const context = new AudioContext(); await context.resume();
+      const tones = [440, 880].map((frequency) => { const oscillator = context.createOscillator(), gain = context.createGain(), destination = context.createMediaStreamDestination(); oscillator.frequency.value = frequency; gain.gain.value = 0.2; oscillator.connect(gain); gain.connect(destination); oscillator.start(); return { oscillator, stream: destination.stream }; });
+      const sources: PipMosaicSource[] = tones.map((tone, index) => ({ id: String(index), name: index ? "Remote camera off" : "Outgoing voice", stream: tone.stream, isSelf: index === 0, hasVideo: false, isScreenShare: false, isSpeaking: true, micOn: true }));
+      const updates: RecorderUpdate[] = []; const owner = crypto.randomUUID();
+      const engine = new MeetingRecorder(owner, null, "Synthetic two-voice regression", (update) => updates.push(update));
+      await engine.start(sources, includeVideo, false); await new Promise((resolve) => setTimeout(resolve, 3700)); await engine.stop();
+      const records = await listRecordings(owner), chunks = await recordingChunks(owner, engine.id);
+      const notePath = "/src/lib/notebookStorage.ts";
+      const { listNotebookDocuments } = await import(notePath) as typeof import("../src/lib/notebookStorage");
+      const notes = await listNotebookDocuments(owner);
+      if (notes.length !== 1 || notes[0].id !== engine.id || notes[0].notes || notes[0].transcript || notes[0].syncEnabled !== true) throw new Error("Recording did not attach to a blank private note");
+      const mediaPath = "/src/lib/recordingMedia.ts"; const { recordingMedia } = await import(mediaPath) as typeof import("../src/lib/recordingMedia");
+      const blob = await recordingMedia(records[0], chunks);
+      const wav = await recordingAudioBackup(chunks, records[0].duration); if (!wav) throw new Error("Missing WAV");
+      const decoded = await context.decodeAudioData(await wav.arrayBuffer());
+      const samples = decoded.getChannelData(0);
+      const magnitude = (frequency: number): number => { let real = 0, imaginary = 0; const start = Math.floor(decoded.sampleRate), length = Math.floor(decoded.sampleRate); for (let i = 0; i < length; i++) { const angle = 2 * Math.PI * frequency * i / decoded.sampleRate; real += samples[start + i] * Math.cos(angle); imaginary += samples[start + i] * Math.sin(angle); } return Math.hypot(real, imaginary) / length; };
+      const player = document.createElement("video"); player.controls = true; player.muted = true; document.body.append(player); player.src = URL.createObjectURL(blob);
+      await new Promise<void>((resolve, reject) => { player.onloadedmetadata = () => resolve(); player.onerror = () => reject(new Error("Saved container cannot play")); });
+      const seek = async (): Promise<void> => new Promise((resolve, reject) => { const timer = setTimeout(() => reject(new Error("Not seekable")), 4000); player.onseeked = () => { clearTimeout(timer); resolve(); }; player.currentTime = 1.5; });
+      await seek(); const seekPosition = player.currentTime; const containerDuration = player.duration; const width = player.videoWidth;
+      const trackStates = tones.map((tone) => tone.stream.getAudioTracks()[0].readyState);
+      tones.forEach((tone) => { tone.oscillator.stop(); tone.stream.getTracks().forEach((track) => track.stop()); }); await context.close();
+      const url = URL.createObjectURL(wav); player.src = url;
+      return { state: updates[updates.length - 1]?.state, duration: records[0].duration, decodedDuration: decoded.duration, containerDuration, width, seekPosition, mediaSize: blob.size, amplitudes: [magnitude(440), magnitude(880), magnitude(1300)], trackStates, audioStart: chunks.find((chunk) => chunk.kind === "audio")?.start, owner, id: engine.id };
+    }, video);
+    expect(result.state).toBe("ready"); expect(result.mediaSize).toBeGreaterThan(1000); expect(result.duration).toBeGreaterThan(3); expect(result.duration).toBeLessThan(5);
+    expect(result.decodedDuration).toBeCloseTo(result.duration, 1); expect(result.containerDuration).toBeGreaterThan(3); expect(Number.isFinite(result.containerDuration)).toBe(true);
+    expect(result.seekPosition).toBeCloseTo(1.5, 1); if (video) expect(result.width).toBe(1280);
+    expect(result.amplitudes[0]).toBeGreaterThan(0.04); expect(result.amplitudes[1]).toBeGreaterThan(0.04); expect(result.amplitudes[2]).toBeLessThan(0.005);
+    expect(result.trackStates).toEqual(["live", "live"]); expect(result.audioStart).toBeLessThan(0.1);
+    await context.setOffline(true);
+    const savedOffline = await page.evaluate(async ({ owner, id }) => { const path = "/src/lib/meetingRecordingStorage.ts"; const { recordingChunks } = await import(path) as typeof import("../src/lib/meetingRecordingStorage"); const chunks = await recordingChunks(owner, id); return chunks.length; }, result);
+    expect(savedOffline).toBeGreaterThanOrEqual(2);
+    await context.setOffline(false); await page.reload();
+    const reopened = await page.evaluate(async ({ owner, id }) => {
+      const notesPath = "/src/lib/notebookStorage.ts", recordingsPath = "/src/lib/meetingRecordingStorage.ts", mediaPath = "/src/lib/recordingMedia.ts";
+      const { listNotebookDocuments } = await import(notesPath) as typeof import("../src/lib/notebookStorage");
+      const { listRecordings, recordingChunks } = await import(recordingsPath) as typeof import("../src/lib/meetingRecordingStorage");
+      const { recordingMedia } = await import(mediaPath) as typeof import("../src/lib/recordingMedia");
+      const note = (await listNotebookDocuments(owner)).find((item) => item.id === id);
+      const record = (await listRecordings(owner)).find((item) => item.id === note?.id);
+      if (!record) throw new Error("Linked recording missing after reload");
+      const blob = await recordingMedia(record, await recordingChunks(owner, record.id));
+      const url = URL.createObjectURL(blob), player = document.createElement("video"); player.muted = true; player.controls = true; document.body.append(player);
+      await new Promise<void>((resolve, reject) => { const timer = setTimeout(() => reject(new Error("Reload playback timeout")), 6000); player.onloadeddata = () => { clearTimeout(timer); resolve(); }; player.onerror = () => { clearTimeout(timer); reject(new Error("Reload playback failed")); }; player.src = url; player.load(); });
+      const duration = player.duration; player.remove(); URL.revokeObjectURL(url);
+      return { linked: note?.id === record.id, duration, size: blob.size };
+    }, result);
+    expect(reopened.linked).toBe(true); expect(reopened.duration).toBeGreaterThan(3); expect(reopened.size).toBeGreaterThan(1000);
+  });
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "prime",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "21cf8082-7408-4f20-8fd6-e2d3f48eaa73",
+  "workspaceID": "whisper-21cf8082-7408-4f20-8fd6-e2d3f48eaa73",
+  "requestID": "cedc37ee-4cbb-4664-b5fd-96e167cf5379",
+  "taskID": "cedc37ee-4cbb-4664-b5fd-96e167cf5379",
+  "conversationID": "e386da4b-1956-46a3-a0d2-9f419fa88dd8",
+  "sourceMessageID": "9282bfae-a6ac-4df7-8d55-8be7c78cb466",
+  "expectedBuild": "b738112fad6fc1585433fee3c84f0345fb4b6769f5ab6fe26a594f05533303a9",
+  "startedAt": "2026-11-15T20:32:47.921Z",
+  "ask": "Use the real workspace to compute the sum of all prime numbers below 1000. Show the actual computation tool card and give the numeric answer based on its command result. Do not create files or update memory for this calculation.",
+  "syntheticOnly": true,
+  "noAutomaticRetry": true,
+  "noHistoricalReplay": true,
+  "documentConsent": "knot_ai_consent_v4",
+  "modelConsent": "default_cloud_routed_only"
+}

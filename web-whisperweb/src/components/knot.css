@@ -1,0 +1,18 @@
+:root { --knot-ink: #202729; --knot-glass-fill: rgb(255 255 255 / .64); }
+.dark { --knot-ink: #f3f4f6; --knot-glass-fill: rgb(36 40 47 / .68); }
+.knot-mascot { position: relative; display: inline-block; flex-shrink: 0; pointer-events: none; }
+.knot-layer { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.knot-eye { position: absolute; object-fit: contain; transition: transform .16s ease, left .4s ease, top .4s ease; }
+.knot-working { animation: none; }
+.knot-portrait { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; border-radius: 50%; background: #fff; border: 1px solid #20272912; overflow: hidden; }
+.knot-glass { background: rgb(255 255 255 / .64); color: #202729; border: 1px solid rgb(120 130 140 / .16); box-shadow: 0 2px 8px #0000000a; backdrop-filter: blur(20px) saturate(1.1); }
+.dark .knot-glass { background: rgb(36 40 47 / .68); color: #f3f4f6; border-color: #ffffff20; }
+@media (prefers-reduced-transparency: reduce) { .knot-glass { background: #fff; backdrop-filter: none; } .dark .knot-glass { background: #24282f; } }
+.knot-wordmark { display: inline-block; flex-shrink: 0; vertical-align: middle; line-height: 0; }
+.knot-wordmark img { display: block; width: 100%; height: auto; }
+.knot-wordmark img.knot-wordmark-dark { display: none; }
+.dark .knot-wordmark img.knot-wordmark-light { display: none; }
+.dark .knot-wordmark img.knot-wordmark-dark { display: block; }
+.whisper-social .knot-composer textarea:focus-visible { outline: none; }
+.knot-composer-field:has(textarea:focus-visible) { outline: none; box-shadow: inset 0 0 0 1px #5279ab55; }
+@media (prefers-reduced-motion: reduce) { .knot-working { animation: none; } .knot-eye { transition: none; } }

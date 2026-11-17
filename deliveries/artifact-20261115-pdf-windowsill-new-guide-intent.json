@@ -1,0 +1,18 @@
+{
+  "kind": "pdf",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "workspaceID": "whisper-4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "requestID": "3ed70d56-248b-4f04-a7fa-9475802f71f2",
+  "taskID": "3ed70d56-248b-4f04-a7fa-9475802f71f2",
+  "conversationID": "89b81ccd-9a74-45de-b84b-bcb4cbb9b677",
+  "sourceMessageID": "466977f5-0c08-4ebb-b54a-080d76266da0",
+  "expectedBuild": "1bcd5a7556437b6a32b21a314e048feaa919535380daadf51fe9d82bfa49a78a",
+  "startedAt": "2026-11-15T10:52:47.515Z",
+  "ask": "Create and deliver a new two-page PDF titled Sunny Windowsill Herbs, a practical beginner guide to basil, rosemary and thyme grown in containers. Page 1: explain the light, watering, drainage and harvesting needs of each of these three herbs in separate concise sections. Page 2: include a concrete Monday-through-Sunday care checklist, a brief protective-care tip for cold nights and extreme heat, and a short troubleshooting section for yellow leaves and soggy soil. Use an original clean botanical editorial layout with legible type, clear headings and comfortable margins. This is a new guide with this exact scope, not retrieval or repair of any earlier artifact. Deliver the actual PDF, not its source.",
+  "noAutomaticRetry": true,
+  "noHistoricalReplay": true,
+  "syntheticOnly": true,
+  "modelConsent": "default_cloud_routed_only",
+  "documentConsent": "knot_ai_consent_v4"
+}

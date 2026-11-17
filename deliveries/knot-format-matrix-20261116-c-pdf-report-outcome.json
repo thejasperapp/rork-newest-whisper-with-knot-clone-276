@@ -1,0 +1,20 @@
+{
+  "scope": "knot-format-matrix-20261116-c-pdf-report",
+  "caseName": "pdf-report",
+  "requestedFormat": "pdf",
+  "taskID": "f8989fd7-027a-497b-a8a0-140c17791c2f",
+  "conversationID": "9c4007f2-9940-4157-b88e-cabc8ef0ea2a",
+  "expectedBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:37:12.567Z",
+  "passed": false,
+  "accountID": "f7335cf1-958f-486f-a4e9-1648d6c9be1f",
+  "issue": "managed_http_503",
+  "stopAcknowledgment": {
+    "ok": true
+  },
+  "endedAt": "2026-11-16T02:38:26.373Z",
+  "elapsedMs": 73806
+}

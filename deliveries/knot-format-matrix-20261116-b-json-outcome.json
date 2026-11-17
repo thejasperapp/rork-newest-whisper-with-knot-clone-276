@@ -1,0 +1,225 @@
+{
+  "scope": "knot-format-matrix-20261116-b-json",
+  "caseName": "json",
+  "requestedFormat": "json",
+  "taskID": "5748a86d-d5c6-4e49-91bc-be8016fa9457",
+  "conversationID": "bc10e90c-1c78-4a64-af66-4f5507f93e97",
+  "expectedBuild": "e7eded0631f31bea472200c98215736d51b0d1f4fb91ac679e421cd6d22b03a2",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:22:43.324Z",
+  "passed": true,
+  "accountID": "3503db59-fd00-4c29-9fd3-82a7c7f7cf64",
+  "terminal": {
+    "task": {
+      "id": "5748a86d-d5c6-4e49-91bc-be8016fa9457",
+      "bot": "main",
+      "conversationID": "bc10e90c-1c78-4a64-af66-4f5507f93e97",
+      "sourceMessageID": "5748a86d-d5c6-4e49-91bc-be8016fa9457",
+      "replyID": "d748a86d-d5c6-4e49-91bc-be8016fa9457",
+      "state": "completed",
+      "createdAt": 1794795767169,
+      "startedAt": 1794795770801,
+      "finishedAt": 1794795800925,
+      "sequence": 72
+    },
+    "events": [],
+    "next": 72,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "5748a86d-d5c6-4e49-91bc-be8016fa9457-a1",
+        "label": "Create JSON File",
+        "tool": "session_input",
+        "purpose": "Author a JSON file with specific plant data for balcony herb plan.",
+        "started_at": 1794795777455,
+        "ended_at": 1794795779718,
+        "receipt_id": "fbee4f35-1f97-4c4b-abb9-324b4471ddfb"
+      },
+      {
+        "id": "5748a86d-d5c6-4e49-91bc-be8016fa9457-a2",
+        "label": "Create JSON File",
+        "tool": "session_input",
+        "purpose": "Author a JSON file with specific plant data for balcony herb plan.",
+        "started_at": 1794795779718,
+        "ended_at": 1794795780544,
+        "receipt_id": "fbee4f35-1f97-4c4b-abb9-324b4471ddfb"
+      },
+      {
+        "id": "5748a86d-d5c6-4e49-91bc-be8016fa9457-a3",
+        "label": "Create JSON file for balcony herb plan",
+        "tool": "session_input",
+        "purpose": "Generate the specified JSON file with balcony herb plan details.",
+        "started_at": 1794795782456,
+        "ended_at": 1794795782615,
+        "receipt_id": "1b4e1c7f-bc9c-4946-aea3-8097bc31457e"
+      },
+      {
+        "id": "5748a86d-d5c6-4e49-91bc-be8016fa9457-a4",
+        "label": "Create JSON file for balcony herb plan",
+        "tool": "session_input",
+        "purpose": "Generate the specified JSON file with balcony herb plan details.",
+        "started_at": 1794795782615,
+        "ended_at": 1794795783408,
+        "receipt_id": "1b4e1c7f-bc9c-4946-aea3-8097bc31457e"
+      },
+      {
+        "id": "5748a86d-d5c6-4e49-91bc-be8016fa9457-a5",
+        "label": "Creating JSON file for herb plan",
+        "tool": "session_input",
+        "purpose": "Generate and deliver a JSON file with specific herb planting data",
+        "started_at": 1794795785995,
+        "ended_at": 1794795786157,
+        "receipt_id": "fa8f05e2-a343-41cd-a299-5c9595b616d5"
+      },
+      {
+        "id": "5748a86d-d5c6-4e49-91bc-be8016fa9457-a6",
+        "label": "Creating JSON file for herb plan",
+        "tool": "session_input",
+        "purpose": "Generate and deliver a JSON file with specific herb planting data",
+        "started_at": 1794795786157,
+        "ended_at": 1794795786933,
+        "receipt_id": "fa8f05e2-a343-41cd-a299-5c9595b616d5"
+      },
+      {
+        "id": "5748a86d-d5c6-4e49-91bc-be8016fa9457-a7",
+        "label": "Creating JSON for Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Author the specified JSON file with the given structure and values.",
+        "started_at": 1794795788652,
+        "ended_at": 1794795788813,
+        "receipt_id": "daa3be33-087c-467e-83df-947aa4d6b366"
+      },
+      {
+        "id": "5748a86d-d5c6-4e49-91bc-be8016fa9457-a8",
+        "label": "Creating JSON for Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Author the specified JSON file with the given structure and values.",
+        "started_at": 1794795788813,
+        "ended_at": 1794795789641,
+        "receipt_id": "daa3be33-087c-467e-83df-947aa4d6b366"
+      },
+      {
+        "id": "5748a86d-d5c6-4e49-91bc-be8016fa9457-a9",
+        "label": "Create JSON Data File",
+        "tool": "document_prepare",
+        "purpose": "Author and prepare a new JSON file with specific herb planning data.",
+        "started_at": 1794795791310,
+        "ended_at": 1794795793928,
+        "receipt_id": "943f137c-ee4f-453d-a6a0-742c96502b57"
+      },
+      {
+        "id": "5748a86d-d5c6-4e49-91bc-be8016fa9457-a10",
+        "label": "Create JSON Data File",
+        "tool": "document_script",
+        "purpose": "Author and prepare a new JSON file with specific herb planning data.",
+        "started_at": 1794795793928,
+        "ended_at": 1794795795649,
+        "receipt_id": "943f137c-ee4f-453d-a6a0-742c96502b57"
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [],
+  "document": {
+    "id": "9a9241dc89417e8d74d9de2cacbba4d008e54ce05583654bde0f714cb259f161",
+    "name": "knot-5748a86d-d5c6-4e49-91bc-be8016fa9457-herb-plan.json",
+    "format": "json",
+    "contentType": "application/json",
+    "title": "Balcony Herb Plan",
+    "deliveryLabel": "JSON Data File",
+    "size": 285,
+    "sha256": "ebe0007cabd9d05185723d270993ba15d829a6329d0b9b7ed5e0666f58f52652",
+    "pages": 1,
+    "proofPages": [],
+    "createdAt": "2026-11-16T02:23:17.622Z",
+    "expiresAt": "2026-11-23T02:23:17.622Z",
+    "proposalID": "943f137c-ee4f-453d-a6a0-742c96502b57",
+    "review": "not_requested",
+    "sampled": true,
+    "sourcePath": "knot-5748a86d-d5c6-4e49-91bc-be8016fa9457-herb-plan.json",
+    "byteFidelity": {
+      "status": "pass",
+      "scope": "measured_final_to_immutable_capture",
+      "sha256": "ebe0007cabd9d05185723d270993ba15d829a6329d0b9b7ed5e0666f58f52652",
+      "bytes": 285
+    },
+    "contentQuality": {
+      "status": "pass",
+      "scope": "complete_text_coverage",
+      "finalSHA256": "ebe0007cabd9d05185723d270993ba15d829a6329d0b9b7ed5e0666f58f52652",
+      "factualCertification": false
+    },
+    "contentReview": {
+      "version": "knot_document_content_v1",
+      "status": "pass",
+      "contentCheckAttempts": [
+        {
+          "attempt": 1,
+          "model": "openai/gpt-4o",
+          "durationMs": 1692,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 2653,
+          "contentBytes": 693,
+          "outcome": "pass",
+          "httpStatus": 200,
+          "contentEncoding": "json"
+        }
+      ],
+      "requestSHA256": "8027eabae3f7e64074570f1e20902b1fa8039bbfadb2afbc21ba57fb8af6798e",
+      "finalSHA256": "ebe0007cabd9d05185723d270993ba15d829a6329d0b9b7ed5e0666f58f52652",
+      "finalTextSHA256": "ebe0007cabd9d05185723d270993ba15d829a6329d0b9b7ed5e0666f58f52652",
+      "sourceSHA256s": [],
+      "scope": "complete_text",
+      "requestedItems": [
+        {
+          "item": "JSON_Syntax_and_Content",
+          "evidenceID": "request",
+          "quote": "{\"title\":\"Balcony Herb Plan\",\"plants\":[{\"name\":\"Basil\",\"containers\":2,\"weeklyWaterChecks\":3},{\"name\":\"Mint\",\"containers\":1,\"weeklyWaterChecks\":4}]}",
+          "section": "All",
+          "status": "developed",
+          "coverageQuote": "{\n    \"title\": \"Balcony Herb Plan\",\n    \"plants\": [\n        {\n            \"name\": \"Basil\",\n            \"containers\": 2,\n            \"weeklyWaterChecks\": 3\n        },\n        {\n            \"name\": \"Mint\",\n            \"containers\": 1,\n            \"weeklyWaterChecks\": 4\n        }\n    ]\n}",
+          "repair": ""
+        }
+      ],
+      "workOrders": []
+    },
+    "sourceMessageID": "5748a86d-d5c6-4e49-91bc-be8016fa9457",
+    "originalPath": "/home/user/rork-app/deliveries/knot-format-matrix-20261116-b-json-original.json",
+    "downloadedSHA256": "ebe0007cabd9d05185723d270993ba15d829a6329d0b9b7ed5e0666f58f52652"
+  },
+  "independentInspection": {
+    "format": "json",
+    "sha256": "ebe0007cabd9d05185723d270993ba15d829a6329d0b9b7ed5e0666f58f52652",
+    "bytes": 285,
+    "newExecutionOrReplay": false,
+    "value": {
+      "title": "Balcony Herb Plan",
+      "plants": [
+        {
+          "name": "Basil",
+          "containers": 2,
+          "weeklyWaterChecks": 3
+        },
+        {
+          "name": "Mint",
+          "containers": 1,
+          "weeklyWaterChecks": 4
+        }
+      ]
+    },
+    "text": "{\n    \"title\": \"Balcony Herb Plan\",\n    \"plants\": [\n        {\n            \"name\": \"Basil\",\n            \"containers\": 2,\n            \"weeklyWaterChecks\": 3\n        },\n        {\n            \"name\": \"Mint\",\n            \"containers\": 1,\n            \"weeklyWaterChecks\": 4\n        }\n    ]\n}"
+  },
+  "automatedChecksPassed": true,
+  "runtimeScope": "authenticated_backend_delivery_and_downloaded_bytes_not_phone_or_browser",
+  "awaitingVisualReview": false,
+  "endedAt": "2026-11-16T02:23:23.401Z",
+  "elapsedMs": 40077
+}

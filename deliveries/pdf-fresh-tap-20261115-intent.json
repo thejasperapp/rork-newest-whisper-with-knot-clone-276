@@ -1,0 +1,17 @@
+{
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "d49f632a-2c64-4d1e-a672-287b147e8aec",
+  "workspaceID": "whisper-d49f632a-2c64-4d1e-a672-287b147e8aec",
+  "requestID": "099067d2-8933-4577-8c24-f9652d7f83ec",
+  "taskID": "099067d2-8933-4577-8c24-f9652d7f83ec",
+  "conversationID": "2396c88f-f0d5-41d8-bb43-5fa7681b45c1",
+  "sourceMessageID": "e5a5969a-43a9-4121-87f3-704a8d662bf1",
+  "expectedBuild": "6feec9e280db8b7046e354d2f97fb6b4a6707bf3559bf1899c8ed22aca11d853",
+  "startedAt": "2026-11-15T22:03:32.889Z",
+  "ask": "Create and deliver a new real two-page PDF titled Rainy Day Reading Plan. Page one: five practical reading-nook preparation tasks and a short book-selection checklist. Page two: a Friday, Saturday and Sunday reading schedule. Use considered typography, warm cream and dark ink, clear hierarchy and comfortable margins. Keep all text concise and readable. This is new authoring, not retrieval or repair of any earlier file. Deliver the actual PDF, not Markdown or an explanation about PDFs.",
+  "syntheticOnly": true,
+  "noAutomaticRetry": true,
+  "noHistoricalReplay": true,
+  "documentConsent": "knot_ai_consent_v4",
+  "modelConsent": "default_cloud_routed_only"
+}

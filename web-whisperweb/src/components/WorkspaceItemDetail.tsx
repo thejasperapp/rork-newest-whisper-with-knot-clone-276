@@ -1,0 +1,62 @@
+import { useEffect, useState } from 'react';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { ArrowLeft, Link2 } from 'lucide-react';
+import { toast } from 'sonner';
+import { workActions, workLink, workNames, workRequest, workStatus, type WorkPerson, type WorkScope, type WorkView } from '@/lib/workspace';
+import { Button } from './ui/button';
+import { WorkspaceForm, type WorkField } from './WorkspaceForm';
+import { JasperNoteConnections } from './JasperNoteConnections';
+import { JasperMeetingAnswerCard } from './JasperMeetingAssistant';
+
+type Edit = { action: string; item: WorkView; label: string };
+export function WorkspaceItemDetail({ owner, scope, id, close, members, isOwner }: { owner: string; scope: WorkScope; id: string; close: () => void; members: WorkPerson[]; isOwner: boolean }): JSX.Element {
+  const cache = useQueryClient();
+  return <WorkspaceLoadedItem owner={owner} scope={scope} id={id} close={close} members={members} isOwner={isOwner} refreshBoard={() => void cache.invalidateQueries({ queryKey: ['jasper-work-board', owner] })} />;
+}
+function WorkspaceLoadedItem({ owner, scope, id, close, members, isOwner, refreshBoard }: { owner: string; scope: WorkScope; id: string; close: () => void; members: WorkPerson[]; isOwner: boolean; refreshBoard: () => void }): JSX.Element {
+  const cache = useQueryClient();
+  const queryKey = ['jasper-work-detail', owner, scope.space, scope.team, id];
+  const query = useQuery({ queryKey, queryFn: ({ signal }) => workRequest<WorkView>(owner, { ...scope }, `/item/${id}`, undefined, signal), refetchOnWindowFocus: true, refetchInterval: 15000, gcTime: 0, retry: false });
+  const [edit, setEdit] = useState<Edit | null>(null);
+  const [connections, setConnections] = useState<boolean>(false);
+  const item = query.data;
+  useEffect(() => { setEdit(null); setConnections(false); }, [item?.external, item?.canManage, item?.canDecide, query.isError]);
+  const labelFor = (person: string): string => members.find((p) => p.id === person)?.username ?? (person === owner ? 'You' : person ? `Account ${person.slice(0, 8)}` : 'Workspace owner');
+  const open = (action: string, label: string): void => { if (item) { setConnections(false); setEdit({ action, label, item: structuredClone(item) }); } };
+  if (query.error) return <section className="space-y-3"><p role="alert">{query.error.message}</p><Button onClick={() => void query.refetch()}>Retry access</Button><Button variant="ghost" onClick={close}>Back</Button></section>;
+  if (!item) return <p role="status">Loading this workspace item…</p>;
+  const fields: WorkField[] = edit?.action === 'reassign_reviewer' ? [{ key: 'assigneeId', label: 'Outcome reviewer', required: true, options: members.map((p) => ({ id: p.id, label: p.username })) }] : edit?.action === 'edit' ? [
+    { key: 'title', label: 'Title', required: true, max: 160 }, { key: 'brief', label: 'Brief', required: true, multiline: true },
+    ...(item.kind === 'decision' ? [{ key: 'alternatives', label: 'Alternatives and trade-offs', multiline: true, max: 4000 }] : []),
+    { key: 'deadline', label: 'Due date (UTC day)', type: 'date' }, ...(item.kind === 'decision' ? [{ key: 'reviewOn', label: 'Outcome review date (UTC day)', type: 'date' }] : []),
+    ...(isOwner ? [{ key: 'assigneeId', label: 'Accountable owner / approver', options: members.map((p) => ({ id: p.id, label: p.username })) }] : []),
+    { key: 'internalNote', label: 'Internal context — never included in the client portal', multiline: true, max: 4000 },
+  ] : edit?.action === 'publish' ? [
+    { key: 'username', label: 'Client’s exact Whisper username', required: true, max: 40 }, { key: 'title', label: 'Client-facing title', required: true, max: 160 },
+    { key: 'summary', label: 'Reviewed delivery update', required: true, multiline: true, max: 6000 }, { key: 'milestones', label: 'Milestones, dates and progress', multiline: true, max: 3000 }, { key: 'url', label: 'Deliverable HTTPS link (optional)', max: 2000 },
+  ] : edit?.action === 'comment' ? [{ key: 'text', label: item.kind === 'decision' ? 'Contribution or objection' : 'Comment', required: true, multiline: true, max: 2000 }, ...(!item.external && item.kind !== 'decision' ? [{ key: 'audience', label: 'Visibility', options: [{ id: 'internal', label: 'Internal only' }, { id: 'shared', label: 'Also visible to the client / requester' }] }] : [])] : ['respond', 'decide', 'review', 'approve', 'decline'].includes(edit?.action ?? '') ? [{ key: 'text', label: 'Reason, feedback or outcome', required: edit?.label !== 'Accept this version', multiline: true, max: 2000 }] : [];
+  const done = (): void => { setEdit(null); void cache.invalidateQueries({ queryKey }); refreshBoard(); };
+  return <article className="space-y-5">
+    <Button variant="ghost" onClick={close}><ArrowLeft className="mr-2 h-4 w-4" />All work</Button>
+    <header className="space-y-3"><p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">{workNames[item.kind]} · {item.external ? 'Shared with you' : scope.team ? 'Team workspace' : 'Private workspace'}</p><h2 className="break-words text-2xl font-semibold sm:text-3xl">{item.title}</h2><div className="flex flex-wrap gap-2 text-xs"><span className="rounded-full bg-secondary px-3 py-1.5 capitalize">{workStatus(item.status)}</span>{item.assigneeId && <span className="rounded-full border px-3 py-1.5">Owner: {labelFor(item.assigneeId)}</span>}{item.deadline && <span className="rounded-full border px-3 py-1.5">Due {item.deadline}</span>}{item.reviewOn && <span className="rounded-full border px-3 py-1.5">Review {item.reviewOn}</span>}</div></header>
+    <p className="whitespace-pre-wrap break-words text-sm leading-7">{item.brief}</p>
+    {item.alternatives && <section className="rounded-2xl bg-secondary/50 p-5"><h3 className="mb-2 text-sm font-semibold">Alternatives & trade-offs</h3><p className="whitespace-pre-wrap text-sm leading-7">{item.alternatives}</p></section>}
+    {item.outcome && <section className="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-5"><h3 className="mb-2 font-semibold">Recorded outcome</h3><p className="whitespace-pre-wrap text-sm leading-7">{item.outcome}</p></section>}
+    {item.internalNote && <details className="rounded-xl border p-4"><summary className="cursor-pointer text-sm font-medium">Internal context</summary><p className="mt-3 whitespace-pre-wrap text-sm leading-6">{item.internalNote}</p></details>}
+    {edit && edit.item.external === item.external && edit.item.canManage === item.canManage && edit.item.canDecide === item.canDecide ? <WorkspaceForm key={`${edit.action}-${edit.item.revision}`} title={edit.label} fields={fields} initial={{ ...Object.fromEntries(Object.entries(edit.item).filter(([, v]) => typeof v === 'string')) as Record<string, string>, username: edit.item.client?.username ?? '', summary: '', audience: item.kind === 'decision' || item.external ? 'shared' : 'internal', text: '' }} audience={edit.action === 'publish' ? 'Only the exact client named here can view this published version. Internal briefs and discussions are excluded. Linked files retain their own permissions. Copy and send the portal link yourself; no email is sent.' : item.external ? 'Your response is shared with the workspace team. It applies to this reviewed version only.' : `Changes are saved to this ${scope.team ? 'team' : 'private'} workspace. Request briefs and outcomes, and shared comments, are also visible to their requester. Client deliveries expose only separately published content. Decisions and approvals are attributed to your signed-in account.`} submitLabel={edit.label} submit={(values) => workRequest(owner, scope, '', { ...values, action: edit.action, id, revision: edit.item.revision, confirm: true, assigneeId: values.assigneeId ?? edit.item.assigneeId, reviewOn: values.reviewOn ?? edit.item.reviewOn, alternatives: values.alternatives ?? edit.item.alternatives, ...(edit.action === 'respond' ? { version: edit.item.publishedVersion, status: edit.label === 'Accept this version' ? 'accepted' : 'changes_requested' } : {}) })} done={done} cancel={() => setEdit(null)} /> : <div className="flex flex-wrap gap-2">
+      {workActions(item).map((a) => <Button key={a.id} className="min-h-11 rounded-full" onClick={() => open(a.id, a.label)}>{a.label}</Button>)}
+      {isOwner && !item.external && item.kind === 'decision' && item.status === 'decided' && <Button variant="outline" onClick={() => open('reassign_reviewer', 'Assign outcome reviewer')}>Assign outcome reviewer</Button>}
+      {item.canManage && !['archived', 'decided', 'reviewed', 'completed', 'declined'].includes(item.status) && <Button variant="outline" onClick={() => open('edit', 'Edit brief')}>Edit brief</Button>}
+      {item.canManage && item.kind === 'delivery' && item.status !== 'archived' && <><Button onClick={() => open('publish', 'Publish reviewed version')}>Publish a version</Button>{item.publishedVersion !== null && <Button variant="outline" onClick={() => open('revoke', 'Revoke client access')}>Revoke access</Button>}</>}
+      {item.canRespond && <><Button onClick={() => open('respond', 'Accept this version')}>Accept this version</Button><Button variant="outline" onClick={() => open('respond', 'Request changes')}>Request changes</Button></>}
+      {item.status !== 'archived' && (item.kind !== 'decision' || item.status === 'discussing') && <Button variant="outline" onClick={() => open('comment', item.kind === 'decision' ? 'Add contribution or objection' : 'Add comment')}>Add {item.kind === 'decision' ? 'contribution' : 'comment'}</Button>}
+      {!item.external && <Button variant="outline" onClick={() => setConnections(!connections)}><Link2 className="mr-2 h-4 w-4" />Ask Jasper about this</Button>}
+      <Button variant="ghost" onClick={() => void navigator.clipboard.writeText(workLink(scope, id)).then(() => toast.success('Link copied. Access is still restricted.'), () => toast.error('Could not copy. Use the page address.'))}>Copy restricted link</Button>
+      {item.canManage && item.status !== 'archived' && <Button variant="ghost" onClick={() => open('archive', 'Archive this item')}>Archive</Button>}
+    </div>}
+    {connections && !item.external && <JasperNoteConnections key={`${item.id}:${item.revision}`} owner={owner} initialNote={{ title: item.title, text: item.brief }} renderAnswer={(answer) => <JasperMeetingAnswerCard answer={answer} />} />}
+    {item.versions.length > 0 && <section className="space-y-3"><h3 className="font-semibold">Delivery versions</h3>{[...item.versions].reverse().map((v) => <div key={v.number} className="space-y-2 rounded-2xl border p-4"><p className="text-xs text-muted-foreground">Version {v.number} · {new Date(v.at).toLocaleString()} {v.number === item.publishedVersion ? '· Current publication' : '· Internal history'}</p><h4 className="font-medium">{v.title}</h4><p className="whitespace-pre-wrap text-sm leading-6">{v.summary}</p><p className="whitespace-pre-wrap text-sm leading-6">{v.milestones}</p>{v.url && <a className="inline-flex min-h-11 items-center text-sm underline" href={v.url} target="_blank" rel="noopener noreferrer">Open deliverable</a>}{v.response && <p className="rounded-xl bg-secondary p-3 text-sm">{workStatus(v.response.status)} · {labelFor(v.response.actor)} · {new Date(v.response.at).toLocaleString()}<span className="mt-1 block whitespace-pre-wrap">{v.response.text}</span></p>}</div>)}</section>}
+    {item.comments.length > 0 && <section className="space-y-3"><h3 className="font-semibold">Discussion</h3>{item.comments.map((c) => <div key={c.id} className="rounded-2xl border p-4"><p className="text-xs text-muted-foreground">{labelFor(c.author)} · {new Date(c.at).toLocaleString()} · {c.audience === 'internal' ? 'Internal only' : 'Shared'}</p><p className="mt-2 whitespace-pre-wrap break-words text-sm leading-6">{c.text}</p></div>)}</section>}
+    {!item.external && <details className="rounded-xl border p-4"><summary className="cursor-pointer text-sm">Activity history · revision {item.revision}</summary><ul className="mt-3 space-y-2 text-xs text-muted-foreground">{[...item.events].reverse().map((e) => <li key={e.id}>{workStatus(e.action)} · {labelFor(e.actor)} · {new Date(e.at).toLocaleString()}{e.contentRevision !== undefined && ` · content revision ${e.contentRevision}`}{e.detail && <p className="mt-1 whitespace-pre-wrap text-foreground">{e.detail}</p>}</li>)}</ul></details>}
+  </article>;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "rork-functions",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@stacksjs/ts-webp": "^0.1.7",
+    "fast-png": "^8.0.0",
+    "fflate": "^0.8.3",
+    "jpeg-js": "^0.4.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261110.1"
+  }
+}

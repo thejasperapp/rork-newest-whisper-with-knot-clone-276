@@ -1,0 +1,1858 @@
+{
+  "title": "Structured recipes — complete recorded stage vitals",
+  "taskID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+  "conversationID": "ee938d0d-cff3-4645-812a-1faff64a4797",
+  "sourceMessageID": "bd9f0567-9808-486e-96de-560308cd6523",
+  "scope": "20261114-recipe-lists-04",
+  "sourceBuildSHA256": "61b7039aac31177019ab0b7f1806eaa0e1306988b171835c4babb848913d700a",
+  "startedAt": "2026-11-14T06:48:39.108Z",
+  "endedAt": "2026-11-14T06:59:20.855Z",
+  "timings": {
+    "captureElapsedMs": 618401,
+    "completionReceivedMs": 634211,
+    "streamEndedMs": 635463,
+    "evidenceCollectionMs": 6284,
+    "totalElapsedMs": 641747
+  },
+  "comparison": {
+    "baselineCompletionMs": 603097,
+    "prospectivePlanningMs": 265225,
+    "targetMs": 330000,
+    "abovePlanningMs": 368986,
+    "aboveTargetMs": 304211,
+    "abovePriorCompletionMs": 31114,
+    "speedImprovementEstablished": false,
+    "estimatedOneResponseGenerationMs": 102210,
+    "actualAuthorProviderMs": 442096,
+    "generationAbovePlanMs": 339886,
+    "plannedOtherMs": 163015,
+    "actualOtherThanAuthorProviderMs": 192115,
+    "otherAbovePlanMs": 29100,
+    "additionalFullPasses2Through4ProviderMs": 335371
+  },
+  "authoring": [
+    {
+      "stage": "Full author pass 1",
+      "proposalID": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+      "model": "anthropic/claude-sonnet-4.6",
+      "modelResponseBytes": 17932,
+      "programBytes": 20809,
+      "storagePieces": 1,
+      "semanticResponses": 1,
+      "transportCalls": 1,
+      "authoringElapsedMs": 103903,
+      "providerElapsedMs": 103548,
+      "firstContentMs": 3174,
+      "maxIdleMs": 3174,
+      "bytesPerSecond": 200,
+      "returnedContentBytesPerSecond": 173.176,
+      "promptBytesIncludingContract": 48610,
+      "promptOverageBytes": 15842,
+      "basePromptBytes": 42879,
+      "readPayloadMessageBytes": 22877,
+      "developedAuthorshipMessageBytes": 0,
+      "descriptorMessageBytes": 1367,
+      "startedAt": "2026-11-14T06:48:51.902Z",
+      "endedAt": "2026-11-14T06:50:35.805Z",
+      "providerStartedAt": "2026-11-14T06:48:52.019Z",
+      "providerEndedAt": "2026-11-14T06:50:35.567Z",
+      "frameSequence": 25,
+      "automaticRetries": 0,
+      "outcome": "sealed_and_executed",
+      "fullDocumentResponse": true
+    },
+    {
+      "stage": "Full author pass 2",
+      "proposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "model": "anthropic/claude-sonnet-4.6",
+      "modelResponseBytes": 17867,
+      "programBytes": 20747,
+      "storagePieces": 1,
+      "semanticResponses": 1,
+      "transportCalls": 1,
+      "authoringElapsedMs": 106637,
+      "providerElapsedMs": 106272,
+      "firstContentMs": 2022,
+      "maxIdleMs": 2022,
+      "bytesPerSecond": 194,
+      "returnedContentBytesPerSecond": 168.125,
+      "promptBytesIncludingContract": 70167,
+      "promptOverageBytes": 37399,
+      "basePromptBytes": 64433,
+      "readPayloadMessageBytes": 22877,
+      "developedAuthorshipMessageBytes": 18637,
+      "descriptorMessageBytes": 4061,
+      "startedAt": "2026-11-14T06:50:49.828Z",
+      "endedAt": "2026-11-14T06:52:36.465Z",
+      "providerStartedAt": "2026-11-14T06:50:49.960Z",
+      "providerEndedAt": "2026-11-14T06:52:36.232Z",
+      "frameSequence": 37,
+      "automaticRetries": 0,
+      "outcome": "sealed_and_executed",
+      "fullDocumentResponse": true
+    },
+    {
+      "stage": "Full author pass 3",
+      "proposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "model": "anthropic/claude-sonnet-4.6",
+      "modelResponseBytes": 18837,
+      "programBytes": 21709,
+      "storagePieces": 1,
+      "semanticResponses": 1,
+      "transportCalls": 1,
+      "authoringElapsedMs": 109422,
+      "providerElapsedMs": 109017,
+      "firstContentMs": 1444,
+      "maxIdleMs": 1444,
+      "bytesPerSecond": 198,
+      "returnedContentBytesPerSecond": 172.79,
+      "promptBytesIncludingContract": 90074,
+      "promptOverageBytes": 57306,
+      "basePromptBytes": 84340,
+      "readPayloadMessageBytes": 22877,
+      "developedAuthorshipMessageBytes": 37212,
+      "descriptorMessageBytes": 5170,
+      "startedAt": "2026-11-14T06:52:57.221Z",
+      "endedAt": "2026-11-14T06:54:46.643Z",
+      "providerStartedAt": "2026-11-14T06:52:57.377Z",
+      "providerEndedAt": "2026-11-14T06:54:46.394Z",
+      "frameSequence": 49,
+      "automaticRetries": 0,
+      "outcome": "sealed_and_executed",
+      "fullDocumentResponse": true
+    },
+    {
+      "stage": "Full author pass 4",
+      "proposalID": "b7450130-6419-4af3-a45b-a406ddceb043",
+      "model": "anthropic/claude-sonnet-4.6",
+      "modelResponseBytes": 20711,
+      "programBytes": 23595,
+      "storagePieces": 1,
+      "semanticResponses": 1,
+      "transportCalls": 1,
+      "authoringElapsedMs": 121055,
+      "providerElapsedMs": 120082,
+      "firstContentMs": 1542,
+      "maxIdleMs": 1542,
+      "bytesPerSecond": 194,
+      "returnedContentBytesPerSecond": 172.474,
+      "promptBytesIncludingContract": 110146,
+      "promptOverageBytes": 77378,
+      "basePromptBytes": 104412,
+      "readPayloadMessageBytes": 22877,
+      "developedAuthorshipMessageBytes": 56749,
+      "descriptorMessageBytes": 5482,
+      "startedAt": "2026-11-14T06:55:04.630Z",
+      "endedAt": "2026-11-14T06:57:05.685Z",
+      "providerStartedAt": "2026-11-14T06:55:04.753Z",
+      "providerEndedAt": "2026-11-14T06:57:04.835Z",
+      "frameSequence": 61,
+      "automaticRetries": 0,
+      "outcome": "sealed_and_executed",
+      "fullDocumentResponse": true
+    },
+    {
+      "stage": "Layout-only patch",
+      "proposalID": "126be6ae-8f1c-465c-921b-7122764a5cea",
+      "model": "anthropic/claude-sonnet-4.6",
+      "modelResponseBytes": 148,
+      "programBytes": 23671,
+      "storagePieces": 1,
+      "semanticResponses": 1,
+      "transportCalls": 1,
+      "authoringElapsedMs": 3487,
+      "providerElapsedMs": 3177,
+      "firstContentMs": 2528,
+      "maxIdleMs": 2528,
+      "bytesPerSecond": 6788,
+      "returnedContentBytesPerSecond": 46.585,
+      "promptBytesIncludingContract": 149998,
+      "promptOverageBytes": 117230,
+      "basePromptBytes": 130670,
+      "readPayloadMessageBytes": 22877,
+      "developedAuthorshipMessageBytes": 78172,
+      "descriptorMessageBytes": 9650,
+      "startedAt": "2026-11-14T06:58:08.142Z",
+      "endedAt": "2026-11-14T06:58:11.629Z",
+      "providerStartedAt": "2026-11-14T06:58:08.378Z",
+      "providerEndedAt": "2026-11-14T06:58:11.555Z",
+      "frameSequence": 86,
+      "automaticRetries": 0,
+      "outcome": "sealed_and_executed",
+      "fullDocumentResponse": false
+    }
+  ],
+  "providerGenerationMs": 442096,
+  "classification": {
+    "stage": "Initial work classification",
+    "model": "openai/gpt-4o",
+    "modelBasis": "Verified run source: runStep initializes routing model via knotTaskModel; routing always selects GPT-4o.",
+    "responseBytes": null,
+    "providerElapsedMs": null,
+    "promptBytes": null,
+    "startedAt": "2026-11-14T06:48:41.034Z",
+    "endedAt": "2026-11-14T06:48:42.181Z",
+    "observedWindowMs": 1147,
+    "durationScope": "Timestamp-derived enclosing classification/parsing/routing window, NOT exact provider duration.",
+    "missingTelemetry": "No classification response bytes, exact request prompt size or provider duration were retained.",
+    "providerDispatch": "established_by_successful_classification_and_following_fixed_briefing",
+    "transportCalls": 1,
+    "retries": 0,
+    "frameSequences": [
+      3,
+      4
+    ],
+    "outcome": "create_document_routed",
+    "briefingIsSeparateModelCall": false
+  },
+  "selection": [
+    {
+      "stage": "Selection 1",
+      "phase": "document_authoring",
+      "model": "anthropic/claude-sonnet-4.6",
+      "promptBytes": 112515,
+      "responseBytes": null,
+      "providerElapsedMs": null,
+      "responseBytesMissingReason": "Successful selection response bodies and response byte counts were not retained.",
+      "durationMissingReason": "No successful selection completion/provider-duration event was emitted.",
+      "startedAt": "2026-11-14T06:48:47.798Z",
+      "windowEndedAt": "2026-11-14T06:48:51.902Z",
+      "observedWindowMs": 4104,
+      "durationScope": "Timestamp-derived enclosing selection/validation/preparation window, NOT exact provider duration.",
+      "transportAttempts": 1,
+      "observedRetries": 0,
+      "frameSequence": 19,
+      "endFrameSequence": 21,
+      "outcome": "author_descriptor_accepted"
+    },
+    {
+      "stage": "Selection 2",
+      "phase": "document_build",
+      "model": "anthropic/claude-sonnet-4.6",
+      "promptBytes": 273018,
+      "responseBytes": null,
+      "providerElapsedMs": null,
+      "responseBytesMissingReason": "Successful selection response bodies and response byte counts were not retained.",
+      "durationMissingReason": "No successful selection completion/provider-duration event was emitted.",
+      "startedAt": "2026-11-14T06:50:44.643Z",
+      "windowEndedAt": "2026-11-14T06:50:49.828Z",
+      "observedWindowMs": 5185,
+      "durationScope": "Timestamp-derived enclosing selection/validation/preparation window, NOT exact provider duration.",
+      "transportAttempts": 1,
+      "observedRetries": 0,
+      "frameSequence": 31,
+      "endFrameSequence": 33,
+      "outcome": "author_descriptor_accepted"
+    },
+    {
+      "stage": "Selection 3",
+      "phase": "document_build",
+      "model": "anthropic/claude-sonnet-4.6",
+      "promptBytes": 377889,
+      "responseBytes": null,
+      "providerElapsedMs": null,
+      "responseBytesMissingReason": "Successful selection response bodies and response byte counts were not retained.",
+      "durationMissingReason": "No successful selection completion/provider-duration event was emitted.",
+      "startedAt": "2026-11-14T06:52:51.682Z",
+      "windowEndedAt": "2026-11-14T06:52:57.221Z",
+      "observedWindowMs": 5539,
+      "durationScope": "Timestamp-derived enclosing selection/validation/preparation window, NOT exact provider duration.",
+      "transportAttempts": 1,
+      "observedRetries": 0,
+      "frameSequence": 43,
+      "endFrameSequence": 45,
+      "outcome": "author_descriptor_accepted"
+    },
+    {
+      "stage": "Selection 4",
+      "phase": "document_build",
+      "model": "anthropic/claude-sonnet-4.6",
+      "promptBytes": 486092,
+      "responseBytes": null,
+      "providerElapsedMs": null,
+      "responseBytesMissingReason": "Successful selection response bodies and response byte counts were not retained.",
+      "durationMissingReason": "No successful selection completion/provider-duration event was emitted.",
+      "startedAt": "2026-11-14T06:54:58.917Z",
+      "windowEndedAt": "2026-11-14T06:55:04.630Z",
+      "observedWindowMs": 5713,
+      "durationScope": "Timestamp-derived enclosing selection/validation/preparation window, NOT exact provider duration.",
+      "transportAttempts": 1,
+      "observedRetries": 0,
+      "frameSequence": 55,
+      "endFrameSequence": 57,
+      "outcome": "author_descriptor_accepted"
+    },
+    {
+      "stage": "Selection 5",
+      "phase": "document_build",
+      "model": "anthropic/claude-sonnet-4.6",
+      "promptBytes": 603997,
+      "responseBytes": null,
+      "providerElapsedMs": null,
+      "responseBytesMissingReason": "Successful selection response bodies and response byte counts were not retained.",
+      "durationMissingReason": "No successful selection completion/provider-duration event was emitted.",
+      "startedAt": "2026-11-14T06:57:19.237Z",
+      "windowEndedAt": "2026-11-14T06:57:27.963Z",
+      "observedWindowMs": 8726,
+      "durationScope": "Timestamp-derived enclosing selection/validation/preparation window, NOT exact provider duration.",
+      "transportAttempts": 1,
+      "observedRetries": 0,
+      "frameSequence": 67,
+      "endFrameSequence": 69,
+      "outcome": "build_descriptor_accepted"
+    },
+    {
+      "stage": "Selection 6",
+      "phase": "document_build",
+      "model": "anthropic/claude-sonnet-4.6",
+      "promptBytes": 613156,
+      "responseBytes": null,
+      "providerElapsedMs": null,
+      "responseBytesMissingReason": "Successful selection response bodies and response byte counts were not retained.",
+      "durationMissingReason": "No successful selection completion/provider-duration event was emitted.",
+      "startedAt": "2026-11-14T06:58:01.334Z",
+      "windowEndedAt": "2026-11-14T06:58:08.142Z",
+      "observedWindowMs": 6808,
+      "durationScope": "Timestamp-derived enclosing selection/validation/preparation window, NOT exact provider duration.",
+      "transportAttempts": 1,
+      "observedRetries": 0,
+      "frameSequence": 80,
+      "endFrameSequence": 82,
+      "outcome": "author_descriptor_accepted"
+    },
+    {
+      "stage": "Selection 7",
+      "phase": "document_build",
+      "model": "anthropic/claude-sonnet-4.6",
+      "promptBytes": 773451,
+      "responseBytes": null,
+      "providerElapsedMs": null,
+      "responseBytesMissingReason": "Successful selection response bodies and response byte counts were not retained.",
+      "durationMissingReason": "No successful selection completion/provider-duration event was emitted.",
+      "startedAt": "2026-11-14T06:58:20.298Z",
+      "windowEndedAt": "2026-11-14T06:58:27.718Z",
+      "observedWindowMs": 7420,
+      "durationScope": "Timestamp-derived enclosing selection/validation/preparation window, NOT exact provider duration.",
+      "transportAttempts": 1,
+      "observedRetries": 0,
+      "frameSequence": 92,
+      "endFrameSequence": 94,
+      "outcome": "build_descriptor_accepted"
+    },
+    {
+      "stage": "Selection 8",
+      "phase": "closing_choice",
+      "model": "anthropic/claude-sonnet-4.6",
+      "promptBytes": 767068,
+      "responseBytes": null,
+      "providerElapsedMs": null,
+      "responseBytesMissingReason": "Successful selection response bodies and response byte counts were not retained.",
+      "durationMissingReason": "No successful selection completion/provider-duration event was emitted.",
+      "startedAt": "2026-11-14T06:58:59.652Z",
+      "windowEndedAt": "2026-11-14T06:59:13.334Z",
+      "observedWindowMs": 13682,
+      "durationScope": "Timestamp-derived enclosing selection/validation/preparation window, NOT exact provider duration.",
+      "transportAttempts": 1,
+      "observedRetries": 0,
+      "frameSequence": 108,
+      "endFrameSequence": 110,
+      "outcome": "closing_choice_completed"
+    }
+  ],
+  "modelCalls": {
+    "classification": 1,
+    "authors": 5,
+    "selections": 8,
+    "contentChecks": 11,
+    "confirmedVisualBatches": 5,
+    "confirmedTotal": 30,
+    "additionalPossibleVisualRequest": 1,
+    "additionalPossibleVisualDispatchConfirmed": false,
+    "briefing": "Fixed text, not an additional generation",
+    "providerGenerationMsScope": "Author provider time only; excludes content-check attempts (accounted separately) and classification/selection/visual calls (exact provider timing unavailable)."
+  },
+  "contentChecks": [
+    {
+      "stage": "Source 1",
+      "proposalID": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+      "operation": "source",
+      "attempt": 1,
+      "retry": 0,
+      "model": "openai/gpt-4o",
+      "durationMs": 5107,
+      "outcome": "issues",
+      "responseBytes": 4956,
+      "contentBytes": 2896,
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "failureStage": "grounding",
+      "validationCode": "item_requirement_anchor",
+      "itemIndex": 0,
+      "reason": "content_check_unparseable",
+      "startedAt": "2026-11-14T06:50:39.495Z",
+      "endedAt": "2026-11-14T06:50:44.602Z",
+      "eventSequence": 1328,
+      "durationScope": "Measured complete check attempt: request, response read, JSON/schema/grounding validation; not isolated model computation.",
+      "timestampScope": "End is retained Event time; start is derived by subtracting measured attempt duration, with reporting/clock skew possible.",
+      "pageCoverage": {
+        "pages": null,
+        "scope": "complete HTML source; not yet paginated"
+      }
+    },
+    {
+      "stage": "Source 2",
+      "proposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "operation": "source",
+      "attempt": 1,
+      "retry": 0,
+      "model": "openai/gpt-4o",
+      "durationMs": 4984,
+      "outcome": "unconfirmed",
+      "responseBytes": 4856,
+      "contentBytes": 2736,
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "failureStage": "requested_items",
+      "validationCode": "item_identity",
+      "itemIndex": 1,
+      "reason": "content_check_unparseable",
+      "startedAt": "2026-11-14T06:52:40.426Z",
+      "endedAt": "2026-11-14T06:52:45.410Z",
+      "eventSequence": 1337,
+      "durationScope": "Measured complete check attempt: request, response read, JSON/schema/grounding validation; not isolated model computation.",
+      "timestampScope": "End is retained Event time; start is derived by subtracting measured attempt duration, with reporting/clock skew possible.",
+      "pageCoverage": {
+        "pages": null,
+        "scope": "complete HTML source; not yet paginated"
+      }
+    },
+    {
+      "stage": "Source 2",
+      "proposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "operation": "source",
+      "attempt": 2,
+      "retry": 1,
+      "model": "openai/gpt-4o",
+      "durationMs": 6237,
+      "outcome": "issues",
+      "responseBytes": 4998,
+      "contentBytes": 2945,
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "failureStage": "grounding",
+      "validationCode": "item_requirement_anchor",
+      "itemIndex": 0,
+      "reason": "content_check_unparseable",
+      "startedAt": "2026-11-14T06:52:45.410Z",
+      "endedAt": "2026-11-14T06:52:51.647Z",
+      "eventSequence": 1338,
+      "durationScope": "Measured complete check attempt: request, response read, JSON/schema/grounding validation; not isolated model computation.",
+      "timestampScope": "End is retained Event time; start is derived by subtracting measured attempt duration, with reporting/clock skew possible.",
+      "pageCoverage": {
+        "pages": null,
+        "scope": "complete HTML source; not yet paginated"
+      }
+    },
+    {
+      "stage": "Source 3",
+      "proposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "operation": "source",
+      "attempt": 1,
+      "retry": 0,
+      "model": "openai/gpt-4o",
+      "durationMs": 3870,
+      "outcome": "unconfirmed",
+      "responseBytes": 3367,
+      "contentBytes": 1415,
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "failureStage": "grounding",
+      "validationCode": "item_coverage_anchor",
+      "itemIndex": 3,
+      "reason": "content_check_unparseable",
+      "startedAt": "2026-11-14T06:54:50.419Z",
+      "endedAt": "2026-11-14T06:54:54.289Z",
+      "eventSequence": 1347,
+      "durationScope": "Measured complete check attempt: request, response read, JSON/schema/grounding validation; not isolated model computation.",
+      "timestampScope": "End is retained Event time; start is derived by subtracting measured attempt duration, with reporting/clock skew possible.",
+      "pageCoverage": {
+        "pages": null,
+        "scope": "complete HTML source; not yet paginated"
+      }
+    },
+    {
+      "stage": "Source 3",
+      "proposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "operation": "source",
+      "attempt": 2,
+      "retry": 1,
+      "model": "openai/gpt-4o",
+      "durationMs": 4593,
+      "outcome": "issues",
+      "responseBytes": 4426,
+      "contentBytes": 2406,
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "failureStage": "grounding",
+      "validationCode": "item_requirement_anchor",
+      "itemIndex": 0,
+      "reason": "content_check_unparseable",
+      "startedAt": "2026-11-14T06:54:54.289Z",
+      "endedAt": "2026-11-14T06:54:58.882Z",
+      "eventSequence": 1348,
+      "durationScope": "Measured complete check attempt: request, response read, JSON/schema/grounding validation; not isolated model computation.",
+      "timestampScope": "End is retained Event time; start is derived by subtracting measured attempt duration, with reporting/clock skew possible.",
+      "pageCoverage": {
+        "pages": null,
+        "scope": "complete HTML source; not yet paginated"
+      }
+    },
+    {
+      "stage": "Source 4",
+      "proposalID": "b7450130-6419-4af3-a45b-a406ddceb043",
+      "operation": "source",
+      "attempt": 1,
+      "retry": 0,
+      "model": "openai/gpt-4o",
+      "durationMs": 6933,
+      "outcome": "pass",
+      "responseBytes": 7182,
+      "contentBytes": 4924,
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "failureStage": null,
+      "validationCode": null,
+      "itemIndex": null,
+      "reason": null,
+      "startedAt": "2026-11-14T06:57:12.045Z",
+      "endedAt": "2026-11-14T06:57:18.978Z",
+      "eventSequence": 1357,
+      "durationScope": "Measured complete check attempt: request, response read, JSON/schema/grounding validation; not isolated model computation.",
+      "timestampScope": "End is retained Event time; start is derived by subtracting measured attempt duration, with reporting/clock skew possible.",
+      "pageCoverage": {
+        "pages": null,
+        "scope": "complete HTML source; not yet paginated"
+      }
+    },
+    {
+      "stage": "Candidate PDF",
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "operation": "final",
+      "attempt": 1,
+      "retry": 0,
+      "model": "openai/gpt-4o",
+      "durationMs": 6728,
+      "outcome": "unconfirmed",
+      "responseBytes": 7050,
+      "contentBytes": 4794,
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "failureStage": "grounding",
+      "validationCode": "item_coverage_anchor",
+      "itemIndex": 0,
+      "reason": "content_check_unparseable",
+      "startedAt": "2026-11-14T06:57:38.008Z",
+      "endedAt": "2026-11-14T06:57:44.736Z",
+      "eventSequence": 1374,
+      "durationScope": "Measured complete check attempt: request, response read, JSON/schema/grounding validation; not isolated model computation.",
+      "timestampScope": "End is retained Event time; start is derived by subtracting measured attempt duration, with reporting/clock skew possible.",
+      "pageCoverage": {
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "scope": "complete extracted document text; NOT separate per-page model calls or confirmed per-page content verdicts"
+      }
+    },
+    {
+      "stage": "Candidate PDF",
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "operation": "final",
+      "attempt": 2,
+      "retry": 1,
+      "model": "openai/gpt-4o",
+      "durationMs": 6043,
+      "outcome": "unconfirmed",
+      "responseBytes": 7053,
+      "contentBytes": 4794,
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "failureStage": "grounding",
+      "validationCode": "item_coverage_anchor",
+      "itemIndex": 0,
+      "reason": "content_check_unparseable",
+      "startedAt": "2026-11-14T06:57:44.736Z",
+      "endedAt": "2026-11-14T06:57:50.779Z",
+      "eventSequence": 1375,
+      "durationScope": "Measured complete check attempt: request, response read, JSON/schema/grounding validation; not isolated model computation.",
+      "timestampScope": "End is retained Event time; start is derived by subtracting measured attempt duration, with reporting/clock skew possible.",
+      "pageCoverage": {
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "scope": "complete extracted document text; NOT separate per-page model calls or confirmed per-page content verdicts"
+      }
+    },
+    {
+      "stage": "Source 5",
+      "proposalID": "126be6ae-8f1c-465c-921b-7122764a5cea",
+      "operation": "source",
+      "attempt": 1,
+      "retry": 0,
+      "model": "openai/gpt-4o",
+      "durationMs": 6124,
+      "outcome": "pass",
+      "responseBytes": 7198,
+      "contentBytes": 4938,
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "failureStage": null,
+      "validationCode": null,
+      "itemIndex": null,
+      "reason": null,
+      "startedAt": "2026-11-14T06:58:14.103Z",
+      "endedAt": "2026-11-14T06:58:20.227Z",
+      "eventSequence": 1389,
+      "durationScope": "Measured complete check attempt: request, response read, JSON/schema/grounding validation; not isolated model computation.",
+      "timestampScope": "End is retained Event time; start is derived by subtracting measured attempt duration, with reporting/clock skew possible.",
+      "pageCoverage": {
+        "pages": null,
+        "scope": "complete HTML source; not yet paginated"
+      }
+    },
+    {
+      "stage": "Delivered PDF",
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "operation": "final",
+      "attempt": 1,
+      "retry": 0,
+      "model": "openai/gpt-4o",
+      "durationMs": 8454,
+      "outcome": "unconfirmed",
+      "responseBytes": 7050,
+      "contentBytes": 4794,
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "failureStage": "grounding",
+      "validationCode": "item_coverage_anchor",
+      "itemIndex": 0,
+      "reason": "content_check_unparseable",
+      "startedAt": "2026-11-14T06:58:36.744Z",
+      "endedAt": "2026-11-14T06:58:45.198Z",
+      "eventSequence": 1406,
+      "durationScope": "Measured complete check attempt: request, response read, JSON/schema/grounding validation; not isolated model computation.",
+      "timestampScope": "End is retained Event time; start is derived by subtracting measured attempt duration, with reporting/clock skew possible.",
+      "pageCoverage": {
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "scope": "complete extracted document text; NOT separate per-page model calls or confirmed per-page content verdicts"
+      }
+    },
+    {
+      "stage": "Delivered PDF",
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "operation": "final",
+      "attempt": 2,
+      "retry": 1,
+      "model": "openai/gpt-4o",
+      "durationMs": 6528,
+      "outcome": "unconfirmed",
+      "responseBytes": 7055,
+      "contentBytes": 4796,
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "failureStage": "grounding",
+      "validationCode": "item_coverage_anchor",
+      "itemIndex": 0,
+      "reason": "content_check_unparseable",
+      "startedAt": "2026-11-14T06:58:45.198Z",
+      "endedAt": "2026-11-14T06:58:51.726Z",
+      "eventSequence": 1407,
+      "durationScope": "Measured complete check attempt: request, response read, JSON/schema/grounding validation; not isolated model computation.",
+      "timestampScope": "End is retained Event time; start is derived by subtracting measured attempt duration, with reporting/clock skew possible.",
+      "pageCoverage": {
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "scope": "complete extracted document text; NOT separate per-page model calls or confirmed per-page content verdicts"
+      }
+    }
+  ],
+  "sourceVerdicts": [
+    {
+      "stage": "Source 1",
+      "proposalID": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+      "recordedAt": "2026-11-14T06:50:44.602Z",
+      "outcome": "issues",
+      "sourceSHA256": "bb5aaf4005e6542b45d61fff1932669a7de2f9cc535a830fd572bc3f8ba8a7ad",
+      "eventSequence": 1329,
+      "findings": [
+        {
+          "kind": "requested_design_inadequate",
+          "item": "Beautifully designed PDF",
+          "detail": "The provided HTML source covers the recipes with structured headers and sections but does not yet demonstrate a finalized design layout as a visually polished PDF.",
+          "repair": "Ensure the HTML source is converted into a well-designed PDF with a focus on editorial style, consistent typography, and appealing layout, utilizing branding colors and styles if a",
+          "evidenceID": "request",
+          "quote": "Make the recipes practical and substantive, with a considered editorial layout, not a decorative list."
+        }
+      ],
+      "advisories": [
+        "HTML source will need conversion to PDF for final visual evaluation."
+      ],
+      "observations": [
+        "requested_design_inadequate:Beautifully designed PDF — The provided HTML source covers the recipes with structured headers and sections but does not yet demonstrate a finalized design layout as a visually polished PDF. Repair: Ensure the HTML source is converted into a well-designed PDF with a focus on editorial style, consistent typography, and appealing layout, utilizing branding colors and styles if a"
+      ],
+      "requestedItems": []
+    },
+    {
+      "stage": "Source 2",
+      "proposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "recordedAt": "2026-11-14T06:52:51.647Z",
+      "outcome": "issues",
+      "sourceSHA256": "50612ccda22c93ea58616d4f4043660dc126e313ec9e7ccfddaf8347673bd693",
+      "eventSequence": 1339,
+      "findings": [
+        {
+          "kind": "underdeveloped_requested_item",
+          "item": "Editorial Layout",
+          "detail": "The request called for a beautifully designed PDF with a considered editorial layout, but this cannot be evaluated in the HTML source.",
+          "repair": "Ensure that the final PDF has a visually appealing and user-friendly editorial layout.",
+          "evidenceID": "request",
+          "quote": "a considered editorial layout"
+        },
+        {
+          "kind": "underdeveloped_requested_item",
+          "item": "High-Protein Diet Explanation",
+          "detail": "While the introduction provides an overview of why protein is important, it doesn’t fully explain why each specific recipe supports a high-protein fat-loss diet.",
+          "repair": "Expand the explanation for each recipe to detail how it specifically supports a high-protein fat-loss diet.",
+          "evidenceID": "request",
+          "quote": "an explanation of why it supports a high-protein fat-loss diet"
+        }
+      ],
+      "advisories": [
+        "Verify final PDF design for visual appeal and user-friendly layout once converted."
+      ],
+      "observations": [
+        "underdeveloped_requested_item:Editorial Layout — The request called for a beautifully designed PDF with a considered editorial layout, but this cannot be evaluated in the HTML source. Repair: Ensure that the final PDF has a visually appealing and user-friendly editorial layout.",
+        "underdeveloped_requested_item:High-Protein Diet Explanation — While the introduction provides an overview of why protein is important, it doesn’t fully explain why each specific recipe supports a high-protein fat-loss diet. Repair: Expand the explanation for each recipe to detail how it specifically supports a high-protein fat-loss diet."
+      ],
+      "requestedItems": []
+    },
+    {
+      "stage": "Source 3",
+      "proposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "recordedAt": "2026-11-14T06:54:58.882Z",
+      "outcome": "issues",
+      "sourceSHA256": "444c53c4aab9458a1f529fed889824b546cb0f86a550a738dc7d0cce1c1912ef",
+      "eventSequence": 1349,
+      "findings": [
+        {
+          "kind": "underdeveloped_requested_item",
+          "item": "total calories and protein per serving",
+          "detail": "The request requires detailed approximate calories and protein per serving to support a high-protein fat-loss diet. Only summary estimates are provided without individualized explanations.",
+          "repair": "Enhance each recipe with specific explanations for the approximate calories and protein per serving to align with high-protein fat-loss benefits.",
+          "evidenceID": "request",
+          "quote": "approximate calories and protein per serving"
+        },
+        {
+          "kind": "underdeveloped_requested_item",
+          "item": "editorial layout",
+          "detail": "The content lacks a clear editorial layout plan, focusing more on recipe details than presentation format described as editorial rather than decorative.",
+          "repair": "Develop an outline or description of the intended editorial layout showcasing how it will be distinctly different from a simple list.",
+          "evidenceID": "request",
+          "quote": "considered editorial layout, not a decorative list."
+        }
+      ],
+      "advisories": [],
+      "observations": [
+        "underdeveloped_requested_item:total calories and protein per serving — The request requires detailed approximate calories and protein per serving to support a high-protein fat-loss diet. Only summary estimates are provided without individualized explanations. Repair: Enhance each recipe with specific explanations for the approximate calories and protein per serving to align with high-protein fat-loss benefits.",
+        "underdeveloped_requested_item:editorial layout — The content lacks a clear editorial layout plan, focusing more on recipe details than presentation format described as editorial rather than decorative. Repair: Develop an outline or description of the intended editorial layout showcasing how it will be distinctly different from a simple list."
+      ],
+      "requestedItems": []
+    },
+    {
+      "stage": "Source 4",
+      "proposalID": "b7450130-6419-4af3-a45b-a406ddceb043",
+      "recordedAt": "2026-11-14T06:57:18.978Z",
+      "outcome": "pass",
+      "sourceSHA256": "cec9d9d5bb76b23b30462fb5610b107b37b3eb19069c85e345a44f94bfeb9402",
+      "eventSequence": 1358,
+      "findings": [],
+      "advisories": [
+        "The document is currently in HTML source format. Conversion to a beautifully designed PDF with visual elements will occur later."
+      ],
+      "observations": [],
+      "requestedItems": [
+        {
+          "item": "high-protein_recipe_1",
+          "evidenceID": "request",
+          "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+          "section": "recipe-1",
+          "status": "developed",
+          "coverageQuote": "Seared Salmon with Lemony Lentils and Wilted Spinach",
+          "repair": ""
+        },
+        {
+          "item": "high-protein_recipe_2",
+          "evidenceID": "request",
+          "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+          "section": "recipe-2",
+          "status": "developed",
+          "coverageQuote": "Turkish-Spiced Turkey Mince Bowl with Roasted Peppers and Yoghurt",
+          "repair": ""
+        },
+        {
+          "item": "high-protein_recipe_3",
+          "evidenceID": "request",
+          "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+          "section": "recipe-3",
+          "status": "developed",
+          "coverageQuote": "Chilli-Lime Chicken Thighs with Black Beans and Charred Corn",
+          "repair": ""
+        },
+        {
+          "item": "measured_ingredients_recipe_1",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-1",
+          "status": "developed",
+          "coverageQuote": "2 salmon fillets, skin-on — approx. 160 g each raw weight; 320 g total; pat completely dry before cooking",
+          "repair": ""
+        },
+        {
+          "item": "measured_ingredients_recipe_2",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-2",
+          "status": "developed",
+          "coverageQuote": "500 g turkey mince, 5% fat",
+          "repair": ""
+        },
+        {
+          "item": "measured_ingredients_recipe_3",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-3",
+          "status": "developed",
+          "coverageQuote": "4 boneless skinless chicken thighs — approx. 150 g each raw",
+          "repair": ""
+        },
+        {
+          "item": "clear_cooking_steps_recipe_1",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-1",
+          "status": "developed",
+          "coverageQuote": "Place the rinsed lentils in a medium saucepan with the cold water or stock.",
+          "repair": ""
+        },
+        {
+          "item": "clear_cooking_steps_recipe_2",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-2",
+          "status": "developed",
+          "coverageQuote": "Heat the oven to 220 °C fan.",
+          "repair": ""
+        },
+        {
+          "item": "clear_cooking_steps_recipe_3",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-3",
+          "status": "developed",
+          "coverageQuote": "Combine the lime juice, chipotle paste, cumin, garlic powder, smoked paprika",
+          "repair": ""
+        },
+        {
+          "item": "approx_calories_protein_per_serving_recipe_1",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-1",
+          "status": "developed",
+          "coverageQuote": "approx. 480 kcal per serving · approx. 46 g protein per serving",
+          "repair": ""
+        },
+        {
+          "item": "approx_calories_protein_per_serving_recipe_2",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-2",
+          "status": "developed",
+          "coverageQuote": "approx. 420 kcal per serving · approx. 50 g protein per serving",
+          "repair": ""
+        },
+        {
+          "item": "approx_calories_protein_per_serving_recipe_3",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-3",
+          "status": "developed",
+          "coverageQuote": "approx. 520 kcal per serving · approx. 48 g protein per serving",
+          "repair": ""
+        },
+        {
+          "item": "explanation_high-protein_fat-loss_diet_recipe_1",
+          "evidenceID": "request",
+          "quote": "an explanation of why it supports a high-protein fat-loss diet",
+          "section": "recipe-1",
+          "status": "developed",
+          "coverageQuote": "Salmon is one of the few animal proteins that combines high protein density with predominantly anti-inflammatory omega-3 fat",
+          "repair": ""
+        },
+        {
+          "item": "explanation_high-protein_fat-loss_diet_recipe_2",
+          "evidenceID": "request",
+          "quote": "an explanation of why it supports a high-protein fat-loss diet",
+          "section": "recipe-2",
+          "status": "developed",
+          "coverageQuote": "Turkey mince at 5% fat is among the most calorie-efficient complete protein sources available",
+          "repair": ""
+        },
+        {
+          "item": "explanation_high-protein_fat-loss_diet_recipe_3",
+          "evidenceID": "request",
+          "quote": "an explanation of why it supports a high-protein fat-loss diet",
+          "section": "recipe-3",
+          "status": "developed",
+          "coverageQuote": "Chicken thighs are consistently underused in fat-loss cooking because of a persistent myth that the extra fat makes them inappropriate.",
+          "repair": ""
+        }
+      ]
+    },
+    {
+      "stage": "Source 5",
+      "proposalID": "126be6ae-8f1c-465c-921b-7122764a5cea",
+      "recordedAt": "2026-11-14T06:58:20.227Z",
+      "outcome": "pass",
+      "sourceSHA256": "5e100928a130a032a2638096ed1325501b8aa15405e69fcc1f80a0788a9c47ba",
+      "eventSequence": 1390,
+      "findings": [],
+      "advisories": [
+        "Ensure final PDF format review happens after HTML source conversion.",
+        "Confirm all required visual design elements in the PDF post-conversion."
+      ],
+      "observations": [],
+      "requestedItems": [
+        {
+          "item": "high-protein_recipe_1",
+          "evidenceID": "request",
+          "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+          "section": "recipe-1",
+          "status": "developed",
+          "coverageQuote": "Seared Salmon with Lemony Lentils and Wilted Spinach",
+          "repair": ""
+        },
+        {
+          "item": "high-protein_recipe_2",
+          "evidenceID": "request",
+          "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+          "section": "recipe-2",
+          "status": "developed",
+          "coverageQuote": "Turkish-Spiced Turkey Mince Bowl with Roasted Peppers and Yoghurt",
+          "repair": ""
+        },
+        {
+          "item": "high-protein_recipe_3",
+          "evidenceID": "request",
+          "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+          "section": "recipe-3",
+          "status": "developed",
+          "coverageQuote": "Chilli-Lime Chicken Thighs with Black Beans and Charred Corn",
+          "repair": ""
+        },
+        {
+          "item": "measured_ingredients_recipe_1",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-1",
+          "status": "developed",
+          "coverageQuote": "2 salmon fillets, skin-on — approx. 160 g each raw weight; 320 g total; pat completely dry before cooking",
+          "repair": ""
+        },
+        {
+          "item": "measured_ingredients_recipe_2",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-2",
+          "status": "developed",
+          "coverageQuote": "500 g turkey mince, 5% fat",
+          "repair": ""
+        },
+        {
+          "item": "measured_ingredients_recipe_3",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-3",
+          "status": "developed",
+          "coverageQuote": "4 boneless skinless chicken thighs — approx. 150 g each raw",
+          "repair": ""
+        },
+        {
+          "item": "clear_cooking_steps_recipe_1",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-1",
+          "status": "developed",
+          "coverageQuote": "Place the rinsed lentils in a medium saucepan with the cold water or stock.",
+          "repair": ""
+        },
+        {
+          "item": "clear_cooking_steps_recipe_2",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-2",
+          "status": "developed",
+          "coverageQuote": "Heat the oven to 220 °C fan.",
+          "repair": ""
+        },
+        {
+          "item": "clear_cooking_steps_recipe_3",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-3",
+          "status": "developed",
+          "coverageQuote": "Combine the lime juice, chipotle paste, cumin, garlic powder, smoked paprika",
+          "repair": ""
+        },
+        {
+          "item": "approx_calories_protein_per_serving_recipe_1",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-1",
+          "status": "developed",
+          "coverageQuote": "approx. 480 kcal per serving · approx. 46 g protein per serving",
+          "repair": ""
+        },
+        {
+          "item": "approx_calories_protein_per_serving_recipe_2",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-2",
+          "status": "developed",
+          "coverageQuote": "approx. 420 kcal per serving · approx. 50 g protein per serving",
+          "repair": ""
+        },
+        {
+          "item": "approx_calories_protein_per_serving_recipe_3",
+          "evidenceID": "request",
+          "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+          "section": "recipe-3",
+          "status": "developed",
+          "coverageQuote": "approx. 520 kcal per serving · approx. 48 g protein per serving",
+          "repair": ""
+        },
+        {
+          "item": "explanation_high-protein_fat-loss_diet_recipe_1",
+          "evidenceID": "request",
+          "quote": "an explanation of why it supports a high-protein fat-loss diet",
+          "section": "recipe-1",
+          "status": "developed",
+          "coverageQuote": "Salmon is one of the few animal proteins that combines high protein density with predominantly anti-inflammatory omega-3 fat",
+          "repair": ""
+        },
+        {
+          "item": "explanation_high-protein_fat-loss_diet_recipe_2",
+          "evidenceID": "request",
+          "quote": "an explanation of why it supports a high-protein fat-loss diet",
+          "section": "recipe-2",
+          "status": "developed",
+          "coverageQuote": "Turkey mince at 5% fat is among the most calorie-efficient complete protein sources available",
+          "repair": ""
+        },
+        {
+          "item": "explanation_high-protein_fat-loss_diet_recipe_3",
+          "evidenceID": "request",
+          "quote": "an explanation of why it supports a high-protein fat-loss diet",
+          "section": "recipe-3",
+          "status": "developed",
+          "coverageQuote": "Chicken thighs are consistently underused in fat-loss cooking because of a persistent myth that the extra fat makes them inappropriate.",
+          "repair": ""
+        }
+      ]
+    }
+  ],
+  "visualChecks": [
+    {
+      "stage": "Candidate PDF",
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "finalSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42",
+      "model": "openai/gpt-4o",
+      "pages": [
+        {
+          "page": 1,
+          "sha256": "800a1341b1212985589b01bac367f9aa0ae92b8c660c6a23a3de1a86fb3de4fd",
+          "verdict": "pass",
+          "issues": []
+        },
+        {
+          "page": 2,
+          "sha256": "17b3829c0e91ba2bea053c7bdfd5e6a6ea7785281e6350358538ab916748060a",
+          "verdict": "pass",
+          "issues": []
+        }
+      ],
+      "providerElapsedMs": null,
+      "responseBytes": null,
+      "startedAt": "2026-11-14T06:57:50.779Z",
+      "endedAt": "2026-11-14T06:57:53.144Z",
+      "observedWindowMs": 2365,
+      "durationScope": "Timestamp-derived inter-event window including PNG reads/hash checks/provider/validation/reporting; exact provider duration was not retained.",
+      "outcome": "pass",
+      "attempts": 1,
+      "retries": 0,
+      "providerDispatch": "established_by_bound_returned_verdicts",
+      "eventSequence": 1376
+    },
+    {
+      "stage": "Candidate PDF",
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "finalSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42",
+      "model": "openai/gpt-4o",
+      "pages": [
+        {
+          "page": 3,
+          "sha256": "bbad05ceb29d70fa854fa24d305147dd8a57d0c9c901f6efa8b7b44dbb270aae",
+          "verdict": "issues",
+          "issues": [
+            "Typography is somewhat cluttered, especially in the nutritional breakdown section. Suggest using more spacing to improve readability.",
+            "The transition between Recipe 1 and Recipe 2 could be clearer, possibly with a visual break or separator to delineate sections.",
+            "The color palette is minimal and functional, which works well, but small headers should be more distinct to enhance the hierarchy."
+          ]
+        },
+        {
+          "page": 4,
+          "sha256": "73ed6e8f670e45cca5c347e0168832d93ea9051edf0e1fb68af18ffc9337ced6",
+          "verdict": "issues",
+          "issues": [
+            "The list layout is cramped; adding some white space would improve legibility.",
+            "Typography consistency could be improved, particularly with the recipe list items—some items appear squeezed.",
+            "Consider using bullet points to better organize the preparation steps for clarity and flow."
+          ]
+        }
+      ],
+      "providerElapsedMs": null,
+      "responseBytes": null,
+      "startedAt": "2026-11-14T06:57:53.144Z",
+      "endedAt": "2026-11-14T06:57:56.015Z",
+      "observedWindowMs": 2871,
+      "durationScope": "Timestamp-derived inter-event window including PNG reads/hash checks/provider/validation/reporting; exact provider duration was not retained.",
+      "outcome": "issues",
+      "attempts": 1,
+      "retries": 0,
+      "providerDispatch": "established_by_bound_returned_verdicts",
+      "eventSequence": 1377
+    },
+    {
+      "stage": "Candidate PDF",
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "finalSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42",
+      "model": "openai/gpt-4o",
+      "pages": [
+        {
+          "page": 5,
+          "sha256": "6e35f32e65beaa10dbfbea0fe80d47a806a3b048916667fd56ac85f4bd5d41d9",
+          "verdict": "issues",
+          "issues": [
+            "Text alignment in callout box inconsistent",
+            "Callout box colors create low contrast",
+            "Stranded heading at base of page"
+          ]
+        },
+        {
+          "page": 6,
+          "sha256": "3af839b71ca1288da94daad6c5303105846ec410595e688ac7496356755ee571",
+          "verdict": "issues",
+          "issues": [
+            "Bulleted lists cramped; increase spacing for clarity",
+            "Avoidable orphan line at end of instructions",
+            "Excessive page length, consider splitting content"
+          ]
+        }
+      ],
+      "providerElapsedMs": null,
+      "responseBytes": null,
+      "startedAt": "2026-11-14T06:57:56.015Z",
+      "endedAt": "2026-11-14T06:57:58.961Z",
+      "observedWindowMs": 2946,
+      "durationScope": "Timestamp-derived inter-event window including PNG reads/hash checks/provider/validation/reporting; exact provider duration was not retained.",
+      "outcome": "issues",
+      "attempts": 1,
+      "retries": 0,
+      "providerDispatch": "established_by_bound_returned_verdicts",
+      "eventSequence": 1378
+    },
+    {
+      "stage": "Candidate PDF",
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "finalSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42",
+      "model": "openai/gpt-4o",
+      "pages": [
+        {
+          "page": 7,
+          "sha256": "f9355e73d3c8124fd1f7d39171a4ff797f3529edce89d6e02e1c28e4137aec58",
+          "verdict": "pass",
+          "issues": []
+        },
+        {
+          "page": 8,
+          "sha256": "6456fd87046e23e9c059f9c6673b27648db372b8a31bb8001773f4578ef1dc9b",
+          "verdict": "pass",
+          "issues": []
+        }
+      ],
+      "providerElapsedMs": null,
+      "responseBytes": null,
+      "startedAt": "2026-11-14T06:57:58.961Z",
+      "endedAt": "2026-11-14T06:58:01.260Z",
+      "observedWindowMs": 2299,
+      "durationScope": "Timestamp-derived inter-event window including PNG reads/hash checks/provider/validation/reporting; exact provider duration was not retained.",
+      "outcome": "pass",
+      "attempts": 1,
+      "retries": 0,
+      "providerDispatch": "established_by_bound_returned_verdicts",
+      "eventSequence": 1379
+    },
+    {
+      "stage": "Delivered PDF",
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "finalSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+      "model": "openai/gpt-4o",
+      "pages": [
+        {
+          "page": 1,
+          "sha256": "142c6d70b08a055e68c62d966ac54f8adcb000076278a0485a8a4c81af82480a",
+          "verdict": "pass",
+          "issues": []
+        },
+        {
+          "page": 2,
+          "sha256": "dbc6f30a5ea96277ebfff6b6d861ccaea0db874e386a32989d45d9951673a088",
+          "verdict": "pass",
+          "issues": []
+        }
+      ],
+      "providerElapsedMs": null,
+      "responseBytes": null,
+      "startedAt": "2026-11-14T06:58:51.726Z",
+      "endedAt": "2026-11-14T06:58:54.125Z",
+      "observedWindowMs": 2399,
+      "durationScope": "Timestamp-derived inter-event window including PNG reads/hash checks/provider/validation/reporting; exact provider duration was not retained.",
+      "outcome": "pass",
+      "attempts": 1,
+      "retries": 0,
+      "providerDispatch": "established_by_bound_returned_verdicts",
+      "eventSequence": 1408
+    },
+    {
+      "stage": "Delivered PDF",
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "finalSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+      "model": "openai/gpt-4o",
+      "pages": [
+        {
+          "page": 3,
+          "sha256": "093eb2d46b5061b372e39ab26e5f8aa6a5c76d5df45fe34268a4f391349892a9",
+          "verdict": "unconfirmed",
+          "issues": []
+        },
+        {
+          "page": 4,
+          "sha256": "83041ecb2b0ea28c0bb11de5d58843ff2dfd4b1db016d24b2d3cb3151b672fbe",
+          "verdict": "unconfirmed",
+          "issues": []
+        }
+      ],
+      "providerElapsedMs": null,
+      "responseBytes": null,
+      "startedAt": "2026-11-14T06:58:54.125Z",
+      "endedAt": "2026-11-14T06:58:57.509Z",
+      "observedWindowMs": 3384,
+      "durationScope": "Timestamp-derived next-batch/failure window; no request-start, HTTP outcome, response body or exact provider duration was retained.",
+      "outcome": "unavailable",
+      "attempts": 1,
+      "retries": 0,
+      "providerDispatch": "not_retained_could_fail_during_page_read_or_request_or_response_validation",
+      "issue": "document_visual_review_unavailable",
+      "eventSequence": 1409,
+      "pagesNotReached": [
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "proposalID": "8cec075a-e5e9-453b-887b-c83d1e1b5449",
+      "stage": "memory_read",
+      "operation": "memory_read",
+      "newExecution": true,
+      "durationMs": 84,
+      "startedAt": "2026-11-14T06:48:44.112Z",
+      "endedAt": "2026-11-14T06:48:44.196Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "ba5e928f-cfb2-4efc-bd1c-da9fdfec7b67",
+      "stage": "skill_index",
+      "operation": "skill_index",
+      "newExecution": true,
+      "durationMs": 94,
+      "startedAt": "2026-11-14T06:48:44.816Z",
+      "endedAt": "2026-11-14T06:48:44.910Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "3cac09fa-fe03-41e1-8824-8d4a62a7fd81",
+      "stage": "skill_read",
+      "operation": "skill_read",
+      "newExecution": false,
+      "durationMs": null,
+      "startedAt": null,
+      "endedAt": null,
+      "durationSource": "cached_guide_not_new_execution",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "5bc5ba29-c8b8-4ed5-a57e-495e3799671b",
+      "stage": "workspace_inventory",
+      "operation": "workspace_inventory",
+      "newExecution": true,
+      "durationMs": 110,
+      "startedAt": "2026-11-14T06:48:46.842Z",
+      "endedAt": "2026-11-14T06:48:46.952Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+      "stage": "source",
+      "operation": "work",
+      "newExecution": true,
+      "durationMs": 773,
+      "startedAt": "2026-11-14T06:50:38.493Z",
+      "endedAt": "2026-11-14T06:50:39.266Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "stage": "source",
+      "operation": "work",
+      "newExecution": true,
+      "durationMs": 725,
+      "startedAt": "2026-11-14T06:52:39.156Z",
+      "endedAt": "2026-11-14T06:52:39.881Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "stage": "source",
+      "operation": "work",
+      "newExecution": true,
+      "durationMs": 738,
+      "startedAt": "2026-11-14T06:54:48.976Z",
+      "endedAt": "2026-11-14T06:54:49.714Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "b7450130-6419-4af3-a45b-a406ddceb043",
+      "stage": "source",
+      "operation": "work",
+      "newExecution": true,
+      "durationMs": 1075,
+      "startedAt": "2026-11-14T06:57:09.011Z",
+      "endedAt": "2026-11-14T06:57:10.086Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "7beecfbd-7e04-4d8a-8205-53754b8ce32e",
+      "stage": "build",
+      "operation": "work",
+      "newExecution": true,
+      "durationMs": 5834,
+      "startedAt": "2026-11-14T06:57:28.195Z",
+      "endedAt": "2026-11-14T06:57:34.029Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "stage": "independent_proof",
+      "operation": "work",
+      "newExecution": true,
+      "durationMs": 2024,
+      "startedAt": "2026-11-14T06:57:34.962Z",
+      "endedAt": "2026-11-14T06:57:36.986Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "126be6ae-8f1c-465c-921b-7122764a5cea",
+      "stage": "source",
+      "operation": "work",
+      "newExecution": true,
+      "durationMs": 742,
+      "startedAt": "2026-11-14T06:58:12.567Z",
+      "endedAt": "2026-11-14T06:58:13.309Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "f5de22fb-ddd3-4401-ab17-a18700d1745e",
+      "stage": "build",
+      "operation": "work",
+      "newExecution": true,
+      "durationMs": 5240,
+      "startedAt": "2026-11-14T06:58:27.966Z",
+      "endedAt": "2026-11-14T06:58:33.206Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "stage": "independent_proof",
+      "operation": "work",
+      "newExecution": true,
+      "durationMs": 2074,
+      "startedAt": "2026-11-14T06:58:33.806Z",
+      "endedAt": "2026-11-14T06:58:35.880Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    },
+    {
+      "proposalID": "e08c6a37-dfde-4a52-aad7-346e187558e7",
+      "stage": "memory_write",
+      "operation": "memory_write",
+      "newExecution": true,
+      "durationMs": 719,
+      "startedAt": "2026-11-14T06:58:58.033Z",
+      "endedAt": "2026-11-14T06:58:58.752Z",
+      "durationSource": "harness_command_observation",
+      "outcome": "exit_0_complete"
+    }
+  ],
+  "fullRewriteCauses": [
+    {
+      "fromPass": 1,
+      "toPass": 2,
+      "sourceProposalID": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+      "eventSequence": 1329,
+      "recordedAt": "2026-11-14T06:50:44.602Z",
+      "recordedSourceVerdict": "issues",
+      "findings": [
+        {
+          "kind": "requested_design_inadequate",
+          "item": "Beautifully designed PDF",
+          "detail": "The provided HTML source covers the recipes with structured headers and sections but does not yet demonstrate a finalized design layout as a visually polished PDF.",
+          "repair": "Ensure the HTML source is converted into a well-designed PDF with a focus on editorial style, consistent typography, and appealing layout, utilizing branding colors and styles if a",
+          "evidenceID": "request",
+          "quote": "Make the recipes practical and substantive, with a considered editorial layout, not a decorative list."
+        }
+      ],
+      "observations": [
+        "requested_design_inadequate:Beautifully designed PDF — The provided HTML source covers the recipes with structured headers and sections but does not yet demonstrate a finalized design layout as a visually polished PDF. Repair: Ensure the HTML source is converted into a well-designed PDF with a focus on editorial style, consistent typography, and appealing layout, utilizing branding colors and styles if a"
+      ],
+      "explanation": "Source 1 was blocked solely by a requested_design_inadequate finding demanding a finalized polished PDF before the source was built. The next selection authored a new complete source.",
+      "automaticAuthorRetry": false
+    },
+    {
+      "fromPass": 2,
+      "toPass": 3,
+      "sourceProposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "eventSequence": 1339,
+      "recordedAt": "2026-11-14T06:52:51.647Z",
+      "recordedSourceVerdict": "issues",
+      "findings": [
+        {
+          "kind": "underdeveloped_requested_item",
+          "item": "Editorial Layout",
+          "detail": "The request called for a beautifully designed PDF with a considered editorial layout, but this cannot be evaluated in the HTML source.",
+          "repair": "Ensure that the final PDF has a visually appealing and user-friendly editorial layout.",
+          "evidenceID": "request",
+          "quote": "a considered editorial layout"
+        },
+        {
+          "kind": "underdeveloped_requested_item",
+          "item": "High-Protein Diet Explanation",
+          "detail": "While the introduction provides an overview of why protein is important, it doesn’t fully explain why each specific recipe supports a high-protein fat-loss diet.",
+          "repair": "Expand the explanation for each recipe to detail how it specifically supports a high-protein fat-loss diet.",
+          "evidenceID": "request",
+          "quote": "an explanation of why it supports a high-protein fat-loss diet"
+        }
+      ],
+      "observations": [
+        "underdeveloped_requested_item:Editorial Layout — The request called for a beautifully designed PDF with a considered editorial layout, but this cannot be evaluated in the HTML source. Repair: Ensure that the final PDF has a visually appealing and user-friendly editorial layout.",
+        "underdeveloped_requested_item:High-Protein Diet Explanation — While the introduction provides an overview of why protein is important, it doesn’t fully explain why each specific recipe supports a high-protein fat-loss diet. Repair: Expand the explanation for each recipe to detail how it specifically supports a high-protein fat-loss diet."
+      ],
+      "explanation": "Source 2 was blocked after one unusable check and one issues verdict. Findings included judging design unavailable in HTML and missing recipe-specific fat-loss explanations. The next selection authored a new complete source.",
+      "automaticAuthorRetry": false
+    },
+    {
+      "fromPass": 3,
+      "toPass": 4,
+      "sourceProposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "eventSequence": 1349,
+      "recordedAt": "2026-11-14T06:54:58.882Z",
+      "recordedSourceVerdict": "issues",
+      "findings": [
+        {
+          "kind": "underdeveloped_requested_item",
+          "item": "total calories and protein per serving",
+          "detail": "The request requires detailed approximate calories and protein per serving to support a high-protein fat-loss diet. Only summary estimates are provided without individualized explanations.",
+          "repair": "Enhance each recipe with specific explanations for the approximate calories and protein per serving to align with high-protein fat-loss benefits.",
+          "evidenceID": "request",
+          "quote": "approximate calories and protein per serving"
+        },
+        {
+          "kind": "underdeveloped_requested_item",
+          "item": "editorial layout",
+          "detail": "The content lacks a clear editorial layout plan, focusing more on recipe details than presentation format described as editorial rather than decorative.",
+          "repair": "Develop an outline or description of the intended editorial layout showcasing how it will be distinctly different from a simple list.",
+          "evidenceID": "request",
+          "quote": "considered editorial layout, not a decorative list."
+        }
+      ],
+      "observations": [
+        "underdeveloped_requested_item:total calories and protein per serving — The request requires detailed approximate calories and protein per serving to support a high-protein fat-loss diet. Only summary estimates are provided without individualized explanations. Repair: Enhance each recipe with specific explanations for the approximate calories and protein per serving to align with high-protein fat-loss benefits.",
+        "underdeveloped_requested_item:editorial layout — The content lacks a clear editorial layout plan, focusing more on recipe details than presentation format described as editorial rather than decorative. Repair: Develop an outline or description of the intended editorial layout showcasing how it will be distinctly different from a simple list."
+      ],
+      "explanation": "Source 3 was blocked after one unusable check and one issues verdict. Findings demanded individualized calorie/protein explanations and an editorial-layout outline. The next selection authored a new complete source.",
+      "automaticAuthorRetry": false
+    }
+  ],
+  "longestStage": {
+    "stage": "Full author pass 4",
+    "durationMs": 121055,
+    "scope": "measured complete authoring stage",
+    "providerElapsedMs": 120082,
+    "proposalID": "b7450130-6419-4af3-a45b-a406ddceb043"
+  },
+  "accounting": {
+    "basis": "Completion-received clock. Author/provider times nested, never added to each other. Classification, visual and selection windows include non-provider work; they are not exact model timings.",
+    "authoringStagesMs": 444504,
+    "authorProviderMs": 442096,
+    "authorWrapperMs": 2408,
+    "classificationEnclosingWindowMs": 1147,
+    "selectionEnclosingWindowsMs": 57177,
+    "sourceContentChecksMs": 37848,
+    "finalContentChecksMs": 27753,
+    "visualEnclosingWindowsMs": 16264,
+    "actualForegroundCommandObservationMs": 20232,
+    "residualOrchestrationNetworkAndCaptureMs": 29286,
+    "sumMs": 634211,
+    "percentCompletionInAuthorProvider": 69.708,
+    "residualMeaning": "Arithmetic remainder, not an independently measured stage or provider cost. Includes auth, routing outside the classification window, tool/API handoffs, source/final reads outside visual windows, persistence/capture, SSE/network scheduling. Cross-clock timestamps have small observation skew.",
+    "observedStageIntervalCount": 44,
+    "observedOverlaps": [],
+    "exactCallTimingCoverageComplete": false
+  },
+  "retryCounts": {
+    "automaticAuthorValidationOrTransportRetries": 0,
+    "sourceAndFinalCheckGroups": [
+      {
+        "stage": "Source 1",
+        "proposalID": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+        "attempts": 1,
+        "retries": 0,
+        "durationMs": 5107,
+        "terminalOutcome": "issues",
+        "unconfirmedAfterTwo": false
+      },
+      {
+        "stage": "Source 2",
+        "proposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+        "attempts": 2,
+        "retries": 1,
+        "durationMs": 11221,
+        "terminalOutcome": "issues",
+        "unconfirmedAfterTwo": false
+      },
+      {
+        "stage": "Source 3",
+        "proposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+        "attempts": 2,
+        "retries": 1,
+        "durationMs": 8463,
+        "terminalOutcome": "issues",
+        "unconfirmedAfterTwo": false
+      },
+      {
+        "stage": "Source 4",
+        "proposalID": "b7450130-6419-4af3-a45b-a406ddceb043",
+        "attempts": 1,
+        "retries": 0,
+        "durationMs": 6933,
+        "terminalOutcome": "pass",
+        "unconfirmedAfterTwo": false
+      },
+      {
+        "stage": "Candidate PDF",
+        "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+        "attempts": 2,
+        "retries": 1,
+        "durationMs": 12771,
+        "terminalOutcome": "unconfirmed",
+        "unconfirmedAfterTwo": true
+      },
+      {
+        "stage": "Source 5",
+        "proposalID": "126be6ae-8f1c-465c-921b-7122764a5cea",
+        "attempts": 1,
+        "retries": 0,
+        "durationMs": 6124,
+        "terminalOutcome": "pass",
+        "unconfirmedAfterTwo": false
+      },
+      {
+        "stage": "Delivered PDF",
+        "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+        "attempts": 2,
+        "retries": 1,
+        "durationMs": 14982,
+        "terminalOutcome": "unconfirmed",
+        "unconfirmedAfterTwo": true
+      }
+    ],
+    "contentCalls": 11,
+    "contentRetries": 4,
+    "visualCompletedBatches": 5,
+    "visualAbortedNextBatchWindows": 1,
+    "visualRetries": 0,
+    "selectionObservedRetries": 0,
+    "rule": "At most two content attempts per exact source/final; still unconfirmed after two degrades and records. Distinct revised bytes are separately identified check groups. Visual batches have no retry loop.",
+    "finalContentDegradedAfterTwoForBothPDFs": true
+  },
+  "quality": {
+    "byteFidelity": "pass",
+    "finalContentCoverage": "unconfirmed",
+    "visualReview": "unavailable",
+    "candidateVisualPagesReviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "finalVisualPagesConfirmed": [
+      1,
+      2
+    ],
+    "finalVisualPagesUnconfirmed": [
+      3,
+      4
+    ],
+    "finalVisualPagesNotReached": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "certified": false,
+    "factualOrNutritionCertification": false
+  },
+  "evidence": {
+    "orderedFrames": 110,
+    "contentAttemptEvents": 11,
+    "commandReceipts": 14,
+    "actualNewExecutions": 13,
+    "cachedOriginalBoundGuide": 1,
+    "framesSHA256": "401d124dc2a966c698b84108609fd7c6119f188d467beb2b50167bf6433d4ded",
+    "files": [
+      {
+        "path": "8cec075a-e5e9-453b-887b-c83d1e1b5449-events.json",
+        "sha256": "f73e5b5a9234f09d00b8de90e6552975e9017a087b44384ecd7161be57c12c1f",
+        "bytes": 11690
+      },
+      {
+        "path": "ba5e928f-cfb2-4efc-bd1c-da9fdfec7b67-events.json",
+        "sha256": "f3d710bef0755d68b1c8fad8219277a29511d37e5aac2d7d60741521572fefde",
+        "bytes": 17414
+      },
+      {
+        "path": "3cac09fa-fe03-41e1-8824-8d4a62a7fd81-events.json",
+        "sha256": "db457402f343a4103f2248f77046d1d7123523c7b0c4896b1e66e1124e22c112",
+        "bytes": 7361
+      },
+      {
+        "path": "5bc5ba29-c8b8-4ed5-a57e-495e3799671b-events.json",
+        "sha256": "e64a144152f53bb2c69e86c6e99dfc3656939611f2f1f27ce49642ed3883b721",
+        "bytes": 13480
+      },
+      {
+        "path": "96309b45-cb6a-4c74-baff-165a5bf85c74-events.json",
+        "sha256": "a0fc97563bbd6e41e0b3ec6e116d7d19d09c8c3dbd54bcbfe18cef68118faee2",
+        "bytes": 156988
+      },
+      {
+        "path": "b8a2bc67-bbed-45b9-8dee-0123d469313e-events.json",
+        "sha256": "6512d60849cac33f07e7e703707e813ee5a116c7484be07e0aca77d728127a18",
+        "bytes": 158756
+      },
+      {
+        "path": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041-events.json",
+        "sha256": "a12833830678bd7ee72f661b618b962908662f0a61df8e9de67cabd64f18935b",
+        "bytes": 163397
+      },
+      {
+        "path": "b7450130-6419-4af3-a45b-a406ddceb043-events.json",
+        "sha256": "904020810602407ace67bdc37485f5fb0ecdea98ff7ba87ae51d52729a05c0c1",
+        "bytes": 175714
+      },
+      {
+        "path": "7beecfbd-7e04-4d8a-8205-53754b8ce32e-events.json",
+        "sha256": "4dcff280584c515fb372d05f9f570db7a1dcd35f776b088631efd3a61d83a0f7",
+        "bytes": 55808
+      },
+      {
+        "path": "7dd52240-c636-467e-b003-87a47e9161fc-events.json",
+        "sha256": "92351ff99bde6939a2b39b5328a172ba6dabf1325e620a0b444e7c1b770eef08",
+        "bytes": 45149
+      },
+      {
+        "path": "126be6ae-8f1c-465c-921b-7122764a5cea-events.json",
+        "sha256": "3ecb4cd9043f22861373470d97d05678668da2d26a33a58942274e4eebf70d9c",
+        "bytes": 176814
+      },
+      {
+        "path": "f5de22fb-ddd3-4401-ab17-a18700d1745e-events.json",
+        "sha256": "3e5cfd78b7c3f8d13eb09180b626062adc21ee4f835b52993b3f285f526d0683",
+        "bytes": 55809
+      },
+      {
+        "path": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50-events.json",
+        "sha256": "95f58dea390ec08f4286e89580aadb0173ee0e31d7d5616f223400388310ff2e",
+        "bytes": 41612
+      },
+      {
+        "path": "e08c6a37-dfde-4a52-aad7-346e187558e7-events.json",
+        "sha256": "548541fbc7226148709c4f744e238449daa20234dd83e318c7a52d9843b58ba7",
+        "bytes": 20873
+      },
+      {
+        "path": "8cec075a-e5e9-453b-887b-c83d1e1b5449-result.json",
+        "sha256": "34517f812b285b9c70feb30b2b68c6c866c2c589b69ae83c9f330ddcb3b634cb",
+        "bytes": 2650
+      },
+      {
+        "path": "ba5e928f-cfb2-4efc-bd1c-da9fdfec7b67-result.json",
+        "sha256": "1acd5e227010a33644374b6fa15136f03aa6e812cb9fd39ec52298d6667e1178",
+        "bytes": 7919
+      },
+      {
+        "path": "3cac09fa-fe03-41e1-8824-8d4a62a7fd81-result.json",
+        "sha256": "82d6419ba65f5fdf96dd0b048b4e51ac8edbfe4d1de40c7071c12558d4a51d95",
+        "bytes": 8929
+      },
+      {
+        "path": "5bc5ba29-c8b8-4ed5-a57e-495e3799671b-result.json",
+        "sha256": "0db2b68e776db046a00294248ede75837a3fca7284f8cafa0b23d4b93aa44dbe",
+        "bytes": 8804
+      },
+      {
+        "path": "96309b45-cb6a-4c74-baff-165a5bf85c74-result.json",
+        "sha256": "2098f41f1e93e3febc444379eb3105e5785a0d3c51dcb909da3a37bc9ea6e706",
+        "bytes": 1997
+      },
+      {
+        "path": "b8a2bc67-bbed-45b9-8dee-0123d469313e-result.json",
+        "sha256": "6fc9f94722121beac45c1cfe0865cddf1cef618db5dbec74767155153d90b7e7",
+        "bytes": 2000
+      },
+      {
+        "path": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041-result.json",
+        "sha256": "ccdaeb42426b3d2f29d85c1f81900e665170800ed6b5b9ddca335ee6c2b7f385",
+        "bytes": 2000
+      },
+      {
+        "path": "b7450130-6419-4af3-a45b-a406ddceb043-result.json",
+        "sha256": "0e3b444de868b05a5b6f21ec4137f1413b29199d7af6daa33b1cea25042fe864",
+        "bytes": 2001
+      },
+      {
+        "path": "7beecfbd-7e04-4d8a-8205-53754b8ce32e-result.json",
+        "sha256": "726c253315f7a93508c77471b4ed8d31c415c3c98dba28af55852b4ce524110c",
+        "bytes": 8986
+      },
+      {
+        "path": "7dd52240-c636-467e-b003-87a47e9161fc-result.json",
+        "sha256": "792bfd5a6b47942ef13cbffe04c1850cdfebd926de294868e69b6ad14165d67f",
+        "bytes": 5400
+      },
+      {
+        "path": "126be6ae-8f1c-465c-921b-7122764a5cea-result.json",
+        "sha256": "279b11db22286df557533e678a17a518ba8834710f2dc7273cfc639eb837fa9e",
+        "bytes": 2000
+      },
+      {
+        "path": "f5de22fb-ddd3-4401-ab17-a18700d1745e-result.json",
+        "sha256": "68d6db29db93d721ecc4210144b7f312f1fa5c98615aa417ade208c5b9919bce",
+        "bytes": 8987
+      },
+      {
+        "path": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50-result.json",
+        "sha256": "6c1c7ee23fcfb25f1fd31fa2a80d9fb50023c89079f41b01db35363c1167174a",
+        "bytes": 5400
+      },
+      {
+        "path": "e08c6a37-dfde-4a52-aad7-346e187558e7-result.json",
+        "sha256": "a843e3506332d138d0edb25fdd3286df3e37b5aa53cabfe79a755dacd2035993",
+        "bytes": 2587
+      }
+    ],
+    "originalReport": "deliveries/recipes-repair-8b14eaa8.json",
+    "originalPDF": "deliveries/high-protein-recipes-repair-24ee8bf7eda8.pdf",
+    "originalPDFSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+    "newProviderCalls": 0,
+    "newRemoteCommands": 0,
+    "historicalReplay": false,
+    "aiLogLookup": "Exact source-message scoped rork AI log lookup returned no logs."
+  },
+  "limitations": [
+    "The initial GPT-4o classification is a separate model call: only its 1147 ms enclosing window is retained, not response bytes or exact provider duration. The following briefing is fixed text, not another generation.",
+    "No exact visual provider durations or response byte counts were retained. Every available page verdict and timestamp-bounded batch/failure window is included instead.",
+    "Successful selection response byte counts and exact provider elapsed times were not retained. All observed selection starts and enclosing windows are included; missing is not zero.",
+    "Delivered-PDF visual failure has only document_visual_review_unavailable; dispatch/HTTP/parser/uncertainty cause cannot be recovered. Pages 3–4 identify the next loop batch, not proof of provider submission.",
+    "Content checks compare complete source/extracted text, not separate per-page calls. Neither failed final-content attempt confirms individual page coverage.",
+    "Raw checker responses were not retained; the recorded grounding diagnostics are not sufficient to recover the rejected literal quote.",
+    "Earlier delivered reports/PDFs remain unchanged. No new paid task, re-review, capture, deployment or device/browser interaction is performed for this accounting."
+  ]
+}

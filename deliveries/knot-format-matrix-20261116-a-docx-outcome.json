@@ -1,0 +1,16 @@
+{
+  "scope": "knot-format-matrix-20261116-a-docx",
+  "caseName": "docx",
+  "requestedFormat": "docx",
+  "taskID": "b784fd99-8603-4d25-8854-93df1ab3073a",
+  "conversationID": "fedb052e-2dbc-4845-88ed-8847241b072c",
+  "expectedBuild": "7f561ae5f22b876dc9e6a18e1f82b57a7fa987399fcf70c4cbc5d6171215aa6e",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:04:31.978Z",
+  "passed": false,
+  "issue": "auth_http_500",
+  "endedAt": "2026-11-16T02:04:32.379Z",
+  "elapsedMs": 401
+}

@@ -1,0 +1,76 @@
+{
+  "kind": "pdf",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "workspaceID": "whisper-4e02c8a2-f40d-46d1-b6d3-68304a126918",
+  "requestID": "3ed70d56-248b-4f04-a7fa-9475802f71f2",
+  "taskID": "3ed70d56-248b-4f04-a7fa-9475802f71f2",
+  "conversationID": "89b81ccd-9a74-45de-b84b-bcb4cbb9b677",
+  "sourceMessageID": "466977f5-0c08-4ebb-b54a-080d76266da0",
+  "expectedBuild": "1bcd5a7556437b6a32b21a314e048feaa919535380daadf51fe9d82bfa49a78a",
+  "startedAt": "2026-11-15T10:52:47.515Z",
+  "elapsedMs": 27996,
+  "completed": true,
+  "workIncomplete": true,
+  "issue": "document_content_incomplete",
+  "stopConfirmed": true,
+  "executions": [
+    {
+      "proposalID": "2d493643-c20c-47c8-992d-2a08e5391d30",
+      "operation": "memory_read",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "b4f25f5a2a3ba56c3eba5d9e71262272d99b5bcb3fb52fa9522f8c30617d3a49"
+    },
+    {
+      "proposalID": "f099d9ad-8beb-4823-9b7e-330240ab105d",
+      "operation": "skill_index",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "77f735984584ac7ce6017bf231b8bab430af79f2e5ab1a8be975daa4f656b8d3"
+    },
+    {
+      "proposalID": "4c98381c-d1b9-4083-9e39-750845e69de2",
+      "operation": "skill_read",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": true,
+      "stdoutSHA256": "f59a19dbc39edbc3b4b7e65108ed7125f3dd9e9338a97be7907c0a5710b4bcd4"
+    },
+    {
+      "proposalID": "ce891775-d5ea-48aa-a0b6-dcaad74bf5d6",
+      "operation": "workspace_inventory",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "166e33596f05d5cfb0bbd6e6c62bcbb41b4500563b8103742c2deccfbfc21df4"
+    },
+    {
+      "proposalID": "f7d3edf1-0941-4992-bf82-b9054c13c518",
+      "operation": "work",
+      "documentStage": "source",
+      "status": "completed",
+      "exitCode": 0,
+      "terminationConfirmed": true,
+      "outputComplete": true,
+      "cached": false,
+      "stdoutSHA256": "430bf7a26aa819306f1b4d67cd0192a08eaeb4b8146352a450dff8401f46d623"
+    }
+  ],
+  "documents": [],
+  "retainedRecordCount": 5,
+  "frameCount": 45,
+  "chatSubmissions": 1,
+  "directSidecarCalls": 0,
+  "personalAccountAccessed": false
+}

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wilds of Kraalu: Creature Battle</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #1a1a2e;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #e0e0f0;
+    overflow: hidden;
+  }
+  #game-wrap {
+    width: min(480px, 100vw);
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    user-select: none;
+  }
+  /* Title screen */
+  #screen-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 32px 24px;
+    min-height: 100vh;
+  }
+  #title-logo-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  #title-logo-wrap h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #f7c948;
+    text-shadow: 0 0 24px #f7c94888;
+    text-align: center;
+  }
+  #title-logo-wrap p {
+    font-size: 0.95rem;
+    color: #a0a0c0;
+    text-align: center;
+  }
+  #btn-start {
+    margin-top: 10px;
+    padding: 14px 48px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #f7c948 0%, #e07b20 100%);
+    color: #1a1a2e;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    box-shadow: 0 4px 24px #f7c94855;
+    transition: transform 0.1s, box-shadow 0.1s;
+  }
+  #btn-start:hover { transform: scale(1.06); box-shadow: 0 6px 32px #f7c94888; }
+  #btn-start:active { transform: scale(0.97); }
+
+  /* Battle screen */
+  #screen-battle { display: none; flex-direction: column; width: 100%; }
+
+  /* Arena */
+  #arena {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    background: linear-gradient(180deg, #16213e 0%, #0f3460 55%, #53c28b22 56%, #2d6a4f 100%);
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+    border: 2px solid #0f3460;
+  }
+  /* Ground lines */
+  #arena::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    top: 55%; height: 2px;
+    background: rgba(255,255,255,0.08);
+  }
+  /* Stars */
+  .star {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+
+  /* Creature containers */
+  .creature-slot {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  #slot-enemy {
+    top: 18px;
+    right: 32px;
+  }
+  #slot-player {
+    bottom: 28px;
+    left: 28px;
+  }
+
+  /* HP bars inside arena */
+  .hp-bar-wrap {
+    background: #0d0d1e;
+    border: 1.5px solid #333355;
+    border-radius: 8px;
+    padding: 4px 8px;
+    min-width: 120px;
+    font-size: 0.72rem;
+    color: #c0c0e0;
+  }
+  .hp-bar-wrap .label { font-weight: 700; margin-bottom: 2px; letter-spacing: 0.5px; }
+  .hp-track {
+    width: 100%;
+    height: 8px;
+    background: #222244;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .hp-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.35s ease, background 0.35s ease;
+  }
+  .hp-fill.green { background: #3ddc84; }
+  .hp-fill.yellow { background: #f7c948; }
+  .hp-fill.red { background: #e05252; }
+  .hp-num { margin-top: 2px; text-align: right; font-size: 0.68rem; color: #9090b0; }
+
+  #slot-enemy .hp-bar-wrap { text-align: left; }
+  #slot-player .hp-bar-wrap { text-align: left; }
+
+  /* Canvas creatures */
+  canvas.creature-canvas { display: block; }
+
+  /* shake/flash animations */
+  @keyframes shake {
+    0%,100%{transform:translateX(0)}
+    20%{transform:translateX(-8px)}
+    40%{transform:translateX(8px)}
+    60%{transform:translateX(-6px)}
+    80%{transform:translateX(6px)}
+  }
+  @keyframes flash {
+    0%,100%{opacity:1}
+    50%{opacity:0.15}
+  }
+  .shake { animation: shake 0.35s ease; }
+  .flash { animation: flash 0.35s ease 2; }
+
+  /* Bottom panel */
+  #bottom-panel {
+    background: #0d0d1e;
+    border: 2px solid #0f3460;
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+    padding: 12px 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Log box */
+  #log-box {
+    background: #12122a;
+    border: 1.5px solid #1e1e44;
+    border-radius: 8px;
+    padding: 8px 12px;
+    min-height: 48px;
+    font-size: 0.88rem;
+    color: #d0d0f0;
+    line-height: 1.4;
+  }
+  #log-box span.highlight { color: #f7c948; font-weight: 700; }
+  #log-box span.damage { color: #e05252; font-weight: 700; }
+  #log-box span.heal { color: #3ddc84; font-weight: 700; }
+
+  /* Attack buttons */
+  #attack-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .atk-btn {
+    padding: 10px 8px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    text-align: left;
+    line-height: 1.3;
+    background: #12122a;
+    color: #e0e0f0;
+  }
+  .atk-btn:hover:not(:disabled) { transform: scale(1.04); box-shadow: 0 2px 12px currentColor; }
+  .atk-btn:active:not(:disabled) { transform: scale(0.97); }
+  .atk-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .atk-btn .atk-name { font-size: 0.88rem; }
+  .atk-btn .atk-meta { font-size: 0.72rem; opacity: 0.7; margin-top: 2px; }
+  .type-fire { border-color: #e05252; color: #e07070; }
+  .type-water { border-color: #4ca6e8; color: #7ec4f0; }
+  .type-earth { border-color: #8db87a; color: #aed69a; }
+  .type-dark { border-color: #9b59b6; color: #c990e8; }
+  .type-normal { border-color: #888aaa; color: #aaaacc; }
+  .type-storm { border-color: #f7c948; color: #f7d870; }
+
+  /* Game over overlay */
+  #overlay {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.78);
+    border-radius: 16px 16px 0 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    z-index: 10;
+  }
+  #overlay.visible { display: flex; }
+  #overlay h2 { font-size: 2rem; font-weight: 900; letter-spacing: 2px; }
+  #overlay h2.win { color: #f7c948; text-shadow: 0 0 24px #f7c94888; }
+  #overlay h2.lose { color: #e05252; text-shadow: 0 0 24px #e0525288; }
+  #overlay p { color: #c0c0e0; font-size: 0.95rem; text-align: center; padding: 0 20px; }
+  #btn-restart {
+    padding: 12px 36px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #f7c948, #e07b20);
+    color: #1a1a2e;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px #f7c94855;
+    transition: transform 0.1s;
+  }
+  #btn-restart:hover { transform: scale(1.06); }
+  #btn-restart:active { transform: scale(0.97); }
+</style>
+</head>
+<body>
+<div id="game-wrap">
+
+  <!-- TITLE SCREEN -->
+  <div id="screen-title">
+    <div id="title-logo-wrap">
+      <canvas id="title-canvas" width="180" height="180"></canvas>
+      <h1>Wilds of Kraalu</h1>
+      <p>Creature Battle — original monsters, turn-based combat</p>
+    </div>
+    <button id="btn-start">Begin Battle</button>
+  </div>
+
+  <!-- BATTLE SCREEN -->
+  <div id="screen-battle">
+    <div id="arena">
+      <div id="slot-enemy" class="creature-slot">
+        <div class="hp-bar-wrap" id="enemy-hpbox">
+          <div class="label" id="enemy-name-label">VORTHAK</div>
+          <div class="hp-track"><div class="hp-fill green" id="enemy-hp-fill" style="width:100%"></div></div>
+          <div class="hp-num" id="enemy-hp-num">120 / 120</div>
+        </div>
+        <canvas class="creature-canvas" id="canvas-enemy" width="110" height="110"></canvas>
+      </div>
+      <div id="slot-player" class="creature-slot">
+        <canvas class="creature-canvas" id="canvas-player" width="110" height="110"></canvas>
+        <div class="hp-bar-wrap" id="player-hpbox">
+          <div class="label" id="player-name-label">LUMBREX</div>
+          <div class="hp-track"><div class="hp-fill green" id="player-hp-fill" style="width:100%"></div></div>
+          <div class="hp-num" id="player-hp-num">130 / 130</div>
+        </div>
+      </div>
+      <div id="overlay">
+        <h2 id="overlay-title">YOU WIN!</h2>
+        <p id="overlay-msg">Vorthak was defeated!</p>
+        <button id="btn-restart">Play Again</button>
+      </div>
+    </div>
+    <div id="bottom-panel">
+      <div id="log-box">Choose an attack!</div>
+      <div id="attack-grid"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ============================================================
+// WILDS OF KRAALU — Creature Battle
+// Self-contained, no external resources
+// ============================================================
+
+// ---- Palette ----
+const PAL = {
+  sky1: '#16213e', sky2: '#0f3460',
+  ground: '#2d6a4f', groundLight: '#3ddc84',
+  yellow: '#f7c948', orange: '#e07b20',
+  red: '#e05252', purple: '#9b59b6',
+  blue: '#4ca6e8', teal: '#3ddc84',
+  dark: '#1a1a2e', panel: '#0d0d1e',
+  white: '#ffffff', offwhite: '#e0e0f0',
+};
+
+// ---- Draw helpers ----
+function cls(ctx, w, h, bg) {
+  ctx.clearRect(0, 0, w, h);
+  if (bg) { ctx.fillStyle = bg; ctx.fillRect(0, 0, w, h); }
+}
+function circle(ctx, x, y, r, fill, stroke, sw) {
+  ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2);
+  if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+  if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = sw||2; ctx.stroke(); }
+}
+function rect(ctx, x, y, w, h, fill, stroke, sw, r) {
+  ctx.beginPath();
+  if (r) {
+    ctx.moveTo(x+r,y); ctx.lineTo(x+w-r,y);
+    ctx.quadraticCurveTo(x+w,y,x+w,y+r);
+    ctx.lineTo(x+w,y+h-r); ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+    ctx.lineTo(x+r,y+h); ctx.quadraticCurveTo(x,y+h,x,y+h-r);
+    ctx.lineTo(x,y+r); ctx.quadraticCurveTo(x,y,x+r,y);
+    ctx.closePath();
+  } else {
+    ctx.rect(x, y, w, h);
+  }
+  if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+  if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = sw||2; ctx.stroke(); }
+}
+function eye(ctx, x, y, r, pupilCol) {
+  circle(ctx, x, y, r, '#ffffff', '#333355', 1.5);
+  circle(ctx, x+r*0.2, y, r*0.5, pupilCol||'#1a1a2e');
+  // highlight
+  circle(ctx, x+r*0.5, y-r*0.4, r*0.2, 'rgba(255,255,255,0.8)');
+}
+
+// ---- Draw LUMBREX (player) — luminous crystal fox ----
+// Palette: teal body, yellow crystal fin, white belly, blue eyes
+function drawLumbrex(ctx, scale=1, flipped=false) {
+  ctx.save();
+  ctx.scale(scale, scale);
+  if (flipped) { ctx.translate(110,0); ctx.scale(-1,1); }
+  const cx=55, cy=55;
+  // Shadow
+  ctx.save(); ctx.globalAlpha=0.18;
+  ctx.beginPath(); ctx.ellipse(cx, 100, 30, 8, 0, 0, Math.PI*2);
+  ctx.fillStyle='#000'; ctx.fill(); ctx.restore();
+  // Body
+  rect(ctx, 20, 50, 70, 45, '#3ddc84', '#1a6644', 2, 14);
+  // Belly
+  ctx.beginPath(); ctx.ellipse(55, 72, 22, 16, 0, 0, Math.PI*2);
+  ctx.fillStyle = '#c8f7e4'; ctx.fill();
+  // Crystal fin (back)
+  ctx.beginPath();
+  ctx.moveTo(68,52); ctx.lineTo(85,20); ctx.lineTo(95,38); ctx.lineTo(78,55);
+  ctx.closePath();
+  ctx.fillStyle='#f7c948'; ctx.fill();
+  ctx.strokeStyle='#c89c10'; ctx.lineWidth=1.5; ctx.stroke();
+  // inner crystal line
+  ctx.beginPath(); ctx.moveTo(72,50); ctx.lineTo(86,26);
+  ctx.strokeStyle='rgba(255,255,255,0.5)'; ctx.lineWidth=1.2; ctx.stroke();
+  // Head
+  circle(ctx, 30, 42, 24, '#3ddc84', '#1a6644', 2);
+  // Ears (pointed)
+  ctx.beginPath(); ctx.moveTo(16,26); ctx.lineTo(10,8); ctx.lineTo(28,20); ctx.closePath();
+  ctx.fillStyle='#3ddc84'; ctx.fill(); ctx.strokeStyle='#1a6644'; ctx.lineWidth=1.5; ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(16,26); ctx.lineTo(12,12); ctx.lineTo(24,20); ctx.closePath();
+  ctx.fillStyle='#c8f7e4'; ctx.fill();
+  ctx.beginPath(); ctx.moveTo(42,22); ctx.lineTo(50,6); ctx.lineTo(55,22); ctx.closePath();
+  ctx.fillStyle='#3ddc84'; ctx.fill(); ctx.strokeStyle='#1a6644'; ctx.lineWidth=1.5; ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(43,22); ctx.lineTo(50,10); ctx.lineTo(53,22); ctx.closePath();
+  ctx.fillStyle='#c8f7e4'; ctx.fill();
+  // Muzzle
+  circle(ctx, 24, 48, 10, '#c8f7e4', '#1a6644', 1.5);
+  // Nose
+  ctx.beginPath(); ctx.moveTo(16,48); ctx.lineTo(20,52); ctx.lineTo(16,52); ctx.closePath();
+  ctx.fillStyle='#1a6644'; ctx.fill();
+  // Eyes
+  eye(ctx, 32, 38, 7, '#4ca6e8');
+  // Legs
+  rect(ctx, 25, 90, 14, 14, '#3ddc84', '#1a6644', 1.5, 4);
+  rect(ctx, 65, 90, 14, 14, '#3ddc84', '#1a6644', 1.5, 4);
+  // Crystal tail
+  ctx.beginPath();
+  ctx.moveTo(90,70); ctx.lineTo(108,52); ctx.lineTo(104,76); ctx.lineTo(90,80);
+  ctx.closePath();
+  ctx.fillStyle='#f7c948'; ctx.fill();
+  ctx.strokeStyle='#c89c10'; ctx.lineWidth=1.5; ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(94,72); ctx.lineTo(106,56);
+  ctx.strokeStyle='rgba(255,255,255,0.5)'; ctx.lineWidth=1.2; ctx.stroke();
+  // Crystal horn on head
+  ctx.beginPath(); ctx.moveTo(28,18); ctx.lineTo(24,4); ctx.lineTo(32,10); ctx.closePath();
+  ctx.fillStyle='#f7c948'; ctx.fill();
+  ctx.strokeStyle='#c89c10'; ctx.lineWidth=1.2; ctx.stroke();
+  ctx.restore();
+}
+
+// ---- Draw VORTHAK (enemy) — shadow serpent dragon ----
+// Palette: dark purple body, red accents, yellow eyes, spiky crown
+function drawVorthak(ctx, scale=1, flipped=false) {
+  ctx.save();
+  ctx.scale(scale, scale);
+  if (flipped) { ctx.translate(110,0); ctx.scale(-1,1); }
+  const cx=58, cy=55;
+  // Shadow
+  ctx.save(); ctx.globalAlpha=0.18;
+  ctx.beginPath(); ctx.ellipse(cx, 100, 32, 8, 0, 0, Math.PI*2);
+  ctx.fillStyle='#000'; ctx.fill(); ctx.restore();
+  // Body (serpentine oval)
+  ctx.beginPath(); ctx.ellipse(60, 68, 30, 28, -0.2, 0, Math.PI*2);
+  ctx.fillStyle='#3d1a5e'; ctx.fill();
+  ctx.strokeStyle='#6a2ea8'; ctx.lineWidth=2; ctx.stroke();
+  // Belly scales
+  ctx.beginPath(); ctx.ellipse(60, 72, 18, 18, 0, 0, Math.PI*2);
+  ctx.fillStyle='#2a1240'; ctx.fill();
+  // Scale lines
+  for (let i=0; i<4; i++) {
+    ctx.beginPath();
+    ctx.ellipse(60, 62+i*6, 14-i*2, 3, 0, 0, Math.PI);
+    ctx.strokeStyle='rgba(255,100,180,0.18)'; ctx.lineWidth=1; ctx.stroke();
+  }
+  // Neck
+  ctx.beginPath(); ctx.moveTo(42,44); ctx.lineTo(50,32); ctx.lineTo(68,32); ctx.lineTo(74,44);
+  ctx.fillStyle='#3d1a5e'; ctx.fill();
+  ctx.strokeStyle='#6a2ea8'; ctx.lineWidth=1.5; ctx.stroke();
+  // Head
+  ctx.beginPath(); ctx.ellipse(58, 26, 26, 22, 0, 0, Math.PI*2);
+  ctx.fillStyle='#3d1a5e'; ctx.fill();
+  ctx.strokeStyle='#6a2ea8'; ctx.lineWidth=2; ctx.stroke();
+  // Crown spikes
+  const spikeX=[42,50,58,66,74], spikeH=[10,16,20,16,10];
+  for (let i=0;i<5;i++) {
+    ctx.beginPath();
+    ctx.moveTo(spikeX[i]-5, 10);
+    ctx.lineTo(spikeX[i], 10-spikeH[i]);
+    ctx.lineTo(spikeX[i]+5, 10);
+    ctx.closePath();
+    ctx.fillStyle = i===2 ? '#e05252' : '#9b59b6';
+    ctx.fill();
+    ctx.strokeStyle='#1a1a2e'; ctx.lineWidth=1; ctx.stroke();
+  }
+  // Red face marking
+  ctx.beginPath(); ctx.ellipse(58, 28, 14, 8, 0, 0, Math.PI*2);
+  ctx.fillStyle='rgba(224,82,82,0.25)'; ctx.fill();
+  // Eyes (yellow, wide set)
+  eye(ctx, 44, 24, 8, '#1a1a2e');
+  ctx.beginPath(); ctx.arc(44,24,5,0,Math.PI*2);
+  ctx.fillStyle='#f7c948'; ctx.fill();
+  circle(ctx, 45.5, 23, 2.5, '#1a1a2e');
+  circle(ctx, 46.5, 22.5, 0.8, 'rgba(255,255,255,0.7)');
+
+  eye(ctx, 72, 24, 8, '#1a1a2e');
+  ctx.beginPath(); ctx.arc(72,24,5,0,Math.PI*2);
+  ctx.fillStyle='#f7c948'; ctx.fill();
+  circle(ctx, 73.5, 23, 2.5, '#1a1a2e');
+  circle(ctx, 74.5, 22.5, 0.8, 'rgba(255,255,255,0.7)');
+
+  // Nostrils
+  circle(ctx, 54, 34, 2, '#1a1a2e');
+  circle(ctx, 62, 34, 2, '#1a1a2e');
+  // Mouth (menacing)
+  ctx.beginPath(); ctx.moveTo(44,38); ctx.quadraticCurveTo(58,46,72,38);
+  ctx.strokeStyle='#e05252'; ctx.lineWidth=2; ctx.stroke();
+  // Fangs
+  ctx.beginPath(); ctx.moveTo(50,40); ctx.lineTo(48,48); ctx.lineTo(54,42);
+  ctx.fillStyle='#ffffff'; ctx.fill();
+  ctx.beginPath(); ctx.moveTo(66,40); ctx.lineTo(64,48); ctx.lineTo(68,42);
+  ctx.fillStyle='#ffffff'; ctx.fill();
+  // Wings (vestigial, folded)
+  ctx.beginPath();
+  ctx.moveTo(30,56); ctx.lineTo(5,38); ctx.lineTo(16,60); ctx.lineTo(32,66);
+  ctx.closePath();
+  ctx.fillStyle='rgba(100,30,160,0.75)'; ctx.fill();
+  ctx.strokeStyle='#6a2ea8'; ctx.lineWidth=1.5; ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(86,56); ctx.lineTo(108,38); ctx.lineTo(100,60); ctx.lineTo(84,66);
+  ctx.closePath();
+  ctx.fillStyle='rgba(100,30,160,0.75)'; ctx.fill();
+  ctx.strokeStyle='#6a2ea8'; ctx.lineWidth=1.5; ctx.stroke();
+  // Tail tip
+  ctx.beginPath(); ctx.moveTo(80,88); ctx.lineTo(100,98); ctx.lineTo(90,102); ctx.lineTo(74,92);
+  ctx.closePath();
+  ctx.fillStyle='#e05252'; ctx.fill();
+  ctx.restore();
+}
+
+// ---- Stars in arena ----
+function seedStars(arenaEl) {
+  for (let i=0;i<28;i++) {
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random()*2+0.8;
+    s.style.cssText = `width:${size}px;height:${size}px;top:${Math.random()*54}%;left:${Math.random()*100}%;opacity:${0.3+Math.random()*0.6}`;
+    arenaEl.appendChild(s);
+  }
+}
+
+// ---- Title screen icon ----
+function drawTitleIcon() {
+  const c = document.getElementById('title-canvas');
+  const ctx = c.getContext('2d');
+  // Background circle
+  ctx.beginPath(); ctx.arc(90,90,86,0,Math.PI*2);
+  const g = ctx.createRadialGradient(90,90,10,90,90,86);
+  g.addColorStop(0,'#1a4a6e'); g.addColorStop(1,'#0d0d1e');
+  ctx.fillStyle=g; ctx.fill();
+  ctx.strokeStyle='#f7c948'; ctx.lineWidth=4; ctx.stroke();
+  // Draw both creatures small
+  ctx.save(); ctx.translate(-18, 18); drawVorthak(ctx, 0.68, false); ctx.restore();
+  ctx.save(); ctx.translate(42, 28); drawLumbrex(ctx, 0.68, true); ctx.restore();
+  // VS text
+  ctx.font='bold 20px Segoe UI, Arial';
+  ctx.fillStyle='#f7c948';
+  ctx.textAlign='center';
+  ctx.shadowColor='#f7c948'; ctx.shadowBlur=12;
+  ctx.fillText('VS', 90, 110);
+  ctx.shadowBlur=0;
+}
+
+// ---- Creature data ----
+const PLAYER = {
+  name: 'LUMBREX',
+  maxHp: 130,
+  hp: 130,
+  draw: drawLumbrex,
+  canvasId: 'canvas-player',
+  hpFillId: 'player-hp-fill',
+  hpNumId: 'player-hp-num',
+  slotId: 'slot-player',
+  attacks: [
+    { name:'Crystal Slash', type:'normal', power:30, pp:5, maxPP:5, desc:'A slicing crystal blow.' },
+    { name:'Lumen Burst', type:'storm', power:42, pp:3, maxPP:3, desc:'Blinding flash. High dmg.' },
+    { name:'Healing Glow', type:'earth', power:0, pp:2, maxPP:2, heal:38, desc:'Restore 38 HP.' },
+    { name:'Voidcrack', type:'dark', power:55, pp:2, maxPP:2, desc:'Dark rend. Massive hit.' },
+  ],
+};
+
+const ENEMY = {
+  name: 'VORTHAK',
+  maxHp: 120,
+  hp: 120,
+  draw: drawVorthak,
+  canvasId: 'canvas-enemy',
+  hpFillId: 'enemy-hp-fill',
+  hpNumId: 'enemy-hp-num',
+  slotId: 'slot-enemy',
+  attacks: [
+    { name:'Shadow Bite', power:28 },
+    { name:'Wing Slam', power:34 },
+    { name:'Dark Pulse', power:45 },
+    { name:'Venom Reek', power:18, debuff:true },
+  ],
+};
+
+// ---- Game state ----
+let state = 'title'; // title | player-turn | enemy-turn | gameover
+let playerPoisoned = false;
+let enemyEnraged = false;
+let turnCount = 0;
+
+// ---- HP bar update ----
+function updateHPBar(creature) {
+  const pct = Math.max(0, creature.hp / creature.maxHp) * 100;
+  const fill = document.getElementById(creature.hpFillId);
+  const num = document.getElementById(creature.hpNumId);
+  fill.style.width = pct + '%';
+  fill.className = 'hp-fill ' + (pct > 50 ? 'green' : pct > 20 ? 'yellow' : 'red');
+  num.textContent = Math.max(0,Math.floor(creature.hp)) + ' / ' + creature.maxHp;
+}
+
+// ---- Render creature canvas ----
+function renderCreature(creature) {
+  const c = document.getElementById(creature.canvasId);
+  const ctx = c.getContext('2d');
+  ctx.clearRect(0,0,110,110);
+  creature.draw(ctx, 1, false);
+}
+
+// ---- Log ----
+function log(html) {
+  document.getElementById('log-box').innerHTML = html;
+}
+
+// ---- Animate hit on a slot ----
+function animateHit(slotId, type) {
+  const el = document.getElementById(slotId);
+  el.classList.remove('shake','flash');
+  void el.offsetWidth;
+  el.classList.add(type==='hit' ? 'shake' : 'flash');
+  setTimeout(()=>el.classList.remove('shake','flash'), 600);
+}
+
+// ---- Attack buttons ----
+function buildAttackButtons() {
+  const grid = document.getElementById('attack-grid');
+  grid.innerHTML = '';
+  PLAYER.attacks.forEach((atk, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'atk-btn type-' + atk.type;
+    btn.id = 'atk-btn-' + i;
+    btn.innerHTML = `<div class="atk-name">${atk.name}</div><div class="atk-meta">${atk.pp}/${atk.maxPP} PP · ${atk.heal ? 'Heal '+atk.heal+' HP' : 'Pow '+atk.power}</div>`;
+    btn.addEventListener('click', () => playerAttack(i));
+    grid.appendChild(btn);
+  });
+}
+
+function refreshButtonsState(enabled) {
+  PLAYER.attacks.forEach((atk,i)=>{
+    const btn = document.getElementById('atk-btn-'+i);
+    if (!btn) return;
+    btn.disabled = !enabled || atk.pp <= 0;
+    btn.innerHTML = `<div class="atk-name">${atk.name}</div><div class="atk-meta">${atk.pp}/${atk.maxPP} PP · ${atk.heal ? 'Heal '+atk.heal+' HP' : 'Pow '+atk.power}</div>`;
+  });
+}
+
+// ---- Player attack ----
+function playerAttack(idx) {
+  if (state !== 'player-turn') return;
+  const atk = PLAYER.attacks[idx];
+  if (atk.pp <= 0) return;
+  atk.pp--;
+  state = 'enemy-turn';
+  refreshButtonsState(false);
+
+  let playerMsg;
+  if (atk.heal) {
+    const healed = Math.min(atk.heal, PLAYER.maxHp - PLAYER.hp);
+    PLAYER.hp = Math.min(PLAYER.maxHp, PLAYER.hp + atk.heal);
+    updateHPBar(PLAYER);
+    animateHit('slot-player','flash');
+    playerMsg = `<span class="highlight">Lumbrex</span> used <span class="highlight">${atk.name}</span>! Restored <span class="heal">${healed} HP</span>.`;
+  } else {
+    // calc damage with variance
+    const variance = 0.85 + Math.random()*0.3;
+    let dmg = Math.round(atk.power * variance);
+    if (enemyEnraged) dmg = Math.round(dmg * 0.75); // enrage makes player weaker (flavour)
+    ENEMY.hp = Math.max(0, ENEMY.hp - dmg);
+    updateHPBar(ENEMY);
+    renderCreature(ENEMY);
+    animateHit('slot-enemy','hit');
+    playerMsg = `<span class="highlight">Lumbrex</span> used <span class="highlight">${atk.name}</span>! Dealt <span class="damage">${dmg} damage</span>.`;
+  }
+
+  if (ENEMY.hp <= 0) {
+    setTimeout(()=>endGame(true), 400);
+    log(playerMsg + ' <span class="highlight">Vorthak fainted!</span>');
+    return;
+  }
+
+  log(playerMsg);
+  // Enemy turn after delay
+  setTimeout(enemyTurn, 900);
+}
+
+// ---- Enemy AI ----
+function enemyTurn() {
+  if (state !== 'enemy-turn') return;
+  turnCount++;
+
+  // Apply player poison
+  let poisonMsg = '';
+  if (playerPoisoned) {
+    const poisonDmg = Math.round(PLAYER.maxHp * 0.08);
+    PLAYER.hp = Math.max(0, PLAYER.hp - poisonDmg);
+    updateHPBar(PLAYER);
+    animateHit('slot-player','hit');
+    poisonMsg = ` Lumbrex took <span class="damage">${poisonDmg} poison damage</span>!`;
+    if (PLAYER.hp <= 0) {
+      setTimeout(()=>endGame(false), 400);
+      log('Vorthak watches.'+poisonMsg+' <span class="damage">Lumbrex fainted!</span>');
+      return;
+    }
+  }
+
+  // Enemy enrages if below 40%
+  if (ENEMY.hp / ENEMY.maxHp < 0.4 && !enemyEnraged) {
+    enemyEnraged = true;
+  }
+
+  // Pick attack — bias toward stronger when enraged
+  let pick;
+  if (enemyEnraged) {
+    const r = Math.random();
+    pick = r < 0.5 ? ENEMY.attacks[2] : (r < 0.75 ? ENEMY.attacks[1] : ENEMY.attacks[0]);
+  } else {
+    pick = ENEMY.attacks[Math.floor(Math.random()*ENEMY.attacks.length)];
+  }
+
+  const variance = 0.85 + Math.random()*0.3;
+  let dmg = Math.round(pick.power * variance * (enemyEnraged ? 1.3 : 1));
+  PLAYER.hp = Math.max(0, PLAYER.hp - dmg);
+  updateHPBar(PLAYER);
+  renderCreature(PLAYER);
+  animateHit('slot-player','hit');
+
+  let debuffMsg = '';
+  if (pick.debuff && !playerPoisoned) {
+    playerPoisoned = true;
+    debuffMsg = ' <span class="damage">Lumbrex is poisoned!</span>';
+  }
+
+  const enrageMsg = enemyEnraged ? ' <span class="damage">Vorthak is enraged!</span>' : '';
+  const atkMsg = `<span class="highlight">Vorthak</span> used <span class="highlight">${pick.name}</span>! Dealt <span class="damage">${dmg} damage</span>.${debuffMsg}${enrageMsg}${poisonMsg}`;
+
+  if (PLAYER.hp <= 0) {
+    setTimeout(()=>endGame(false), 400);
+    log(atkMsg + ' <span class="damage">Lumbrex fainted!</span>');
+    return;
+  }
+
+  log(atkMsg);
+  state = 'player-turn';
+  refreshButtonsState(true);
+}
+
+// ---- End game ----
+function endGame(won) {
+  state = 'gameover';
+  refreshButtonsState(false);
+  const overlay = document.getElementById('overlay');
+  const title = document.getElementById('overlay-title');
+  const msg = document.getElementById('overlay-msg');
+  overlay.classList.add('visible');
+  if (won) {
+    title.textContent = 'VICTORY!';
+    title.className = 'win';
+    msg.textContent = 'Vorthak was defeated! The Wilds of Kraalu are safe!';
+  } else {
+    title.textContent = 'DEFEATED...';
+    title.className = 'lose';
+    msg.textContent = 'Lumbrex fainted. The shadow dragon claims the Wilds!';
+  }
+}
+
+// ---- Reset ----
+function resetGame() {
+  PLAYER.hp = PLAYER.maxHp;
+  ENEMY.hp = ENEMY.maxHp;
+  PLAYER.attacks.forEach(a => { a.pp = a.maxPP; });
+  playerPoisoned = false;
+  enemyEnraged = false;
+  turnCount = 0;
+  state = 'player-turn';
+  updateHPBar(PLAYER);
+  updateHPBar(ENEMY);
+  renderCreature(PLAYER);
+  renderCreature(ENEMY);
+  document.getElementById('overlay').classList.remove('visible');
+  buildAttackButtons();
+  refreshButtonsState(true);
+  log('Choose an attack!');
+}
+
+// ---- Start game (from title) ----
+function startGame() {
+  document.getElementById('screen-title').style.display = 'none';
+  const bs = document.getElementById('screen-battle');
+  bs.style.display = 'flex';
+  seedStars(document.getElementById('arena'));
+  resetGame();
+}
+
+// ---- Init ----
+document.addEventListener('DOMContentLoaded', () => {
+  drawTitleIcon();
+  document.getElementById('btn-start').addEventListener('click', startGame);
+  document.getElementById('btn-restart').addEventListener('click', () => {
+    document.getElementById('overlay').classList.remove('visible');
+    resetGame();
+  });
+});
+</script>
+</body>
+</html>

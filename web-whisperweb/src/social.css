@@ -1,0 +1,109 @@
+/* App-derived surfaces, scoped to the signed-in social shell. */
+.whisper-social {
+  --background: 45 28.6% 97.3%;
+  --foreground: 193 12.3% 14.3%;
+  --card: 48 13.5% 92.7%;
+  --card-foreground: 193 12.3% 14.3%;
+  --secondary: 48 13.5% 92.7%;
+  --secondary-foreground: 193 12.3% 14.3%;
+  --muted: 48 13.5% 92.7%;
+  --muted-foreground: 185 6.1% 41.8%;
+  --primary: 193 12.3% 14.3%;
+  --primary-foreground: 45 28.6% 97.3%;
+  --border: 45 8% 88%;
+  letter-spacing: -0.012em;
+}
+.dark .whisper-social {
+  --background: 204 11.1% 8.82%;
+  --foreground: 60 17.2% 94.3%;
+  --card: 197 9.86% 13.9%;
+  --card-foreground: 60 17.2% 94.3%;
+  --secondary: 197 9.86% 13.9%;
+  --secondary-foreground: 60 17.2% 94.3%;
+  --muted: 197 9.86% 13.9%;
+  --muted-foreground: 180 5.39% 67.3%;
+  --primary: 60 17.2% 94.3%;
+  --primary-foreground: 204 11.1% 8.82%;
+  --border: 197 8% 23%;
+}
+.pitch-black .whisper-social { --background: 0 0% 0%; --card: 0 0% 9%; --secondary: 0 0% 9%; --muted: 0 0% 9%; }
+.whisper-social .social-rail-panel {
+  background: hsl(var(--card) / 0.6);
+  border-color: transparent;
+  border-radius: 24px;
+  backdrop-filter: none;
+}
+.whisper-social .social-rail-panel a[aria-current="page"] {
+  background: hsl(var(--background));
+  box-shadow: 0 1px 3px #00000006;
+}
+.whisper-social .social-page-header { background: hsl(var(--background) / 0.96); }
+.whisper-social .social-page-title {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  font-size: 17px;
+  font-weight: 650;
+}
+.whisper-social .social-header-action { background: hsl(var(--card)); border-color: transparent; box-shadow: none; backdrop-filter: none; }
+.whisper-social .social-feed-surface { border-color: hsl(var(--border)); }
+.whisper-social .social-feed-composer { background: hsl(var(--card) / 0.45); }
+.whisper-social :is(button, a, input, textarea):focus-visible { outline: 2px solid hsl(var(--foreground)); outline-offset: 3px; }
+.whisper-social :is(button, a) { -webkit-tap-highlight-color: transparent; }
+.whisper-chat-surface .group-outgoing a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.whisper-social :is(input, textarea):focus-visible,
+.whisper-chat-surface :is(input, textarea):focus-visible { outline: none; outline-offset: 0; box-shadow: inset 0 0 0 1px #5279ab55; }
+.whisper-chat-surface textarea { box-shadow: none; }
+.whisper-social .knot-composer textarea:focus-visible { box-shadow: none; }
+.chat-attachment-popover { width: 280px; max-height: min(430px, 65dvh); overflow-y: auto; padding: 6px; border-radius: 22px; background: hsl(var(--popover) / .96); backdrop-filter: blur(24px); box-shadow: 0 8px 32px #00000018; }
+.chat-attachment-action { display: flex; width: 100%; min-height: 54px; align-items: center; gap: 14px; padding: 10px 14px; border-radius: 15px; text-align: left; font-size: 15px; font-weight: 500; color: hsl(var(--foreground)); }
+.chat-attachment-action:hover, .chat-attachment-action:focus-visible { background: hsl(var(--secondary)); }
+.chat-attachment-action.text-destructive { color: hsl(var(--destructive)); }
+.chat-attachment-action > svg { width: 22px; height: 22px; flex-shrink: 0; }
+/* A feed-column profile, not a full-width dashboard. Both desktop rails stay intact. */
+.web-profile { container: profile / inline-size; }
+.web-profile .profile-toolbar { height: 56px; padding-inline: 12px; }
+.web-profile .profile-cover { height: clamp(140px, 30cqw, 192px); }
+.web-profile .profile-cover-empty { height: 112px; }
+.web-profile .profile-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 12px; padding: 0 20px 16px; }
+.web-profile .profile-identity, .web-profile .profile-name { display: contents; }
+.web-profile .profile-avatar { grid-column: 1; grid-row: 1; width: 100px; height: 100px; margin-top: -34px; z-index: 1; }
+.web-profile .profile-avatar > button[aria-label="View profile picture"] > :is(div, img) { width: 100px !important; height: 100px !important; }
+.web-profile .profile-note { position: absolute; left: 50%; top: -6px; transform: translate(-50%, -100%); z-index: 2; }
+.web-profile .profile-note-art { display: block; transform: scale(.78); transform-origin: center bottom; }
+.web-profile .profile-note-label { display: none; }
+.web-profile .profile-note-replies { top: 47px; bottom: auto; left: 125px; transform: none; }
+.web-profile .profile-name > div:first-child { grid-column: 1 / -1; grid-row: 2; display: flex; flex-wrap: wrap; column-gap: 8px; row-gap: 0; padding-top: 9px; }
+.web-profile .profile-name h2 { font-size: 22px; line-height: 1.25; }
+.web-profile .profile-roles { flex-basis: 100%; min-width: 0; font-size: 12px; align-items: flex-start; }
+.web-profile .profile-roles > p { padding-top: 7px; line-height: 1.5; }
+.web-profile .profile-roles > button { min-height: 32px; min-width: 32px; }
+.web-profile .profile-name > p { grid-column: 1 / -1; grid-row: 3; margin: 0; }
+.web-profile .profile-bio { grid-column: 1 / -1; grid-row: 4; padding-top: 9px; }
+.web-profile .profile-bio > :first-child { margin-top: 0; }
+.web-profile .profile-bio p { line-height: 1.5; }
+.web-profile .profile-stats { grid-column: 1 / -1; grid-row: 5; gap: 20px; margin: 12px 0 0; flex-wrap: wrap; }
+.web-profile .profile-stats > :is(span, button) { flex: 0 1 auto; min-width: 0; display: flex; align-items: baseline; gap: 4px; }
+.web-profile .profile-stats > :is(span, button) > span:first-child { font-size: 14px; }
+.web-profile .profile-actions { grid-column: 2; grid-row: 1; align-self: start; justify-self: end; gap: 6px; margin: 12px 0 0; max-width: 100%; }
+.web-profile .profile-actions > button { flex: 0 1 auto; min-height: 36px; padding-inline: 12px; border-radius: 999px; font-size: 12px; white-space: nowrap; }
+.web-profile .profile-actions > button[aria-label="Find people"] { width: 36px; padding-inline: 0; }
+.web-profile .profile-dashboard { grid-column: 1 / -1; grid-row: 6; margin: 14px 0 0; min-height: 40px; border-radius: 12px; gap: 8px; flex-wrap: wrap; }
+.web-profile .profile-highlights { grid-column: 1 / -1; grid-row: 7; min-width: 0; padding-top: 16px; }
+.web-profile .profile-highlights:has(> :first-child) { padding-bottom: 0; }
+.web-profile .profile-highlights > div:first-child { padding-bottom: 0; }
+.web-profile .profile-highlights button { width: 52px; }
+.web-profile .profile-highlights button > span:first-child { width: 52px; height: 52px; }
+.web-profile .profile-coaching { grid-column: 1 / -1; grid-row: 8; margin-top: 12px; padding-bottom: 0; }
+.web-profile .profile-tabs { margin: 0 16px 12px; }
+.profile-content { min-width: 0; border-top: 1px solid hsl(var(--border) / .65); }
+@container profile (max-width: 440px) {
+  .web-profile .profile-header { padding-inline: 16px; }
+  .web-profile .profile-note-art { transform: scale(.7); }
+  .web-profile .profile-actions { gap: 4px; }
+  .web-profile .profile-actions > button { padding-inline: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .whisper-social *, .whisper-social *::before, .whisper-social *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}

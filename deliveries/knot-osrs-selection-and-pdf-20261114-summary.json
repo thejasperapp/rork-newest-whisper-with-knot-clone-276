@@ -1,0 +1,218 @@
+{
+  "title": "Knot selection budget, PDF phase diagnosis and one fresh OSRS game",
+  "projectID": "mayokn2749ag072e3uvbh",
+  "date": "2026-11-14",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "supabaseProjectRef": "uryyyegnbtlmyhqlgndy",
+  "status": "backend_fixes_deployed_one_owner_game_delivered_runtime_gameplay_open",
+  "scope": {
+    "freshOwnerGameSubmissions": 1,
+    "freshOwnerGameScopeConsumed": true,
+    "historicalCommandsReplayed": 0,
+    "pdfRecaptureOrRedelivery": false,
+    "accountPasswordOrEmailChanged": false,
+    "credentialsIncluded": false,
+    "originalEvidenceOverwritten": false,
+    "nativeConfigurationEdited": false,
+    "originalBackendsOrParkedVoiceGitHubRecipesChanged": false
+  },
+  "historicalGame": {
+    "taskID": "ff1ec610-bba1-48f4-8bbb-73485b63436e",
+    "ask": "Make me an osrs style rpg game",
+    "selectionPromptBytes": 107814,
+    "selectionReceiptBytes": 43503,
+    "promptTargetExceeded": true,
+    "declaredSelectionDeadlineMs": 120000,
+    "actualSelectionElapsedMs": 180750,
+    "providerTimeoutAttempts": 3,
+    "perAttemptTimeoutMs": 60000,
+    "backoffMs": [250, 500],
+    "authoringStarted": false,
+    "buildSHA256": "178f79bcc6b19776fe27a0aa4bf24dc1a5bfd3e411e7590c798e650ad04dfe97"
+  },
+  "historicalPDF": {
+    "evidenceMethod": "read_only_exact_owner_retained_task_events_and_receipts",
+    "taskID": "e9e11652-e0d9-4881-84da-3d0f1006bc9d",
+    "conversationID": "549a559d-3f67-40e8-bbce-9ca95e6ddb8d",
+    "ask": "Make me a pdf of osrs fractures archive strategies",
+    "source": {
+      "proposalID": "f7295062-0eab-43a9-a5fe-fd0051827b11",
+      "sha256": "116fd555eaad7463e8d6f08ef382693dd933a4ba5d7ddf3882ba80291db728b5",
+      "contentCheckAttempts": 2,
+      "contentVerdict": "unconfirmed",
+      "reason": "grounding",
+      "detail": "item_requirement_anchor",
+      "itemIndex": 0,
+      "sourceContentPassEstablished": false
+    },
+    "build": {
+      "proposalID": "b91e890d-5125-496c-90fc-238d19e3df7e",
+      "recordedAt": "2026-11-14T16:00:41.043Z",
+      "title": "OSRS Fractures Archive Strategies",
+      "format": "pdf",
+      "pages": 11,
+      "bytes": 51396,
+      "sha256": "5df88c415b8d87e15ce0a11419e7089363a076e9104af1b25d6b902ae2ec1624"
+    },
+    "proof": {
+      "proposalID": "2d04c3e1-153a-470f-933f-6a9aeb5be26c",
+      "recordedAt": "2026-11-14T16:00:45.161Z",
+      "renderer": "Poppler",
+      "pagePNGs": 11,
+      "expectedPages": 11,
+      "structureAndAllPageProofPrepared": true,
+      "literalMarkup": "clear",
+      "extractedTextBytes": 19624,
+      "isCaptureOrDelivery": false
+    },
+    "falseFinalContentFinding": {
+      "recordedAt": "2026-11-14T16:00:53.447Z",
+      "httpStatus": 200,
+      "durationMs": 6493,
+      "kind": "missing_requested_item",
+      "item": "OSRS Fractures Archive Strategies PDF",
+      "detail": "The request was for a PDF document, but the operation specified is 'source' which relies on the HTML content.",
+      "repair": "Convert the HTML source document into a PDF file following the format provided in the request.",
+      "evidenceID": "request",
+      "quote": "Make me a pdf of osrs fractures archive strategies",
+      "failureMechanism": "Source-phase conversion claim survived the grounded-finding fallback after malformed requested-item validation, despite measured PDF build and proof already existing."
+    },
+    "stoppedAt": "2026-11-14T16:00:53.497Z",
+    "stopReason": "document_content_incomplete",
+    "capturedDeliveries": 0,
+    "substantiveQualityOrReferencePassInferred": false,
+    "historicalTaskReplayed": false,
+    "pdfRedelivered": false
+  },
+  "deployedCorrections": {
+    "selection": [
+      "Project bounded routing facts rather than nested receipts, stdout, code and repeated framing.",
+      "Enforce the 32768-byte target on actual serialized tool-selection messages; record contract bytes separately.",
+      "Use one immutable selection expiry across transport attempts, backoff, semantic repair and bounded same-provider minimal recovery.",
+      "Keep complete author/reference evidence separate. Reject oversized legacy inline selection evidence rather than silently clipping it.",
+      "Preserve ownership, admission, live/reference reads, consent, Stop and no-replay safeguards."
+    ],
+    "documents": [
+      "Default a fresh implicitly playable game request to HTML without changing explicit, ambiguous or historical format authority.",
+      "Persist final requested items and work orders through actual actor capture and cached findings; prioritize current owned repair authority over stale source findings.",
+      "Compare measured final text with operation=final, independently of the build invocation stage.",
+      "Reject narrow source-phase conversion findings before malformed-item fallback. Retry invalid verdicts once and remain unconfirmed rather than manufacture a pass.",
+      "Keep genuine substantive conversion-guide omissions blocking, with all content, reference, proof and integrity gates unchanged."
+    ]
+  },
+  "deployment": {
+    "app": "functions",
+    "sourceBuildSHA256": "fd240cf595d8ff95b7c04c2db8b7c22bfc72b56c65ab1495535a8b56dbb6ba68",
+    "sourceInputs": 90,
+    "sourceID": "src_61e10e08cd58f98c4",
+    "artifactID": "f09fca0788e470d4f85087e596a176ad",
+    "warnings": 0,
+    "exactServingWorkerAndActorVerified": true,
+    "verificationMethod": "Owned exact-proposal Events response headers, corroborated by logs; aggregate Events omits actor header.",
+    "sourceStampVerifiedAfterLiveRun": true
+  },
+  "validation": {
+    "focusedSelectionCaptureActor": {
+      "passed": 133,
+      "failed": 0,
+      "skipped": 89,
+      "todo": 0,
+      "seconds": 6,
+      "log": "/home/user/.tmp/rork-web-test-log-ffJ6T6/web-whisperweb.log"
+    },
+    "narrowPhaseGuardAndSubstantiveCounterexample": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 9,
+      "log": "/home/user/.tmp/rork-web-test-log-7P0zEm/web-whisperweb.log"
+    },
+    "historicalPhaseRegression": {
+      "before": { "passed": 0, "failed": 1, "skipped": 24 },
+      "after": "Passes in final focused capture selection; an invalid phase finding remains unconfirmed, not pass."
+    },
+    "fakeClockActualOrchestrator": {
+      "passed": 5,
+      "failed": 0,
+      "scenarios": ["minimal-read", "both-stall", "repair-stall", "stop", "oversized-utf8"]
+    },
+    "fullAdjacentContentSelections": {
+      "current": { "passed": 60, "failed": 5 },
+      "unchangedBaseline": { "passed": 57, "failed": 5 },
+      "sameFailureNamesVerified": true,
+      "currentLog": "/home/user/.tmp/rork-web-test-log-NsJEqI/web-whisperweb.log",
+      "baselineLog": "/home/user/.tmp/rork-web-test-log-IeOiQb/web-whisperweb.log",
+      "inheritedFailures": [
+        "knot-content-checker: retries once and permits the next build without claiming approval: no-choice",
+        "knot-content-checker: retries once and permits the next build without claiming approval: missing-reference",
+        "knot-content-checker: does not discard a separately grounded finding because of missing-items",
+        "knot-document-content: keeps guessed prior-conversation requirements advisory instead of blocking delivery",
+        "knot-document-content: does not accept invented quotes or authored/prior text as requirement authority"
+      ]
+    },
+    "fullSlicedAuthoringAndBuildContinuation": {
+      "current": { "passed": 130, "failed": 17 },
+      "previouslyRecordedUnchangedBaseline": { "passed": 125, "failed": 17 },
+      "baselineRevision": "90b352617bedbde27e837c2593388215d320006c",
+      "currentLog": "/home/user/.tmp/rork-web-test-log-RcetSR/web-whisperweb.log",
+      "priorBaselineLogNoLongerPresentAtClose": "/home/user/.tmp/rork-web-test-log-z4inWD/web-whisperweb.log",
+      "inheritedActorFailure": "document-only expanded actor admission retains exact owned authority for a long program: owned; expected 200, got 409",
+      "inheritedSlicedAuthoringFailureVariants": ["truncated", "invalid-json", "multiple-choices", "tool-envelope", "malformed-middle", "length-then-stop", "empty-then-stop", "raw-html", "timeout-then-stop", "timeout-exhausted", "stopped-retry", "ambiguous", "refused", "content-filtered", "520-then-stop", "520-exhausted"]
+    },
+    "distinctInheritedTestFailuresAcrossWiderSelections": 22,
+    "fullSuiteClean": false,
+    "strictAffectedBackendAndOwnerScripts": "pass",
+    "fullBackendStatic": {
+      "currentErrors": 14,
+      "inheritedErrors": 14,
+      "addedDiagnosticSignaturesOrCounts": 0,
+      "globallyClean": false
+    },
+    "functionsChecks": "rork checks does not support this Cloudflare app; deployment bundling is the active backend validation surface.",
+    "webChecks": { "status": "pass", "errors": 0, "buildID": "art_c33b682c24a633bb1" },
+    "inheritedWebNotices": ["redirect loop", "legacy asset", "optional routing"],
+    "stagedAndUnstagedWhitespace": "pass",
+    "qualityGatesWeakenedToPassTests": false
+  },
+  "freshOwnerGame": {
+    "intent": "deliveries/owner-osrs-game-20261114-once-intent.json",
+    "originalOutcome": "deliveries/owner-osrs-game-20261114-once-outcome.json",
+    "authoritativeReadOnlyCorrection": "deliveries/owner-osrs-game-20261114-readonly-verification.json",
+    "taskID": "cedfd85b-8836-4208-9948-7071dca58bfc",
+    "conversationID": "fedcba15-f13a-4bcd-9bbb-6179b3c1a310",
+    "conversationTitle": "OSRS RPG",
+    "sourceMessageID": "eb413e1e-dc41-4f3e-9c9b-506539ceaccd",
+    "ask": "Make me an osrs style rpg game",
+    "startedAt": "2026-11-14T16:54:43.342Z",
+    "completedAfterMs": 315300,
+    "selection": { "promptBytes": 11118, "targetBytes": 32768, "promptTargetExceeded": false, "elapsedMs": 4019, "deadlineMs": 25000, "attempt": 1, "minimalRecoveryNeeded": false },
+    "separateCompleteAuthoring": { "promptBytes": 51020, "readBytes": 30423, "authoringPromptTargetExceeded": true, "authoringElapsedMs": 295525, "responses": 1, "sealedSlices": 3, "evidenceClipped": false, "subjectToSelectionOnlyCap": false },
+    "ownedExecutions": { "count": 5, "allCompleted": true, "allExitZero": true, "operations": ["memory_read", "skill_index", "skill_read", "workspace_inventory", "document_script"] },
+    "artifact": {
+      "id": "f901dc9bef3671b33b0f51bc046ed03c94612399e5fe7dbe2e709049fc79ccc1",
+      "title": "OSRS-Style RPG Game",
+      "format": "html",
+      "bytes": 50038,
+      "sha256": "51696fc18b0031a629f574c523028e55d59711fb686d2284cea10a90a0aca9c7",
+      "ownedPath": "knot-cedfd85b-8836-4208-9948-7071dca58bfc-osrs_rpg.html",
+      "proposalID": "15b5c53a-de5b-4378-8be6-155d84bd6be2",
+      "capturedAt": "2026-11-14T16:59:58.413Z",
+      "ownedBoxFileIndependentlyRead": true,
+      "immutableDownloadIndependentlyRead": true,
+      "identicalBytesAndSHA256": true,
+      "cardSourceBindingVerified": true,
+      "review": "unavailable"
+    },
+    "chat": { "sourcePersisted": true, "messageCount": 2, "receivedAssistantReplyPersisted": true, "assistantReplyBytes": 23, "assistantReplySHA256": "0761b55269aae03d1c123ab1ff8af24d2160cda3f591fc551d4b5ebf1ceb3d42" },
+    "collectorCorrection": "Original collector mixed classification/complete-authoring with selection-only prompts. Original outcome remains unchanged; corrected read-only collection filters stage=tool_selection and separately retains complete authoring diagnostics.",
+    "correctionNewChatSubmissions": 0,
+    "correctionNewCommands": 0,
+    "acceptance": "owned_box_capture_chat_and_prompt_budget_verified"
+  },
+  "remainingAcceptance": [
+    "Actual gameplay and browser/native preview interactions are untested. Byte identity is not gameplay or visual certification.",
+    "No PDF recapture/redelivery occurred; the historical PDF is not claimed to have a card or a substantive quality pass.",
+    "Native A1-A5 touch, relaunch, particle, battle and non-HTML delivery acceptance remain open.",
+    "Measured native smoothness, exact-owner signed-Release, Stop/account/permission and cross-device acceptance remain open.",
+    "Wider inherited test failures and backend static errors remain; focused passes are not a globally clean suite."
+  ]
+}

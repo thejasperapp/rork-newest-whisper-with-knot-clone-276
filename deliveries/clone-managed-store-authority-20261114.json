@@ -1,0 +1,22 @@
+{
+  "check": "supported_managed_environment_store_authority",
+  "project": "mayokn2749ag072e3uvbh",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "observedAt": "2026-11-14T09:11:54.719Z",
+  "observations": [
+    {
+      "environment": "development",
+      "supportedGetSucceeded": false,
+      "denied": true,
+      "candidateAvailable": false,
+      "runtimeComparison": null
+    }
+  ],
+  "gatewayRequestPerformed": false,
+  "generationPerformed": false,
+  "rawCredentialLoggedOrPersisted": false,
+  "credentialConfigurationWritten": false,
+  "memberSessionUsed": false,
+  "originalBackendsCalled": false,
+  "billingAssociationVerified": false
+}

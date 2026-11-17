@@ -1,0 +1,88 @@
+{
+  "title": "Structured recipes measurement — stopped before authoring",
+  "taskID": "19623939-62a4-4efc-b3b7-19e74b786840",
+  "conversationID": "73f4ed57-0378-47ac-a9d8-a081bd53a1dd",
+  "sourceMessageID": "c68c4033-1fa8-43bd-bca4-94e79b5746b2",
+  "sourceBuildSHA256": "4110da0a37d66d75739d13632f97aac39d1f47380a504eaaa2e0c1c5a064d8a4",
+  "preflightObservedAt": "2026-11-14T04:22:20.380Z",
+  "startedAt": "2026-11-14T04:22:29.055Z",
+  "endedAt": "2026-11-14T04:22:38.088Z",
+  "outcome": "measurement_incomplete_harness_provenance_seed_missing",
+  "attemptTimings": {
+    "streamEndedMs": 7977,
+    "evidenceCollectionMs": 1056,
+    "totalElapsedMs": 9033,
+    "completionReceivedMs": null,
+    "captureElapsedMs": null
+  },
+  "prospectivePlan": {
+    "declaredAt": "2026-11-14T04:19:44.472Z",
+    "referenceTaskID": "b936a45f-b94a-4c5c-8ac6-b0c92e894466",
+    "baselineCompletionMs": 603097,
+    "baselineProviderGenerationMs": 440082,
+    "baselineNonGenerationMs": 163015,
+    "calibrationBytesPerSecond": 215,
+    "completeExtractedTextBytes": 17580,
+    "estimatedStructuredResponseBytes": 21975,
+    "prospectivePlanningMs": 265225,
+    "targetMs": 330000,
+    "policy": "One full structured content response; at most one affected-section layout-only response. Unpatchable visual advice ships recorded. No model-authored markup/CSS. No output shortening, provider fallback, skipped proof/review or reduced funded deadline.",
+    "interpretation": "Prospective working floor, not a physical lower bound or promise. Reuses all observed non-generation overhead conservatively, including the old second build/proof. Actual post-run floor must use actual model-response bytes and separately reported overhead. The former three-minute target is superseded, not retroactively passed."
+  },
+  "comparison": {
+    "baselineCompletionMs": 603097,
+    "targetMs": 330000,
+    "targetAssessed": false,
+    "improvementEstablished": false,
+    "recalibratedFloorMs": null,
+    "reason": "No authoring, document build, proof, content verdict or capture was reached. Abort duration is not document latency."
+  },
+  "commands": [
+    {
+      "proposalID": "d46eb1ad-7e26-4c1f-8dff-f1e193d18f3b",
+      "operation": "memory_read",
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "commandSHA256": "7898ebb296291043dacbe7db07cf88b60529018b007c2890b7ca321825e59b8e",
+      "stdoutSHA256": "a042a3adeae1109fd7095c3d2c6ae9fb3539d94e79e15b294dc3a6ceb68e3d7e",
+      "logBoundariesMatch": true
+    },
+    {
+      "proposalID": "2942ef4a-3034-4f20-ab1f-8e67190fa071",
+      "operation": "skill_index",
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+      "commandSHA256": "2cfb3bd266aa9c5d650f39c895229d2a56ecdd2560f7a744996a00851ce2da3b",
+      "stdoutSHA256": "4c163e791dd33692132eaab48f6475de06dbfcfe8f52a28f531d738fd9624436",
+      "logBoundariesMatch": true
+    }
+  ],
+  "cache": {
+    "proposalID": "c04ed3bb-1246-48c0-b44d-befb0abccf4d",
+    "sourceProposalID": "9924aed8-6462-4db0-a779-a0f0400495b0",
+    "actualSessionID": "cfa2086e-cd18-45df-9025-e75ba8568225",
+    "sha256": "f82c7eb4ecd411664199f5d16f42afe4dc53651a69400c7537685d72bb78be0e",
+    "originalObservedAt": "2026-11-14T03:41:35.881Z",
+    "independentlyMatchedToKnownOriginalLocally": true,
+    "newShellExecution": false,
+    "initiallyImportedOriginalsOmittedThisReceipt": true
+  },
+  "evidence": {
+    "observedOwnedProposals": 3,
+    "actualShellInputs": 2,
+    "cachedReads": 1,
+    "meteredWorkCommands": 0,
+    "observedAuthorResponses": 0,
+    "capturedDocuments": 0,
+    "ownedTurnCancellationRecorded": true,
+    "allObservedShellInputsTerminal": true,
+    "priorSessionReused": true
+  },
+  "validation": {
+    "affectedBackendStrictTypes": "passed",
+    "fullBackend": "14 current / 14 inherited; no additions; not globally clean",
+    "supportedWebChecks": "passed; zero errors",
+    "newUnitOrRegressionTests": "not run",
+    "runtimeDocumentPipeline": "not reached",
+    "browserAndDeviceAcceptance": "not performed"
+  },
+  "scope": "Local postmortem only; no remote call, task resume, paid review, command or capture replay. Once-intent remains consumed. One replacement fresh run requires explicit new authorization. Existing delivered files remain unchanged."
+}

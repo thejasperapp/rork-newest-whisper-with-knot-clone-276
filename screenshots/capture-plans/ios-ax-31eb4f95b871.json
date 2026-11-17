@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "platform": "ios",
+  "screenshotPrompts": [
+    {
+      "label": "Whisper app entry",
+      "screenDescription": "The normal Whisper first screen after launch: the branded W splash, sign-in form, Reconnect to Whisper recovery, or the existing member's home screen. Capture the actual current entry state without navigating or changing session/data. This is startup diagnosis, not a particular signed-in destination.",
+      "prompt": "Raw normal-launch evidence only. No fixture, sign-in, account switch, clearing storage, posting or navigation. Observe the app entry after ordinary launch. If the app exits, return the actual launch failure or crash evidence; do not bypass the startup path."
+    }
+  ]
+}

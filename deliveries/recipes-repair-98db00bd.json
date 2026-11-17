@@ -1,0 +1,112 @@
+{
+  "title": "Recipes repair iteration — strict author rejection",
+  "scope": "20261114-nonblank-cells-01",
+  "taskID": "98db00bd-3276-41e6-9c65-876e506d1a72",
+  "conversationID": "f856e2f3-7e86-49ab-ae1a-dcd35c2766bf",
+  "sourceMessageID": "2ec05cdc-7f0d-48ab-8bd6-a8c84dee80b0",
+  "sourceBuildSHA256": "0f8a1f73e8330eef57c5dfb77831fbd1e5acf867dc20a107bbe1e867dfa1fcb9",
+  "preflightObservedAt": "2026-11-14T06:01:10.298Z",
+  "startedAt": "2026-11-14T06:01:18.455Z",
+  "endedAt": "2026-11-14T06:03:26.158Z",
+  "outcome": "failed_before_source_build_proof_or_capture",
+  "timing": {
+    "incompleteCompletionEventMs": 125125,
+    "streamEndedMs": 125408,
+    "evidenceCollectionMs": 2295,
+    "totalMs": 127703,
+    "authorProviderMs": 105390,
+    "firstAuthorContentMs": 1264,
+    "successfulDeliveryMs": null
+  },
+  "authoring": {
+    "model": "anthropic/claude-sonnet-4.6",
+    "authorResponses": 1,
+    "authorProviderCalls": 1,
+    "automaticAuthorRetries": 0,
+    "returnedContentBytes": 18489,
+    "completionTokens": 5022,
+    "promptTokens": 14021,
+    "finishReason": "stop",
+    "promptBytesIncludingContract": 46890,
+    "completeReadMessageBytes": 22882,
+    "sealedProgramBytes": 0
+  },
+  "diagnostic": {
+    "branch": "text_nonblank",
+    "fieldPath": "$.sections[1].blocks[1].rows[7][2]",
+    "expectedShape": "nonblank_string",
+    "receivedShape": "blank_string",
+    "unexplained": false
+  },
+  "actualRetainedResponseReplay": {
+    "verified": true,
+    "completeReassembledContent": true,
+    "originalWireBytesClaimed": false,
+    "bodyHashVerified": true,
+    "schemaHashVerified": true,
+    "ownerAndParentVerified": true,
+    "diagnosticMatchesProduction": true,
+    "rejectedBodySHA256": "bdbfce7432fff87607370aeca477a8e2269e105ccfc0dd36d28273468e28cb0a",
+    "blankCellPaths": [
+      "$.sections[1].blocks[1].rows[7][2]",
+      "$.sections[1].blocks[1].rows[9][2]",
+      "$.sections[4].blocks[1].rows[12][2]",
+      "$.sections[7].blocks[1].rows[10][2]"
+    ],
+    "privateContentPublished": false,
+    "additionalProviderCalls": 0,
+    "commandsExecuted": 0
+  },
+  "comparison": {
+    "exactSameAsk": true,
+    "baselineSuccessfulCompletionMs": 603097,
+    "successfulDeliveryImprovementEstablished": false
+  },
+  "evidence": {
+    "orderedFrames": 27,
+    "ownedReceipts": 4,
+    "newShellInputs": 3,
+    "sameSessionCompleteCachedGuide": 1,
+    "meteredWorkCommands": 0,
+    "workCeiling": 10000,
+    "capturedDocuments": 0,
+    "sourceBuildProofCommands": 0,
+    "contentChecks": 0,
+    "pageReviews": 0,
+    "historicalTaskOrCommandReplay": false,
+    "terminalIncompleteOutcome": true,
+    "stopConfirmed": true
+  },
+  "commands": [
+    {
+      "proposalID": "81e4be9b-684e-4668-af58-0441ad551b4b",
+      "operation": "memory_read",
+      "newExecution": true,
+      "exactLogBoundaryMatches": true,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225"
+    },
+    {
+      "proposalID": "cb1413b4-c5b0-488f-b10b-6cc712178398",
+      "operation": "skill_index",
+      "newExecution": true,
+      "exactLogBoundaryMatches": true,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225"
+    },
+    {
+      "proposalID": "1dc7f5ea-7fce-4f58-b4b2-519d9bff00a5",
+      "operation": "skill_read",
+      "newExecution": false,
+      "originalGuideReceipt": "9924aed8-6462-4db0-a779-a0f0400495b0",
+      "completeOutputMatchesOriginal": true,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225"
+    },
+    {
+      "proposalID": "c97c41c8-4545-4159-8130-be2d2b603a49",
+      "operation": "workspace_inventory",
+      "newExecution": true,
+      "exactLogBoundaryMatches": true,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225"
+    }
+  ],
+  "scopeNote": "One deliberate newly authorized paid repair iteration. Time to failure is not successful delivery latency. Rejected content stays in private storage; it was not patched, executed or substituted for a PDF. Native/device acceptance remains separate."
+}

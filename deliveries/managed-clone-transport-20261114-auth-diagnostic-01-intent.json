@@ -1,0 +1,20 @@
+{
+  "title": "Clone migration — fixed synthetic AI transport check",
+  "scope": "managed-clone-transport-20261114-auth-diagnostic-01",
+  "project": "mayokn2749ag072e3uvbh",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "startedAt": "2026-11-14T09:14:15.981Z",
+  "expectedBuild": "178f79bcc6b19776fe27a0aa4bf24dc1a5bfd3e411e7590c798e650ad04dfe97",
+  "method": "POST",
+  "path": "/admin/knot-text-transport",
+  "reportedManagedKeyID": "sk_0gbdem17",
+  "reportedKeyIdentityIsNotRuntimeByteProof": true,
+  "fixedSyntheticGreetingOnly": true,
+  "maximumOperatorPosts": 1,
+  "automaticRetries": 0,
+  "memberDataRead": false,
+  "usesMemberSession": false,
+  "boxCommands": 0,
+  "configurationWrites": 0,
+  "consumesScopeBeforeRequest": true
+}

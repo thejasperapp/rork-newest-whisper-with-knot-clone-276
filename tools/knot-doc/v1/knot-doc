@@ -1,0 +1,212 @@
+#!/usr/bin/env python3
+"""Versioned mechanical PDF build/staging utility; not a delivery verifier.
+
+Installation and live operator acceptance are required before advertising this
+command. It does not author content, select a design, certify the user's ask,
+replace independent proof, copy old outputs, or alter existing member files.
+"""
+import argparse
+import hashlib
+import importlib.metadata
+import json
+import logging
+import os
+from pathlib import Path
+import re
+import subprocess
+import sys
+
+VERSION = '1.0.0'
+MAX_FILE = 50_000_000
+ROOT = Path.cwd().resolve()
+ENV = {'PATH': '/usr/local/bin:/usr/bin:/bin', 'LC_ALL': 'C.UTF-8', 'HOME': str(ROOT)}
+
+
+class CheckFailed(Exception):
+    pass
+
+
+def require(condition, name):
+    if not condition:
+        raise CheckFailed(name)
+
+
+def relative(value, hidden=False):
+    require(isinstance(value, str) and 0 < len(value) <= 240, 'path_invalid')
+    require(bool(re.fullmatch(r'[a-zA-Z0-9_.][a-zA-Z0-9_. /-]*', value)), 'path_invalid')
+    parts = value.split('/')
+    require(all(p and p not in ('.', '..') and (hidden or not p.startswith('.')) for p in parts), 'path_invalid')
+    p = Path(value)
+    require(not p.is_absolute(), 'path_absolute')
+    require(all(not Path(*p.parts[:i+1]).is_symlink() for i in range(len(p.parts))), 'path_symlink')
+    require(p.resolve().is_relative_to(ROOT), 'path_outside_workspace')
+    return p
+
+
+def measured(p, limit=MAX_FILE):
+    relative(str(p), hidden=True)
+    require(p.is_file() and 0 < p.stat().st_size <= limit, 'file_size_invalid')
+    with p.open('rb') as f:
+        data = f.read(limit + 1)
+    require(0 < len(data) <= limit, 'file_size_invalid')
+    return data, hashlib.sha256(data).hexdigest()
+
+
+def exclusive(p, payload):
+    relative(str(p), hidden=True)
+    fd = os.open(p, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, 0o600)
+    with os.fdopen(fd, 'wb') as f:
+        f.write(payload)
+        f.flush()
+        os.fsync(f.fileno())
+    # Intent/output directory entries must survive a process interruption too.
+    directory = os.open(p.parent, os.O_RDONLY | os.O_DIRECTORY)
+    try:
+        os.fsync(directory)
+    finally:
+        os.close(directory)
+
+
+def line(value):
+    return (json.dumps(value, separators=(',', ':')) + '\n').encode('utf-8')
+
+
+def run(args, maximum=10_000_000):
+    result = subprocess.run(args, capture_output=True, timeout=90, env=ENV)
+    require(result.returncode == 0, 'measurement_command_failed')
+    require(len(result.stdout) <= maximum, 'measurement_output_too_large')
+    return result.stdout
+
+
+def denied_fetcher(url, **kwargs):
+    # All file/network/image/font references are forbidden. Inline author CSS
+    # remains the author's choice. Do not silently render with missing resources.
+    raise CheckFailed('document_resource_fetch_forbidden')
+
+
+def build(args):
+    require(bool(re.fullmatch(r'[0-9a-fA-F]{8}(?:-[0-9a-fA-F]{4}){3}-[0-9a-fA-F]{12}', args.task_id or '')), 'task_identity_required')
+    task = args.task_id.lower()
+    source, output, proof_root = relative(args.source), relative(args.out), relative(args.proof_dir)
+    require(source.suffix.lower() in ('.md', '.html'), 'source_format_unsupported')
+    require(output.suffix.lower() == '.pdf', 'output_format_unsupported')
+    require(source != output, 'source_output_conflict')
+    data, source_hash = measured(source, 1_000_000)
+    text = data.decode('utf-8', errors='strict')
+    require(text.strip() and '\x00' not in text, 'source_text_invalid')
+    try:
+        versions = {name: importlib.metadata.version(name) for name in ('weasyprint', 'markdown-it-py')}
+        from weasyprint import HTML
+        from markdown_it import MarkdownIt
+    except (ImportError, importlib.metadata.PackageNotFoundError):
+        raise CheckFailed('installed_dependency_missing')
+    inputs = {'toolVersion': VERSION, 'sourceSHA256': source_hash, 'sourceBytes': len(data),
+              'sourceFormat': source.suffix.lower()[1:], 'outputFormat': 'pdf', 'packages': versions,
+              'resourcePolicy': 'deny-all-v1', 'markdown': 'commonmark-tables-strikethrough-html-v1', 'render': 'scale-to-1400-png-v1'}
+    input_hash = hashlib.sha256(line(inputs)).hexdigest()
+    state_dir = relative('.knot-doc/v1/' + task, hidden=True)
+    state_dir.mkdir(parents=True, exist_ok=True)
+    relative(str(state_dir), hidden=True)
+    journal = state_dir / (input_hash + '.jsonl')
+    if journal.exists():
+        saved, _ = measured(journal, 1_000_000)
+        entries = [json.loads(item) for item in saved.decode('utf-8').splitlines()]
+        require(len(entries) == 2 and entries[0].get('inputs') == inputs and entries[0].get('taskID') == task and entries[1].get('state') == 'staged', 'prior_attempt_not_replayable')
+        manifest = entries[1]['manifest']
+        require(manifest.get('taskID') == task and manifest.get('inputsSHA256') == input_hash and manifest.get('path') == entries[0].get('output'), 'retained_receipt_invalid')
+        final, final_hash = measured(relative(manifest['path']))
+        require(final_hash == manifest['sha256'] and len(final) == manifest['size'], 'retained_output_changed')
+        for item in manifest['proofs'] + [manifest['textEvidence'], manifest['pdfInfo']]:
+            content, digest = measured(relative(item['path']))
+            require(digest == item['sha256'] and len(content) == item['size'], 'retained_stage_changed')
+        print('KNOT_DOCUMENT_V1 ' + json.dumps(manifest, separators=(',', ':')))
+        return
+    require(not output.exists(), 'document_output_exists')
+    require(output.parent.is_dir(), 'output_parent_missing')
+    proof_root.mkdir(parents=True, exist_ok=True)
+    relative(str(proof_root))
+    stage = relative(str(proof_root / ('knot-doc-' + task + '-' + input_hash)))
+    require(not stage.exists(), 'proof_stage_exists')
+    # Exclusive durable intent precedes every build side effect. A failed,
+    # interrupted or uncertain attempt is never automatically run again.
+    exclusive(journal, line({'state': 'intent', 'taskID': task, 'inputs': inputs, 'output': str(output)}))
+    stage.mkdir()
+    html = text if source.suffix.lower() == '.html' else MarkdownIt('commonmark', {'html': True}).enable(['table', 'strikethrough']).render(text)
+    # WeasyPrint can swallow resource exceptions, so collect and reject them.
+    denied = []
+    def fetcher(url, **kwargs):
+        denied.append(True)
+        return denied_fetcher(url, **kwargs)
+    # Resource errors remain named outcomes, never document URLs in logs.
+    logger = logging.getLogger('weasyprint')
+    logger.handlers = [logging.NullHandler()]
+    logger.propagate = False
+    logger.disabled = True
+    pdf = HTML(string=html, url_fetcher=fetcher).write_pdf()
+    require(not denied, 'document_resource_fetch_forbidden')
+    require(0 < len(pdf) <= MAX_FILE and pdf.startswith(b'%PDF-') and b'%%EOF' in pdf[-2048:], 'pdf_bytes_invalid')
+    current, current_hash = measured(source, 1_000_000)
+    require(current_hash == source_hash and len(current) == len(data), 'document_source_changed')
+    exclusive(output, pdf)
+    info = run(['/usr/bin/pdfinfo', str(output)])
+    match = re.search(rb'^Pages:\s+(\d+)', info, re.M)
+    require(match and 1 <= int(match[1]) <= 300, 'pdf_page_count_invalid')
+    pages = int(match[1])
+    extracted = run(['/usr/bin/pdftotext', '-enc', 'UTF-8', str(output), '-'])
+    require(extracted.decode('utf-8', errors='strict').strip(), 'pdf_text_unreadable')
+    require(not re.search(rb'(?m)^\s{0,3}#{1,6}\s+\S|\*\*|```|<(?:html|body|h[1-6]|p|div|span|table|tr|td|strong|em)(?:\s[^>]*|)>', extracted, re.I), 'pdf_literal_markup_detected')
+    text_path, info_path = stage / 'text.txt', stage / 'pdfinfo.txt'
+    exclusive(text_path, extracted)
+    exclusive(info_path, info)
+    proofs = []
+    total = 0
+    for page in range(1, pages + 1):
+        prefix = stage / ('page-' + str(page))
+        run(['/usr/bin/pdftoppm', '-f', str(page), '-l', str(page), '-singlefile', '-scale-to', '1400', '-png', str(output), str(prefix)], 10000)
+        image = prefix.with_suffix('.png')
+        body, digest = measured(image, 5_000_000)
+        require(body.startswith(b'\x89PNG\r\n\x1a\n'), 'proof_image_invalid')
+        total += len(body)
+        require(total <= 50_000_000, 'proof_stage_too_large')
+        proofs.append({'page': page, 'path': str(image), 'sha256': digest, 'size': len(body)})
+    final, digest = measured(output)
+    require(final == pdf, 'document_bytes_changed')
+    final_source, final_source_hash = measured(source, 1_000_000)
+    require(final_source_hash == source_hash and len(final_source) == len(data), 'document_source_changed')
+    manifest = {'path': str(output), 'sha256': digest, 'size': len(final), 'format': 'pdf', 'pages': pages,
+                'proofs': proofs, 'toolVersion': VERSION, 'taskID': task, 'inputsSHA256': input_hash,
+                'sourceSHA256': source_hash, 'proofStageOnly': True, 'independentVerification': False,
+                'textEvidence': {'path': str(text_path), 'size': len(extracted), 'sha256': hashlib.sha256(extracted).hexdigest()},
+                'pdfInfo': {'path': str(info_path), 'size': len(info), 'sha256': hashlib.sha256(info).hexdigest()}}
+    relative(str(journal), hidden=True)
+    fd = os.open(journal, os.O_WRONLY | os.O_APPEND | os.O_NOFOLLOW)
+    with os.fdopen(fd, 'ab') as f:
+        f.write(line({'state': 'staged', 'manifest': manifest}))
+        f.flush()
+        os.fsync(f.fileno())
+    print('KNOT_DOCUMENT_V1 ' + json.dumps(manifest, separators=(',', ':')))
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Mechanical document build and proof staging; not independent delivery verification.')
+    parser.add_argument('--version', action='version', version=VERSION)
+    sub = parser.add_subparsers(dest='action', required=True)
+    command = sub.add_parser('build')
+    command.add_argument('source')
+    command.add_argument('--out', required=True)
+    command.add_argument('--proof-dir', required=True)
+    command.add_argument('--task-id', default=os.environ.get('KNOT_TASK_ID'))
+    args = parser.parse_args()
+    try:
+        build(args)
+    except CheckFailed as error:
+        print('knot-doc: ' + str(error), file=sys.stderr)
+        return 1
+    except Exception:
+        print('knot-doc: mechanical_build_or_measurement_failed', file=sys.stderr)
+        return 1
+    return 0
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

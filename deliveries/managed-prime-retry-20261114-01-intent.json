@@ -1,0 +1,19 @@
+{
+  "title": "Owner-authorized fresh prime-sum retry 01",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "requestID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+  "taskID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+  "conversationID": "bbd1a8f7-026b-49ef-b677-1f51b0a9266f",
+  "sourceMessageID": "6786afcd-50f8-4026-883c-99d306731548",
+  "expectedBuild": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c",
+  "startedAt": "2026-11-14T08:39:52.102Z",
+  "ask": "Use the real workspace to compute the sum of all prime numbers below 1000. Show the actual computation tool card and give the numeric answer based on its command result. Do not create files or update memory for this calculation.",
+  "retryAuthorization": "managed-prime-retry-20261114-authorization",
+  "attempt": "01",
+  "noAutomaticRetry": true,
+  "noHistoricalReplay": true,
+  "dedicatedAccountOnly": true,
+  "personalAccountAccessed": false
+}

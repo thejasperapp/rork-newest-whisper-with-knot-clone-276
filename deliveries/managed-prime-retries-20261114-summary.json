@@ -1,0 +1,112 @@
+{
+  "title": "New-backend prime-sum retries after owner-approved AI Cloud key rotation",
+  "observedOn": "2026-11-14",
+  "projectID": "mayokn2749ag072e3uvbh",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "rotation": {
+    "ownerApproved": true,
+    "previousKeyID": "sk_rgk11trj",
+    "reportedNewKeyID": "sk_1j1ctnz8",
+    "reportedSuccessful": true,
+    "reportedManagedEnvironmentReload": true,
+    "metadataEnabled": true,
+    "managedToolkitVersion": 2,
+    "managedScope": "all",
+    "servingKeyBytesIndependentlyVerified": false,
+    "billingAssociationVerified": false
+  },
+  "servingSourceBuild": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c",
+  "attempts": [
+    {
+      "attempt": "01",
+      "taskID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+      "servingRequestID": "d03cb84e-015c-4b89-bc2c-15111f210fd2",
+      "startedAt": "2026-11-14T08:39:52.102Z",
+      "clientElapsedMsIncludingEvidence": 2526,
+      "callID": "c56d5388-7d64-40ed-a011-a09762bb747d",
+      "phase": "classification",
+      "httpStatus": 401,
+      "workerModelCallElapsedMs": 196,
+      "evidence": "deliveries/managed-prime-retry-20261114-01-evidence.json",
+      "qualification": "The first collector's blockedBeforeExecution boolean recognized quota rejection only and is false for this 401. Its independently retained zero proposals, command records and executions establish that no execution occurred. The immutable report is preserved, not overwritten."
+    },
+    {
+      "attempt": "02",
+      "taskID": "a0b31e2c-6f6b-40ba-a6c7-05e7edea2943",
+      "servingRequestID": "2b8e612b-e7f7-4f53-b380-81138df90a7d",
+      "startedAt": "2026-11-14T08:40:43.288Z",
+      "clientElapsedMsIncludingEvidence": 1717,
+      "callID": "12a6c859-51be-4d37-9c68-03f87452de4d",
+      "phase": "classification",
+      "httpStatus": 401,
+      "workerModelCallElapsedMs": 271,
+      "evidence": "deliveries/managed-prime-retry-20261114-02-evidence.json"
+    },
+    {
+      "attempt": "03",
+      "taskID": "d9944e28-27dc-4924-87c6-e4c62c02cd5c",
+      "servingRequestID": "81610485-3c16-4d30-8a92-219ab6dfeb78",
+      "startedAt": "2026-11-14T08:41:21.714Z",
+      "clientElapsedMsIncludingEvidence": 1745,
+      "callID": "8f153f4f-68a8-4500-b443-93f914396438",
+      "phase": "classification",
+      "httpStatus": 401,
+      "workerModelCallElapsedMs": 263,
+      "evidence": "deliveries/managed-prime-retry-20261114-03-evidence.json"
+    }
+  ],
+  "observedTransport": {
+    "transport": "rork",
+    "endpointHost": "toolkit.rork.com",
+    "endpointPath": "/v2/vercel/v1/chat/completions",
+    "requestedModel": "openai/gpt-4o",
+    "observedExecutedProvider": null,
+    "returnedModel": null,
+    "responseID": null,
+    "firstContent": null,
+    "exactErrorCode": null
+  },
+  "configurationChecks": {
+    "newBackendCloudOnlyPolicyHTTP": 200,
+    "managedCredentialPresent": true,
+    "addressOverridePresent": false,
+    "authoritativeLocalComparisonCandidateAvailable": false,
+    "deploymentRefresh": "supported command skipped unchanged source; no new deployment or reset is claimed",
+    "artifactHash": "0a02b27dde125cc2c434e2a7a79393a1",
+    "sourceHash": "src_cda13c8506c66c832"
+  },
+  "outcome": {
+    "passed": false,
+    "status": "blocked_at_AI_Cloud_authentication_before_execution",
+    "freshChatSubmissions": 3,
+    "proposals": 0,
+    "commandRecords": 0,
+    "remoteCommands": 0,
+    "remoteSessionsCreated": 0,
+    "stdout": null,
+    "answer": null,
+    "stopConfirmedForEveryAttempt": true,
+    "originalOnceEvidencePreserved": true,
+    "personalAccountWorkspaceOrMemoryAccessed": false,
+    "directSidecarCalls": 0,
+    "sandboxComputation": false,
+    "nativeRoutingChanged": false,
+    "originalBackendsTouched": false,
+    "additionalKeyRotations": 0
+  },
+  "validation": {
+    "retryAndDiagnosticToolsStrictCompilation": "passed",
+    "affectedBackendStrictCompilation": "passed",
+    "sourceBuildStamp": "verified_unchanged",
+    "whitespace": "passed",
+    "iosSimulatorBuild": "passed",
+    "iosSourceHash": "src_97a7c8b78a0fef1ea",
+    "iosBuildSeconds": 100,
+    "deviceBuild": "detached_unverified",
+    "browserOrDeviceInteraction": "not_performed"
+  },
+  "nextGate": "Verify and repair the managed credential delivered to the new backend and its gateway authentication. The supported controls used here do not independently expose that binding; repeated rotation or copying an inherited credential is not an established fix.",
+  "uiFollowup": "The owner's artifact previewer and related UI reminder remains queued after this Cloud work; no new UI change or UI acceptance is claimed by these retries."
+}

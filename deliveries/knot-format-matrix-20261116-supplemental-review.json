@@ -1,0 +1,627 @@
+{
+  "observationDate": "2026-11-16",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "newExecutionOrReplay": false,
+  "immutableOriginalOutcomesPreserved": true,
+  "nativeOrWhisperBrowserUITested": false,
+  "allFormatsAccepted": false,
+  "records": [
+    {
+      "scope": "knot-format-matrix-20261116-c-csv",
+      "taskID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-csv-outcome.json",
+      "originalOutcomeSHA256": "7432acd3d37469b1e0031e094842569913a2ea64161d094d4c7b0ebe065b311f",
+      "historicalHarnessPassed": true,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "pass",
+      "backendVisualStatus": "not_recorded",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "230517b815b69da9a09195539881d2432187ebc69a703465cc5b7635bc9c134f",
+      "bytes": 54,
+      "originalFile": "deliveries/knot-format-matrix-20261116-c-csv-original.csv",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "csv",
+        "sha256": "230517b815b69da9a09195539881d2432187ebc69a703465cc5b7635bc9c134f",
+        "bytes": 54,
+        "newExecutionOrReplay": false,
+        "rows": [
+          [
+            "Plant",
+            "Containers",
+            "WeeklyWaterChecks"
+          ],
+          [
+            "Basil",
+            "2",
+            "3"
+          ],
+          [
+            "Mint",
+            "1",
+            "4"
+          ]
+        ],
+        "text": "Plant,Containers,WeeklyWaterChecks\nBasil,2,3\nMint,1,4\n"
+      }
+    },
+    {
+      "scope": "knot-format-matrix-20261116-c-docx",
+      "taskID": "066bedc4-5310-45d7-ab4e-9dbc95d45a0b",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-docx-outcome.json",
+      "originalOutcomeSHA256": "cfb681c806ce5a54aae80c67076cbbc15bd87f0ebd2d9db1da8645f2dce0593b",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "pass",
+      "backendVisualStatus": "issues",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "bf691f96c19017cf4d9a82e0f123feabc3a3193222a510003ed1a9d155990278",
+      "bytes": 37321,
+      "originalFile": "deliveries/knot-format-matrix-20261116-c-docx-original.docx",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "docx",
+        "sha256": "bf691f96c19017cf4d9a82e0f123feabc3a3193222a510003ed1a9d155990278",
+        "bytes": 37321,
+        "newExecutionOrReplay": false,
+        "officeRendering": "not_independently_exercised",
+        "text": "Balcony Herb Plan Introduction Growing herbs on your balcony can be a rewarding and practical way to enhance your culinary dishes and enjoy gardening in limited space. This guide provides practical steps for setting up a small balcony herb garden, focusing on Basil and Mint. Basil Practical Setup Steps - Container: Use a pot with drainage holes, at least 12 inches deep. - Soil: Well-drained soil with rich organic matter. - Location: Place in a sunny spot with 6-8 hours of sunlight. Watering and Harvesting Advice - Watering: Water deeply when the top inch of soil is dry. - Harvesting: Pinch off leaves regularly to encourage growth and prevent flowering. Mint Practical Setup Steps - Container: Use a wide container, as mint spreads aggressively. - Soil: Loamy soil, slightly acidic to neutral pH. - Location: Can tolerate some shade, but prefers partial sun. Watering and Harvesting Advice - Watering: Keep soil consistently moist, but not waterlogged. - Harvesting: Harvest leaves as needed, trim back regularly to maintain shape. Safety Note Mint can become invasive. Keep it contained by planting in a separate pot or use a root barrier if planted directly in a larger container. Conclusion By following these steps, you can successfully grow and maintain Basil and Mint on your balcony. Enjoy fresh herbs ready for your recipes anytime!"
+      },
+      "independentOfficeRendering": "not_exercised_local_libreoffice_unavailable"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-c-json",
+      "taskID": "864cf3a9-8966-4b2b-b5a6-d7f307c3efdd",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-json-outcome.json",
+      "originalOutcomeSHA256": "2ed28742fe9d56dcf972c56ec956f3c3e20bb8c349a7f8c101af76a494e79b03",
+      "historicalHarnessPassed": true,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "pass",
+      "backendVisualStatus": "not_recorded",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "85718bca961440e55e61f41cae50e5e45237ffbf090abbcb0da76c921f01756a",
+      "bytes": 147,
+      "originalFile": "deliveries/knot-format-matrix-20261116-c-json-original.json",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "json",
+        "sha256": "85718bca961440e55e61f41cae50e5e45237ffbf090abbcb0da76c921f01756a",
+        "bytes": 147,
+        "newExecutionOrReplay": false,
+        "value": {
+          "title": "Balcony Herb Plan",
+          "plants": [
+            {
+              "name": "Basil",
+              "containers": 2,
+              "weeklyWaterChecks": 3
+            },
+            {
+              "name": "Mint",
+              "containers": 1,
+              "weeklyWaterChecks": 4
+            }
+          ]
+        },
+        "text": "{\"title\":\"Balcony Herb Plan\",\"plants\":[{\"name\":\"Basil\",\"containers\":2,\"weeklyWaterChecks\":3},{\"name\":\"Mint\",\"containers\":1,\"weeklyWaterChecks\":4}]}"
+      }
+    },
+    {
+      "scope": "knot-format-matrix-20261116-c-md",
+      "taskID": "c256528e-555d-4d1d-914c-fd2811a80306",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-md-outcome.json",
+      "originalOutcomeSHA256": "9408cb0ad6e32909266668d182d9252f2a4f04ae520d68222d3af66fa624504a",
+      "historicalHarnessPassed": true,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "unconfirmed",
+      "backendVisualStatus": "not_recorded",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "57fd1cbc5640905304993a65cc5761e4c1228fe21faa22378a805a0afa41333c",
+      "bytes": 1833,
+      "originalFile": "deliveries/knot-format-matrix-20261116-c-md-original.md",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "md",
+        "sha256": "57fd1cbc5640905304993a65cc5761e4c1228fe21faa22378a805a0afa41333c",
+        "bytes": 1833,
+        "newExecutionOrReplay": false,
+        "text": "# Balcony Herb Plan\n\n## Basil\n\n### Practical Setup Steps\n1. **Container Selection**: Choose a container that is at least 6-8 inches deep. Ensure it has drainage holes to prevent waterlogging.\n2. **Soil**: Use well-draining potting soil. Basil thrives in nutrient-rich environments.\n3. **Placement**: Place the container in an area with full sun. Basil needs at least 6 hours of sunlight per day.\n\n### Watering\n- Water the basil plant regularly, keeping the soil moist but not waterlogged. Allow the top inch of soil to dry out between waterings.\n\n### Harvesting\n- Begin harvesting once the plant has at least 6-8 leaves. Pinch off leaves or cut stems just above a leaf node to encourage bushy growth.\n\n## Mint\n\n### Practical Setup Steps\n1. **Container Selection**: Use a container with a depth of at least 8 inches with proper drainage systems.\n2. **Soil**: Plant mint in a loamy, well-drained soil. It should retain moisture without becoming too soggy.\n3. **Placement**: Position the pot in partial shade to avoid intense sunlight, which can scorch the plant.\n\n### Watering\n- Keep the soil consistently moist. Mint requires frequent watering, especially in warm weather, but avoid overwatering.\n\n### Harvesting\n- Start harvesting once the plant reaches about 6 inches in height. Frequent cutting helps promote growth.\n\n### Safety Note\n- **Containment**: Mint can be invasive and can quickly outgrow its space. It\u2019s essential to keep it in a pot to prevent spreading.\n\n## General Advice\n- **Fertilization**: Apply a balanced, water-soluble fertilizer monthly during the growing season.\n- **Pest Management**: Check regularly for pests such as aphids and use organic methods to control them.\n\nThis plan will help ensure a successful and manageable balcony herb garden. Regular maintenance and observation are key to thriving plants."
+      },
+      "qualification": "Harness/independent format-content checks passed; backend complete-content review remains unconfirmed. Do not call this an unqualified quality pass."
+    },
+    {
+      "scope": "knot-format-matrix-20261116-c-pdf-forest",
+      "taskID": "491f8569-95da-4c6a-b7dc-04f77cd0c94f",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-pdf-forest-outcome.json",
+      "originalOutcomeSHA256": "f9d45d2f15cbf1f7b3faea98adf3e44c56598916bd208cd74da3a3478b289c47",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "pass",
+      "backendVisualStatus": "issues",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "1edd2a2f8f354c99ab5bf5b034c24f6d7922c98b5432ff7ccae941a8f4ba26f2",
+      "bytes": 14985,
+      "originalFile": "deliveries/knot-format-matrix-20261116-c-pdf-forest-original.pdf",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "pdf",
+        "sha256": "1edd2a2f8f354c99ab5bf5b034c24f6d7922c98b5432ff7ccae941a8f4ba26f2",
+        "bytes": 14985,
+        "newExecutionOrReplay": false,
+        "pages": 2,
+        "renders": [
+          "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-forest/independent/page-1.png",
+          "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-forest/independent/page-2.png"
+        ],
+        "visualInspection": "pending",
+        "text": "Balcony Herb Plan\nA Practical Guide to Growing Basil and Mint\nIntroduction\nGrowing herbs on your balcony is a rewarding endeavor. With just a small amount of\nspace, you can cultivate fresh basil and mint to enhance your culinary creations. This\nguide provides practical steps for setup, care, and harvesting.\nBasil: Setup and Care\nSelect a pot with good drainage holes.\nFill the pot with a mix of potting soil and compost.\nPlant basil seeds 1/4 inch deep, or transplant seedlings.\nPlace the pot in a sunny spot; basil loves warmth and sunlight.\nWater regularly, keeping the soil moist but not waterlogged.\nMint: Setup and Care\nChoose a wide pot; mint spreads rapidly and can overtake other plants.\nFill with well-draining potting soil.\nPlant mint seeds or root divisions just below the surface.\nLocate in partial sunlight; mint thrives even with less sun than basil.\nWater consistently; mint likes slightly moist soil.\nWatering Tips\nBoth basil and mint require regular watering, but it's essential to ensure the pots have\nproper drainage to prevent root rot. During hot weather, you might need to water daily.\nHarvesting Herbs\nFor basil, pinch off leaves above the node to encourage bushy growth.\nHarvest mint by snipping stems close to the base, promoting new shoots.\nBest to harvest in the morning after the dew dries for maximum flavor.\n1. \n2. \n3. \n4. \n5. \n1. \n2. \n3. \n4. \n5. \n1. \n2. \n3. \n1\nSafety Note\nTo keep mint from becoming invasive, always grow it in a pot, never directly in a\ngarden bed unless you want it to spread extensively.\n2"
+      },
+      "independentRenderedPagesOpened": [
+        1,
+        2
+      ],
+      "supplementalVisualStatus": "issues",
+      "observations": [
+        "Green accents are present and text is readable; safety callout occupies an otherwise mostly-empty second page."
+      ],
+      "supplementalWholeTurnAcceptance": "not_passed"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-c-pdf-guide",
+      "taskID": "882a3cab-20aa-46d1-9ce8-365647df10ab",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-pdf-guide-outcome.json",
+      "originalOutcomeSHA256": "ca9b60473ba40de98a1039068b8b8a07bf77b7bc6787ede44c5450d66d2f4330",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "pass",
+      "backendVisualStatus": "issues",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "a2f5cbe66f13f3bf072d218a670b93ecd201fba3889ac91634f78367db95317c",
+      "bytes": 16921,
+      "originalFile": "deliveries/knot-format-matrix-20261116-c-pdf-guide-original.pdf",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "pdf",
+        "sha256": "a2f5cbe66f13f3bf072d218a670b93ecd201fba3889ac91634f78367db95317c",
+        "bytes": 16921,
+        "newExecutionOrReplay": false,
+        "pages": 2,
+        "renders": [
+          "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-guide/independent/page-1.png",
+          "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-guide/independent/page-2.png"
+        ],
+        "visualInspection": "pending",
+        "text": "Balcony Herb Plan\nA Practical Guide to Growing Basil and Mint\nIntroduction\nGrowing herbs on your balcony can be a rewarding and practical way to enhance your cooking and beautify\nyour living space. This guide provides step-by-step instructions to grow basil and mint, including setup,\nmaintenance, and harvesting tips. You will also find a crucial safety note to keep mint controlled.\nBasil\nPractical Setup Steps\nContainer Selection: Choose a pot with good drainage. A diameter of at least 12 inches is ideal for\nbasil.\nSoil: Use well-draining potting soil enriched with compost to provide essential nutrients.\nPlacement: Place the pot in a sunny spot that receives 6-8 hours of sunlight daily.\nWatering\nFrequency: Water basil when the soil surface is dry. Basil prefers moist but not waterlogged soil.\nTechnique: Water at the base of the plant to avoid wetting the leaves.\nHarvesting Advice\nTiming: Start harvesting once the plant has 6-8 leaves per stem.\nMethod: Pinch leaves from the top to encourage bushier growth.\nMint\nPractical Setup Steps\nContainer Selection: Use a wide, shallow container to prevent mint from spreading too much.\nSoil: A general-purpose potting mix will support mint's growth needs.\nPlacement: Mint thrives in partial sunlight, so place the pot in a lightly shaded area.\nWatering\nFrequency: Mint requires consistently moist soil; water when the top inch of soil is dry.\nTechnique: Ensure even watering without waterlogging.\nHarvesting Advice\nTiming: Harvest mint leaves regularly once the plant is established.\nMethod: Snip leaves or stems with scissors to promote new growth.\n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \nSafety Note\nMint can be invasive and take over other plants if not confined. Always keep it in a separate container to\nprevent it from encroaching on other herbs.\nThis guide helps you maintain a successful and manageable herb garden on your balcony. Enjoy the fresh\nflavors and aromas at your doorstep!\n2 / 2"
+      },
+      "independentRenderedPagesOpened": [
+        1,
+        2
+      ],
+      "supplementalVisualStatus": "issues",
+      "observations": [
+        "Readable, but the safety note and ending spill onto a mostly-empty second page."
+      ],
+      "supplementalWholeTurnAcceptance": "not_passed"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-c-pdf-letter",
+      "taskID": "a819f3b0-adc5-425c-9c83-349396f8f9ac",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-pdf-letter-outcome.json",
+      "originalOutcomeSHA256": "ab3c1cf8d861d1000165ec1ca07020b411e808064f60a9b678cf081517ec13b9",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "unconfirmed",
+      "backendVisualStatus": "issues",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "5e27dc9f62c0ecbec1f804c5fb2da83f9d904c5cb27f20ab649cbc3e48cf8d2d",
+      "bytes": 18277,
+      "originalFile": "deliveries/knot-format-matrix-20261116-c-pdf-letter-original.pdf",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "pdf",
+        "sha256": "5e27dc9f62c0ecbec1f804c5fb2da83f9d904c5cb27f20ab649cbc3e48cf8d2d",
+        "bytes": 18277,
+        "newExecutionOrReplay": false,
+        "pages": 2,
+        "renders": [
+          "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-letter/independent/page-1.png",
+          "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-letter/independent/page-2.png"
+        ],
+        "visualInspection": "pending",
+        "text": "title: Balcony Herb Plan deliveryLabel: Herb Planting Guide\nBalcony Herb Plan\nIntroduction\nGrowing herbs on your balcony can be a rewarding and convenient way to have fresh ingredients at your\nfingertips. In this guide, we will walk you through setting up a successful balcony herb garden, focusing on\ntwo popular herbs: Basil and Mint.\nHerbs Overview\nBasil\nBasil is a popular herb known for its aromatic leaves. It is an essential ingredient in many dishes, particularly\nin Italian cuisine.\nSunlight: Prefers 6-8 hours of sunlight per day.\nSoil: Well-draining, rich soil.\nWater: Keep the soil consistently moist but not waterlogged.\nHarvesting: Pinch leaves from the top to encourage bushier growth.\nMint\nMint is a hardy herb that is easy to grow. It spreads quickly, making it ideal for container gardening to keep it\ncontained.\nSunlight: Partial shade to full sun.\nSoil: Moist, well-draining soil.\nWater: Requires regular watering, keeping soil moist but not soggy.\nSafety Note: Keep mint contained to prevent invasive spreading. Consider using deep containers or\nplacing a barrier at the bottom of the pot to restrict root growth.\nPractical Setup Steps\nChoose Containers: Select pots or containers with good drainage. Ensure the container is deep enough\nfor mint to contain its extensive roots.\nPrepare Soil: Use a high-quality potting mix and add organic matter to improve soil quality.\nPlant Seeds/Saplings: Follow the seed packet instructions or plant saplings at the same depth they\nwere in their previous container.\nPlacement: Position containers in the sunniest area on your balcony for optimal growth.\n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n1. \n2. \n3. \n4. \nWatering and Care\nBasil: Water deeply once a week or when the top inch of soil feels dry.\nMint: Water more frequently, ensuring the soil remains moist.\nCheck for pests and remove any dead leaves regularly.\nHarvesting Advice\nBasil: Begin harvesting once the plant has 6-8 leaves, ensuring you leave adequate foliage to continue\ngrowing.\nMint: Start harvesting once the plant reaches about 6 inches in height.\nConclusion\nWith the right care and environment, you can enjoy a thriving herb garden on your balcony, providing fresh\nand flavorful ingredients for your cooking adventures.\n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n2 / 2"
+      },
+      "independentRenderedPagesOpened": [
+        1,
+        2
+      ],
+      "supplementalVisualStatus": "issues",
+      "observations": [
+        "Visible protocol metadata at top: title: Balcony Herb Plan deliveryLabel: Herb Planting Guide. Not a design acceptance pass."
+      ],
+      "supplementalWholeTurnAcceptance": "not_passed"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-c-pdf-mono",
+      "taskID": "3dda341f-a3bc-47e4-9bff-757da473aa9e",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-pdf-mono-outcome.json",
+      "originalOutcomeSHA256": "6ed0e2d0b9d533e1f306eb2e23df3cb1afbe35b002d689330144a2edb4c812b4",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "unconfirmed",
+      "backendVisualStatus": "pass",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "2c4a301997950c9ab5408adda9e2efd3cb278380c67ce57e1934ec536589974d",
+      "bytes": 14508,
+      "originalFile": "deliveries/knot-format-matrix-20261116-c-pdf-mono-original.pdf",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "pdf",
+        "sha256": "2c4a301997950c9ab5408adda9e2efd3cb278380c67ce57e1934ec536589974d",
+        "bytes": 14508,
+        "newExecutionOrReplay": false,
+        "pages": 2,
+        "renders": [
+          "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-mono/independent/page-1.png",
+          "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-mono/independent/page-2.png"
+        ],
+        "visualInspection": "pending",
+        "text": "Balcony Herb Plan\nA Guide to Growing Basil and Mint\nIntroduction\nGrowing herbs on your balcony can be a rewarding and practical way to enhance your\ncooking. This guide will help you successfully cultivate basil and mint, two popular herbs\nknown for their culinary uses.\nBasil: Practical Setup Steps\nChoose a pot with drainage holes. Basil thrives in well-drained soil.\nFill the pot with high-quality potting mix.\nPlant basil seeds about 1/4-inch deep in the soil.\nPlace the pot in a location that receives at least six hours of sunlight daily.\nBasil: Watering and Harvesting Advice\nBasil likes moisture but allow the top inch of soil to dry out between waterings to prevent\nroot rot.\nWhen harvesting, pick the top leaves regularly to encourage bushier growth and\nimproved yield.\nMint: Practical Setup Steps\nUse a separate pot to grow mint, as it can be invasive and spread quickly,\noverpowering other herbs.\nFill the pot with a rich potting soil.\nPlant mint seedlings at the same depth they were growing in their nursery pots.\nPosition the pot where it gets partial shade.\nMint: Watering and Harvesting Advice\nMint requires consistently moist soil. Water the plant whenever the top inch of soil feels\ndry to the touch.\n1. \n2. \n3. \n4. \n1. \n2. \n3. \n4. \n1\nHarvest mint leaves regularly to encourage growth; the best time is right before the plant\nflowers.\nSafety Note: Keep Mint Contained\nMint can become invasive if not contained properly. Ensure you use a pot with\nboundaries to prevent it from spreading into unwanted areas.\n2"
+      },
+      "independentRenderedPagesOpened": [
+        1,
+        2
+      ],
+      "supplementalVisualStatus": "issues",
+      "observations": [
+        "Subtitle is visibly green rather than strictly monochrome. A paragraph continues onto page two. Not a requested-palette acceptance pass despite the backend visual pass."
+      ],
+      "supplementalWholeTurnAcceptance": "not_passed"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-c-pdf-plain",
+      "taskID": "8001b5a3-8b09-4c97-975e-8b5cc915a9be",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-pdf-plain-outcome.json",
+      "originalOutcomeSHA256": "7dde2178ada6576f6ddb908d872c054e79ebf2c219a3a2a15e8eda00cc71e2b2",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "pass",
+      "backendVisualStatus": "issues",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "d28cab8e76b1824c38f38d2fd3ce1c10f78edf467a5cc8d83f0ed4f1bcaf6b3f",
+      "bytes": 16736,
+      "originalFile": "deliveries/knot-format-matrix-20261116-c-pdf-plain-original.pdf",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "pdf",
+        "sha256": "d28cab8e76b1824c38f38d2fd3ce1c10f78edf467a5cc8d83f0ed4f1bcaf6b3f",
+        "bytes": 16736,
+        "newExecutionOrReplay": false,
+        "pages": 2,
+        "renders": [
+          "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-plain/independent/page-1.png",
+          "/home/user/.tmp/knot-format-matrix-20261116-c-pdf-plain/independent/page-2.png"
+        ],
+        "visualInspection": "pending",
+        "text": "Balcony Herb Plan\nIntroduction\nWelcome to your balcony herb garden plan. This guide provides practical steps to successfully grow basil and\nmint on your balcony. You will find information on setup, watering, harvesting, and a crucial note on keeping\nmint contained.\nHerbs Overview\nBasil\nUses: Basil is a versatile herb commonly used in Italian cuisine, perfect for sauces, salads, and as a\ngarnish.\nGrowth: Basil thrives in warm, sunny conditions.\nContainer: Use a pot at least 12 inches deep to allow root growth.\nMint\nUses: Mint adds freshness to drinks, desserts, and sauces.\nGrowth: Mint grows rapidly in almost all conditions.\nContainer: Plant mint in a separate container to prevent it from overgrowing.\nPractical Setup Steps\nChoose the right containers: Ensure they have good drainage.\nPotting mix: Use a high-quality organic potting soil.\nPlacement: Position your pots where they will get at least 6 hours of sunlight daily.\nWatering Instructions\nBasil: Water when the soil feels dry to the touch. Avoid waterlogging.\nMint: Keep the soil consistently moist but not soggy.\nHarvesting Advice\nBasil: Start harvesting when the plant has at least six leaves. Pick the leaves regularly to encourage\ngrowth.\nMint: Harvest sprigs before the mint flowers for the best flavor.\nSafety Note\nMint can become invasive. Always keep it in a separate pot to prevent it from overtaking your balcony space.\n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n1. \n2. \n3. \n\u2022 \n\u2022 \n\u2022 \n\u2022 \nConclusion\nWith these steps, you'll have delicious, fresh herbs at your fingertips. Enjoy the process and the flavors!\n2 / 2"
+      },
+      "independentRenderedPagesOpened": [
+        1,
+        2
+      ],
+      "supplementalVisualStatus": "issues",
+      "observations": [
+        "Readable, but the conclusion is orphaned on an almost-empty second page."
+      ],
+      "supplementalWholeTurnAcceptance": "not_passed"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-c-pdf-report",
+      "taskID": "f8989fd7-027a-497b-a8a0-140c17791c2f",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-pdf-report-outcome.json",
+      "originalOutcomeSHA256": "92271d84801cc554419b17f93e96dd621265a935ad656e2f2a4deb288300b481",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": null,
+      "backendState": null,
+      "backendContentStatus": "not_recorded",
+      "backendVisualStatus": "not_recorded",
+      "captured": false,
+      "observedIssue": "managed_http_503"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-c-pptx",
+      "taskID": "b10d456d-9a35-43c5-8c79-d6c2aa67d6d3",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-pptx-outcome.json",
+      "originalOutcomeSHA256": "cbffef491b467e0b96af8f0ca909a2c7e15fce465f888fa4c5938238ce5d2e4c",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": null,
+      "backendState": "degraded",
+      "backendContentStatus": "not_recorded",
+      "backendVisualStatus": "not_recorded",
+      "captured": false,
+      "observedIssue": "original_format_capture_missing"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-c-xlsx",
+      "taskID": "42b694b5-c5f4-438d-a838-252ff902bad6",
+      "sourceBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-c-xlsx-outcome.json",
+      "originalOutcomeSHA256": "bc35a901558352158620b3c3f9ae22aff9ea2418d262231a85ae4162241486ae",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "unconfirmed",
+      "backendVisualStatus": "issues",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "f891dc9602b3380092354e929be7cdd283aa2fce3fe721a99d4d7294eef59276",
+      "bytes": 4922,
+      "originalFile": "deliveries/knot-format-matrix-20261116-c-xlsx-original.xlsx",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "xlsx",
+        "sha256": "f891dc9602b3380092354e929be7cdd283aa2fce3fe721a99d4d7294eef59276",
+        "bytes": 4922,
+        "newExecutionOrReplay": false,
+        "cells": {
+          "A1": "Plant",
+          "B1": "Containers",
+          "C1": "WeeklyWaterChecks",
+          "A2": "Basil",
+          "B2": "2",
+          "C2": "3",
+          "A3": "Mint",
+          "B3": "1",
+          "C3": "4"
+        },
+        "officeRendering": "not_independently_exercised",
+        "text": "Balcony Herb Plan Plant Containers WeeklyWaterChecks Basil 2 3 Mint 1 4"
+      },
+      "independentOfficeRendering": "not_exercised_local_libreoffice_unavailable"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-d-docx",
+      "taskID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "sourceBuild": "f2910baf23bbaddc8a93b00c2b10a21d21f72dc851b710a8fdcef3c85f4f90c9",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-d-docx-outcome.json",
+      "originalOutcomeSHA256": "1faf0ea6af2f5e54ac82e462b53044d9d00ab53a568af8a2f07b25518dcf965f",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": null,
+      "backendState": "degraded",
+      "backendContentStatus": "not_recorded",
+      "backendVisualStatus": "not_recorded",
+      "captured": false,
+      "observedIssue": "original_format_capture_missing"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-d-html",
+      "taskID": "818f7b65-75fe-4876-b182-0476e3deb7df",
+      "sourceBuild": "f2910baf23bbaddc8a93b00c2b10a21d21f72dc851b710a8fdcef3c85f4f90c9",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-d-html-outcome.json",
+      "originalOutcomeSHA256": "fc1c55dff47e71c32e319ea768510f0cf16cd96457239fc7263eb2235d0d5e85",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "not_recorded",
+      "backendVisualStatus": "not_recorded",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "cd15708a50d043a3f45a7f1907f94d292cd792c29e8a53cc0c27eb3308010b7d",
+      "bytes": 1818,
+      "originalFile": "deliveries/knot-format-matrix-20261116-d-html-original.html",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "html",
+        "sha256": "cd15708a50d043a3f45a7f1907f94d292cd792c29e8a53cc0c27eb3308010b7d",
+        "bytes": 1818,
+        "newExecutionOrReplay": false,
+        "text": "\n \n \n \n     Balcony Herb Plan \n     Basil \n     To grow basil on your balcony, follow these steps: \n     \n         Choose a sunny spot that receives at least 6 hours of sunlight a day. \n         Use well-draining soil and a pot with drainage holes. \n         Water deeply but infrequently, allowing the soil to dry out between waterings. \n         Harvest basil leaves regularly to encourage growth. \n     \n     Mint \n     To grow mint, follow these steps: \n     \n         Mint thrives in partial shade and moist soil. \n         Use a separate pot to prevent mint from spreading too much. \n         Water frequently to keep the soil consistently damp. \n         Harvest mint leaves by pinching off stems just above a leaf pair. \n     \n     \n         Safety Note:  Mint is known to be invasive. Ensure that it is contained in its own pot to prevent it from overtaking your balcony garden.\n     \n     General Tips \n     \n         Choose pots that fit your space and have good drainage. \n         Label each pot with the herb name and date planted. \n         Rotate your pots periodically to ensure even growth and sunlight exposure. \n     \n \n \n"
+      },
+      "browserEvidence": ".rork/html-delivery-inspection-20261116-d/browser-inspection.json",
+      "browserViewports": [
+        {
+          "width": 390,
+          "height": 844
+        },
+        {
+          "width": 1280,
+          "height": 800
+        }
+      ],
+      "supplementalBrowserLoadScrollAndVisualStatus": "pass",
+      "screenshotsOpened": [
+        ".rork/html-delivery-inspection-20261116-d/html-390-full.png",
+        ".rork/html-delivery-inspection-20261116-d/html-390-end.png",
+        ".rork/html-delivery-inspection-20261116-d/html-1280-full.png",
+        ".rork/html-delivery-inspection-20261116-d/html-1280-end.png"
+      ],
+      "observations": [
+        "All four screenshots opened: legible text, no visible clipping or overlap.",
+        "Actual Chromium load and scroll to document end at phone and desktop widths; scripts disabled, external network blocked; no requests observed.",
+        "Historical optional review-unavailable event and passed:false outcome remain unchanged. Backend content status is not recorded; no new content-review pass is inferred."
+      ]
+    },
+    {
+      "scope": "knot-format-matrix-20261116-d-pdf-report",
+      "taskID": "62cfda44-1a87-4daa-912f-98c1309ebe7c",
+      "sourceBuild": "f2910baf23bbaddc8a93b00c2b10a21d21f72dc851b710a8fdcef3c85f4f90c9",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-d-pdf-report-outcome.json",
+      "originalOutcomeSHA256": "c1c170d3b8cd4c877f3f2da807b36b143ea9ee29a36ff3be389013527258f4b3",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "unconfirmed",
+      "backendVisualStatus": "issues",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "94cf9d4f5be0ff1f8e9d6fa2c198b0165a6c55aef053943da9bfa7adc37f36c5",
+      "bytes": 16595,
+      "originalFile": "deliveries/knot-format-matrix-20261116-d-pdf-report-original.pdf",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "pdf",
+        "sha256": "94cf9d4f5be0ff1f8e9d6fa2c198b0165a6c55aef053943da9bfa7adc37f36c5",
+        "bytes": 16595,
+        "newExecutionOrReplay": false,
+        "pages": 2,
+        "renders": [
+          "/home/user/.tmp/knot-format-matrix-20261116-d-pdf-report/independent/page-1.png",
+          "/home/user/.tmp/knot-format-matrix-20261116-d-pdf-report/independent/page-2.png"
+        ],
+        "visualInspection": "pending",
+        "text": "Balcony Herb Plan\nIntroduction\nGrowing herbs on a balcony is a rewarding and practical way to enhance your culinary endeavors while\nenjoying the benefits of gardening in limited spaces. This guide will walk you through setting up a functional\nbalcony herb garden focusing on two popular herbs: basil and mint.\nBasil\nPractical Setup Steps\nContainers: Choose pots with good drainage. Terracotta or ceramic pots with drainage holes are ideal.\nSoil: Use a well-draining potting mix, ideally with added compost for rich nutrients.\nPlacement: Place pots in an area with plenty of sunlight, around 6-8 hours a day.\nWatering and Care\nFrequency: Water when the top inch of the soil feels dry. Basil prefers moderate moisture.\nMaintenance: Pinch off flower spikes promptly to encourage leaf growth.\nHarvesting\nBegin harvesting when the plants are about 6 inches tall. Regular harvesting encourages bushiness and\ngrowth.\nMint\nPractical Setup Steps\nContainers: Choose a large pot to prevent mint from spreading uncontrollably.\nSoil: Use rich, well-draining soil similar to that of basil.\nPlacement: Mint thrives in both sun and partial shade; ensure at least part-day sun.\nWatering and Care\nFrequency: Keep soil consistently moist but not waterlogged.\nMaintenance: Trim often to manage growth and prevent flowering.\nSafety Note\nKeep mint contained in pots to prevent it from overtaking other plants.\nGeneral Tips\nFertilizing: Use a balanced, water-soluble fertilizer every 4-6 weeks during the growing season.\nPest Management: Use neem oil or soap spray for common pests.\n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \n\u2022 \nConclusion\nWith these steps and tips, even a small balcony can become a lush, productive herb garden, providing fresh\nbasil and mint to enhance your cooking and drinks all season long.\n2 / 2"
+      },
+      "independentRenderedPagesOpened": [
+        1,
+        2
+      ],
+      "supplementalVisualStatus": "issues",
+      "observations": [
+        "Readable, but the conclusion is orphaned on a mostly-empty second page."
+      ],
+      "supplementalWholeTurnAcceptance": "not_passed"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-d-pptx",
+      "taskID": "4eac43e9-ef99-47a7-be53-bfeff373dba8",
+      "sourceBuild": "f2910baf23bbaddc8a93b00c2b10a21d21f72dc851b710a8fdcef3c85f4f90c9",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-d-pptx-outcome.json",
+      "originalOutcomeSHA256": "3aa7eacad6dd5ece0b7782d1f7981b8f85d6f9b221209fdf4e5be50938352dd4",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": null,
+      "backendState": "degraded",
+      "backendContentStatus": "not_recorded",
+      "backendVisualStatus": "not_recorded",
+      "captured": false,
+      "observedIssue": "original_format_capture_missing"
+    },
+    {
+      "scope": "knot-format-matrix-20261116-d-txt",
+      "taskID": "3a3681b2-8b9d-4686-8482-a71c8c6a1361",
+      "sourceBuild": "f2910baf23bbaddc8a93b00c2b10a21d21f72dc851b710a8fdcef3c85f4f90c9",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-d-txt-outcome.json",
+      "originalOutcomeSHA256": "4068d57dad59464ddd0371c2e77d2935d63424e7072551e65ecb35a6d4f909a4",
+      "historicalHarnessPassed": true,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "unconfirmed",
+      "backendVisualStatus": "not_recorded",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "6ab518c939d2f38e13c6e370346d73c27283280d7a31fb2d13a43326a483077a",
+      "bytes": 935,
+      "originalFile": "deliveries/knot-format-matrix-20261116-d-txt-original.txt",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "txt",
+        "sha256": "6ab518c939d2f38e13c6e370346d73c27283280d7a31fb2d13a43326a483077a",
+        "bytes": 935,
+        "newExecutionOrReplay": false,
+        "text": "Title: Balcony Herb Plan\n\n**Basil and Mint: Practical Setup Steps**\n\n**1. Choosing Containers:**\n- Use pots with drainage holes.\n- Ensure pots are at least 12 inches deep for good root growth.\n\n**2. Soil Preparation:**\n- Use potting soil mixed with compost.\n- Ensure soil is well-draining.\n\n**3. Planting:**\n- Plant basil and mint separately to prevent overcrowding.\n- Space basil plants 12 inches apart.\n\n**Watering and Maintenance:**\n\n**4. Watering:**\n- Water when the top inch of soil feels dry.\n- Avoid waterlogging the soil.\n\n**5. Harvesting:**\n- Begin harvesting basil once the plant has 6-8 leaves.\n- Pinch mint leaves regularly to encourage growth.\n\n**Safety Note:**\n- Keep mint in its own pot to prevent it from overtaking other plants.\n\nWith these steps, you can successfully cultivate basil and mint on your balcony, providing fresh herbs for your culinary needs while enjoying the fragrance they bring to your living space."
+      },
+      "qualification": "Harness/independent format-content checks passed; backend complete-content review remains unconfirmed. Do not call this an unqualified quality pass.",
+      "additionalObservation": "TXT original contains literal Markdown-style bold markers; independent text checks did not certify plain-text presentation quality."
+    },
+    {
+      "scope": "knot-format-matrix-20261116-d-xlsx",
+      "taskID": "dabf1526-73c0-4be9-94e2-25fe07d684bc",
+      "sourceBuild": "f2910baf23bbaddc8a93b00c2b10a21d21f72dc851b710a8fdcef3c85f4f90c9",
+      "originalOutcome": "deliveries/knot-format-matrix-20261116-d-xlsx-outcome.json",
+      "originalOutcomeSHA256": "8e4a08f16aa34e30f103ea0aaff01ac3e51ab1e75f72291a88be3b6563c2407b",
+      "historicalHarnessPassed": false,
+      "historicalAutomatedChecksPassed": true,
+      "backendState": "completed",
+      "backendContentStatus": "unconfirmed",
+      "backendVisualStatus": "issues",
+      "captured": true,
+      "observedIssue": null,
+      "finalSHA256": "69c7a7d3eda1210f59826bd1ae6bac19212245461ec896f7c4c06612a57055ed",
+      "bytes": 4944,
+      "originalFile": "deliveries/knot-format-matrix-20261116-d-xlsx-original.xlsx",
+      "immutableCaptureDownloadByteIdentity": "pass",
+      "independentFormatChecks": {
+        "format": "xlsx",
+        "sha256": "69c7a7d3eda1210f59826bd1ae6bac19212245461ec896f7c4c06612a57055ed",
+        "bytes": 4944,
+        "newExecutionOrReplay": false,
+        "cells": {
+          "A1": "Plant",
+          "B1": "Containers",
+          "C1": "WeeklyWaterChecks",
+          "A2": "Basil",
+          "B2": "2",
+          "C2": "3",
+          "A3": "Mint",
+          "B3": "1",
+          "C3": "4"
+        },
+        "officeRendering": "not_independently_exercised",
+        "text": "Balcony Herb Plan Plant Containers WeeklyWaterChecks Basil 2 3 Mint 1 4"
+      },
+      "independentOfficeRendering": "not_exercised_local_libreoffice_unavailable"
+    }
+  ],
+  "readOnlyDiagnoses": {
+    "d-docx": {
+      "taskID": "fab407b9-92ff-4abe-8f6e-fdf222e2a0f7",
+      "buildProposalID": "8326c966-d42a-4d37-9ac6-8e9e4bbab95c",
+      "declaredMeasuredPath": "balcony_herb_plan.mdx2.docx",
+      "authoredSavePath": "balcony_herb_plan.docx",
+      "observedFailure": "Generated wrapper line 42 calls measured; line 14 fails file existence/nonempty/bounded size assertion after child exit zero.",
+      "conclusion": "Authored save path differs from declared measured path. This establishes an output-contract mismatch; no unmeasured neighbor is adopted and no renderer failure is inferred.",
+      "furtherRisk": "Retained authored program also inserts literal Markdown bold markers into Word paragraphs."
+    },
+    "d-pptx": {
+      "taskID": "4eac43e9-ef99-47a7-be53-bfeff373dba8",
+      "buildProposalID": "56d42ade-ea92-4178-a42d-253f32f57205",
+      "proofProposalID": "301d1d1b-aeed-4144-9eb3-f3f18ee6597b",
+      "unacceptedMeasuredBytes": 31519,
+      "unacceptedMeasuredSHA256": "38b7d59b34462421f8f83b449800f2ca6f5b9fec08cc68eff5bf29fc4b672f9e",
+      "observedFailure": "Proof stdin line 33 rejects at least one archive entry matching vbaProject, .bin or /embeddings/.",
+      "unknown": "Actual offending archive name/type has not been observed. Benign printer settings remain only a hypothesis.",
+      "notDelivered": true,
+      "proofGateChanged": false
+    }
+  },
+  "museQuestions": [
+    "For h task 2627847c-f135-454c-b7bb-ee50235ea35d / build 36f70d26-b9c6-4f39-baa0-1216021a6447, can you provide owner-scoped pinned-utility stderr, bounded failure phase and journal evidence without rerunning it?",
+    "What are the documented pinned-utility proof-root lifecycle/reuse semantics? Must the task root be absent before the first utility call, and which directories does a successful or failed call leave? No collision cause is established for h.",
+    "For quarantined proposal 3d6d6c3f-29f1-45ab-b00e-6fd700755e28 / task 34cf36a2-9dcd-42c4-b457-1c52997dda7e, what authoritative owner-filtered lookup can correlate the exact startup intent with a session ID and terminal state without principal-wide enumeration, rebinding or a new start?",
+    "Can the exact existing d-pptx unaccepted measured archive be inspected read-only for entry names, Content_Types and relationships under its original synthetic owner/task? Any follow-up command must be separately authorized, not a replay or adoption."
+  ],
+  "limitations": [
+    "Selected regression suites only; inherited type diagnostics and stale unrelated fixtures remain.",
+    "Independent Office XML/cell inspection is not a rendering pass.",
+    "File browser inspection is not Whisper chat/card, signed-in phone, avatar or playback QA.",
+    "Observed capture or a historical harness pass does not certify all content/style requirements."
+  ]
+}

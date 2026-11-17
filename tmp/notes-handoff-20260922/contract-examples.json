@@ -1,0 +1,103 @@
+{
+  "synthetic": true,
+  "notice": "Shapes only. Supply authenticated user transport externally. Never send placeholders as Yjs updates.",
+  "open": {
+    "request": {
+      "p_notebook": "50000000-0000-4000-8000-000000000001"
+    },
+    "response": {
+      "id": "20000000-0000-4000-8000-000000000001"
+    }
+  },
+  "read": {
+    "request": {
+      "p_doc": "20000000-0000-4000-8000-000000000001",
+      "p_action": "read",
+      "p_payload": {
+        "after": 0
+      }
+    },
+    "beforeInitialize": {
+      "id": "20000000-0000-4000-8000-000000000001",
+      "owner_id": "10000000-0000-4000-8000-000000000001",
+      "title": "Synthetic example",
+      "role": "owner",
+      "seq": 0,
+      "seed": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Synthetic capture."
+              }
+            ]
+          }
+        ]
+      },
+      "updates": [],
+      "people": []
+    },
+    "afterInitialize": {
+      "id": "20000000-0000-4000-8000-000000000001",
+      "owner_id": "10000000-0000-4000-8000-000000000001",
+      "title": "Synthetic example",
+      "role": "owner",
+      "seq": 1,
+      "seed": null,
+      "updates": [
+        {
+          "seq": 1,
+          "operation_id": "40000000-0000-4000-8000-000000000001",
+          "author_id": "10000000-0000-4000-8000-000000000001",
+          "update_data": "<exact persisted seedToUpdate result>"
+        }
+      ],
+      "people": []
+    }
+  },
+  "initialize": {
+    "request": {
+      "p_doc": "20000000-0000-4000-8000-000000000001",
+      "p_action": "initialize",
+      "p_payload": {
+        "operation": "40000000-0000-4000-8000-000000000001",
+        "update": "<exact persisted seedToUpdate result>"
+      }
+    },
+    "response": {
+      "seq": 1,
+      "operation": "40000000-0000-4000-8000-000000000001"
+    },
+    "competingInitializerResponse": {
+      "seq": 1,
+      "alreadyInitialized": true
+    }
+  },
+  "publish": {
+    "request": {
+      "p_meeting": "30000000-0000-4000-8000-000000000001",
+      "p_action": "publish",
+      "p_payload": {}
+    },
+    "response": {
+      "id": "20000000-0000-4000-8000-000000000001",
+      "shared": 1
+    },
+    "retryOrPrivateOrNoNewRecipients": {
+      "id": "20000000-0000-4000-8000-000000000001",
+      "shared": 0
+    }
+  },
+  "denials": [
+    "document_access_denied",
+    "document_not_ready"
+  ],
+  "nullOpenReasons": [
+    "source_unavailable",
+    "host_unverified",
+    "access_required"
+  ]
+}

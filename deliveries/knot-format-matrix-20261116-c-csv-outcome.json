@@ -1,0 +1,270 @@
+{
+  "scope": "knot-format-matrix-20261116-c-csv",
+  "caseName": "csv",
+  "requestedFormat": "csv",
+  "taskID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+  "conversationID": "29319e3a-123b-478c-945d-7f5131247c7c",
+  "expectedBuild": "29c94d707fca98eb439ed1944cfcf75677e10601b42a607e123cc1529c03de72",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:43:35.540Z",
+  "passed": true,
+  "accountID": "83c54ce7-44d7-40ee-9b0d-6de61cc225aa",
+  "terminal": {
+    "task": {
+      "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+      "bot": "main",
+      "conversationID": "29319e3a-123b-478c-945d-7f5131247c7c",
+      "sourceMessageID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+      "replyID": "899a6d4e-4b4e-48d5-8083-1e008bf5787c",
+      "state": "completed",
+      "createdAt": 1794797018770,
+      "startedAt": 1794797021232,
+      "finishedAt": 1794797048087,
+      "sequence": 72
+    },
+    "events": [
+      {
+        "v": 1,
+        "requestID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+        "sequence": 71,
+        "type": "accepted",
+        "stepPresentation": "authored_v1",
+        "activity": {
+          "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c:71",
+          "requestID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+          "taskID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+          "sourceMessageID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+          "sequence": 71,
+          "kind": "accepted",
+          "label": "Request received",
+          "recordedAt": "2026-11-16T02:44:07.843Z",
+          "detail": {
+            "stepPresentation": "authored_v1",
+            "turnElapsedMs": 22398
+          }
+        }
+      },
+      {
+        "v": 1,
+        "requestID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+        "sequence": 72,
+        "type": "complete",
+        "reply": "",
+        "activity": {
+          "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c:72",
+          "requestID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+          "taskID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+          "sourceMessageID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+          "sequence": 72,
+          "kind": "complete",
+          "label": "Response prepared",
+          "recordedAt": "2026-11-16T02:44:07.910Z",
+          "detail": {
+            "stage": "document_capture",
+            "turnElapsedMs": 22465
+          }
+        }
+      }
+    ],
+    "next": 72,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c-a1",
+        "label": "Creating CSV file with plant data",
+        "tool": "session_input",
+        "purpose": "Produce new CSV with specific plant information for delivery.",
+        "started_at": 1794797028430,
+        "ended_at": 1794797030756,
+        "receipt_id": "19022560-3c38-4f5a-a187-6a53ac7f5140"
+      },
+      {
+        "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c-a2",
+        "label": "Creating CSV file with plant data",
+        "tool": "session_input",
+        "purpose": "Produce new CSV with specific plant information for delivery.",
+        "started_at": 1794797030756,
+        "ended_at": 1794797032220,
+        "receipt_id": "19022560-3c38-4f5a-a187-6a53ac7f5140"
+      },
+      {
+        "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c-a3",
+        "label": "Create CSV file for plant data",
+        "tool": "session_input",
+        "purpose": "Generate a CSV file with specified plant data and format.",
+        "started_at": 1794797033602,
+        "ended_at": 1794797033725,
+        "receipt_id": "30e88bad-6d2a-4fee-8392-fc5dd716936f"
+      },
+      {
+        "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c-a4",
+        "label": "Create CSV file for plant data",
+        "tool": "session_input",
+        "purpose": "Generate a CSV file with specified plant data and format.",
+        "started_at": 1794797033725,
+        "ended_at": 1794797034513,
+        "receipt_id": "30e88bad-6d2a-4fee-8392-fc5dd716936f"
+      },
+      {
+        "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c-a5",
+        "label": "Create CSV with plant data",
+        "tool": "session_input",
+        "purpose": "Generate the specified CSV file based on given plant, container, and water check data.",
+        "started_at": 1794797036213,
+        "ended_at": 1794797036326,
+        "receipt_id": "a5f6b001-c06f-4383-980a-7494e5f48c52"
+      },
+      {
+        "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c-a6",
+        "label": "Create CSV with plant data",
+        "tool": "session_input",
+        "purpose": "Generate the specified CSV file based on given plant, container, and water check data.",
+        "started_at": 1794797036326,
+        "ended_at": 1794797037076,
+        "receipt_id": "a5f6b001-c06f-4383-980a-7494e5f48c52"
+      },
+      {
+        "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c-a7",
+        "label": "Create CSV with plant data",
+        "tool": "session_input",
+        "purpose": "Generate a CSV file with specified plant data columns and rows.",
+        "started_at": 1794797038864,
+        "ended_at": 1794797039254,
+        "receipt_id": "f1619224-dbd4-496f-b909-70332d2f479c"
+      },
+      {
+        "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c-a8",
+        "label": "Create CSV with plant data",
+        "tool": "session_input",
+        "purpose": "Generate a CSV file with specified plant data columns and rows.",
+        "started_at": 1794797039254,
+        "ended_at": 1794797040036,
+        "receipt_id": "f1619224-dbd4-496f-b909-70332d2f479c"
+      },
+      {
+        "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c-a9",
+        "label": "Create CSV for Plant Watering Schedule",
+        "tool": "document_prepare",
+        "purpose": "Generating a CSV file with plant watering data.",
+        "started_at": 1794797041762,
+        "ended_at": 1794797043622,
+        "receipt_id": "55ef43d9-e38c-4549-91fd-db9ac63e797b"
+      },
+      {
+        "id": "099a6d4e-4b4e-48d5-8083-1e008bf5787c-a10",
+        "label": "Create CSV for Plant Watering Schedule",
+        "tool": "document_script",
+        "purpose": "Generating a CSV file with plant watering data.",
+        "started_at": 1794797043622,
+        "ended_at": 1794797045069,
+        "receipt_id": "55ef43d9-e38c-4549-91fd-db9ac63e797b"
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [],
+  "document": {
+    "id": "575370632326639a78dc751f0cdda927246e3668021ac7b2d0689669ad7b0534",
+    "name": "knot-099a6d4e-4b4e-48d5-8083-1e008bf5787c-plant_watering.csv",
+    "format": "csv",
+    "contentType": "text/csv",
+    "title": "Plant Watering Schedule",
+    "deliveryLabel": "CSV Data File",
+    "size": 54,
+    "sha256": "230517b815b69da9a09195539881d2432187ebc69a703465cc5b7635bc9c134f",
+    "pages": 1,
+    "proofPages": [],
+    "createdAt": "2026-11-16T02:44:06.838Z",
+    "expiresAt": "2026-11-23T02:44:06.838Z",
+    "proposalID": "55ef43d9-e38c-4549-91fd-db9ac63e797b",
+    "review": "not_requested",
+    "sampled": true,
+    "sourcePath": "knot-099a6d4e-4b4e-48d5-8083-1e008bf5787c-plant_watering.csv",
+    "byteFidelity": {
+      "status": "pass",
+      "scope": "measured_final_to_immutable_capture",
+      "sha256": "230517b815b69da9a09195539881d2432187ebc69a703465cc5b7635bc9c134f",
+      "bytes": 54
+    },
+    "contentQuality": {
+      "status": "pass",
+      "scope": "complete_text_coverage",
+      "finalSHA256": "230517b815b69da9a09195539881d2432187ebc69a703465cc5b7635bc9c134f",
+      "factualCertification": false
+    },
+    "contentReview": {
+      "version": "knot_document_content_v1",
+      "status": "pass",
+      "contentCheckAttempts": [
+        {
+          "attempt": 1,
+          "model": "openai/gpt-4o",
+          "durationMs": 1496,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 2312,
+          "contentBytes": 446,
+          "outcome": "pass",
+          "httpStatus": 200,
+          "contentEncoding": "json"
+        }
+      ],
+      "requestSHA256": "6e65f6dd3f720514b45c67858e57e663c794f288e8e9b417163fd27394260907",
+      "finalSHA256": "230517b815b69da9a09195539881d2432187ebc69a703465cc5b7635bc9c134f",
+      "finalTextSHA256": "230517b815b69da9a09195539881d2432187ebc69a703465cc5b7635bc9c134f",
+      "sourceSHA256s": [],
+      "scope": "complete_text",
+      "requestedItems": [
+        {
+          "item": "CSV file creation with specified columns and rows",
+          "evidenceID": "request",
+          "quote": "Create a new actual CSV file. Use exactly the three columns Plant, Containers, WeeklyWaterChecks and exactly these data rows: Basil,2,3 and Mint,1,4.",
+          "section": "CSV file content",
+          "status": "developed",
+          "coverageQuote": "Plant,Containers,WeeklyWaterChecks\nBasil,2,3\nMint,1,4",
+          "repair": ""
+        }
+      ],
+      "workOrders": []
+    },
+    "sourceMessageID": "099a6d4e-4b4e-48d5-8083-1e008bf5787c",
+    "originalPath": "/home/user/rork-app/deliveries/knot-format-matrix-20261116-c-csv-original.csv",
+    "downloadedSHA256": "230517b815b69da9a09195539881d2432187ebc69a703465cc5b7635bc9c134f"
+  },
+  "independentInspection": {
+    "format": "csv",
+    "sha256": "230517b815b69da9a09195539881d2432187ebc69a703465cc5b7635bc9c134f",
+    "bytes": 54,
+    "newExecutionOrReplay": false,
+    "rows": [
+      [
+        "Plant",
+        "Containers",
+        "WeeklyWaterChecks"
+      ],
+      [
+        "Basil",
+        "2",
+        "3"
+      ],
+      [
+        "Mint",
+        "1",
+        "4"
+      ]
+    ],
+    "text": "Plant,Containers,WeeklyWaterChecks\nBasil,2,3\nMint,1,4\n"
+  },
+  "automatedChecksPassed": true,
+  "runtimeScope": "authenticated_backend_delivery_and_downloaded_bytes_not_phone_or_browser",
+  "awaitingVisualReview": false,
+  "endedAt": "2026-11-16T02:44:09.927Z",
+  "elapsedMs": 34387
+}

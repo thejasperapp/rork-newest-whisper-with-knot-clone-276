@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "created": "2026-09-22",
+  "files": {
+    "contract-examples.json": {
+      "bytes": 2557,
+      "sha256": "cf9279478f2b73bd5a0f2f09fbed2720311458f83be90b18ca865eb59592a553"
+    },
+    "converter/meet-seed.js": {
+      "bytes": 573668,
+      "sha256": "26ab71a84665c23b7a97cb04c1ea676b3de0739a2fb844212e588ba2eb28ec34"
+    },
+    "converter/meet-seed.mjs": {
+      "bytes": 573563,
+      "sha256": "bb92ef240a4c1f3bc277e4c351f9752ac8a06fe6babc6e19daf47c20cec1eedb"
+    },
+    "licenses/@tiptap__core-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-blockquote-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-bold-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-bullet-list-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-code-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-code-block-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-document-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-dropcursor-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-gapcursor-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-hard-break-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-heading-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-highlight-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-horizontal-rule-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-italic-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-link-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-list-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-list-item-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-list-keymap-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-ordered-list-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-paragraph-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-strike-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-subscript-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-superscript-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-table-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-text-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-text-align-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-text-style-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extension-underline-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__extensions-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__pm-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__starter-kit-3.31.3.txt": {
+      "bytes": 1069,
+      "sha256": "c96e5ecb55ac593157ad1d21d1f44a611187f494a0f04c235a1ae692c88d6ba9"
+    },
+    "licenses/@tiptap__y-tiptap-3.0.9.txt": {
+      "bytes": 1140,
+      "sha256": "fd69bd7c93b6c32f43c8244c3182029c1af6cc14bb259a0195750f1661e9e304"
+    },
+    "licenses/isomorphic.js-0.2.5.txt": {
+      "bytes": 1108,
+      "sha256": "dd6488c9c1a4ce2dc978ecee067e5b6a725b52e6057a450b24f1a23bc373b057"
+    },
+    "licenses/lib0-0.2.117.txt": {
+      "bytes": 1108,
+      "sha256": "5446db1e43fe52faf3faab7e9959fe3762ac11bdc61c0945934c498affd52d73"
+    },
+    "licenses/linkifyjs-4.3.3.txt": {
+      "bytes": 1056,
+      "sha256": "58e6f3677452cca096ce5328ebf7de37a1406bbeeb2f263c1b2ededc8c7d0228"
+    },
+    "licenses/orderedmap-2.1.1.txt": {
+      "bytes": 1100,
+      "sha256": "869c30f368eb08735e779027b9f4bc9fea2f39624351856aebe42741f0bc0884"
+    },
+    "licenses/prosemirror-changeset-2.4.3.txt": {
+      "bytes": 1100,
+      "sha256": "7543dfe82fa61d5bb2478c78cbd9dfb2cbd500b6ac2893b24ed925773b67fb70"
+    },
+    "licenses/prosemirror-commands-1.7.2.txt": {
+      "bytes": 1105,
+      "sha256": "ef0b452ced6304db2ce78ca66de1fc7b97bab05bc1750c95df359ed3fe1d65c8"
+    },
+    "licenses/prosemirror-dropcursor-1.8.3.txt": {
+      "bytes": 1105,
+      "sha256": "ef0b452ced6304db2ce78ca66de1fc7b97bab05bc1750c95df359ed3fe1d65c8"
+    },
+    "licenses/prosemirror-gapcursor-1.4.1.txt": {
+      "bytes": 1105,
+      "sha256": "ef0b452ced6304db2ce78ca66de1fc7b97bab05bc1750c95df359ed3fe1d65c8"
+    },
+    "licenses/prosemirror-history-1.5.0.txt": {
+      "bytes": 1105,
+      "sha256": "ef0b452ced6304db2ce78ca66de1fc7b97bab05bc1750c95df359ed3fe1d65c8"
+    },
+    "licenses/prosemirror-inputrules-1.5.1.txt": {
+      "bytes": 1105,
+      "sha256": "ef0b452ced6304db2ce78ca66de1fc7b97bab05bc1750c95df359ed3fe1d65c8"
+    },
+    "licenses/prosemirror-keymap-1.2.3.txt": {
+      "bytes": 1105,
+      "sha256": "ef0b452ced6304db2ce78ca66de1fc7b97bab05bc1750c95df359ed3fe1d65c8"
+    },
+    "licenses/prosemirror-model-1.25.11.txt": {
+      "bytes": 1105,
+      "sha256": "ef0b452ced6304db2ce78ca66de1fc7b97bab05bc1750c95df359ed3fe1d65c8"
+    },
+    "licenses/prosemirror-schema-list-1.5.1.txt": {
+      "bytes": 1105,
+      "sha256": "ef0b452ced6304db2ce78ca66de1fc7b97bab05bc1750c95df359ed3fe1d65c8"
+    },
+    "licenses/prosemirror-state-1.4.4.txt": {
+      "bytes": 1105,
+      "sha256": "ef0b452ced6304db2ce78ca66de1fc7b97bab05bc1750c95df359ed3fe1d65c8"
+    },
+    "licenses/prosemirror-tables-1.8.5.txt": {
+      "bytes": 1099,
+      "sha256": "d1d2046ebbe6362f9ad8fd4d62e9074f2553f289c0e1de895a650f10ba5f4239"
+    },
+    "licenses/prosemirror-transform-1.12.1.txt": {
+      "bytes": 1105,
+      "sha256": "ef0b452ced6304db2ce78ca66de1fc7b97bab05bc1750c95df359ed3fe1d65c8"
+    },
+    "licenses/prosemirror-view-1.42.4.txt": {
+      "bytes": 1105,
+      "sha256": "ef0b452ced6304db2ce78ca66de1fc7b97bab05bc1750c95df359ed3fe1d65c8"
+    },
+    "licenses/rope-sequence-1.3.4.txt": {
+      "bytes": 1089,
+      "sha256": "530424aebdd0e73f53238d1f89df250057bc8d8ce090cf5954197fadce5bf226"
+    },
+    "licenses/w3c-keyname-2.2.8.txt": {
+      "bytes": 1100,
+      "sha256": "869c30f368eb08735e779027b9f4bc9fea2f39624351856aebe42741f0bc0884"
+    },
+    "licenses/y-protocols-1.0.7.txt": {
+      "bytes": 1108,
+      "sha256": "5446db1e43fe52faf3faab7e9959fe3762ac11bdc61c0945934c498affd52d73"
+    },
+    "licenses/yjs-13.6.32.txt": {
+      "bytes": 1211,
+      "sha256": "341baa53605ed85d6f95782322854cca56c655ebc7fd4712649b8e7afc6020ff"
+    },
+    "licenses/zod-3.25.76.txt": {
+      "bytes": 1072,
+      "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
+    },
+    "supabase/notes-collaboration.sql": {
+      "bytes": 21118,
+      "sha256": "5a99899e5a954d07e0638e6632f3aff65460136ab80cedab37a2ce2cf2f9e28f"
+    },
+    "supabase/notes-import-guard.sql": {
+      "bytes": 5792,
+      "sha256": "66247575293439158223153b0a5c91da803d4951ceb60bac5aa014fca43e5846"
+    },
+    "supabase/notes-meeting-documents.sql": {
+      "bytes": 14413,
+      "sha256": "6fd32b666fe2db434dc4bc3f786e1f4c5d755da770eea722b6909c1b3686f1c5"
+    },
+    "supabase/notes-messaging-groups.sql": {
+      "bytes": 5492,
+      "sha256": "757202400340c144768d5816eb319e3d5fd15458875b0eadff40907a17272e19"
+    },
+    "supabase/notes-people-picker.sql": {
+      "bytes": 3762,
+      "sha256": "78cdd5b17c286ef4b71b9c5cd3a40be183312383b59ce5b838053722be561fcf"
+    },
+    "supabase/notes-private-assets.sql": {
+      "bytes": 6369,
+      "sha256": "6c081478cc147d7aa2effe8c986d43f2cca85189778a823803a03f6ff76fe4a6"
+    },
+    "supabase/notes-suggestions.sql": {
+      "bytes": 4928,
+      "sha256": "c182f3920b8f7092284f348ca8d51ec41f7c6c83e81f5332b71420fd3d0d51cd"
+    },
+    "supabase/private-notebook-sync.sql": {
+      "bytes": 4373,
+      "sha256": "c7aa36809c9d34e0ce14536159f1de4fdb8a1de26501d810f519f8c42a9bfae3"
+    },
+    "supabase/private-recording-archive.sql": {
+      "bytes": 8511,
+      "sha256": "b4847687365bdde0c661057bf009927579c01dbf3464718b5ce17dd79f1d20f1"
+    },
+    "web-whisperweb/meet-seed-browser.ts": {
+      "bytes": 278,
+      "sha256": "8bcd447e4e9fad72559b60eb9d4439a3ab4b42ff555aef9ec2b7ccddb3df4042"
+    },
+    "web-whisperweb/package.json": {
+      "bytes": 989,
+      "sha256": "6ee731bd328c3c24a2c8e9401b7fece6c4b04dd1dce0a0a2d15dfe0ff3eea62b"
+    },
+    "web-whisperweb/src/lib/documentStyle.ts": {
+      "bytes": 1372,
+      "sha256": "2f840c371e2c35259ac40a6c91e6c4c5d733dc968dbea3f457c54248e80b9d4e"
+    },
+    "web-whisperweb/src/lib/meetSeed.test.ts": {
+      "bytes": 1485,
+      "sha256": "7746abcd2fb14e49340e6a6ee49ac4bb1d773c8e46b5036418346a544790660c"
+    },
+    "web-whisperweb/src/lib/meetSeed.ts": {
+      "bytes": 743,
+      "sha256": "d0b1d41e399a8a6e79c7d205fc0404137891fa42a4874fed2f8008f1ee641e37"
+    },
+    "web-whisperweb/src/lib/notebookDocument.ts": {
+      "bytes": 9371,
+      "sha256": "f6f131bc07b25c4146c35f730e33b837eabf616426d0a308a47cd1060bd8b6c1"
+    },
+    "web-whisperweb/src/lib/notebookHighlights.ts": {
+      "bytes": 2364,
+      "sha256": "7e1c375661cfc4c88f3e636e13b0576980366a9270c1f9fbc04d853dcca12e15"
+    },
+    "web-whisperweb/src/lib/notesCollaboration.sql.test.ts": {
+      "bytes": 7925,
+      "sha256": "0a46f034ae565a2a3b7516570f208d132f75077d38b2cde87432c05a4b41c96a"
+    },
+    "web-whisperweb/src/lib/notesEditorExtensions.ts": {
+      "bytes": 2056,
+      "sha256": "dc89f8e3798db0d5a0cb81fea01d76587fe71d1503b90c8b0f7927f12e72fb2d"
+    },
+    "web-whisperweb/src/lib/notesMeeting.sql.test.ts": {
+      "bytes": 10958,
+      "sha256": "098c340fba5034ae04dcc3cfe305903ec3c1b148b8ee110c6e5f848b417245cf"
+    },
+    "web-whisperweb/src/lib/notesPrivateAssets.sql.test.ts": {
+      "bytes": 6544,
+      "sha256": "afef0c73fad697f2d825dc648259a2fc6a97803ce70df2e44f065b8b58c11bc3"
+    },
+    "web-whisperweb/src/lib/sharedNotesDocument.test.ts": {
+      "bytes": 1971,
+      "sha256": "e93d9efb0c8bed33c393bcb54c7c64037809a9fcaa8da76e09f49c626a7e07e1"
+    },
+    "web-whisperweb/src/lib/sharedNotesDocument.ts": {
+      "bytes": 1341,
+      "sha256": "5fda140babc55db5c65129334789545dacf9e2abe4bb29082338331a0ef79c7c"
+    },
+    "web-whisperweb/src/lib/sharedNotesExtensions.ts": {
+      "bytes": 1944,
+      "sha256": "99dd4b3735ec5df0c349d49e9b72067c6ccf6d510690b4d6ba14f21b77ce5201"
+    },
+    "web-whisperweb/src/lib/whisperDocument.ts": {
+      "bytes": 5037,
+      "sha256": "7206bc985878df3fd645a11c4d0bd242ddc139de3efd668ee6370c2b97d16913"
+    },
+    "web-whisperweb/src/lib/whisperDocumentMedia.test.ts": {
+      "bytes": 3175,
+      "sha256": "7b8cb1281805c22d19d318285372ff69834c70064ae531a72b7f35337ea86c82"
+    },
+    "web-whisperweb/src/lib/whisperDocumentMedia.ts": {
+      "bytes": 1666,
+      "sha256": "2aa8126e5211120f70d75f6025d8bf679a59acbf5e4de3f5dfb5316af4484129"
+    },
+    "web-whisperweb/vitest.config.ts": {
+      "bytes": 134,
+      "sha256": "672fcd7d201af426cde320d98f46b1259e89242beccc32be82acc2b1f4f4b7f1"
+    },
+    "whisper-documents-meet-handoff.md": {
+      "bytes": 52762,
+      "sha256": "a58f10f23753a9dc5fb1750b6e444962f6f366f34aebf48a4ed240bf2f6442cd"
+    }
+  }
+}

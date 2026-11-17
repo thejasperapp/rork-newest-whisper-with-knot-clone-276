@@ -1,0 +1,159 @@
+{
+  "scope": "Owner-authorized native Events, artifact-preview and responsiveness implementation with separate-account live acceptance",
+  "projectID": "mayokn2749ag072e3uvbh",
+  "date": "2026-11-14",
+  "status": "implemented_partial_runtime_acceptance",
+  "backend": {
+    "origin": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+    "expectedSourceFingerprint": "178f79bcc6b19776fe27a0aa4bf24dc1a5bfd3e411e7590c798e650ad04dfe97",
+    "sourceID": "src_fe5bdbd6bdf9028c2",
+    "artifactID": "1d5d842f27b9183e5d85cc049171a7ec",
+    "changedOrDeployedDuringUIWork": false,
+    "cloudOnlyPreserved": true,
+    "supabaseProjectRef": "uryyyegnbtlmyhqlgndy"
+  },
+  "implemented": [
+    "Fixed inline Events status badge and close button above the scrolling content, charcoal sheet, variable-height dashed timeline and human document titles.",
+    "HTML cards have a large preview region and Open preview; actual interactive viewer has Restart, loading feedback and inactive-content teardown.",
+    "Prefer captured preview images; bounded isolated local HTML thumbnail fallback verifies original bytes and local dependencies. A thumbnail is not interaction proof.",
+    "Provisional text publishes at 100 ms intervals in a locally observed bubble, pauses during scrolling and clears immediately at terminal transport cleanup.",
+    "Coalesce bottom-scroll requests at 80 ms; cancel during interaction and avoid final spring motion while reading away or with reduced motion.",
+    "Defer automatic thumbnails and eager original retention while work is active without blocking explicit opening."
+  ],
+  "validation": {
+    "nativeChecks": {
+      "command": "rork checks --app ios --json",
+      "result": "passed",
+      "sourceID": "src_cc46a3c8f94046fec",
+      "installableBuildID": "3026999b-8bc0-4ed2-9204-3cf0826b830f",
+      "simulatorBuildSeconds": 98,
+      "deviceBuild": "detached_unverified",
+      "notice": "Inherited legacy asset warning",
+      "performanceAcceptance": false
+    },
+    "focusedTests": {
+      "command": "rork test ios --app ios --only WhisperTests/WhisperKnotReplyStreamTests --only WhisperTests/WhisperKnotResponsivenessTests --json",
+      "result": "passed",
+      "passed": 12,
+      "failed": 0,
+      "durationSeconds": 213,
+      "newStreamRegressionCount": 4,
+      "fullSuite": false,
+      "liveInteractionOrSmoothnessProof": false
+    },
+    "stagedAndUnstagedWhitespace": "passed"
+  },
+  "qaIdentity": {
+    "accountID": "bad7b131-6b05-44c8-a450-a30f4748639f",
+    "workspaceID": "whisper-bad7b131-6b05-44c8-a450-a30f4748639f",
+    "profile": "knot_qa_bad7b131",
+    "createdWithOwnerAuthorization": true,
+    "interactiveNativeSignInAndOnboarding": true,
+    "explicitAISharingConsent": true,
+    "personalAccountAccess": false,
+    "credentialsIncluded": false,
+    "accountHistoryAndWorkspacePreserved": true
+  },
+  "freshNativeRequests": [
+    {
+      "label": "history-01",
+      "conversationID": "51190b18-0f64-4f2f-b39c-b6cdb03fe833",
+      "sourceMessageID": "cc7a6536-d437-4fd2-9f85-e885377534de",
+      "taskID": "aeb2e70a-5a3a-4e19-89da-fba89da32a73",
+      "requestedOutput": "18 chat-only accessibility tips, no tools/files/memory updates",
+      "observed": "Incorrectly entered Create/artifact selection. Internal prerequisite reads ran; selection ended tool_call_count_invalid after three attempts. No requested chat answer or artifact.",
+      "turnElapsedMs": 19182,
+      "accepted": false,
+      "scopeConsumed": true,
+      "replayed": false,
+      "evidence": "deliveries/native-knot-ui-20261114-history-01-observation.json"
+    },
+    {
+      "label": "compute-01",
+      "sourceMessageID": "cd2d32dd-c66e-4989-8da1-2c193e4e4192",
+      "taskID": "b481b738-78cf-4d47-ac21-e88a8c52cd61",
+      "executedProposalID": "6f1a6cc8-1c06-4b8b-89ea-73482268a91c",
+      "command": "python3 -c 'import time; time.sleep(12); print(sum(i**2 for i in range(1, 138)))'",
+      "stdout": "866525\n",
+      "exitCode": 0,
+      "executionStatus": "completed",
+      "ownerWorkspaceReceiptVerified": true,
+      "completeOutput": true,
+      "actualNativeCompletedCardObserved": true,
+      "calculationExecutionAccepted": true,
+      "finalExplanatoryReplyObserved": false,
+      "fullRequestAccepted": false,
+      "duplicateProposal": {
+        "id": "9e0d1249-9ba3-47c8-b58e-9f919a912c56",
+        "statusAtObservation": "awaiting_approval",
+        "approvedOrExecuted": false,
+        "mustNotReplay": true
+      },
+      "scopeConsumed": true,
+      "replayed": false,
+      "evidence": "deliveries/native-knot-ui-20261114-compute-01-observation.json"
+    },
+    {
+      "label": "artifact-01",
+      "sourceMessageID": "920a9fff-57e5-4e82-a56c-2ef6af5f0c5e",
+      "taskID": "ab3dee2d-f9c2-4c2c-bdae-eeb9f1a43ef7",
+      "requestedOutput": "Self-contained interactive Tap Counter HTML with Add one and Reset, real workspace verification and delivery",
+      "observed": "Internal prerequisites completed, then document_prepare rejected document_program_closed at receipt_binding before authoring.",
+      "turnElapsedMs": 5653,
+      "programBytes": 0,
+      "authoringResponses": 0,
+      "documentsDelivered": 0,
+      "interactivePreviewOrRestartTested": false,
+      "accepted": false,
+      "scopeConsumed": true,
+      "replayed": false,
+      "evidence": "deliveries/native-knot-ui-20261114-artifact-01-observation.json"
+    }
+  ],
+  "nativeRuntimeObservations": {
+    "eventsListAndTaskDetailsOpened": true,
+    "inlineStatusAndCloseAlignmentVisuallyObserved": true,
+    "fixedCloseDismissalObserved": true,
+    "interactiveArtifactAvailable": false,
+    "activeScrollSmoothness": "unverified",
+    "observationFailure": "During active computation the simulator scroll observation reported screen=1x1 and an empty tree although its screenshot remained full-size; subsequent taps failed off_screen. Reinstalled the same checked build to recover observation. This is not a smoothness pass or proof of an app layout failure.",
+    "runtimeLogs": "No runtime logs found for this project",
+    "screenshots": [
+      {
+        "path": ".rork/tmp/device/sim-ios_uswb_01m7cpmysxfr98xwc2arj78vmj-s70.jpg",
+        "shows": "Events fixed badge/close alignment on a stopped task",
+        "limitation": "Captured before the latest performance-build reinstall; layout evidence only, not latest-build performance acceptance."
+      },
+      {
+        "path": ".rork/tmp/device/sim-ios_uswb_01m7cpmysxfr98xwc2arj78vmj-s88.jpg",
+        "shows": "Actual native Completed code-execution card with 866525 after exact checked-build installation"
+      }
+    ]
+  },
+  "sourceInspectionFollowUps": [
+    "General artifact routing matches writing/game terms without proving the requested output is an executable artifact; investigate the chat-only misroute without weakening tool validation.",
+    "For nongame HTML, prerequisite selection can reach document_prepare without an observed skill_read, while actor programOwner requires at least one fully read skill. This is a candidate contributor; receipt_binding collapses multiple authoritative rejection conditions, so the exact rejecting actor condition is not established.",
+    "Investigate the duplicate calculation proposal and missing final narration without approving, replaying or continuing the saved duplicate.",
+    "Native workspaceIncomplete intentionally clears provisional text and returns without failure prose under the standing Events-only policy. This explains silent idle; no policy reversal was introduced."
+  ],
+  "remainingAcceptance": [
+    "Fresh successful native chat-only reply",
+    "Complete native calculation plus explanatory reply without duplicate proposal",
+    "Actual newly delivered artifact opening, Add one, Reset and Restart interactions",
+    "Measured active-work scrolling and signed-device performance",
+    "Exact-owner c1291eed signed-Release acceptance and all broader existing privacy/Stop/account/cross-device holds"
+  ],
+  "cleanup": {
+    "simulatorID": "ios_uswb_01m7cpmysxfr98xwc2arj78vmj",
+    "sessionEnded": true,
+    "endCommandConfirmed": true,
+    "backendDataDeleted": false
+  },
+  "preserved": [
+    "All consumed scopes and immutable receipts",
+    "Cloud-only transport, current clone backend, original Supabase and owner-keyed workspaces",
+    "Consent, Stop, deletion, immutable originals, local HTML isolation and CSP",
+    "Protected generated configuration, signing/browser settings, original and parked backends",
+    "Parked voice, GitHub and recipes work"
+  ]
+}

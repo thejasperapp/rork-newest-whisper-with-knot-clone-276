@@ -1,0 +1,72 @@
+{
+  "title": "High-Protein Recipes for Fat Loss — capture record",
+  "observedAt": "2026-11-14T02:05:20.145Z",
+  "status": "captured_and_original_download_verified",
+  "captureAttemptsUnderNewAuthorization": 1,
+  "request": {
+    "requestID": "5bfc4443-1ee8-4250-bcb8-64fe922cc5af",
+    "method": "POST",
+    "url": "https://uf26aun6d49w1tsjsm2u9-backend.rork.app/knot/shell/documents/capture-advisory",
+    "httpStatus": 200,
+    "handler": "capture_advisory"
+  },
+  "servingBuild": {
+    "kind": "deterministic_source_build_sha256_not_hosting_bundle_hash",
+    "workerSHA256": "e7150aee8ea6926223c3a2ada0ce4e76a9697d0b098bd0abe9bc71c8083fbc75",
+    "actorSHA256": "e7150aee8ea6926223c3a2ada0ce4e76a9697d0b098bd0abe9bc71c8083fbc75",
+    "verifiedIn": ["response_headers", "capture_start_event", "captured_event", "worker_runtime_log", "actor_runtime_log"],
+    "workerRuntimeLogID": 5404,
+    "actorRuntimeLogID": 5405,
+    "deploymentID": "7836818e-bc02-5aa6-94d2-44819dddc9b3",
+    "deploymentReportedArtifactHash": "2484a6f195ce34da3d7619d497a1f609",
+    "deploymentReportedSourceHash": "src_0b5c9d94e77a26c01"
+  },
+  "capture": {
+    "captureID": "53a86256-61d6-46dd-b8c5-e79bbae52265",
+    "proposalID": "2166cf20-62a1-4f8b-8214-8f0163dc7746",
+    "startEvent": { "sequence": 967, "kind": "document_advisory_capture_started", "recordedAt": "2026-11-14T02:05:17.258Z" },
+    "finishedEvent": { "sequence": 968, "kind": "document_advisory_capture_finished", "recordedAt": "2026-11-14T02:05:17.556Z" },
+    "capturedEvent": { "sequence": 975, "kind": "document_captured", "recordedAt": "2026-11-14T02:05:17.556Z" },
+    "documentID": "59ce3510bcbeed7b4233ae8ef655a9f513de456e15d8e2c93d7eccbb553e2bc5"
+  },
+  "byteVerification": {
+    "boxFileSource": "actual_owned_file_read_and_server_sha256_during_capture",
+    "boxFileSHA256": "b2fee52770cb06b4b69bcbdf2af708a51e97e113a3ebefa2ccb90ae5ca350a88",
+    "capturedSHA256": "b2fee52770cb06b4b69bcbdf2af708a51e97e113a3ebefa2ccb90ae5ca350a88",
+    "downloadedSHA256": "b2fee52770cb06b4b69bcbdf2af708a51e97e113a3ebefa2ccb90ae5ca350a88",
+    "deliveryCopySHA256": "b2fee52770cb06b4b69bcbdf2af708a51e97e113a3ebefa2ccb90ae5ca350a88",
+    "bytes": 47014,
+    "pages": 9,
+    "originalProofPreviewsDownloadedAndHashMatched": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "deliveryPath": "deliveries/high-protein-recipes-nine-pages-b2fee52770cb.pdf"
+  },
+  "review": {
+    "visualStatus": "issues_retained_as_advisory_not_a_pass",
+    "contentStatus": "unconfirmed_not_factual_or_nutrition_certification",
+    "originalEventsPreserved": [920, 925],
+    "retainedFindingCount": 3,
+    "retainedFindingPage": 9,
+    "advisoryEvent": 974,
+    "newAIReview": false,
+    "newShellOrBuildOrProofExecution": false,
+    "rebuiltOrOverwritten": false
+  },
+  "validation": {
+    "focusedSyntheticTestsPassed": 164,
+    "focusedSyntheticTestsFailed": 0,
+    "focusedSyntheticTestsSkipped": 0,
+    "affectedStrictBackendAndScriptCompilation": "passed",
+    "fullBackendEntrypointDiagnostics": { "current": 14, "inherited": 14, "new": 0, "globallyClean": false },
+    "webStaticAndBuildChecks": "passed",
+    "cloudflareRorkChecks": "unsupported_use_affected_compilation_and_managed_bundle",
+    "actualRuntimeVerification": "canonical_backend_capture_original_download_and_all_nine_proof_downloads",
+    "nativeDeviceOrBrowserUIInteractionTestedThisPass": false
+  },
+  "earlierRejectedAttempt": {
+    "recordedAt": "2026-11-14T01:35:17.700Z",
+    "httpStatus": 400,
+    "error": "invalid_document",
+    "servingBuild": "historically_unconfirmed_not_retroactively_attributed",
+    "preservedAsHistoricalFailure": true
+  }
+}

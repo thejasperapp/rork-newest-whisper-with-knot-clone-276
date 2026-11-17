@@ -1,0 +1,13 @@
+{
+  "scope": "native-knot-ui-20261114-compute-01",
+  "authorization": "owner_authorized_paid_native_knot_workspace_testing",
+  "accountID": "bad7b131-6b05-44c8-a450-a30f4748639f",
+  "workspaceID": "whisper-bad7b131-6b05-44c8-a450-a30f4748639f",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "nativeBuildID": "3026999b-8bc0-4ed2-9204-3cf0826b830f",
+  "nativeSource": "src_cc46a3c8f94046fec",
+  "method": "real_native_composer_and_send",
+  "prompt": "Use Python in my real workspace to calculate the sum of the squares of integers 1 through 137 inclusive, then explain the result in chat using the actual command output. For this one UI check only, wait 12 seconds in that same command before printing so I can inspect Events during the work. Do not create files or update memory.",
+  "noAutomaticReplay": true,
+  "independentOfEarlierIntent": true
+}

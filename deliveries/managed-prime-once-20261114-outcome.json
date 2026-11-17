@@ -1,0 +1,32 @@
+{
+  "title": "Observed new-backend prime-sum turn",
+  "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+  "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+  "requestID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+  "taskID": "6ebfbfa4-89be-425c-bd24-9357c9b17842",
+  "conversationID": "66fc7df7-ed84-4930-b19b-a84e122e7172",
+  "sourceMessageID": "8ecb2ced-e184-4516-af3f-3c439f821f20",
+  "expectedBuild": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c",
+  "startedAt": "2026-11-14T08:30:54.260Z",
+  "servingRequestID": "5577191e-4889-4d7c-ae54-2176b43cf0c2",
+  "endedAt": "2026-11-14T08:30:58.434Z",
+  "elapsedMs": 4174,
+  "completionReceivedMs": null,
+  "streamEndedMs": 3846,
+  "completed": false,
+  "workIncomplete": false,
+  "issue": "upstream_quota_exhausted",
+  "reply": "",
+  "answerVerified": false,
+  "stopConfirmed": true,
+  "executions": [],
+  "retained": {
+    "records": [],
+    "activityCount": 5
+  },
+  "frameCount": 4,
+  "chatSubmissions": 1,
+  "directSidecarCalls": 0,
+  "personalAccountAccessed": false
+}

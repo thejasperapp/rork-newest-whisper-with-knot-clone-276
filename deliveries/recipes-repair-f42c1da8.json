@@ -1,0 +1,122 @@
+{
+  "title": "Recipes repair iteration — strict author rejection",
+  "scope": "20261114-source-phase-03",
+  "taskID": "f42c1da8-750b-4233-9be6-a8a86b61faf6",
+  "conversationID": "911272bb-0f1e-4449-9bb6-3d3d6e418e93",
+  "sourceMessageID": "fd65d1b7-85ce-4537-b764-9d2476f54caf",
+  "sourceBuildSHA256": "dd67165a58ddaf72624a942254ff12a81d8a5f7e6766f167f2bcc3e4c2070898",
+  "preflightObservedAt": "2026-11-14T06:43:53.178Z",
+  "startedAt": "2026-11-14T06:44:02.119Z",
+  "endedAt": "2026-11-14T06:45:58.858Z",
+  "outcome": "failed_before_source_build_proof_or_capture",
+  "timing": {
+    "incompleteCompletionEventMs": 114872,
+    "streamEndedMs": 115155,
+    "evidenceCollectionMs": 1584,
+    "totalMs": 116739,
+    "authorProviderMs": 99956,
+    "firstAuthorContentMs": 1370,
+    "successfulDeliveryMs": null
+  },
+  "authoring": {
+    "model": "anthropic/claude-sonnet-4.6",
+    "authorResponses": 1,
+    "authorProviderCalls": 1,
+    "automaticAuthorRetries": 0,
+    "returnedContentBytes": 18750,
+    "completionTokens": 5060,
+    "promptTokens": 14484,
+    "finishReason": "stop",
+    "promptBytesIncludingContract": 48918,
+    "completeReadMessageBytes": 22877,
+    "sealedProgramBytes": 0
+  },
+  "diagnostic": {
+    "branch": "text_nonblank",
+    "fieldPath": "$.sections[1].blocks[1].rows[4][2]",
+    "expectedShape": "nonblank_string",
+    "receivedShape": "blank_string",
+    "unexplained": false
+  },
+  "actualRetainedResponseReplay": {
+    "verified": true,
+    "completeReassembledContent": true,
+    "originalWireBytesClaimed": false,
+    "bodyHashVerified": true,
+    "schemaHashVerified": true,
+    "ownerAndParentVerified": true,
+    "diagnosticMatchesProduction": true,
+    "rejectedBodySHA256": "6071884de316a6a9ab0e0dcd66cd181753fd1c2cacf63c7ab6957a9c53ad7a81",
+    "blankCellPaths": [
+      "$.sections[1].blocks[1].rows[4][2]",
+      "$.sections[1].blocks[1].rows[5][2]",
+      "$.sections[1].blocks[1].rows[9][2]",
+      "$.sections[2].blocks[1].rows[5][2]",
+      "$.sections[2].blocks[1].rows[6][2]",
+      "$.sections[2].blocks[1].rows[8][2]",
+      "$.sections[2].blocks[1].rows[9][2]",
+      "$.sections[3].blocks[1].rows[0][2]",
+      "$.sections[3].blocks[1].rows[6][2]",
+      "$.sections[3].blocks[1].rows[7][2]",
+      "$.sections[3].blocks[1].rows[8][2]",
+      "$.sections[3].blocks[1].rows[9][2]"
+    ],
+    "privateContentPublished": false,
+    "additionalProviderCalls": 0,
+    "commandsExecuted": 0
+  },
+  "comparison": {
+    "exactSameAsk": true,
+    "baselineSuccessfulCompletionMs": 603097,
+    "baselineOriginalRawEvidenceAvailable": false,
+    "recoveredGuideOriginalIndependentlyVerified": true,
+    "successfulDeliveryImprovementEstablished": false
+  },
+  "evidence": {
+    "orderedFrames": 27,
+    "ownedReceipts": 4,
+    "newShellInputs": 3,
+    "sameSessionCompleteCachedGuide": 1,
+    "meteredWorkCommands": 0,
+    "workCeiling": 10000,
+    "capturedDocuments": 0,
+    "sourceBuildProofCommands": 0,
+    "contentChecks": 0,
+    "pageReviews": 0,
+    "historicalTaskOrCommandReplay": false,
+    "terminalIncompleteOutcome": true,
+    "stopConfirmed": true
+  },
+  "commands": [
+    {
+      "proposalID": "d9e0c041-2790-453b-8c08-ae659b8fd410",
+      "operation": "memory_read",
+      "newExecution": true,
+      "exactLogBoundaryMatches": true,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225"
+    },
+    {
+      "proposalID": "3c6c52c9-3a32-4482-97ef-2c71fa3b26ba",
+      "operation": "skill_index",
+      "newExecution": true,
+      "exactLogBoundaryMatches": true,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225"
+    },
+    {
+      "proposalID": "4403adb5-ba43-4503-b35b-5422f28c0b99",
+      "operation": "skill_read",
+      "newExecution": false,
+      "originalGuideReceipt": "9924aed8-6462-4db0-a779-a0f0400495b0",
+      "completeOutputMatchesOriginal": true,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225"
+    },
+    {
+      "proposalID": "94731352-1714-42cd-983d-e5e1d867614d",
+      "operation": "workspace_inventory",
+      "newExecution": true,
+      "exactLogBoundaryMatches": true,
+      "sessionID": "cfa2086e-cd18-45df-9025-e75ba8568225"
+    }
+  ],
+  "scopeNote": "One deliberate newly authorized paid repair iteration. Time to failure is not successful delivery latency. Rejected content stays in private storage; it was not patched, executed or substituted for a PDF. Native/device acceptance remains separate."
+}

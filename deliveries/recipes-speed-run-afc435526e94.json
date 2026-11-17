@@ -1,0 +1,101 @@
+{
+  "title": "High-Protein Recipes for Fat Loss",
+  "taskID": "b936a45f-b94a-4c5c-8ac6-b0c92e894466",
+  "deliveryID": "bf6c062a19382e66c0dadb7931eacf9d13fe3071100e9edfc968588b28631196",
+  "sha256": "afc435526e94c7986f53596958738cf15d01de47ee50c937266941ba0eeab7c0",
+  "bytes": 70257,
+  "pages": 17,
+  "exactImmutableCaptureCopy": true,
+  "timings": {
+    "captureElapsedMs": 602858,
+    "completionReceivedMs": 603097,
+    "streamEndedMs": 604693,
+    "evidenceCollectionMs": 5192,
+    "totalElapsedMs": 609885
+  },
+  "comparison": {
+    "baselineReference": "21f2865d",
+    "baselineApproximateMs": 600000,
+    "baselineSource": "owner_reported_not_controlled_same_ask",
+    "exactOriginalPromptAvailable": false,
+    "targetMs": 180000,
+    "targetMet": false,
+    "improvementEstablished": false
+  },
+  "authoring": [
+    {
+      "programBytes": 48039,
+      "storagePieces": 3,
+      "semanticResponses": 1,
+      "transportCalls": 1,
+      "authoringElapsedMs": 222109,
+      "bytesPerSecond": 216,
+      "providerElapsedMs": 221565,
+      "firstContentMs": 5007,
+      "maxIdleMs": 5007,
+      "promptBytesIncludingContract": 43750,
+      "promptOverageBytes": 10982,
+      "basePromptBytes": 41332,
+      "readPayloadMessageBytes": 22689,
+      "developedAuthorshipMessageBytes": 0,
+      "descriptorMessageBytes": 1288
+    },
+    {
+      "programBytes": 46611,
+      "storagePieces": 2,
+      "semanticResponses": 1,
+      "transportCalls": 1,
+      "authoringElapsedMs": 220268,
+      "bytesPerSecond": 211,
+      "providerElapsedMs": 218517,
+      "firstContentMs": 1300,
+      "maxIdleMs": 1300,
+      "promptBytesIncludingContract": 100262,
+      "promptOverageBytes": 67494,
+      "basePromptBytes": 97841,
+      "readPayloadMessageBytes": 22689,
+      "developedAuthorshipMessageBytes": 50243,
+      "descriptorMessageBytes": 6887
+    }
+  ],
+  "providerGenerationMs": 440082,
+  "evidence": {
+    "commandLogsMatched": 10,
+    "meteredWorkCommands": 6,
+    "independentProofImagesHashMatched": 17,
+    "sourceJournalsAndExtractedTextHashMatched": true,
+    "capturedDownloadAndOwnedFileHashMatched": true
+  },
+  "quality": {
+    "byteFidelity": "pass",
+    "finalContentCoverage": "unconfirmed",
+    "finalContentAttempts": [
+      {
+        "durationMs": 4765,
+        "outcome": "unconfirmed",
+        "reason": "content_check_unparseable",
+        "httpStatus": 200
+      },
+      {
+        "durationMs": 3183,
+        "outcome": "unconfirmed",
+        "reason": "content_check_unparseable",
+        "httpStatus": 200
+      }
+    ],
+    "visualReview": "issues",
+    "findings": [
+      "Page 7: Excessive whitespace creates imbalance",
+      "Page 7: Section header at top lacks accompanying content, could lead to reader confusion"
+    ],
+    "factualOrNutritionCertification": false
+  },
+  "validation": {
+    "focusedTestsPassed": 93,
+    "webChecksErrors": 0,
+    "affectedWorkerStrictTypecheck": "pass",
+    "fullEntrypointTypecheck": "14 inherited diagnostics; no additions",
+    "signedReleaseNativeAcceptance": "open; not device tested"
+  },
+  "scope": "One authorized fresh backend recipes run only. No additional paid run or capture/review replay. Original delivered PDF remains unchanged."
+}

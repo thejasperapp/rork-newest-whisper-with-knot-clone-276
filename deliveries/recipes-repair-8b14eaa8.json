@@ -1,0 +1,2238 @@
+{
+  "title": "High-Protein Recipes for Fat Loss",
+  "scope": "20261114-recipe-lists-04",
+  "taskID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+  "conversationID": "ee938d0d-cff3-4645-812a-1faff64a4797",
+  "sourceMessageID": "bd9f0567-9808-486e-96de-560308cd6523",
+  "sourceBuildSHA256": "61b7039aac31177019ab0b7f1806eaa0e1306988b171835c4babb848913d700a",
+  "preflightObservedAt": "2026-11-14T06:48:31.971Z",
+  "startedAt": "2026-11-14T06:48:39.108Z",
+  "endedAt": "2026-11-14T06:59:20.855Z",
+  "timing": {
+    "captureMs": 618401,
+    "completionMs": 634211,
+    "streamEndedMs": 635463,
+    "evidenceCollectionMs": 6284,
+    "totalMs": 641747
+  },
+  "orderedFrames": 110,
+  "commands": [
+    {
+      "proposalID": "8cec075a-e5e9-453b-887b-c83d1e1b5449",
+      "operation": "memory_read",
+      "tool": "session_input",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "7898ebb296291043dacbe7db07cf88b60529018b007c2890b7ca321825e59b8e",
+      "stdoutSHA256": "a042a3adeae1109fd7095c3d2c6ae9fb3539d94e79e15b294dc3a6ceb68e3d7e"
+    },
+    {
+      "proposalID": "ba5e928f-cfb2-4efc-bd1c-da9fdfec7b67",
+      "operation": "skill_index",
+      "tool": "session_input",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "2cfb3bd266aa9c5d650f39c895229d2a56ecdd2560f7a744996a00851ce2da3b",
+      "stdoutSHA256": "4c163e791dd33692132eaab48f6475de06dbfcfe8f52a28f531d738fd9624436"
+    },
+    {
+      "proposalID": "3cac09fa-fe03-41e1-8824-8d4a62a7fd81",
+      "operation": "skill_read",
+      "tool": "session_input",
+      "newExecution": false,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "a765a95fa5f09f55be26e4919686940279c865d9e91136882ea206b4aa105b1a",
+      "stdoutSHA256": "f59a19dbc39edbc3b4b7e65108ed7125f3dd9e9338a97be7907c0a5710b4bcd4"
+    },
+    {
+      "proposalID": "5bc5ba29-c8b8-4ed5-a57e-495e3799671b",
+      "operation": "workspace_inventory",
+      "tool": "session_input",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "b2de3e2c8bd7951ca8c49b16b67e3a41eca2b38a6e6f97967db34d0fe59d2d6c",
+      "stdoutSHA256": "ab51a7d583f62463975731aa7262b83c8b73c5ccc18e29b8022af9944e7fa4ff"
+    },
+    {
+      "proposalID": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+      "operation": "work",
+      "stage": "source",
+      "tool": "document_script",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "672931fbb3f43217ba32fa34c4159bbc614bfceffecd29cc379afd7256627c0d",
+      "stdoutSHA256": "bf4c7752240fad29d55611f804f467d0a076dfb076867b14c8bf5b2e1b29fade"
+    },
+    {
+      "proposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "operation": "work",
+      "stage": "source",
+      "tool": "document_script",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "c17b15c08a156837cff013ea0508a74e8fb230e6ec867815c93dc8b7cb128750",
+      "stdoutSHA256": "ef7438f935cf3680a0119d0253cdeeabc987cb5aa7a4225b4c92a74ef9d237b6"
+    },
+    {
+      "proposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "operation": "work",
+      "stage": "source",
+      "tool": "document_script",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "96baf43b5a4bc6156495792c4013bd522a177bed7c937b8cd2be377edd54d87f",
+      "stdoutSHA256": "d69905854d8dd4680c45ecbcdbe53893323357b6229ef511ba95b27989eb236a"
+    },
+    {
+      "proposalID": "b7450130-6419-4af3-a45b-a406ddceb043",
+      "operation": "work",
+      "stage": "source",
+      "tool": "document_script",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "24162f709e3a80d20927474a4dbe6b38bd8f7f5c64da21690dbfd680ae3079de",
+      "stdoutSHA256": "d1f26d1f733058088c403b39777cb5a21d2d9fdfcbdb1edcb10d34dd354eaeec"
+    },
+    {
+      "proposalID": "7beecfbd-7e04-4d8a-8205-53754b8ce32e",
+      "operation": "work",
+      "stage": "build",
+      "tool": "document_script",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "312e62b4b1c808ffd36ecaebd916e4ac1d540b77035b71ce280d97f647b65876",
+      "stdoutSHA256": "ff7bbdf79c055eee4f61fceea25c0845669404c8d2b1299301874a527076676e"
+    },
+    {
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "operation": "work",
+      "tool": "session_input",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "9fc5351439dac2e649d77ef09b62b1231fca96f61a0c59eece9101624249ebcc",
+      "stdoutSHA256": "ba5715b8865575b9154a5ef0c221f2b46f9cc3ee640e7640bf86725360d8d22a"
+    },
+    {
+      "proposalID": "126be6ae-8f1c-465c-921b-7122764a5cea",
+      "operation": "work",
+      "stage": "source",
+      "tool": "document_script",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "4ddea028b1922524f3935996ecee646c5d3d72719d15f8769f52a3754111c1a1",
+      "stdoutSHA256": "d5350e3adf347c1bef861a216976b8601782d248cd983b9be16a9ae2b44c6642"
+    },
+    {
+      "proposalID": "f5de22fb-ddd3-4401-ab17-a18700d1745e",
+      "operation": "work",
+      "stage": "build",
+      "tool": "document_script",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "6e2ef420cb8549c79d94482c9e548954e812b87f3614b58730973fea4bc15a6b",
+      "stdoutSHA256": "75f6dc5bc8bd1da39fca10f734431a107144e612d6042e3dc92093874385b217"
+    },
+    {
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "operation": "work",
+      "tool": "session_input",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "683ea02da0e07187f6f8832f979deeabb2a0236beb8ca26556a4c1f650006162",
+      "stdoutSHA256": "3f7f7cc0f55dbd4bc79190626cb495da49c9286559672c5406ccc4f03ba9c773"
+    },
+    {
+      "proposalID": "e08c6a37-dfde-4a52-aad7-346e187558e7",
+      "operation": "memory_write",
+      "tool": "session_input",
+      "newExecution": true,
+      "exactCompleteOutputVerified": true,
+      "commandSHA256": "c795bdfaadf9c0308ad8b23890d2353cb0885a51d8224b52386fea20e0255d67",
+      "stdoutSHA256": "03ab6679e291b91dce37defd21ad1c93a83e1ef24bdc85f1aa4efd2ccfc6fcb5"
+    }
+  ],
+  "sourceChecks": [
+    {
+      "proposalID": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+      "kind": "document_source_blocked",
+      "recordedAt": "2026-11-14T06:50:44.602Z",
+      "check": {
+        "sourceProposalID": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+        "sourceSHA256": "bb5aaf4005e6542b45d61fff1932669a7de2f9cc535a830fd572bc3f8ba8a7ad",
+        "observations": [
+          "requested_design_inadequate:Beautifully designed PDF — The provided HTML source covers the recipes with structured headers and sections but does not yet demonstrate a finalized design layout as a visually polished PDF. Repair: Ensure the HTML source is converted into a well-designed PDF with a focus on editorial style, consistent typography, and appealing layout, utilizing branding colors and styles if a"
+        ],
+        "issue": "document_content_incomplete",
+        "findings": [
+          {
+            "kind": "requested_design_inadequate",
+            "item": "Beautifully designed PDF",
+            "detail": "The provided HTML source covers the recipes with structured headers and sections but does not yet demonstrate a finalized design layout as a visually polished PDF.",
+            "repair": "Ensure the HTML source is converted into a well-designed PDF with a focus on editorial style, consistent typography, and appealing layout, utilizing branding colors and styles if a",
+            "evidenceID": "request",
+            "quote": "Make the recipes practical and substantive, with a considered editorial layout, not a decorative list."
+          }
+        ],
+        "advisories": [
+          "HTML source will need conversion to PDF for final visual evaluation."
+        ],
+        "verdict": "issues",
+        "failureStage": "grounding",
+        "validationCode": "item_requirement_anchor",
+        "itemIndex": 0,
+        "reason": "content_check_unparseable",
+        "contentCheckAttempts": [
+          {
+            "attempt": 1,
+            "model": "openai/gpt-4o",
+            "durationMs": 5107,
+            "tokenLimit": 6500,
+            "finishReason": "stop",
+            "responseBytes": 4956,
+            "contentBytes": 2896,
+            "outcome": "issues",
+            "httpStatus": 200,
+            "contentEncoding": "json",
+            "failureStage": "grounding",
+            "validationCode": "item_requirement_anchor",
+            "itemIndex": 0,
+            "reason": "content_check_unparseable"
+          }
+        ]
+      }
+    },
+    {
+      "proposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "kind": "document_source_blocked",
+      "recordedAt": "2026-11-14T06:52:51.647Z",
+      "check": {
+        "sourceProposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+        "sourceSHA256": "50612ccda22c93ea58616d4f4043660dc126e313ec9e7ccfddaf8347673bd693",
+        "observations": [
+          "underdeveloped_requested_item:Editorial Layout — The request called for a beautifully designed PDF with a considered editorial layout, but this cannot be evaluated in the HTML source. Repair: Ensure that the final PDF has a visually appealing and user-friendly editorial layout.",
+          "underdeveloped_requested_item:High-Protein Diet Explanation — While the introduction provides an overview of why protein is important, it doesn’t fully explain why each specific recipe supports a high-protein fat-loss diet. Repair: Expand the explanation for each recipe to detail how it specifically supports a high-protein fat-loss diet."
+        ],
+        "issue": "document_content_incomplete",
+        "findings": [
+          {
+            "kind": "underdeveloped_requested_item",
+            "item": "Editorial Layout",
+            "detail": "The request called for a beautifully designed PDF with a considered editorial layout, but this cannot be evaluated in the HTML source.",
+            "repair": "Ensure that the final PDF has a visually appealing and user-friendly editorial layout.",
+            "evidenceID": "request",
+            "quote": "a considered editorial layout"
+          },
+          {
+            "kind": "underdeveloped_requested_item",
+            "item": "High-Protein Diet Explanation",
+            "detail": "While the introduction provides an overview of why protein is important, it doesn’t fully explain why each specific recipe supports a high-protein fat-loss diet.",
+            "repair": "Expand the explanation for each recipe to detail how it specifically supports a high-protein fat-loss diet.",
+            "evidenceID": "request",
+            "quote": "an explanation of why it supports a high-protein fat-loss diet"
+          }
+        ],
+        "advisories": [
+          "Verify final PDF design for visual appeal and user-friendly layout once converted."
+        ],
+        "verdict": "issues",
+        "failureStage": "grounding",
+        "validationCode": "item_requirement_anchor",
+        "itemIndex": 0,
+        "reason": "content_check_unparseable",
+        "contentCheckAttempts": [
+          {
+            "attempt": 1,
+            "model": "openai/gpt-4o",
+            "durationMs": 4984,
+            "tokenLimit": 6500,
+            "finishReason": "stop",
+            "responseBytes": 4856,
+            "contentBytes": 2736,
+            "outcome": "unconfirmed",
+            "httpStatus": 200,
+            "contentEncoding": "json",
+            "failureStage": "requested_items",
+            "validationCode": "item_identity",
+            "itemIndex": 1,
+            "reason": "content_check_unparseable"
+          },
+          {
+            "attempt": 2,
+            "model": "openai/gpt-4o",
+            "durationMs": 6237,
+            "tokenLimit": 6500,
+            "finishReason": "stop",
+            "responseBytes": 4998,
+            "contentBytes": 2945,
+            "outcome": "issues",
+            "httpStatus": 200,
+            "contentEncoding": "json",
+            "failureStage": "grounding",
+            "validationCode": "item_requirement_anchor",
+            "itemIndex": 0,
+            "reason": "content_check_unparseable"
+          }
+        ]
+      }
+    },
+    {
+      "proposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "kind": "document_source_blocked",
+      "recordedAt": "2026-11-14T06:54:58.882Z",
+      "check": {
+        "sourceProposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+        "sourceSHA256": "444c53c4aab9458a1f529fed889824b546cb0f86a550a738dc7d0cce1c1912ef",
+        "observations": [
+          "underdeveloped_requested_item:total calories and protein per serving — The request requires detailed approximate calories and protein per serving to support a high-protein fat-loss diet. Only summary estimates are provided without individualized explanations. Repair: Enhance each recipe with specific explanations for the approximate calories and protein per serving to align with high-protein fat-loss benefits.",
+          "underdeveloped_requested_item:editorial layout — The content lacks a clear editorial layout plan, focusing more on recipe details than presentation format described as editorial rather than decorative. Repair: Develop an outline or description of the intended editorial layout showcasing how it will be distinctly different from a simple list."
+        ],
+        "issue": "document_content_incomplete",
+        "findings": [
+          {
+            "kind": "underdeveloped_requested_item",
+            "item": "total calories and protein per serving",
+            "detail": "The request requires detailed approximate calories and protein per serving to support a high-protein fat-loss diet. Only summary estimates are provided without individualized explanations.",
+            "repair": "Enhance each recipe with specific explanations for the approximate calories and protein per serving to align with high-protein fat-loss benefits.",
+            "evidenceID": "request",
+            "quote": "approximate calories and protein per serving"
+          },
+          {
+            "kind": "underdeveloped_requested_item",
+            "item": "editorial layout",
+            "detail": "The content lacks a clear editorial layout plan, focusing more on recipe details than presentation format described as editorial rather than decorative.",
+            "repair": "Develop an outline or description of the intended editorial layout showcasing how it will be distinctly different from a simple list.",
+            "evidenceID": "request",
+            "quote": "considered editorial layout, not a decorative list."
+          }
+        ],
+        "verdict": "issues",
+        "failureStage": "grounding",
+        "validationCode": "item_requirement_anchor",
+        "itemIndex": 0,
+        "reason": "content_check_unparseable",
+        "contentCheckAttempts": [
+          {
+            "attempt": 1,
+            "model": "openai/gpt-4o",
+            "durationMs": 3870,
+            "tokenLimit": 6500,
+            "finishReason": "stop",
+            "responseBytes": 3367,
+            "contentBytes": 1415,
+            "outcome": "unconfirmed",
+            "httpStatus": 200,
+            "contentEncoding": "json",
+            "failureStage": "grounding",
+            "validationCode": "item_coverage_anchor",
+            "itemIndex": 3,
+            "reason": "content_check_unparseable"
+          },
+          {
+            "attempt": 2,
+            "model": "openai/gpt-4o",
+            "durationMs": 4593,
+            "tokenLimit": 6500,
+            "finishReason": "stop",
+            "responseBytes": 4426,
+            "contentBytes": 2406,
+            "outcome": "issues",
+            "httpStatus": 200,
+            "contentEncoding": "json",
+            "failureStage": "grounding",
+            "validationCode": "item_requirement_anchor",
+            "itemIndex": 0,
+            "reason": "content_check_unparseable"
+          }
+        ]
+      }
+    },
+    {
+      "proposalID": "b7450130-6419-4af3-a45b-a406ddceb043",
+      "kind": "document_source_reviewed",
+      "recordedAt": "2026-11-14T06:57:18.978Z",
+      "check": {
+        "sourceProposalID": "b7450130-6419-4af3-a45b-a406ddceb043",
+        "sourceSHA256": "cec9d9d5bb76b23b30462fb5610b107b37b3eb19069c85e345a44f94bfeb9402",
+        "observations": [],
+        "verdict": "pass",
+        "advisories": [
+          "The document is currently in HTML source format. Conversion to a beautifully designed PDF with visual elements will occur later."
+        ],
+        "requestedItems": [
+          {
+            "item": "high-protein_recipe_1",
+            "evidenceID": "request",
+            "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+            "section": "recipe-1",
+            "status": "developed",
+            "coverageQuote": "Seared Salmon with Lemony Lentils and Wilted Spinach",
+            "repair": ""
+          },
+          {
+            "item": "high-protein_recipe_2",
+            "evidenceID": "request",
+            "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+            "section": "recipe-2",
+            "status": "developed",
+            "coverageQuote": "Turkish-Spiced Turkey Mince Bowl with Roasted Peppers and Yoghurt",
+            "repair": ""
+          },
+          {
+            "item": "high-protein_recipe_3",
+            "evidenceID": "request",
+            "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+            "section": "recipe-3",
+            "status": "developed",
+            "coverageQuote": "Chilli-Lime Chicken Thighs with Black Beans and Charred Corn",
+            "repair": ""
+          },
+          {
+            "item": "measured_ingredients_recipe_1",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-1",
+            "status": "developed",
+            "coverageQuote": "2 salmon fillets, skin-on — approx. 160 g each raw weight; 320 g total; pat completely dry before cooking",
+            "repair": ""
+          },
+          {
+            "item": "measured_ingredients_recipe_2",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-2",
+            "status": "developed",
+            "coverageQuote": "500 g turkey mince, 5% fat",
+            "repair": ""
+          },
+          {
+            "item": "measured_ingredients_recipe_3",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-3",
+            "status": "developed",
+            "coverageQuote": "4 boneless skinless chicken thighs — approx. 150 g each raw",
+            "repair": ""
+          },
+          {
+            "item": "clear_cooking_steps_recipe_1",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-1",
+            "status": "developed",
+            "coverageQuote": "Place the rinsed lentils in a medium saucepan with the cold water or stock.",
+            "repair": ""
+          },
+          {
+            "item": "clear_cooking_steps_recipe_2",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-2",
+            "status": "developed",
+            "coverageQuote": "Heat the oven to 220 °C fan.",
+            "repair": ""
+          },
+          {
+            "item": "clear_cooking_steps_recipe_3",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-3",
+            "status": "developed",
+            "coverageQuote": "Combine the lime juice, chipotle paste, cumin, garlic powder, smoked paprika",
+            "repair": ""
+          },
+          {
+            "item": "approx_calories_protein_per_serving_recipe_1",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-1",
+            "status": "developed",
+            "coverageQuote": "approx. 480 kcal per serving · approx. 46 g protein per serving",
+            "repair": ""
+          },
+          {
+            "item": "approx_calories_protein_per_serving_recipe_2",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-2",
+            "status": "developed",
+            "coverageQuote": "approx. 420 kcal per serving · approx. 50 g protein per serving",
+            "repair": ""
+          },
+          {
+            "item": "approx_calories_protein_per_serving_recipe_3",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-3",
+            "status": "developed",
+            "coverageQuote": "approx. 520 kcal per serving · approx. 48 g protein per serving",
+            "repair": ""
+          },
+          {
+            "item": "explanation_high-protein_fat-loss_diet_recipe_1",
+            "evidenceID": "request",
+            "quote": "an explanation of why it supports a high-protein fat-loss diet",
+            "section": "recipe-1",
+            "status": "developed",
+            "coverageQuote": "Salmon is one of the few animal proteins that combines high protein density with predominantly anti-inflammatory omega-3 fat",
+            "repair": ""
+          },
+          {
+            "item": "explanation_high-protein_fat-loss_diet_recipe_2",
+            "evidenceID": "request",
+            "quote": "an explanation of why it supports a high-protein fat-loss diet",
+            "section": "recipe-2",
+            "status": "developed",
+            "coverageQuote": "Turkey mince at 5% fat is among the most calorie-efficient complete protein sources available",
+            "repair": ""
+          },
+          {
+            "item": "explanation_high-protein_fat-loss_diet_recipe_3",
+            "evidenceID": "request",
+            "quote": "an explanation of why it supports a high-protein fat-loss diet",
+            "section": "recipe-3",
+            "status": "developed",
+            "coverageQuote": "Chicken thighs are consistently underused in fat-loss cooking because of a persistent myth that the extra fat makes them inappropriate.",
+            "repair": ""
+          }
+        ],
+        "workOrders": [],
+        "contentCheckAttempts": [
+          {
+            "attempt": 1,
+            "model": "openai/gpt-4o",
+            "durationMs": 6933,
+            "tokenLimit": 6500,
+            "finishReason": "stop",
+            "responseBytes": 7182,
+            "contentBytes": 4924,
+            "outcome": "pass",
+            "httpStatus": 200,
+            "contentEncoding": "json"
+          }
+        ]
+      }
+    },
+    {
+      "proposalID": "126be6ae-8f1c-465c-921b-7122764a5cea",
+      "kind": "document_source_reviewed",
+      "recordedAt": "2026-11-14T06:58:20.227Z",
+      "check": {
+        "sourceProposalID": "126be6ae-8f1c-465c-921b-7122764a5cea",
+        "sourceSHA256": "5e100928a130a032a2638096ed1325501b8aa15405e69fcc1f80a0788a9c47ba",
+        "observations": [],
+        "verdict": "pass",
+        "advisories": [
+          "Ensure final PDF format review happens after HTML source conversion.",
+          "Confirm all required visual design elements in the PDF post-conversion."
+        ],
+        "requestedItems": [
+          {
+            "item": "high-protein_recipe_1",
+            "evidenceID": "request",
+            "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+            "section": "recipe-1",
+            "status": "developed",
+            "coverageQuote": "Seared Salmon with Lemony Lentils and Wilted Spinach",
+            "repair": ""
+          },
+          {
+            "item": "high-protein_recipe_2",
+            "evidenceID": "request",
+            "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+            "section": "recipe-2",
+            "status": "developed",
+            "coverageQuote": "Turkish-Spiced Turkey Mince Bowl with Roasted Peppers and Yoghurt",
+            "repair": ""
+          },
+          {
+            "item": "high-protein_recipe_3",
+            "evidenceID": "request",
+            "quote": "Create and deliver a beautifully designed PDF with three high-protein recipes suitable for fat loss.",
+            "section": "recipe-3",
+            "status": "developed",
+            "coverageQuote": "Chilli-Lime Chicken Thighs with Black Beans and Charred Corn",
+            "repair": ""
+          },
+          {
+            "item": "measured_ingredients_recipe_1",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-1",
+            "status": "developed",
+            "coverageQuote": "2 salmon fillets, skin-on — approx. 160 g each raw weight; 320 g total; pat completely dry before cooking",
+            "repair": ""
+          },
+          {
+            "item": "measured_ingredients_recipe_2",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-2",
+            "status": "developed",
+            "coverageQuote": "500 g turkey mince, 5% fat",
+            "repair": ""
+          },
+          {
+            "item": "measured_ingredients_recipe_3",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-3",
+            "status": "developed",
+            "coverageQuote": "4 boneless skinless chicken thighs — approx. 150 g each raw",
+            "repair": ""
+          },
+          {
+            "item": "clear_cooking_steps_recipe_1",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-1",
+            "status": "developed",
+            "coverageQuote": "Place the rinsed lentils in a medium saucepan with the cold water or stock.",
+            "repair": ""
+          },
+          {
+            "item": "clear_cooking_steps_recipe_2",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-2",
+            "status": "developed",
+            "coverageQuote": "Heat the oven to 220 °C fan.",
+            "repair": ""
+          },
+          {
+            "item": "clear_cooking_steps_recipe_3",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-3",
+            "status": "developed",
+            "coverageQuote": "Combine the lime juice, chipotle paste, cumin, garlic powder, smoked paprika",
+            "repair": ""
+          },
+          {
+            "item": "approx_calories_protein_per_serving_recipe_1",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-1",
+            "status": "developed",
+            "coverageQuote": "approx. 480 kcal per serving · approx. 46 g protein per serving",
+            "repair": ""
+          },
+          {
+            "item": "approx_calories_protein_per_serving_recipe_2",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-2",
+            "status": "developed",
+            "coverageQuote": "approx. 420 kcal per serving · approx. 50 g protein per serving",
+            "repair": ""
+          },
+          {
+            "item": "approx_calories_protein_per_serving_recipe_3",
+            "evidenceID": "request",
+            "quote": "include measured ingredients, clear cooking steps, approximate calories and protein per serving",
+            "section": "recipe-3",
+            "status": "developed",
+            "coverageQuote": "approx. 520 kcal per serving · approx. 48 g protein per serving",
+            "repair": ""
+          },
+          {
+            "item": "explanation_high-protein_fat-loss_diet_recipe_1",
+            "evidenceID": "request",
+            "quote": "an explanation of why it supports a high-protein fat-loss diet",
+            "section": "recipe-1",
+            "status": "developed",
+            "coverageQuote": "Salmon is one of the few animal proteins that combines high protein density with predominantly anti-inflammatory omega-3 fat",
+            "repair": ""
+          },
+          {
+            "item": "explanation_high-protein_fat-loss_diet_recipe_2",
+            "evidenceID": "request",
+            "quote": "an explanation of why it supports a high-protein fat-loss diet",
+            "section": "recipe-2",
+            "status": "developed",
+            "coverageQuote": "Turkey mince at 5% fat is among the most calorie-efficient complete protein sources available",
+            "repair": ""
+          },
+          {
+            "item": "explanation_high-protein_fat-loss_diet_recipe_3",
+            "evidenceID": "request",
+            "quote": "an explanation of why it supports a high-protein fat-loss diet",
+            "section": "recipe-3",
+            "status": "developed",
+            "coverageQuote": "Chicken thighs are consistently underused in fat-loss cooking because of a persistent myth that the extra fat makes them inappropriate.",
+            "repair": ""
+          }
+        ],
+        "workOrders": [],
+        "contentCheckAttempts": [
+          {
+            "attempt": 1,
+            "model": "openai/gpt-4o",
+            "durationMs": 6124,
+            "tokenLimit": 6500,
+            "finishReason": "stop",
+            "responseBytes": 7198,
+            "contentBytes": 4938,
+            "outcome": "pass",
+            "httpStatus": 200,
+            "contentEncoding": "json"
+          }
+        ]
+      }
+    }
+  ],
+  "relevantEvents": [
+    {
+      "proposalID": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+      "kind": "document_content_check_attempt",
+      "recordedAt": "2026-11-14T06:50:44.602Z",
+      "attempt": 1
+    },
+    {
+      "proposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "kind": "document_content_check_attempt",
+      "recordedAt": "2026-11-14T06:52:45.410Z",
+      "attempt": 1
+    },
+    {
+      "proposalID": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "kind": "document_content_check_attempt",
+      "recordedAt": "2026-11-14T06:52:51.647Z",
+      "attempt": 2
+    },
+    {
+      "proposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "kind": "document_content_check_attempt",
+      "recordedAt": "2026-11-14T06:54:54.289Z",
+      "attempt": 1
+    },
+    {
+      "proposalID": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "kind": "document_content_check_attempt",
+      "recordedAt": "2026-11-14T06:54:58.882Z",
+      "attempt": 2
+    },
+    {
+      "proposalID": "b7450130-6419-4af3-a45b-a406ddceb043",
+      "kind": "document_content_check_attempt",
+      "recordedAt": "2026-11-14T06:57:18.978Z",
+      "attempt": 1
+    },
+    {
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "kind": "document_content_check_attempt",
+      "recordedAt": "2026-11-14T06:57:44.736Z",
+      "attempt": 1
+    },
+    {
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "kind": "document_content_check_attempt",
+      "recordedAt": "2026-11-14T06:57:50.779Z",
+      "attempt": 2
+    },
+    {
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "kind": "document_visual_pages_observed",
+      "recordedAt": "2026-11-14T06:57:53.144Z",
+      "delivered": false,
+      "blocking": false
+    },
+    {
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "kind": "document_visual_pages_observed",
+      "recordedAt": "2026-11-14T06:57:56.015Z",
+      "delivered": false,
+      "blocking": false
+    },
+    {
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "kind": "document_visual_pages_observed",
+      "recordedAt": "2026-11-14T06:57:58.961Z",
+      "delivered": false,
+      "blocking": false
+    },
+    {
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "kind": "document_visual_pages_observed",
+      "recordedAt": "2026-11-14T06:58:01.260Z",
+      "delivered": false,
+      "blocking": false
+    },
+    {
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "kind": "document_visual_assessed",
+      "recordedAt": "2026-11-14T06:58:01.260Z",
+      "status": "issues",
+      "issue": "document_visual_quality_shortfalls",
+      "observations": [
+        "Page 3: Typography is somewhat cluttered, especially in the nutritional breakdown section. Suggest using more spacing to improve readability.",
+        "Page 3: The transition between Recipe 1 and Recipe 2 could be clearer, possibly with a visual break or separator to delineate sections.",
+        "Page 3: The color palette is minimal and functional, which works well, but small headers should be more distinct to enhance the hierarchy.",
+        "Page 4: The list layout is cramped; adding some white space would improve legibility.",
+        "Page 4: Typography consistency could be improved, particularly with the recipe list items—some items appear squeezed.",
+        "Page 4: Consider using bullet points to better organize the preparation steps for clarity and flow.",
+        "Page 5: Text alignment in callout box inconsistent",
+        "Page 5: Callout box colors create low contrast",
+        "Page 5: Stranded heading at base of page",
+        "Page 6: Bulleted lists cramped; increase spacing for clarity",
+        "Page 6: Avoidable orphan line at end of instructions",
+        "Page 6: Excessive page length, consider splitting content"
+      ],
+      "review": {
+        "version": "knot_document_visual_v1",
+        "finalSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42",
+        "scope": "all_pages",
+        "status": "issues",
+        "pages": [
+          {
+            "page": 1,
+            "sha256": "800a1341b1212985589b01bac367f9aa0ae92b8c660c6a23a3de1a86fb3de4fd",
+            "verdict": "pass",
+            "issues": []
+          },
+          {
+            "page": 2,
+            "sha256": "17b3829c0e91ba2bea053c7bdfd5e6a6ea7785281e6350358538ab916748060a",
+            "verdict": "pass",
+            "issues": []
+          },
+          {
+            "page": 3,
+            "sha256": "bbad05ceb29d70fa854fa24d305147dd8a57d0c9c901f6efa8b7b44dbb270aae",
+            "verdict": "issues",
+            "issues": [
+              "Typography is somewhat cluttered, especially in the nutritional breakdown section. Suggest using more spacing to improve readability.",
+              "The transition between Recipe 1 and Recipe 2 could be clearer, possibly with a visual break or separator to delineate sections.",
+              "The color palette is minimal and functional, which works well, but small headers should be more distinct to enhance the hierarchy."
+            ]
+          },
+          {
+            "page": 4,
+            "sha256": "73ed6e8f670e45cca5c347e0168832d93ea9051edf0e1fb68af18ffc9337ced6",
+            "verdict": "issues",
+            "issues": [
+              "The list layout is cramped; adding some white space would improve legibility.",
+              "Typography consistency could be improved, particularly with the recipe list items—some items appear squeezed.",
+              "Consider using bullet points to better organize the preparation steps for clarity and flow."
+            ]
+          },
+          {
+            "page": 5,
+            "sha256": "6e35f32e65beaa10dbfbea0fe80d47a806a3b048916667fd56ac85f4bd5d41d9",
+            "verdict": "issues",
+            "issues": [
+              "Text alignment in callout box inconsistent",
+              "Callout box colors create low contrast",
+              "Stranded heading at base of page"
+            ]
+          },
+          {
+            "page": 6,
+            "sha256": "3af839b71ca1288da94daad6c5303105846ec410595e688ac7496356755ee571",
+            "verdict": "issues",
+            "issues": [
+              "Bulleted lists cramped; increase spacing for clarity",
+              "Avoidable orphan line at end of instructions",
+              "Excessive page length, consider splitting content"
+            ]
+          },
+          {
+            "page": 7,
+            "sha256": "f9355e73d3c8124fd1f7d39171a4ff797f3529edce89d6e02e1c28e4137aec58",
+            "verdict": "pass",
+            "issues": []
+          },
+          {
+            "page": 8,
+            "sha256": "6456fd87046e23e9c059f9c6673b27648db372b8a31bb8001773f4578ef1dc9b",
+            "verdict": "pass",
+            "issues": []
+          }
+        ]
+      },
+      "delivered": false,
+      "blocking": false
+    },
+    {
+      "proposalID": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "kind": "document_visual_repair_advised",
+      "recordedAt": "2026-11-14T06:58:01.290Z",
+      "observations": [
+        "Page 3: Typography is somewhat cluttered, especially in the nutritional breakdown section. Suggest using more spacing to improve readability.",
+        "Page 3: The transition between Recipe 1 and Recipe 2 could be clearer, possibly with a visual break or separator to delineate sections.",
+        "Page 3: The color palette is minimal and functional, which works well, but small headers should be more distinct to enhance the hierarchy.",
+        "Page 4: The list layout is cramped; adding some white space would improve legibility.",
+        "Page 4: Typography consistency could be improved, particularly with the recipe list items—some items appear squeezed.",
+        "Page 4: Consider using bullet points to better organize the preparation steps for clarity and flow.",
+        "Page 5: Text alignment in callout box inconsistent",
+        "Page 5: Callout box colors create low contrast",
+        "Page 5: Stranded heading at base of page",
+        "Page 6: Bulleted lists cramped; increase spacing for clarity",
+        "Page 6: Avoidable orphan line at end of instructions",
+        "Page 6: Excessive page length, consider splitting content"
+      ],
+      "delivered": false,
+      "blocking": false
+    },
+    {
+      "proposalID": "126be6ae-8f1c-465c-921b-7122764a5cea",
+      "kind": "document_content_check_attempt",
+      "recordedAt": "2026-11-14T06:58:20.227Z",
+      "attempt": 1
+    },
+    {
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "kind": "document_content_check_attempt",
+      "recordedAt": "2026-11-14T06:58:45.198Z",
+      "attempt": 1
+    },
+    {
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "kind": "document_content_check_attempt",
+      "recordedAt": "2026-11-14T06:58:51.726Z",
+      "attempt": 2
+    },
+    {
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "kind": "document_visual_pages_observed",
+      "recordedAt": "2026-11-14T06:58:54.125Z",
+      "delivered": false,
+      "blocking": false
+    },
+    {
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "kind": "document_visual_assessed",
+      "recordedAt": "2026-11-14T06:58:57.509Z",
+      "status": "unavailable",
+      "issue": "document_visual_review_unavailable",
+      "observations": [],
+      "delivered": false,
+      "blocking": false
+    },
+    {
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "kind": "document_content_quality",
+      "recordedAt": "2026-11-14T06:58:57.509Z"
+    },
+    {
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "kind": "document_content_unconfirmed",
+      "recordedAt": "2026-11-14T06:58:57.509Z",
+      "review": {
+        "version": "knot_document_content_v1",
+        "status": "unconfirmed",
+        "contentCheckAttempts": [
+          {
+            "attempt": 1,
+            "model": "openai/gpt-4o",
+            "durationMs": 8454,
+            "tokenLimit": 6500,
+            "finishReason": "stop",
+            "responseBytes": 7050,
+            "contentBytes": 4794,
+            "outcome": "unconfirmed",
+            "httpStatus": 200,
+            "contentEncoding": "json",
+            "failureStage": "grounding",
+            "validationCode": "item_coverage_anchor",
+            "itemIndex": 0,
+            "reason": "content_check_unparseable"
+          },
+          {
+            "attempt": 2,
+            "model": "openai/gpt-4o",
+            "durationMs": 6528,
+            "tokenLimit": 6500,
+            "finishReason": "stop",
+            "responseBytes": 7055,
+            "contentBytes": 4796,
+            "outcome": "unconfirmed",
+            "httpStatus": 200,
+            "contentEncoding": "json",
+            "failureStage": "grounding",
+            "validationCode": "item_coverage_anchor",
+            "itemIndex": 0,
+            "reason": "content_check_unparseable"
+          }
+        ],
+        "requestSHA256": "3c9fbb5caa2c57b21d2fa908ad02c096caac25efc8b4a4979524844862e31b3a",
+        "finalSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+        "finalTextSHA256": "7baab17b3ff0d71e24e9d6f35dd1b35d817ac3834f49df5b4c9164dbd00e4d1a",
+        "sourceSHA256s": [
+          "5e100928a130a032a2638096ed1325501b8aa15405e69fcc1f80a0788a9c47ba",
+          "bb5aaf4005e6542b45d61fff1932669a7de2f9cc535a830fd572bc3f8ba8a7ad",
+          "50612ccda22c93ea58616d4f4043660dc126e313ec9e7ccfddaf8347673bd693",
+          "444c53c4aab9458a1f529fed889824b546cb0f86a550a738dc7d0cce1c1912ef",
+          "cec9d9d5bb76b23b30462fb5610b107b37b3eb19069c85e345a44f94bfeb9402"
+        ],
+        "scope": "complete_text"
+      }
+    },
+    {
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "kind": "document_visual_advisory",
+      "recordedAt": "2026-11-14T06:58:57.509Z",
+      "issue": "document_visual_review_unavailable",
+      "delivered": true,
+      "blocking": false
+    },
+    {
+      "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "kind": "document_captured",
+      "recordedAt": "2026-11-14T06:58:57.509Z",
+      "review": "unavailable"
+    }
+  ],
+  "authoring": [
+    {
+      "kind": "model_transport_outcome",
+      "receivedMs": 116487,
+      "detail": {
+        "sliceIndex": 0,
+        "schemaHash": "e7ad5e76dbb64751c70ab6b0f44be7cf9d454ce800d96b2a76d58d1abaf7816a",
+        "stage": "document_authoring",
+        "model": "anthropic/claude-sonnet-4.6",
+        "tokenLimit": 96000,
+        "deadlineMs": 60000,
+        "elapsedMs": 103548,
+        "promptBytes": 47642,
+        "promptSections": {
+          "policyBytes": 19788,
+          "requestHistoryBytes": 27834,
+          "receiptBytes": 0,
+          "assistantBytes": 0,
+          "framingBytes": 20,
+          "contractBytes": 968
+        },
+        "transportAttempt": 1,
+        "transportDelayMs": 0,
+        "transportOutcome": "recovered",
+        "transportCallCount": 1,
+        "transportElapsedMs": 103548,
+        "transportFirstTokenMs": 3174,
+        "transportChunkCount": 1961,
+        "transportMaxIdleMs": 3174,
+        "transportStreaming": true,
+        "authoringBasePromptBytes": 42879,
+        "authoringTotalPromptBytes": 48610,
+        "authoringPromptOverageBytes": 15842,
+        "authoringReadBytes": 22877,
+        "authoringDevelopedBytes": 0,
+        "authoringDescriptorBytes": 1367,
+        "turnElapsedMs": 114703,
+        "authoringPromptTargetExceeded": true,
+        "commandDispatched": false
+      }
+    },
+    {
+      "kind": "document_program_sealed",
+      "receivedMs": 116726,
+      "detail": {
+        "deadlineSource": "owned_turn",
+        "sliceIndex": 0,
+        "sliceCharacterLimit": 24000,
+        "sliceByteLimit": 24576,
+        "requestedCharacters": 64000,
+        "expiresAt": 1794639835864,
+        "programID": "e609c296-bd6a-4d39-8ab6-b44d1fb61000",
+        "programSHA256": "bf6acce963815ba099efb054a01e6945c490cdf8327fbb02d1370d5864aaed72",
+        "sliceCount": 1,
+        "tool": "document_prepare",
+        "schemaHash": "e7ad5e76dbb64751c70ab6b0f44be7cf9d454ce800d96b2a76d58d1abaf7816a",
+        "stage": "document_authoring",
+        "model": "anthropic/claude-sonnet-4.6",
+        "finishReason": "stop",
+        "contentBytes": 17932,
+        "completionTokens": 4750,
+        "promptTokens": 14200,
+        "attempt": 1,
+        "attempts": 1,
+        "tokenLimit": 96000,
+        "deadlineMs": 60000,
+        "elapsedMs": 103548,
+        "promptBytes": 47642,
+        "promptSections": {
+          "policyBytes": 19788,
+          "requestHistoryBytes": 27834,
+          "receiptBytes": 0,
+          "assistantBytes": 0,
+          "framingBytes": 20,
+          "contractBytes": 968
+        },
+        "transportCallCount": 1,
+        "transportElapsedMs": 103548,
+        "transportFirstTokenMs": 3174,
+        "transportChunkCount": 1961,
+        "transportMaxIdleMs": 3174,
+        "transportStreaming": true,
+        "programBytes": 20809,
+        "modelResponseBytes": 17932,
+        "authoringResponses": 1,
+        "authoringElapsedMs": 103903,
+        "authoringBytesPerSecond": 200,
+        "authoringBasePromptBytes": 42879,
+        "authoringTotalPromptBytes": 48610,
+        "authoringPromptOverageBytes": 15842,
+        "authoringReadBytes": 22877,
+        "authoringDevelopedBytes": 0,
+        "authoringDescriptorBytes": 1367,
+        "turnElapsedMs": 114941,
+        "authoringPromptTargetExceeded": true,
+        "commandDispatched": false
+      }
+    },
+    {
+      "kind": "model_transport_outcome",
+      "receivedMs": 237144,
+      "detail": {
+        "sliceIndex": 0,
+        "schemaHash": "e7ad5e76dbb64751c70ab6b0f44be7cf9d454ce800d96b2a76d58d1abaf7816a",
+        "stage": "document_authoring",
+        "model": "anthropic/claude-sonnet-4.6",
+        "tokenLimit": 96000,
+        "deadlineMs": 60000,
+        "elapsedMs": 106272,
+        "promptBytes": 69199,
+        "promptSections": {
+          "policyBytes": 19791,
+          "requestHistoryBytes": 49387,
+          "receiptBytes": 0,
+          "assistantBytes": 0,
+          "framingBytes": 21,
+          "contractBytes": 968
+        },
+        "transportAttempt": 1,
+        "transportDelayMs": 0,
+        "transportOutcome": "recovered",
+        "transportCallCount": 1,
+        "transportElapsedMs": 106272,
+        "transportFirstTokenMs": 2022,
+        "transportChunkCount": 2041,
+        "transportMaxIdleMs": 2022,
+        "transportStreaming": true,
+        "authoringBasePromptBytes": 64433,
+        "authoringTotalPromptBytes": 70167,
+        "authoringPromptOverageBytes": 37399,
+        "authoringReadBytes": 22877,
+        "authoringDevelopedBytes": 18637,
+        "authoringDescriptorBytes": 4061,
+        "turnElapsedMs": 235368,
+        "authoringPromptTargetExceeded": true,
+        "commandDispatched": false
+      }
+    },
+    {
+      "kind": "document_program_sealed",
+      "receivedMs": 237378,
+      "detail": {
+        "deadlineSource": "owned_turn",
+        "sliceIndex": 0,
+        "sliceCharacterLimit": 24000,
+        "sliceByteLimit": 24576,
+        "requestedCharacters": 64000,
+        "expiresAt": 1794639835864,
+        "programID": "7c1c6ea7-651b-4626-98e2-9c2a2fa03048",
+        "programSHA256": "1469f654ae43de86860fb2e2073a902d950525e65b47c118c69206c989c956d1",
+        "sliceCount": 1,
+        "tool": "document_prepare",
+        "schemaHash": "e7ad5e76dbb64751c70ab6b0f44be7cf9d454ce800d96b2a76d58d1abaf7816a",
+        "stage": "document_authoring",
+        "model": "anthropic/claude-sonnet-4.6",
+        "finishReason": "stop",
+        "contentBytes": 17867,
+        "completionTokens": 4730,
+        "promptTokens": 19821,
+        "attempt": 1,
+        "attempts": 1,
+        "tokenLimit": 96000,
+        "deadlineMs": 60000,
+        "elapsedMs": 106272,
+        "promptBytes": 69199,
+        "promptSections": {
+          "policyBytes": 19791,
+          "requestHistoryBytes": 49387,
+          "receiptBytes": 0,
+          "assistantBytes": 0,
+          "framingBytes": 21,
+          "contractBytes": 968
+        },
+        "transportCallCount": 1,
+        "transportElapsedMs": 106272,
+        "transportFirstTokenMs": 2022,
+        "transportChunkCount": 2041,
+        "transportMaxIdleMs": 2022,
+        "transportStreaming": true,
+        "programBytes": 20747,
+        "modelResponseBytes": 17867,
+        "authoringResponses": 1,
+        "authoringElapsedMs": 106637,
+        "authoringBytesPerSecond": 194,
+        "authoringBasePromptBytes": 64433,
+        "authoringTotalPromptBytes": 70167,
+        "authoringPromptOverageBytes": 37399,
+        "authoringReadBytes": 22877,
+        "authoringDevelopedBytes": 18637,
+        "authoringDescriptorBytes": 4061,
+        "turnElapsedMs": 235601,
+        "authoringPromptTargetExceeded": true,
+        "commandDispatched": false
+      }
+    },
+    {
+      "kind": "model_transport_outcome",
+      "receivedMs": 367309,
+      "detail": {
+        "sliceIndex": 0,
+        "schemaHash": "e7ad5e76dbb64751c70ab6b0f44be7cf9d454ce800d96b2a76d58d1abaf7816a",
+        "stage": "document_authoring",
+        "model": "anthropic/claude-sonnet-4.6",
+        "tokenLimit": 96000,
+        "deadlineMs": 60000,
+        "elapsedMs": 109017,
+        "promptBytes": 89106,
+        "promptSections": {
+          "policyBytes": 19791,
+          "requestHistoryBytes": 69293,
+          "receiptBytes": 0,
+          "assistantBytes": 0,
+          "framingBytes": 22,
+          "contractBytes": 968
+        },
+        "transportAttempt": 1,
+        "transportDelayMs": 0,
+        "transportOutcome": "recovered",
+        "transportCallCount": 1,
+        "transportElapsedMs": 109017,
+        "transportFirstTokenMs": 1444,
+        "transportChunkCount": 2101,
+        "transportMaxIdleMs": 1444,
+        "transportStreaming": true,
+        "authoringBasePromptBytes": 84340,
+        "authoringTotalPromptBytes": 90074,
+        "authoringPromptOverageBytes": 57306,
+        "authoringReadBytes": 22877,
+        "authoringDevelopedBytes": 37212,
+        "authoringDescriptorBytes": 5170,
+        "turnElapsedMs": 365530,
+        "authoringPromptTargetExceeded": true,
+        "commandDispatched": false
+      }
+    },
+    {
+      "kind": "document_program_sealed",
+      "receivedMs": 367555,
+      "detail": {
+        "deadlineSource": "owned_turn",
+        "sliceIndex": 0,
+        "sliceCharacterLimit": 24000,
+        "sliceByteLimit": 24576,
+        "requestedCharacters": 64000,
+        "expiresAt": 1794639835864,
+        "programID": "0d67b84b-84ce-4643-88fc-aac922aa75b6",
+        "programSHA256": "2dbb90f0596408f664b6658ac41e2f717f70f7d361f81edaaa9e137f6614d370",
+        "sliceCount": 1,
+        "tool": "document_prepare",
+        "schemaHash": "e7ad5e76dbb64751c70ab6b0f44be7cf9d454ce800d96b2a76d58d1abaf7816a",
+        "stage": "document_authoring",
+        "model": "anthropic/claude-sonnet-4.6",
+        "finishReason": "stop",
+        "contentBytes": 18837,
+        "completionTokens": 4979,
+        "promptTokens": 25000,
+        "attempt": 1,
+        "attempts": 1,
+        "tokenLimit": 96000,
+        "deadlineMs": 60000,
+        "elapsedMs": 109017,
+        "promptBytes": 89106,
+        "promptSections": {
+          "policyBytes": 19791,
+          "requestHistoryBytes": 69293,
+          "receiptBytes": 0,
+          "assistantBytes": 0,
+          "framingBytes": 22,
+          "contractBytes": 968
+        },
+        "transportCallCount": 1,
+        "transportElapsedMs": 109017,
+        "transportFirstTokenMs": 1444,
+        "transportChunkCount": 2101,
+        "transportMaxIdleMs": 1444,
+        "transportStreaming": true,
+        "programBytes": 21709,
+        "modelResponseBytes": 18837,
+        "authoringResponses": 1,
+        "authoringElapsedMs": 109422,
+        "authoringBytesPerSecond": 198,
+        "authoringBasePromptBytes": 84340,
+        "authoringTotalPromptBytes": 90074,
+        "authoringPromptOverageBytes": 57306,
+        "authoringReadBytes": 22877,
+        "authoringDevelopedBytes": 37212,
+        "authoringDescriptorBytes": 5170,
+        "turnElapsedMs": 365779,
+        "authoringPromptTargetExceeded": true,
+        "commandDispatched": false
+      }
+    },
+    {
+      "kind": "model_transport_outcome",
+      "receivedMs": 505751,
+      "detail": {
+        "sliceIndex": 0,
+        "schemaHash": "e7ad5e76dbb64751c70ab6b0f44be7cf9d454ce800d96b2a76d58d1abaf7816a",
+        "stage": "document_authoring",
+        "model": "anthropic/claude-sonnet-4.6",
+        "tokenLimit": 96000,
+        "deadlineMs": 60000,
+        "elapsedMs": 120082,
+        "promptBytes": 109178,
+        "promptSections": {
+          "policyBytes": 19791,
+          "requestHistoryBytes": 89364,
+          "receiptBytes": 0,
+          "assistantBytes": 0,
+          "framingBytes": 23,
+          "contractBytes": 968
+        },
+        "transportAttempt": 1,
+        "transportDelayMs": 0,
+        "transportOutcome": "recovered",
+        "transportCallCount": 1,
+        "transportElapsedMs": 120082,
+        "transportFirstTokenMs": 1542,
+        "transportChunkCount": 2314,
+        "transportMaxIdleMs": 1542,
+        "transportStreaming": true,
+        "authoringBasePromptBytes": 104412,
+        "authoringTotalPromptBytes": 110146,
+        "authoringPromptOverageBytes": 77378,
+        "authoringReadBytes": 22877,
+        "authoringDevelopedBytes": 56749,
+        "authoringDescriptorBytes": 5482,
+        "turnElapsedMs": 503971,
+        "authoringPromptTargetExceeded": true,
+        "commandDispatched": false
+      }
+    },
+    {
+      "kind": "document_program_sealed",
+      "receivedMs": 506581,
+      "detail": {
+        "deadlineSource": "owned_turn",
+        "sliceIndex": 0,
+        "sliceCharacterLimit": 24000,
+        "sliceByteLimit": 24576,
+        "requestedCharacters": 64000,
+        "expiresAt": 1794639835864,
+        "programID": "46fbacaf-91cf-4e8a-9ed7-fa779bf8d773",
+        "programSHA256": "6e666e1340b11b2766afbc77d15e6080abe1971c40bb7ea976882e5e278a5cac",
+        "sliceCount": 1,
+        "tool": "document_prepare",
+        "schemaHash": "e7ad5e76dbb64751c70ab6b0f44be7cf9d454ce800d96b2a76d58d1abaf7816a",
+        "stage": "document_authoring",
+        "model": "anthropic/claude-sonnet-4.6",
+        "finishReason": "stop",
+        "contentBytes": 20711,
+        "completionTokens": 5551,
+        "promptTokens": 30210,
+        "attempt": 1,
+        "attempts": 1,
+        "tokenLimit": 96000,
+        "deadlineMs": 60000,
+        "elapsedMs": 120082,
+        "promptBytes": 109178,
+        "promptSections": {
+          "policyBytes": 19791,
+          "requestHistoryBytes": 89364,
+          "receiptBytes": 0,
+          "assistantBytes": 0,
+          "framingBytes": 23,
+          "contractBytes": 968
+        },
+        "transportCallCount": 1,
+        "transportElapsedMs": 120082,
+        "transportFirstTokenMs": 1542,
+        "transportChunkCount": 2314,
+        "transportMaxIdleMs": 1542,
+        "transportStreaming": true,
+        "programBytes": 23595,
+        "modelResponseBytes": 20711,
+        "authoringResponses": 1,
+        "authoringElapsedMs": 121055,
+        "authoringBytesPerSecond": 194,
+        "authoringBasePromptBytes": 104412,
+        "authoringTotalPromptBytes": 110146,
+        "authoringPromptOverageBytes": 77378,
+        "authoringReadBytes": 22877,
+        "authoringDevelopedBytes": 56749,
+        "authoringDescriptorBytes": 5482,
+        "turnElapsedMs": 504821,
+        "authoringPromptTargetExceeded": true,
+        "commandDispatched": false
+      }
+    },
+    {
+      "kind": "model_transport_outcome",
+      "receivedMs": 572464,
+      "detail": {
+        "sliceIndex": 0,
+        "schemaHash": "2c153671a48598c8aff1e11e01c2c592a7b5318f604bf582db5be253f92ad9a3",
+        "stage": "document_authoring",
+        "model": "anthropic/claude-sonnet-4.6",
+        "tokenLimit": 96000,
+        "deadlineMs": 60000,
+        "elapsedMs": 3177,
+        "promptBytes": 149527,
+        "promptSections": {
+          "policyBytes": 33882,
+          "requestHistoryBytes": 115621,
+          "receiptBytes": 0,
+          "assistantBytes": 0,
+          "framingBytes": 24,
+          "contractBytes": 471
+        },
+        "transportAttempt": 1,
+        "transportDelayMs": 0,
+        "transportOutcome": "recovered",
+        "transportCallCount": 1,
+        "transportElapsedMs": 3177,
+        "transportFirstTokenMs": 2528,
+        "transportChunkCount": 12,
+        "transportMaxIdleMs": 2528,
+        "transportStreaming": true,
+        "authoringBasePromptBytes": 130670,
+        "authoringTotalPromptBytes": 149998,
+        "authoringPromptOverageBytes": 117230,
+        "authoringReadBytes": 22877,
+        "authoringDevelopedBytes": 78172,
+        "authoringDescriptorBytes": 9650,
+        "turnElapsedMs": 570691,
+        "authoringPromptTargetExceeded": true,
+        "commandDispatched": false
+      }
+    },
+    {
+      "kind": "document_program_sealed",
+      "receivedMs": 572540,
+      "detail": {
+        "deadlineSource": "owned_turn",
+        "sliceIndex": 0,
+        "sliceCharacterLimit": 24000,
+        "sliceByteLimit": 24576,
+        "requestedCharacters": 64000,
+        "expiresAt": 1794639790864,
+        "programID": "e5de8f19-df6b-4562-9163-8f09a48f92d8",
+        "programSHA256": "11995a128170531df4c35ac2cbc1dbfdeaa6fcb9a06998a6aefd49dac6b6167d",
+        "sliceCount": 1,
+        "tool": "document_prepare",
+        "schemaHash": "2c153671a48598c8aff1e11e01c2c592a7b5318f604bf582db5be253f92ad9a3",
+        "stage": "document_authoring",
+        "model": "anthropic/claude-sonnet-4.6",
+        "finishReason": "stop",
+        "contentBytes": 148,
+        "completionTokens": 53,
+        "promptTokens": 40873,
+        "attempt": 1,
+        "attempts": 1,
+        "tokenLimit": 96000,
+        "deadlineMs": 60000,
+        "elapsedMs": 3177,
+        "promptBytes": 149527,
+        "promptSections": {
+          "policyBytes": 33882,
+          "requestHistoryBytes": 115621,
+          "receiptBytes": 0,
+          "assistantBytes": 0,
+          "framingBytes": 24,
+          "contractBytes": 471
+        },
+        "transportCallCount": 1,
+        "transportElapsedMs": 3177,
+        "transportFirstTokenMs": 2528,
+        "transportChunkCount": 12,
+        "transportMaxIdleMs": 2528,
+        "transportStreaming": true,
+        "programBytes": 23671,
+        "modelResponseBytes": 148,
+        "authoringResponses": 1,
+        "authoringElapsedMs": 3487,
+        "authoringBytesPerSecond": 6788,
+        "authoringBasePromptBytes": 130670,
+        "authoringTotalPromptBytes": 149998,
+        "authoringPromptOverageBytes": 117230,
+        "authoringReadBytes": 22877,
+        "authoringDevelopedBytes": 78172,
+        "authoringDescriptorBytes": 9650,
+        "turnElapsedMs": 570765,
+        "authoringPromptTargetExceeded": true,
+        "commandDispatched": false
+      }
+    }
+  ],
+  "document": {
+    "id": "0057c3694395b7940d41063a67e458939233815970a8a25c35fc3424814c8a1f",
+    "title": "High-Protein Recipes for Fat Loss",
+    "name": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v5.pdf",
+    "format": "pdf",
+    "sha256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+    "size": 36646,
+    "pages": 8,
+    "createdAt": "2026-11-14T06:58:57.509Z",
+    "proposalID": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+    "review": "unavailable",
+    "reviewIssue": "document_visual_review_unavailable",
+    "proofPages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "byteFidelity": {
+      "status": "pass",
+      "scope": "measured_final_to_immutable_capture",
+      "sha256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+      "bytes": 36646
+    },
+    "contentQuality": {
+      "status": "unconfirmed",
+      "scope": "complete_text_coverage",
+      "finalSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+      "factualCertification": false
+    },
+    "contentReview": {
+      "version": "knot_document_content_v1",
+      "status": "unconfirmed",
+      "contentCheckAttempts": [
+        {
+          "attempt": 1,
+          "model": "openai/gpt-4o",
+          "durationMs": 8454,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 7050,
+          "contentBytes": 4794,
+          "outcome": "unconfirmed",
+          "httpStatus": 200,
+          "contentEncoding": "json",
+          "failureStage": "grounding",
+          "validationCode": "item_coverage_anchor",
+          "itemIndex": 0,
+          "reason": "content_check_unparseable"
+        },
+        {
+          "attempt": 2,
+          "model": "openai/gpt-4o",
+          "durationMs": 6528,
+          "tokenLimit": 6500,
+          "finishReason": "stop",
+          "responseBytes": 7055,
+          "contentBytes": 4796,
+          "outcome": "unconfirmed",
+          "httpStatus": 200,
+          "contentEncoding": "json",
+          "failureStage": "grounding",
+          "validationCode": "item_coverage_anchor",
+          "itemIndex": 0,
+          "reason": "content_check_unparseable"
+        }
+      ],
+      "requestSHA256": "3c9fbb5caa2c57b21d2fa908ad02c096caac25efc8b4a4979524844862e31b3a",
+      "finalSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+      "finalTextSHA256": "7baab17b3ff0d71e24e9d6f35dd1b35d817ac3834f49df5b4c9164dbd00e4d1a",
+      "sourceSHA256s": [
+        "5e100928a130a032a2638096ed1325501b8aa15405e69fcc1f80a0788a9c47ba",
+        "bb5aaf4005e6542b45d61fff1932669a7de2f9cc535a830fd572bc3f8ba8a7ad",
+        "50612ccda22c93ea58616d4f4043660dc126e313ec9e7ccfddaf8347673bd693",
+        "444c53c4aab9458a1f529fed889824b546cb0f86a550a738dc7d0cce1c1912ef",
+        "cec9d9d5bb76b23b30462fb5610b107b37b3eb19069c85e345a44f94bfeb9402"
+      ],
+      "scope": "complete_text"
+    },
+    "downloadedProofs": [
+      {
+        "page": 1,
+        "bytes": 107131,
+        "sha256": "142c6d70b08a055e68c62d966ac54f8adcb000076278a0485a8a4c81af82480a"
+      },
+      {
+        "page": 2,
+        "bytes": 146401,
+        "sha256": "dbc6f30a5ea96277ebfff6b6d861ccaea0db874e386a32989d45d9951673a088"
+      },
+      {
+        "page": 3,
+        "bytes": 117480,
+        "sha256": "093eb2d46b5061b372e39ab26e5f8aa6a5c76d5df45fe34268a4f391349892a9"
+      },
+      {
+        "page": 4,
+        "bytes": 144892,
+        "sha256": "83041ecb2b0ea28c0bb11de5d58843ff2dfd4b1db016d24b2d3cb3151b672fbe"
+      },
+      {
+        "page": 5,
+        "bytes": 127594,
+        "sha256": "d63884df9c4ed374810844140a65b6e4c24ae5cb5ad7a387114788843808cba5"
+      },
+      {
+        "page": 6,
+        "bytes": 142487,
+        "sha256": "21103628e0924c5b85679c1b9963785aec49cd6c228276adee612ab86293f248"
+      },
+      {
+        "page": 7,
+        "bytes": 150579,
+        "sha256": "a4d4d59c6d2e745e86c897741980c4ff052bf7d3c69a607c8f2edae12a7d5490"
+      },
+      {
+        "page": 8,
+        "bytes": 134644,
+        "sha256": "5c77415e81ffa5274fec0b46fac200a85837119d00071db88f12d928dda40e13"
+      }
+    ],
+    "deliveredSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+    "deliveredBytes": 36646,
+    "deliveredMatches": true,
+    "boxSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+    "boxBytes": 36646,
+    "boxMatches": true
+  },
+  "manifests": [
+    {
+      "id": "96309b45-cb6a-4c74-baff-165a5bf85c74",
+      "marker": "KNOT_DOCUMENT_SOURCE_V1",
+      "value": {
+        "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes.html",
+        "sha256": "bb5aaf4005e6542b45d61fff1932669a7de2f9cc535a830fd572bc3f8ba8a7ad",
+        "size": 19334,
+        "format": "html"
+      }
+    },
+    {
+      "id": "b8a2bc67-bbed-45b9-8dee-0123d469313e",
+      "marker": "KNOT_DOCUMENT_SOURCE_V1",
+      "value": {
+        "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v2.html",
+        "sha256": "50612ccda22c93ea58616d4f4043660dc126e313ec9e7ccfddaf8347673bd693",
+        "size": 19269,
+        "format": "html"
+      }
+    },
+    {
+      "id": "82ca0a9c-3e3a-46ac-98b3-05afd7b8f041",
+      "marker": "KNOT_DOCUMENT_SOURCE_V1",
+      "value": {
+        "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v3.html",
+        "sha256": "444c53c4aab9458a1f529fed889824b546cb0f86a550a738dc7d0cce1c1912ef",
+        "size": 20273,
+        "format": "html"
+      }
+    },
+    {
+      "id": "b7450130-6419-4af3-a45b-a406ddceb043",
+      "marker": "KNOT_DOCUMENT_SOURCE_V1",
+      "value": {
+        "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v4.html",
+        "sha256": "cec9d9d5bb76b23b30462fb5610b107b37b3eb19069c85e345a44f94bfeb9402",
+        "size": 22135,
+        "format": "html"
+      }
+    },
+    {
+      "id": "7beecfbd-7e04-4d8a-8205-53754b8ce32e",
+      "marker": "KNOT_RESIDENT_DOCUMENT_V1",
+      "value": {
+        "manifest": {
+          "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v4.pdf",
+          "sha256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42",
+          "size": 36526,
+          "format": "pdf",
+          "pages": 8,
+          "proofs": [
+            {
+              "page": 1,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a/page-1.png",
+              "sha256": "6a9c8f6fc1deddb9b54b1edef202a05621ca45cbb7a58411fa1900292ecb0a47",
+              "size": 255273
+            },
+            {
+              "page": 2,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a/page-2.png",
+              "sha256": "db0df1010d7541d570ba4c269ffb0a1db13201557ab799e7e0edcb37a5a1b4c1",
+              "size": 335296
+            },
+            {
+              "page": 3,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a/page-3.png",
+              "sha256": "10ec2e2f247c631828226fd037b156bc0a98b8b3ef9a7658262053630c1f8f71",
+              "size": 323323
+            },
+            {
+              "page": 4,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a/page-4.png",
+              "sha256": "c95a6dc1779ac8b0317f71b5b49a3d6f4b520c09365b578c17b0a2ea4027abf6",
+              "size": 294726
+            },
+            {
+              "page": 5,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a/page-5.png",
+              "sha256": "6a400f6a4e2d1882edcc1843bd968a123a7f85f2b7cbc4fffe214d37a02450ed",
+              "size": 323756
+            },
+            {
+              "page": 6,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a/page-6.png",
+              "sha256": "e34e70693ea7a7d1b235e8b17dde2c1f9bdcffb0f828db34f79394ba8eab3132",
+              "size": 305788
+            },
+            {
+              "page": 7,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a/page-7.png",
+              "sha256": "a1cfcb87a848951cc68efc845a920db710f68c50aa4e167ded942cce386e2497",
+              "size": 321286
+            },
+            {
+              "page": 8,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a/page-8.png",
+              "sha256": "1605d1aa0212c753272f65b443c9db3a267664330109c8fcf1574b09a7fc5470",
+              "size": 88930
+            }
+          ],
+          "toolVersion": "2.0.0",
+          "taskID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+          "inputsSHA256": "3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a",
+          "sourceSHA256": "cec9d9d5bb76b23b30462fb5610b107b37b3eb19069c85e345a44f94bfeb9402",
+          "proofStageOnly": true,
+          "independentVerification": false,
+          "textEvidence": {
+            "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a/text.txt",
+            "size": 19948,
+            "sha256": "2e3df7df9a0e615c03a84ec4d92b4e49deb691799897cd940bb8dec2cb77ce92"
+          },
+          "pdfInfo": {
+            "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a/pdfinfo.txt",
+            "size": 397,
+            "sha256": "64b69d311e832540180a9acd1b4b793b51ff7cb0e80727e9d4c234e69a1f0780"
+          }
+        },
+        "designEvidence": {
+          "inputs": {
+            "design": "authored-inline-v1",
+            "styleEncoding": "html-parser-style-records-v1",
+            "source": {
+              "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v4.html",
+              "sha256": "cec9d9d5bb76b23b30462fb5610b107b37b3eb19069c85e345a44f94bfeb9402",
+              "size": 22135,
+              "format": "html"
+            },
+            "styleSHA256": "4d8fbe2a0774761c8f0ac7a5ba828a31889c1a7afe7be1ba7caa8676166cbc0c",
+            "styleBytes": 1241,
+            "resourcePolicy": "deny-all-v1"
+          },
+          "entries": [
+            {
+              "state": "intent",
+              "taskID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+              "output": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v4.pdf",
+              "inputs": {
+                "design": "authored-inline-v1",
+                "styleEncoding": "html-parser-style-records-v1",
+                "source": {
+                  "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v4.html",
+                  "sha256": "cec9d9d5bb76b23b30462fb5610b107b37b3eb19069c85e345a44f94bfeb9402",
+                  "size": 22135,
+                  "format": "html"
+                },
+                "styleSHA256": "4d8fbe2a0774761c8f0ac7a5ba828a31889c1a7afe7be1ba7caa8676166cbc0c",
+                "styleBytes": 1241,
+                "resourcePolicy": "deny-all-v1"
+              }
+            },
+            {
+              "state": "staged",
+              "taskID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+              "output": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v4.pdf",
+              "rendererInputsSHA256": "3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a",
+              "rendererJournalSHA256": "e237dd7d92a0ad3312170be704196f169876f7aa8fc1a2e2df32ff6cd92726b7",
+              "finalSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42",
+              "finalBytes": 36526
+            }
+          ],
+          "journal": {
+            "path": ".knot-doc/design/8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/ba266049f7c99b8b7803896754390d7d9db42442892955b05ddef533eb64ff60.jsonl",
+            "sha256": "d54d1f0c62eda5bfb84789204062ebc9b8a01347c5dfa2885ec464a24cf1b1e0",
+            "size": 991
+          }
+        },
+        "journal": {
+          "path": ".knot-doc/v2/8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/3209dff62bcd7f011a546f79c854c57164572e83910408faf6ba5d1ade67223a.jsonl",
+          "sha256": "e237dd7d92a0ad3312170be704196f169876f7aa8fc1a2e2df32ff6cd92726b7",
+          "size": 4030
+        },
+        "inputs": {
+          "toolVersion": "2.0.0",
+          "sourceSHA256": "cec9d9d5bb76b23b30462fb5610b107b37b3eb19069c85e345a44f94bfeb9402",
+          "sourceBytes": 22135,
+          "sourceFormat": "html",
+          "outputFormat": "pdf",
+          "packages": {
+            "weasyprint": "70.0",
+            "markdown-it-py": "3.0.0"
+          },
+          "resourcePolicy": "deny-all-v1",
+          "markdown": "commonmark-tables-strikethrough-html-v1",
+          "render": "scale-to-1400-png-v1",
+          "design": "author-v1",
+          "houseStyleSHA256": null
+        }
+      }
+    },
+    {
+      "id": "7beecfbd-7e04-4d8a-8205-53754b8ce32e",
+      "marker": "KNOT_DOCUMENT_V1",
+      "value": {
+        "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v4.pdf",
+        "sha256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42",
+        "size": 36526,
+        "format": "pdf",
+        "pages": 8,
+        "proofs": [],
+        "title": "High-Protein Recipes for Fat Loss",
+        "deliveryLabel": "Recipe guide"
+      }
+    },
+    {
+      "id": "7dd52240-c636-467e-b003-87a47e9161fc",
+      "marker": "KNOT_DOCUMENT_V1",
+      "value": {
+        "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v4.pdf",
+        "sha256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42",
+        "size": 36526,
+        "format": "pdf",
+        "pages": 8,
+        "proofs": [
+          {
+            "path": "deliverables/knot-proof-7beecfbd-7e04-4d8a-8205-53754b8ce32e/page-1.png",
+            "sha256": "800a1341b1212985589b01bac367f9aa0ae92b8c660c6a23a3de1a86fb3de4fd",
+            "page": 1,
+            "sourceSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42"
+          },
+          {
+            "path": "deliverables/knot-proof-7beecfbd-7e04-4d8a-8205-53754b8ce32e/page-2.png",
+            "sha256": "17b3829c0e91ba2bea053c7bdfd5e6a6ea7785281e6350358538ab916748060a",
+            "page": 2,
+            "sourceSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42"
+          },
+          {
+            "path": "deliverables/knot-proof-7beecfbd-7e04-4d8a-8205-53754b8ce32e/page-3.png",
+            "sha256": "bbad05ceb29d70fa854fa24d305147dd8a57d0c9c901f6efa8b7b44dbb270aae",
+            "page": 3,
+            "sourceSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42"
+          },
+          {
+            "path": "deliverables/knot-proof-7beecfbd-7e04-4d8a-8205-53754b8ce32e/page-4.png",
+            "sha256": "73ed6e8f670e45cca5c347e0168832d93ea9051edf0e1fb68af18ffc9337ced6",
+            "page": 4,
+            "sourceSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42"
+          },
+          {
+            "path": "deliverables/knot-proof-7beecfbd-7e04-4d8a-8205-53754b8ce32e/page-5.png",
+            "sha256": "6e35f32e65beaa10dbfbea0fe80d47a806a3b048916667fd56ac85f4bd5d41d9",
+            "page": 5,
+            "sourceSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42"
+          },
+          {
+            "path": "deliverables/knot-proof-7beecfbd-7e04-4d8a-8205-53754b8ce32e/page-6.png",
+            "sha256": "3af839b71ca1288da94daad6c5303105846ec410595e688ac7496356755ee571",
+            "page": 6,
+            "sourceSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42"
+          },
+          {
+            "path": "deliverables/knot-proof-7beecfbd-7e04-4d8a-8205-53754b8ce32e/page-7.png",
+            "sha256": "f9355e73d3c8124fd1f7d39171a4ff797f3529edce89d6e02e1c28e4137aec58",
+            "page": 7,
+            "sourceSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42"
+          },
+          {
+            "path": "deliverables/knot-proof-7beecfbd-7e04-4d8a-8205-53754b8ce32e/page-8.png",
+            "sha256": "6456fd87046e23e9c059f9c6673b27648db372b8a31bb8001773f4578ef1dc9b",
+            "page": 8,
+            "sourceSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42"
+          }
+        ],
+        "verification": {
+          "version": "knot_document_proof_v1",
+          "sourceSHA256": "6df5cf0b38c6176b7d97f828860bd3fb4e5f3d6856d7432c465e95bcdcf38e42",
+          "sourceSize": 36526,
+          "format": "pdf",
+          "renderedPages": 8,
+          "textSHA256": "2e3df7df9a0e615c03a84ec4d92b4e49deb691799897cd940bb8dec2cb77ce92",
+          "markupScan": "clear",
+          "renderer": "poppler",
+          "producerChecked": false,
+          "structureChecked": true,
+          "allPageProofs": true,
+          "textPath": "deliverables/knot-proof-7beecfbd-7e04-4d8a-8205-53754b8ce32e/text.txt",
+          "textSize": 19948
+        },
+        "title": "High-Protein Recipes for Fat Loss",
+        "deliveryLabel": "Recipe guide"
+      }
+    },
+    {
+      "id": "126be6ae-8f1c-465c-921b-7122764a5cea",
+      "marker": "KNOT_DOCUMENT_SOURCE_V1",
+      "value": {
+        "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v5.html",
+        "sha256": "5e100928a130a032a2638096ed1325501b8aa15405e69fcc1f80a0788a9c47ba",
+        "size": 22147,
+        "format": "html"
+      }
+    },
+    {
+      "id": "f5de22fb-ddd3-4401-ab17-a18700d1745e",
+      "marker": "KNOT_RESIDENT_DOCUMENT_V1",
+      "value": {
+        "manifest": {
+          "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v5.pdf",
+          "sha256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+          "size": 36646,
+          "format": "pdf",
+          "pages": 8,
+          "proofs": [
+            {
+              "page": 1,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed/page-1.png",
+              "sha256": "dba270460496af9e39f3a2811f169cc028c1f8e031657d7ae2ebbfbee5e35057",
+              "size": 227225
+            },
+            {
+              "page": 2,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed/page-2.png",
+              "sha256": "ff9b5c8e6fdbd2fed20173dd31a6715e81f255c44a2a3ef449a0c25336a6f4b8",
+              "size": 296816
+            },
+            {
+              "page": 3,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed/page-3.png",
+              "sha256": "8e008523ffcd40efb059e19c7eddfa18d250a21bc3fbe584cc66cba57c6e04b4",
+              "size": 252578
+            },
+            {
+              "page": 4,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed/page-4.png",
+              "sha256": "176f9fe2769a12c7b3ed7210b9d4d59263e5ab3d47ff48b2c40377f1b0a461d3",
+              "size": 290900
+            },
+            {
+              "page": 5,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed/page-5.png",
+              "sha256": "e06905d14f4bfe06c64d5d19d8628ecad15fa4485ea60fb1e22866a3a0e21eac",
+              "size": 278928
+            },
+            {
+              "page": 6,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed/page-6.png",
+              "sha256": "4f109590f5dea210e88927d43fa4c4f40869a8193b00c334329d2e451d85e2b4",
+              "size": 288235
+            },
+            {
+              "page": 7,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed/page-7.png",
+              "sha256": "4c961b2aa4fd91f4183d38d661272343c50f803b38a202a167a6472cb33901bd",
+              "size": 328166
+            },
+            {
+              "page": 8,
+              "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed/page-8.png",
+              "sha256": "9933bdc6177b0a2f0e4e8c47007dd7d816fa59dcfea6d164c956dd79ab8b2a60",
+              "size": 284964
+            }
+          ],
+          "toolVersion": "2.0.0",
+          "taskID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+          "inputsSHA256": "a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed",
+          "sourceSHA256": "5e100928a130a032a2638096ed1325501b8aa15405e69fcc1f80a0788a9c47ba",
+          "proofStageOnly": true,
+          "independentVerification": false,
+          "textEvidence": {
+            "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed/text.txt",
+            "size": 19947,
+            "sha256": "7baab17b3ff0d71e24e9d6f35dd1b35d817ac3834f49df5b4c9164dbd00e4d1a"
+          },
+          "pdfInfo": {
+            "path": "deliverables/knot-resident-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/knot-doc-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed/pdfinfo.txt",
+            "size": 397,
+            "sha256": "c8dadc919907da9a7c07152d3aa7cda44814ac958a62c1377aff344d99459f83"
+          }
+        },
+        "designEvidence": {
+          "inputs": {
+            "design": "authored-inline-v1",
+            "styleEncoding": "html-parser-style-records-v1",
+            "source": {
+              "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v5.html",
+              "sha256": "5e100928a130a032a2638096ed1325501b8aa15405e69fcc1f80a0788a9c47ba",
+              "size": 22147,
+              "format": "html"
+            },
+            "styleSHA256": "4d8fbe2a0774761c8f0ac7a5ba828a31889c1a7afe7be1ba7caa8676166cbc0c",
+            "styleBytes": 1241,
+            "resourcePolicy": "deny-all-v1"
+          },
+          "entries": [
+            {
+              "state": "intent",
+              "taskID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+              "output": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v5.pdf",
+              "inputs": {
+                "design": "authored-inline-v1",
+                "styleEncoding": "html-parser-style-records-v1",
+                "source": {
+                  "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v5.html",
+                  "sha256": "5e100928a130a032a2638096ed1325501b8aa15405e69fcc1f80a0788a9c47ba",
+                  "size": 22147,
+                  "format": "html"
+                },
+                "styleSHA256": "4d8fbe2a0774761c8f0ac7a5ba828a31889c1a7afe7be1ba7caa8676166cbc0c",
+                "styleBytes": 1241,
+                "resourcePolicy": "deny-all-v1"
+              }
+            },
+            {
+              "state": "staged",
+              "taskID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+              "output": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v5.pdf",
+              "rendererInputsSHA256": "a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed",
+              "rendererJournalSHA256": "d0813242c569a18d7fde224309dd4613dcdf6e3fe891442e3c9876f69e652c0a",
+              "finalSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+              "finalBytes": 36646
+            }
+          ],
+          "journal": {
+            "path": ".knot-doc/design/8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/e03bc8691c16bb9ea2a86f7c15b6477141a54c621c75e6ecaab97d0ef2958d0f.jsonl",
+            "sha256": "cb89ef873ce7a06ced9133c183af0644ebb3545cf1814586b0a12d516a66294e",
+            "size": 991
+          }
+        },
+        "journal": {
+          "path": ".knot-doc/v2/8b14eaa8-9fbd-4295-bd36-7dc33d9e8635/a5e294cfe1646038164cf399e83a374b5cbece6341dce604272dd6e9c60906ed.jsonl",
+          "sha256": "d0813242c569a18d7fde224309dd4613dcdf6e3fe891442e3c9876f69e652c0a",
+          "size": 4031
+        },
+        "inputs": {
+          "toolVersion": "2.0.0",
+          "sourceSHA256": "5e100928a130a032a2638096ed1325501b8aa15405e69fcc1f80a0788a9c47ba",
+          "sourceBytes": 22147,
+          "sourceFormat": "html",
+          "outputFormat": "pdf",
+          "packages": {
+            "weasyprint": "70.0",
+            "markdown-it-py": "3.0.0"
+          },
+          "resourcePolicy": "deny-all-v1",
+          "markdown": "commonmark-tables-strikethrough-html-v1",
+          "render": "scale-to-1400-png-v1",
+          "design": "author-v1",
+          "houseStyleSHA256": null
+        }
+      }
+    },
+    {
+      "id": "f5de22fb-ddd3-4401-ab17-a18700d1745e",
+      "marker": "KNOT_DOCUMENT_V1",
+      "value": {
+        "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v5.pdf",
+        "sha256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+        "size": 36646,
+        "format": "pdf",
+        "pages": 8,
+        "proofs": [],
+        "title": "High-Protein Recipes for Fat Loss",
+        "deliveryLabel": "Recipe guide"
+      }
+    },
+    {
+      "id": "ce8d58a4-5ea9-449f-b1b9-7a9a2f2d5f50",
+      "marker": "KNOT_DOCUMENT_V1",
+      "value": {
+        "path": "knot-8b14eaa8-9fbd-4295-bd36-7dc33d9e8635-high-protein-recipes-v5.pdf",
+        "sha256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+        "size": 36646,
+        "format": "pdf",
+        "pages": 8,
+        "proofs": [
+          {
+            "path": "deliverables/knot-proof-f5de22fb-ddd3-4401-ab17-a18700d1745e/page-1.png",
+            "sha256": "142c6d70b08a055e68c62d966ac54f8adcb000076278a0485a8a4c81af82480a",
+            "page": 1,
+            "sourceSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1"
+          },
+          {
+            "path": "deliverables/knot-proof-f5de22fb-ddd3-4401-ab17-a18700d1745e/page-2.png",
+            "sha256": "dbc6f30a5ea96277ebfff6b6d861ccaea0db874e386a32989d45d9951673a088",
+            "page": 2,
+            "sourceSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1"
+          },
+          {
+            "path": "deliverables/knot-proof-f5de22fb-ddd3-4401-ab17-a18700d1745e/page-3.png",
+            "sha256": "093eb2d46b5061b372e39ab26e5f8aa6a5c76d5df45fe34268a4f391349892a9",
+            "page": 3,
+            "sourceSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1"
+          },
+          {
+            "path": "deliverables/knot-proof-f5de22fb-ddd3-4401-ab17-a18700d1745e/page-4.png",
+            "sha256": "83041ecb2b0ea28c0bb11de5d58843ff2dfd4b1db016d24b2d3cb3151b672fbe",
+            "page": 4,
+            "sourceSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1"
+          },
+          {
+            "path": "deliverables/knot-proof-f5de22fb-ddd3-4401-ab17-a18700d1745e/page-5.png",
+            "sha256": "d63884df9c4ed374810844140a65b6e4c24ae5cb5ad7a387114788843808cba5",
+            "page": 5,
+            "sourceSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1"
+          },
+          {
+            "path": "deliverables/knot-proof-f5de22fb-ddd3-4401-ab17-a18700d1745e/page-6.png",
+            "sha256": "21103628e0924c5b85679c1b9963785aec49cd6c228276adee612ab86293f248",
+            "page": 6,
+            "sourceSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1"
+          },
+          {
+            "path": "deliverables/knot-proof-f5de22fb-ddd3-4401-ab17-a18700d1745e/page-7.png",
+            "sha256": "a4d4d59c6d2e745e86c897741980c4ff052bf7d3c69a607c8f2edae12a7d5490",
+            "page": 7,
+            "sourceSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1"
+          },
+          {
+            "path": "deliverables/knot-proof-f5de22fb-ddd3-4401-ab17-a18700d1745e/page-8.png",
+            "sha256": "5c77415e81ffa5274fec0b46fac200a85837119d00071db88f12d928dda40e13",
+            "page": 8,
+            "sourceSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1"
+          }
+        ],
+        "verification": {
+          "version": "knot_document_proof_v1",
+          "sourceSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+          "sourceSize": 36646,
+          "format": "pdf",
+          "renderedPages": 8,
+          "textSHA256": "7baab17b3ff0d71e24e9d6f35dd1b35d817ac3834f49df5b4c9164dbd00e4d1a",
+          "markupScan": "clear",
+          "renderer": "poppler",
+          "producerChecked": false,
+          "structureChecked": true,
+          "allPageProofs": true,
+          "textPath": "deliverables/knot-proof-f5de22fb-ddd3-4401-ab17-a18700d1745e/text.txt",
+          "textSize": 19947
+        },
+        "title": "High-Protein Recipes for Fat Loss",
+        "deliveryLabel": "Recipe guide"
+      }
+    }
+  ],
+  "historicalReplay": false,
+  "baselineRawEvidenceRecovered": false,
+  "newRemoteCommands": 0,
+  "newProviderCalls": 0,
+  "observation": {
+    "observedAt": "2026-11-14T07:01:17.971Z",
+    "taskID": "8b14eaa8-9fbd-4295-bd36-7dc33d9e8635",
+    "documentID": "0057c3694395b7940d41063a67e458939233815970a8a25c35fc3424814c8a1f",
+    "finalSHA256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+    "finalBytes": 36646,
+    "sourceSHA256": "5e100928a130a032a2638096ed1325501b8aa15405e69fcc1f80a0788a9c47ba",
+    "sourceBytes": 22147,
+    "textSHA256": "7baab17b3ff0d71e24e9d6f35dd1b35d817ac3834f49df5b4c9164dbd00e4d1a",
+    "textBytes": 19947,
+    "pages": [
+      {
+        "page": 1,
+        "bytes": 107131,
+        "sha256": "142c6d70b08a055e68c62d966ac54f8adcb000076278a0485a8a4c81af82480a",
+        "width": 637,
+        "height": 900
+      },
+      {
+        "page": 2,
+        "bytes": 146401,
+        "sha256": "dbc6f30a5ea96277ebfff6b6d861ccaea0db874e386a32989d45d9951673a088",
+        "width": 637,
+        "height": 900
+      },
+      {
+        "page": 3,
+        "bytes": 117480,
+        "sha256": "093eb2d46b5061b372e39ab26e5f8aa6a5c76d5df45fe34268a4f391349892a9",
+        "width": 637,
+        "height": 900
+      },
+      {
+        "page": 4,
+        "bytes": 144892,
+        "sha256": "83041ecb2b0ea28c0bb11de5d58843ff2dfd4b1db016d24b2d3cb3151b672fbe",
+        "width": 637,
+        "height": 900
+      },
+      {
+        "page": 5,
+        "bytes": 127594,
+        "sha256": "d63884df9c4ed374810844140a65b6e4c24ae5cb5ad7a387114788843808cba5",
+        "width": 637,
+        "height": 900
+      },
+      {
+        "page": 6,
+        "bytes": 142487,
+        "sha256": "21103628e0924c5b85679c1b9963785aec49cd6c228276adee612ab86293f248",
+        "width": 637,
+        "height": 900
+      },
+      {
+        "page": 7,
+        "bytes": 150579,
+        "sha256": "a4d4d59c6d2e745e86c897741980c4ff052bf7d3c69a607c8f2edae12a7d5490",
+        "width": 637,
+        "height": 900
+      },
+      {
+        "page": 8,
+        "bytes": 134644,
+        "sha256": "5c77415e81ffa5274fec0b46fac200a85837119d00071db88f12d928dda40e13",
+        "width": 637,
+        "height": 900
+      }
+    ],
+    "originalBuildProofCaptureDownloadAgree": true,
+    "completeSourceAndTextRead": true,
+    "journalsVerified": true,
+    "allPageAIReviewPresent": false,
+    "noNewExecutionOrReview": true
+  },
+  "delivery": {
+    "path": "deliveries/high-protein-recipes-repair-24ee8bf7eda8.pdf",
+    "id": "0057c3694395b7940d41063a67e458939233815970a8a25c35fc3424814c8a1f",
+    "sha256": "24ee8bf7eda8fdc5a4e4815a20d3db66f963cb9398a87c954e76b7537f0229e1",
+    "bytes": 36646,
+    "pages": 8,
+    "exactImmutableCaptureCopy": true
+  },
+  "quality": {
+    "content": "unconfirmed",
+    "visual": "unavailable",
+    "reviewIssue": "document_visual_review_unavailable",
+    "certified": false
+  },
+  "comparison": {
+    "baselineCompletionMs": 603097,
+    "targetMs": 330000,
+    "successfulQualityAcceptance": false,
+    "targetMet": false,
+    "speedImprovementEstablished": false
+  },
+  "nativeDeviceAcceptance": "not performed"
+}

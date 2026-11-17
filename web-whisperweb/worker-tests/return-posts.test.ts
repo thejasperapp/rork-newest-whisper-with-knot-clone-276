@@ -1,0 +1,43 @@
+// @vitest-environment node
+import { beforeAll, beforeEach, afterAll, it, expect } from "vitest";
+import { PGlite } from "@electric-sql/pglite";
+import { readFile } from "node:fs/promises";
+const a="11111111-1111-4111-8111-111111111111", b="22222222-2222-4222-8222-222222222222", post="33333333-3333-4333-8333-333333333333", old="44444444-4444-4444-8444-444444444444";
+let db:PGlite;
+beforeAll(async()=>{
+ db=new PGlite();
+ await db.exec(`create role anon;create role authenticated;create role service_role;create schema auth;
+ create function auth.uid() returns uuid language sql as $$select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid$$;
+ create function auth.role() returns text language sql as $$select current_setting('request.jwt.claim.role',true)$$;
+ create table auth.users(id uuid primary key,deleted_at timestamptz,is_anonymous boolean default false,banned_until timestamptz);
+ create table whisper_profiles(user_id uuid primary key,username text,ghost_enabled boolean default false,is_private boolean default false);
+ create table whisper_blocks(blocker_id uuid,blocked_user_id uuid);create table whisper_dm_blocks(blocked_sender_id uuid,protected_user_id uuid);
+ create table whisper_follows(follower_id uuid,followee_id uuid);
+ create table whisper_notification_prefs(user_id uuid primary key,master_enabled boolean default true,quiet_mode boolean default false,dms boolean default true);
+ create table whisper_messages(id uuid primary key default gen_random_uuid(),thread_id uuid not null,from_user_id uuid,to_user_id uuid,from_username text,to_username text,body text,created_at timestamptz default now(),read_at timestamptz,embed jsonb,media_url text);
+ create table whisper_posts(id uuid primary key,user_id uuid,created_at timestamptz default now(),is_ghost boolean default false,community_id text);
+ create table whisper_post_likes(post_id uuid,user_id uuid,created_at timestamptz default now(),primary key(post_id,user_id));
+ create function whisper_dispatch_social_push() returns trigger language plpgsql as $$begin return new;end$$;`);
+ for(const name of ['20261001010000_social_teams_invitations.sql','20261001030000_return_post_alerts.sql']) await db.exec(await readFile(new URL(`../../supabase/migrations/${name}`,import.meta.url),'utf8'));
+},30000);
+afterAll(async()=>{await db?.close();});
+beforeEach(async()=>{await db.exec(`truncate whisper_return_posts_private.deliveries,whisper_posts,whisper_post_likes,whisper_follows,whisper_notification_prefs,whisper_messages,whisper_blocks,whisper_dm_blocks,whisper_profiles;
+ insert into auth.users(id) values('${a}'),('${b}') on conflict do nothing;
+ insert into whisper_profiles(user_id,username) values('${a}','alice'),('${b}','bob');
+ insert into whisper_follows values('${b}','${a}');
+ insert into whisper_notification_prefs(user_id,new_posts,new_posts_synced) values('${b}',true,true);
+ insert into whisper_messages(thread_id,from_user_id,to_user_id,body) values('${post}','${a}','${b}','hello'),('${post}','${b}','${a}','hi');
+ insert into whisper_posts(id,user_id,created_at) values('${old}','${a}',now()-interval '20 days'),('${post}','${a}',now());
+ update whisper_return_posts_private.activation set enabled=true;
+ select set_config('request.jwt.claim.role','service_role',false),set_config('request.jwt.claim.sub','${b}',false);`);});
+async function audience(){return (await db.query<{value:string[]}>('select whisper_return_post_candidates($1) as value',[post])).rows[0].value;}
+it('admits a followed two-way contact once with durable retry identity',async()=>{expect(await audience()).toEqual([b]);expect(await audience()).toEqual([b]);expect((await db.query<{n:number}>('select count(*)::int as n from whisper_return_posts_private.deliveries')).rows[0].n).toBe(1);});
+it('first posts and gaps under fourteen days are silent',async()=>{await db.exec(`update whisper_posts set created_at=now()-interval '13 days' where id='${old}'`);expect(await audience()).toEqual([]);await db.exec(`delete from whisper_posts where id='${old}'`);expect(await audience()).toEqual([]);});
+it('requires actual following and recent bilateral text evidence',async()=>{await db.exec(`delete from whisper_messages where from_user_id='${b}'`);expect(await audience()).toEqual([]);await db.exec(`update whisper_messages set body='::whisper-calendar-v1::fixture'`);expect(await audience()).toEqual([]);});
+it('three real recent likes can qualify instead of DMs',async()=>{await db.exec(`delete from whisper_messages;insert into whisper_posts(id,user_id,created_at) values(gen_random_uuid(),'${a}',now()-interval '21 days'),(gen_random_uuid(),'${a}',now()-interval '22 days');insert into whisper_post_likes(post_id,user_id) select id,'${b}' from whisper_posts where id<>'${post}';`);expect(await audience()).toEqual([b]);await db.exec(`update whisper_post_likes set created_at=now()-interval '91 days';truncate whisper_return_posts_private.deliveries`);expect(await audience()).toEqual([]);});
+it('rechecks revoked follows and both block directions on retry',async()=>{expect(await audience()).toEqual([b]);await db.exec('delete from whisper_follows');expect(await audience()).toEqual([]);await db.exec(`insert into whisper_follows values('${b}','${a}')`);for(const [x,y] of [[a,b],[b,a]]){await db.query('insert into whisper_blocks values($1,$2)',[x,y]);expect(await audience()).toEqual([]);await db.exec('delete from whisper_blocks');}});
+it('rollout, quiet, master and category opt-outs are authoritative',async()=>{for(const patch of ['quiet_mode=true','master_enabled=false','new_posts=false','new_posts_synced=false']){await db.exec(`update whisper_notification_prefs set ${patch}`);expect(await audience()).toEqual([]);await db.exec('update whisper_notification_prefs set quiet_mode=false,master_enabled=true,new_posts=true,new_posts_synced=true');}await db.exec('update whisper_return_posts_private.activation set enabled=false');expect(await audience()).toEqual([]);});
+it('rejects stale, ghost and community posts',async()=>{for(const patch of ["created_at=now()-interval '16 minutes'","is_ghost=true","community_id='private-group'"]){await db.exec(`update whisper_posts set ${patch} where id='${post}'`);expect(await audience()).toEqual([]);await db.exec(`update whisper_posts set created_at=now(),is_ghost=false,community_id=null where id='${post}'`);}});
+it('enforces author cooldown and recipient weekly budget',async()=>{await db.exec(`insert into whisper_return_posts_private.deliveries values(gen_random_uuid(),'${a}','${b}',now()-interval '29 days')`);expect(await audience()).toEqual([]);await db.exec(`truncate whisper_return_posts_private.deliveries;insert into whisper_return_posts_private.deliveries select gen_random_uuid(),gen_random_uuid(),'${b}',now() from generate_series(1,3)`);expect(await audience()).toEqual([]);});
+it('preference RPC is owner-bound and passive reads cannot opt in or undo opt-outs',async()=>{await expect(db.query('select whisper_new_post_preference($1,true)',[a])).rejects.toThrow();await expect(db.exec('select whisper_new_post_preference(null,true)')).rejects.toThrow();await db.exec('delete from whisper_notification_prefs');const read=async()=> (await db.query<{v:{new_posts:boolean}}>('select whisper_new_post_preference($1) as v',[b])).rows[0].v.new_posts;expect(await read()).toBe(false);await db.query('select whisper_new_post_preference($1,true)',[b]);expect(await read()).toBe(true);await db.query('select whisper_new_post_preference($1,false)',[b]);expect(await read()).toBe(false);});
+it('audience discovery is service-only',async()=>{await db.exec("select set_config('request.jwt.claim.role','authenticated',false)");await expect(audience()).rejects.toThrow();});

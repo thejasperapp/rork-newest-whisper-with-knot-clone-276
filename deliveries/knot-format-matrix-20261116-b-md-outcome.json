@@ -1,0 +1,200 @@
+{
+  "scope": "knot-format-matrix-20261116-b-md",
+  "caseName": "md",
+  "requestedFormat": "md",
+  "taskID": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+  "conversationID": "e5f3287f-588b-4a9a-b7db-281b4178e83d",
+  "expectedBuild": "e7eded0631f31bea472200c98215736d51b0d1f4fb91ac679e421cd6d22b03a2",
+  "syntheticOnly": true,
+  "ownerAccessed": false,
+  "noReplay": true,
+  "startedAt": "2026-11-16T02:21:52.934Z",
+  "passed": false,
+  "accountID": "677e4ba4-58b0-4aaa-ba51-c06a3d8ba8d7",
+  "terminal": {
+    "task": {
+      "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+      "bot": "main",
+      "conversationID": "e5f3287f-588b-4a9a-b7db-281b4178e83d",
+      "sourceMessageID": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+      "replyID": "9bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+      "state": "degraded",
+      "createdAt": 1794795716683,
+      "startedAt": 1794795720478,
+      "finishedAt": 1794795760521,
+      "sequence": 87
+    },
+    "events": [
+      {
+        "v": 1,
+        "requestID": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+        "sequence": 86,
+        "type": "accepted",
+        "stepPresentation": "authored_v1",
+        "activity": {
+          "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2:86",
+          "requestID": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+          "taskID": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+          "sourceMessageID": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+          "sequence": 86,
+          "kind": "accepted",
+          "label": "Request received",
+          "recordedAt": "2026-11-16T02:22:40.320Z",
+          "detail": {
+            "stepPresentation": "authored_v1",
+            "turnElapsedMs": 36056
+          }
+        }
+      },
+      {
+        "v": 1,
+        "requestID": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+        "sequence": 87,
+        "type": "complete",
+        "reply": "",
+        "workIncomplete": true,
+        "reason": "document_write_failures_no_replay",
+        "stage": "shell_receipt",
+        "activity": {
+          "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2:87",
+          "requestID": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+          "taskID": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+          "sourceMessageID": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2",
+          "sequence": 87,
+          "kind": "error",
+          "label": "Response unavailable",
+          "recordedAt": "2026-11-16T02:22:40.387Z",
+          "detail": {
+            "stage": "shell_receipt",
+            "turnElapsedMs": 36123
+          }
+        }
+      }
+    ],
+    "next": 87,
+    "hasMore": false,
+    "terminal": true,
+    "currentActivity": null,
+    "activityTimeline": [
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a1",
+        "label": "Create Balcony Herb Plan in Markdown",
+        "tool": "session_input",
+        "purpose": "Author a new Markdown document with detailed instructions for growing Basil and Mint on a balcony.",
+        "started_at": 1794795728783,
+        "ended_at": 1794795730851,
+        "receipt_id": "a4901554-a154-4f19-a3bc-958f1fb13f6f"
+      },
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a2",
+        "label": "Create Balcony Herb Plan in Markdown",
+        "tool": "session_input",
+        "purpose": "Author a new Markdown document with detailed instructions for growing Basil and Mint on a balcony.",
+        "started_at": 1794795730851,
+        "ended_at": 1794795731617,
+        "receipt_id": "a4901554-a154-4f19-a3bc-958f1fb13f6f"
+      },
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a3",
+        "label": "Draft Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Authoring a Markdown guide for setting up, caring for, and harvesting basil and mint, with special instructions to contain mint.",
+        "started_at": 1794795734854,
+        "ended_at": 1794795734960,
+        "receipt_id": "394a4792-3f56-40df-9a17-f1e713382e2b"
+      },
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a4",
+        "label": "Draft Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Authoring a Markdown guide for setting up, caring for, and harvesting basil and mint, with special instructions to contain mint.",
+        "started_at": 1794795734960,
+        "ended_at": 1794795735731,
+        "receipt_id": "394a4792-3f56-40df-9a17-f1e713382e2b"
+      },
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a5",
+        "label": "Author Markdown for Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Compose a complete Markdown file guiding the setup and care of Basil and Mint on a balcony.",
+        "started_at": 1794795738362,
+        "ended_at": 1794795738457,
+        "receipt_id": "9b4cb1e4-9a3e-4003-8d3d-237ab688212a"
+      },
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a6",
+        "label": "Author Markdown for Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Compose a complete Markdown file guiding the setup and care of Basil and Mint on a balcony.",
+        "started_at": 1794795738457,
+        "ended_at": 1794795739229,
+        "receipt_id": "9b4cb1e4-9a3e-4003-8d3d-237ab688212a"
+      },
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a7",
+        "label": "Author Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Create a comprehensive Markdown document with practical advice on growing basil and mint on a balcony.",
+        "started_at": 1794795742722,
+        "ended_at": 1794795742836,
+        "receipt_id": "f8dadaf4-0953-4d34-8c43-bf553cd60e1a"
+      },
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a8",
+        "label": "Author Balcony Herb Plan",
+        "tool": "session_input",
+        "purpose": "Create a comprehensive Markdown document with practical advice on growing basil and mint on a balcony.",
+        "started_at": 1794795742836,
+        "ended_at": 1794795743636,
+        "receipt_id": "f8dadaf4-0953-4d34-8c43-bf553cd60e1a"
+      },
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a9",
+        "label": "Draft Balcony Herb Plan in Markdown",
+        "tool": "document_prepare",
+        "purpose": "Create a new Markdown file with details on growing basil and mint.",
+        "started_at": 1794795746275,
+        "ended_at": 1794795750080,
+        "receipt_id": "20bd73b4-a8e6-4cc2-b5dd-4a1f66b0ed69"
+      },
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a10",
+        "label": "Draft Balcony Herb Plan in Markdown",
+        "tool": "document_script",
+        "purpose": "Create a new Markdown file with details on growing basil and mint.",
+        "started_at": 1794795750080,
+        "ended_at": 1794795751520,
+        "receipt_id": "20bd73b4-a8e6-4cc2-b5dd-4a1f66b0ed69"
+      },
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a11",
+        "label": "Create herb garden plan",
+        "tool": "document_prepare",
+        "purpose": "Draft a clear, concise Markdown guide for setting up a balcony herb garden with basil and mint.",
+        "started_at": 1794795754466,
+        "ended_at": 1794795758623,
+        "receipt_id": "d6f903e7-8345-452a-a5a8-07cdacc73e12"
+      },
+      {
+        "id": "1bcf72e0-11e4-4601-b2f4-8ecdb54fbad2-a12",
+        "label": "Create herb garden plan",
+        "tool": "document_script",
+        "purpose": "Draft a clear, concise Markdown guide for setting up a balcony herb garden with basil and mint.",
+        "started_at": 1794795758623,
+        "ended_at": 1794795760068,
+        "receipt_id": "d6f903e7-8345-452a-a5a8-07cdacc73e12"
+      }
+    ],
+    "result": {
+      "reply": ""
+    }
+  },
+  "failureDiagnostics": [],
+  "failures": [],
+  "issue": "original_format_capture_missing",
+  "stopAcknowledgment": {
+    "ok": true
+  },
+  "endedAt": "2026-11-16T02:22:42.465Z",
+  "elapsedMs": 49531
+}

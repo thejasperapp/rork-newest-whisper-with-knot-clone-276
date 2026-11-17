@@ -1,0 +1,146 @@
+{
+  "title": "New-backend prime-sum retry 01 — observed outcome",
+  "observedAt": "2026-11-14T08:39:59.360Z",
+  "intent": {
+    "title": "Owner-authorized fresh prime-sum retry 01",
+    "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+    "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+    "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+    "requestID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+    "taskID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+    "conversationID": "bbd1a8f7-026b-49ef-b677-1f51b0a9266f",
+    "sourceMessageID": "6786afcd-50f8-4026-883c-99d306731548",
+    "expectedBuild": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c",
+    "startedAt": "2026-11-14T08:39:52.102Z",
+    "ask": "Use the real workspace to compute the sum of all prime numbers below 1000. Show the actual computation tool card and give the numeric answer based on its command result. Do not create files or update memory for this calculation.",
+    "retryAuthorization": "managed-prime-retry-20261114-authorization",
+    "attempt": "01",
+    "noAutomaticRetry": true,
+    "noHistoricalReplay": true,
+    "dedicatedAccountOnly": true,
+    "personalAccountAccessed": false
+  },
+  "outcome": {
+    "title": "Observed new-backend prime-sum turn",
+    "backend": "https://newest-whisper-with-knot-clone-t6ui3ur-backend.rork.app",
+    "accountID": "e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+    "workspaceID": "whisper-e00a9064-5f85-40bb-9f44-8bd60f90d24a",
+    "requestID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+    "taskID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+    "conversationID": "bbd1a8f7-026b-49ef-b677-1f51b0a9266f",
+    "sourceMessageID": "6786afcd-50f8-4026-883c-99d306731548",
+    "expectedBuild": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c",
+    "startedAt": "2026-11-14T08:39:52.102Z",
+    "servingRequestID": "d03cb84e-015c-4b89-bc2c-15111f210fd2",
+    "endedAt": "2026-11-14T08:39:54.628Z",
+    "elapsedMs": 2526,
+    "completionReceivedMs": null,
+    "streamEndedMs": 2293,
+    "completed": false,
+    "workIncomplete": false,
+    "issue": "upstream_http_rejection",
+    "reply": "",
+    "answerVerified": false,
+    "stopConfirmed": true,
+    "executions": [],
+    "retained": {
+      "records": [],
+      "activityCount": 5
+    },
+    "frameCount": 4,
+    "chatSubmissions": 1,
+    "directSidecarCalls": 0,
+    "personalAccountAccessed": false
+  },
+  "streamResponse": {
+    "status": 200,
+    "servingRequestID": "d03cb84e-015c-4b89-bc2c-15111f210fd2",
+    "workerBuild": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c"
+  },
+  "modelCalls": [
+    {
+      "logID": 33,
+      "loggedAt": "2026-11-14T08:39:54.062Z",
+      "requestID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+      "taskID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+      "servingRequestID": "d03cb84e-015c-4b89-bc2c-15111f210fd2",
+      "phase": "classification",
+      "requestedModel": "openai/gpt-4o",
+      "callID": "c56d5388-7d64-40ed-a011-a09762bb747d",
+      "workerBuildSHA256": "df6faba6323a71e1490c1f522ee92cad2eb746f530e353bfc1803c1d7092620c",
+      "transport": "rork",
+      "endpointHost": "toolkit.rork.com",
+      "endpointPath": "/v2/vercel/v1/chat/completions",
+      "reportedProvider": null,
+      "returnedModel": null,
+      "responseID": null,
+      "responseHeaders": {
+        "x-vercel-id": "pdx1::iad1::5cmxl-1794645593923-ab725a9ce6e8"
+      },
+      "httpStatus": 401,
+      "startedAt": "2026-11-14T08:39:53.866Z",
+      "endedAt": "2026-11-14T08:39:54.062Z",
+      "headersMs": 196,
+      "firstContentMs": null,
+      "elapsedMs": 196,
+      "outcome": "failed",
+      "timingSource": "worker_wall_clock",
+      "upstreamInternalTiming": "unavailable_unless_response_header_supplied"
+    }
+  ],
+  "rejection": null,
+  "toolExecutionRecord": {
+    "proposalsEmitted": 0,
+    "executions": [],
+    "retainedCommandRecords": [],
+    "remoteSessionID": null,
+    "stdout": null,
+    "exitCode": null,
+    "computationPerformed": false
+  },
+  "turnFrameMetadata": [
+    {
+      "sequence": 1,
+      "type": "accepted",
+      "requestID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+      "clientReceivedAt": "2026-11-14T08:39:52.966Z",
+      "clientElapsedMs": 864,
+      "reason": null
+    },
+    {
+      "sequence": 2,
+      "type": "connection_check_started",
+      "requestID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+      "clientReceivedAt": "2026-11-14T08:39:53.751Z",
+      "clientElapsedMs": 1649,
+      "reason": null
+    },
+    {
+      "sequence": 3,
+      "type": "work_routing",
+      "requestID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+      "clientReceivedAt": "2026-11-14T08:39:53.879Z",
+      "clientElapsedMs": 1777,
+      "reason": null
+    },
+    {
+      "sequence": 4,
+      "type": "rejected",
+      "requestID": "3d55a7bf-6976-4a6d-809f-dccd65898573",
+      "clientReceivedAt": "2026-11-14T08:39:54.077Z",
+      "clientElapsedMs": 1975,
+      "reason": "upstream_http_rejection"
+    }
+  ],
+  "retainedActivityCount": 5,
+  "conclusions": {
+    "blockedBeforeExecution": false,
+    "runnerAnswerVerified": false,
+    "dedicatedAccountOnly": true,
+    "personalAccountWorkspaceOrMemoryAccessed": false,
+    "originalAttemptPreserved": true,
+    "nativeRoutingChanged": false,
+    "noDirectSidecarCalls": true,
+    "noSandboxComputation": true
+  }
+}

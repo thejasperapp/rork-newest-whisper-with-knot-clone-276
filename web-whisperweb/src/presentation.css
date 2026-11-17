@@ -1,0 +1,66 @@
+.presentation-page { color: hsl(var(--foreground)); }
+.presentation-page .presentation-container { width: min(1120px, 100%); margin: auto; padding: 0 28px 80px; }
+.presentation-page .presentation-intro { padding: 72px 0 48px; }
+.presentation-page .presentation-eyebrow { font-size: 10px; text-transform: uppercase; font-weight: 650; letter-spacing: .18em; color: hsl(var(--muted-foreground)); }
+.whisper-marketing .wm-public-content .presentation-page h1 { font-size: clamp(40px, 5.4vw, 70px); line-height: 1.02; letter-spacing: -.055em; max-width: 820px; margin-top: 22px; font-weight: 600; text-wrap: balance; }
+.presentation-page .presentation-lede { max-width: 610px; font-size: 17px; line-height: 1.75; color: hsl(var(--muted-foreground)); margin-top: 24px; }
+.presentation-page .presentation-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.presentation-page .presentation-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; border: 1px solid hsl(var(--border)); border-radius: 99px; padding: 13px 20px; font-size: 13px; font-weight: 550; transition: background .2s, transform .2s; }
+.presentation-page .presentation-link:hover { background: hsl(var(--secondary)); }
+.presentation-page .presentation-link:active { transform: scale(.98); }
+.presentation-page .presentation-link-primary { background: hsl(var(--foreground)); color: hsl(var(--background)); border-color: transparent; }
+.presentation-page .presentation-link-primary:hover { background: hsl(var(--foreground) / .85); }
+.presentation-page .presentation-section { padding: 48px 0; border-top: 1px solid hsl(var(--border)); }
+.presentation-page .presentation-section h2 { font-size: clamp(26px, 3vw, 38px); letter-spacing: -.04em; font-weight: 550; margin: 12px 0 26px; }
+.presentation-page .presentation-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.presentation-page .presentation-card { background: hsl(var(--card)); border: 1px solid hsl(var(--border) / .5); border-radius: 24px; padding: 30px; }
+.presentation-page .presentation-card h3 { font-size: 22px; letter-spacing: -.035em; margin: 22px 0 12px; }
+.presentation-page .presentation-card p, .presentation-page .presentation-body { font-size: 14px; line-height: 1.8; color: hsl(var(--muted-foreground)); }
+.presentation-page .presentation-icon { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 15px; background: hsl(var(--background)); color: hsl(var(--foreground)); }
+.presentation-page .role-hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: center; padding-bottom: 50px; }
+.presentation-page .role-hero .presentation-intro { padding-bottom: 0; }
+.presentation-page .role-preview { background: hsl(var(--card)); border: 1px solid hsl(var(--border)); padding: 18px; border-radius: 30px; margin-top: 48px; box-shadow: 0 24px 60px -46px #27343c66; }
+.presentation-page .role-preview-header { display: flex; align-items: center; justify-content: space-between; padding: 12px 9px 24px; font-size: 15px; font-weight: 600; }
+.presentation-page .role-preview-header span { font-size: 9px; font-weight: 500; color: hsl(var(--muted-foreground)); text-transform: uppercase; letter-spacing: .1em; }
+.presentation-page .role-preview-row { display: flex; align-items: center; gap: 15px; border-radius: 17px; padding: 19px 16px; background: hsl(var(--background)); margin-bottom: 8px; }
+.presentation-page .role-preview-row svg { width: 19px; height: 19px; flex-shrink: 0; }
+.presentation-page .role-preview-row strong { display: block; font-size: 13px; font-weight: 550; }
+.presentation-page .role-preview-row small { display: block; color: hsl(var(--muted-foreground)); margin-top: 4px; font-size: 11px; }
+.presentation-page .role-preview-note { padding: 14px 10px 4px; font-size: 11px; line-height: 1.6; color: hsl(var(--muted-foreground)); }
+.presentation-page .role-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 7px; margin-top: 24px; }
+.presentation-page .role-price strong { font-size: 24px; font-weight: 550; letter-spacing: -.04em; }
+.presentation-page .role-price span { font-size: 13px; color: hsl(var(--muted-foreground)); }
+.presentation-page .role-tabs { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 28px; }
+.presentation-page .role-tabs a { font-size: 12px; padding: 9px 14px; border-radius: 99px; border: 1px solid hsl(var(--border)); }
+.presentation-page .role-tabs a[aria-current=page] { background: hsl(var(--foreground)); color: hsl(var(--background)); border-color: transparent; }
+.presentation-page .presentation-faq details { border-bottom: 1px solid hsl(var(--border)); padding: 22px 0; }
+.presentation-page .presentation-faq summary { cursor: pointer; list-style: none; font-size: 15px; font-weight: 550; display: flex; gap: 20px; justify-content: space-between; }
+.presentation-page .presentation-faq summary::-webkit-details-marker { display: none; }
+.presentation-page .presentation-faq summary span { font-size: 20px; font-weight: 400; }
+.presentation-page .presentation-faq details[open] summary span { transform: rotate(45deg); }
+.presentation-page .presentation-faq p { max-width: 740px; margin-top: 15px; font-size: 14px; line-height: 1.8; color: hsl(var(--muted-foreground)); }
+.presentation-page .presentation-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.presentation-page .presentation-steps > div > span { font-size: 12px; color: hsl(var(--muted-foreground)); }
+.presentation-page .presentation-steps h3 { margin: 14px 0 10px; font-size: 16px; }
+.presentation-page .safety-shortcuts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 0 0 48px; }
+.presentation-page .safety-shortcuts a { display: flex; align-items: center; gap: 12px; padding: 22px; border: 1px solid hsl(var(--border)); border-radius: 20px; font-size: 13px; font-weight: 550; transition: background .2s; }
+.presentation-page .safety-shortcuts a:hover { background: hsl(var(--card)); }
+.presentation-page .safety-protocol { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 50px; padding: 38px 0; border-top: 1px solid hsl(var(--border)); scroll-margin-top: 90px; }
+.presentation-page .safety-protocol h2 { font-size: 22px; margin-top: 16px; letter-spacing: -.035em; }
+.presentation-page .safety-protocol p + p { margin-top: 14px; }
+.presentation-page .safety-note { padding: 28px; border-radius: 24px; background: hsl(var(--card)); margin-top: 30px; }
+.presentation-page .safety-note h2 { font-size: 24px; margin-bottom: 12px; }
+.presentation-page :is(a,summary):focus-visible { outline: 2px solid hsl(var(--foreground)); outline-offset: 5px; }
+@media (max-width: 760px) {
+  .presentation-page .presentation-container { padding: 0 20px 56px; }
+  .presentation-page .presentation-intro { padding-top: 44px; }
+  .presentation-page .role-hero { grid-template-columns: 1fr; gap: 20px; }
+  .presentation-page .role-preview { margin-top: 8px; }
+  .presentation-page .presentation-grid { grid-template-columns: 1fr; }
+  .presentation-page .presentation-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .presentation-page .safety-shortcuts { grid-template-columns: 1fr; }
+  .presentation-page .safety-shortcuts a { padding: 17px 20px; }
+  .presentation-page .safety-protocol { grid-template-columns: 1fr; gap: 20px; }
+  .presentation-page .presentation-card { padding: 24px; }
+}
+@media (prefers-reduced-motion: reduce) { .presentation-page * { transition: none !important; } }
